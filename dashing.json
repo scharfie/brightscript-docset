@@ -2,7 +2,7 @@
     "name": "BrightScript SDK",
     "package": "brightscript",
     "selectors": {
-        "h1#title-text a": "Object"
+        "h1#title-text a": "Entry"
     },
     "ignore": [
         "ABOUT"
