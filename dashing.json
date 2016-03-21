@@ -1,0 +1,13 @@
+{
+    "name": "BrightScript SDK",
+    "package": "brightscript",
+    "selectors": {
+        "h1#title-text a": "Object"
+    },
+    "ignore": [
+        "ABOUT"
+    ],
+    "icon32x32": "",
+    "allowJS": false,
+    "ExternalURL": "https://sdkdocs.roku.com/display/sdkdoc/Index"
+}
