@@ -19,6 +19,11 @@ task :fetch do
   run %(wget -k -r -p --include-directories=display --adjust-extension "https://sdkdocs.roku.com/display/sdkdoc/Index")
 end
 
+desc "Massage the SDK HTML files"
+task :massage do
+  load 'massage-html.rb'
+end
+
 desc "Build the docset"
 task :build do
   run %(dashing build)
