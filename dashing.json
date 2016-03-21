@@ -4,7 +4,8 @@
     "index": "index.html",
     "selectors": {
         "h1#title-text a": "Entry",
-        "h4": "Method"
+        "h4": "Method",
+        "[id*='-Fields'] + div > table td:nth-child(1)": "Field"
     },
     "ignore": [
         "ABOUT"
