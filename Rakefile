@@ -8,10 +8,10 @@ def run(command)
   end
 end
 
-desc "Generate zip file of docset"
+desc "Generate archive file of docset"
 
-task :zip do
-  run %(zip -r brightscript.zip brightscript.docset)
+task :archive do
+  run %(tar --exclude='.DS_Store' -cvzf brightscript.tgz brightscript.docset)
 end
 
 desc "Fetch the SDK HTML docs"
