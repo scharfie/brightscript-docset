@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>The Roku Channel Developer Program - Roku SDK Documentation - Developer Documentation</title>
 
         
@@ -21,9 +22,7 @@
 
 
 <meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
-<script type="text/javascript">
-        var contextPath = '';
-</script>
+
 
     
 
@@ -70,21 +69,9 @@
     <link rel="shortcut icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
     <link rel="icon" type="image/x-icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
 
-<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation">
 
-<script>
-window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
-</script>
+
 <link type="text/css" rel="stylesheet" href="../../s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css%3Fbuild-number=6150.css" media="all">
 <!--[if lt IE 9]>
 <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
@@ -99,44 +86,28 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <![endif]-->
 <link type="text/css" rel="stylesheet" href="../../s/35e02545dc3a2fc430eccbb927fe7227-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/css/theme.doc/batch.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
-<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js" ></script>
-<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
-<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB" ></script>
+<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js"></script>
+<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true"></script>
+<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB"></script>
 
 
         
     
 
         
-        <meta name="ajs-site-title" content="Developer Documentation" />
+        <meta name="ajs-site-title" content="Developer Documentation">
 
     
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-67357911-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    
 
 <!-- Google Tag Manager -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <!-- End Google Tag Manager -->
 
 <!-- New Relic -->
-<script type="text/javascript">
-window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
-;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
-</script>
+
 <!-- End New Relic -->
 
     
@@ -147,11 +118,10 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 </head>
 
-<body             onload="placeFocus()"
-     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+<body onload="placeFocus()" id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
 
         
-            <div id='stp-licenseStatus-banner'></div>
+            <div id="stp-licenseStatus-banner"></div>
     <div id="full-height-container">
     <div id="header-precursor">
         
@@ -164,12 +134,14 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 <header id="header" role="banner">
-    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary">
+<h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation"><span class="aui-header-logo-text">Developer Documentation</span></a></h1>
+<ul class="aui-nav">
                             <li>
             
         
         
-<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+<a id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action" class=" aui-nav-imagelink" title="Spaces">
             <span>Spaces</span>
     </a>
         </li>
@@ -181,32 +153,32 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     </a>
     <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
                     <div class="aui-dropdown2-section">
-                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                <ul id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
                                             <li>
     
             
-<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+<a id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    " title="Browse pages in the Roku SDK Documentation space">
         Pages
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+<a id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    " title="Browse blogs in the Roku SDK Documentation space">
         Blog
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+<a id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    " title="Browse labels in the Roku SDK Documentation space">
         Labels
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+<a id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    " title="Browse additional space functions in the Roku SDK Documentation space">
         Space Operations
 </a>
 </li>
@@ -218,293 +190,35 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                         <li class="aui-buttons">
             </li>
     </ul>
-</div><div class="aui-header-secondary"><ul class="aui-nav">
-            <li>
-        
-    
-            
-<a  id="doctheme-anchor" href="The+Roku+Channel+Developer+Program.html#"  class=" aui-nav-imagelink"   title="">
-            <span></span>
-    </a>
-    </li>
-                    <li>
-        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
-    </li>
-        <li>
-            
-        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="The+Roku+Channel+Developer+Program.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
-        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
-    </a>
-    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                    <div class="aui-dropdown2-section">
-                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
-                                            <li>
-        
-            
-<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
->
-        Online Help
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="keyboard-shortcuts-link" href="The+Roku+Channel+Developer+Program.html#" class="    "      title="View available keyboard shortcuts" >
-        Keyboard Shortcuts
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
-        Feed Builder
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
-        What’s new
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="gadget-directory-link" href="The+Roku+Channel+Developer+Program.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
-        Available Gadgets
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
-        About Confluence
-</a>
-</li>
-                                    </ul>
-            </div>
-            </nav>
-    
-    </li>
-        <li>
-                
-    
-    </li>
-        <li>
-            
-    </li>
-        <li>
-                                            <li>
-        
-            
-<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FThe%2BRoku%2BChannel%2BDeveloper%2BProgram" class="   user-item login-link "      title="" >
-        Log in
-</a>
-</li>
-                        
-    </li>
-    </ul>
-</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+</div></div>
+<!-- .aui-header-inner--></nav><!-- .aui-header -->
     <br class="clear">
 </header>
 
     <div id="splitter">
-    <div id="splitter-sidebar"  class="padding-div" >
+    <div id="splitter-sidebar" class="padding-div">
         
 
                     
     
 
 
-<div class="plugin_pagetree">
 
-        
-        
-    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
-        <div class="plugin_pagetree_children">
-        </div>
-    </ul>
-
-    <fieldset class="hidden">
-        <input type="hidden" name="treeId" value="">
-        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
-        <input type="hidden" name="treePageId" value="3737027">
-
-        <input type="hidden" name="noRoot" value="false">
-        <input type="hidden" name="rootPageId" value="1611307">
-
-        <input type="hidden" name="rootPage" value="">
-        <input type="hidden" name="startDepth" value="0">
-        <input type="hidden" name="spaceKey" value="sdkdoc" >
-
-        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
-        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
-        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
-        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DThe%2BRoku%2BChannel%2BDeveloper%2BProgram">
-        <input type="hidden" name="mobile" value="false">
-
-                <fieldset class="hidden">
-                                                <input type="hidden" name="ancestorId" value="3736646">
-                                    <input type="hidden" name="ancestorId" value="1611307">
-                                    </fieldset>
-    </fieldset>
-</div>
 
 
 
             </div>
     <div id="splitter-content">
 
-        <script>InitDocThemeSidebar()</script>
+        
 
                         
             
-<div id="main"  class="aui-page-panel" >
+<div id="main" class="aui-page-panel">
     <div id="main-header">
         
         
-    <div id="navigation" class="content-navigation view">
-                    <ul class="ajs-menu-bar">
-                                            
-        <li class="normal ajs-menu-item">
-        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="The+Roku+Channel+Developer+Program.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
-            <span>
-                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
-                                
-            </span>
-        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-primary"                         class="section-primary first">
-                                                    <li>
-
     
-        
-                                            
-    
-    
-    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737027" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
-                <span>
-                        A<u>t</u>tachments (8)
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=3737027" rel="nofollow" class="action-view-history"   title="">
-                <span>
-                        Page History
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737027" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
-                <span>
-                        Restrictions
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-secondary"                         class="section-secondary">
-                                                    <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737027" rel="nofollow" class="action-view-info"   title="">
-                <span>
-                        Page Information
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-            
-                                            
-    
-    
-    <a  id="view-resolved-comments" href="The+Roku+Channel+Developer+Program.html#" rel="nofollow" class=""   title="">
-                <span>
-                        Resolved comments
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737027" rel="nofollow" class=""   title="Link to this Page">
-                <span>
-                        Link to this Page…
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=3737027#selectedPageInHierarchy" rel="nofollow" class=""   title="">
-                <span>
-                        View in Hierarchy
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=3737027" rel="nofollow" class="action-view-source popup-link"   title="">
-                <span>
-                        View Source
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=3737027" rel="nofollow" class=""   title="">
-                <span>
-                        Export to PDF
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=3737027" rel="nofollow" class="action-export-word"   title="">
-                <span>
-                        Export to Word
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                    </div>
-    </li>
-            </ul>
-    </div>
 
         
                 <div id="title-heading" class="pagetitle with-breadcrumbs">
@@ -517,20 +231,23 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     <ol id="breadcrumbs">
                                         
                         
-        <li class="first" >
+        <li class="first">
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
                                                                     
                         
-        <li>
+        </li>
+<li>
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
                                                                     
                         
-        <li>
+        </li>
+<li>
                         
                             <span class=""><a href="Developer+Guide.html">Developer Guide</a></span>
-                                                    </ol>
+                                                    </li>
+</ol>
 
 
                 </div>
@@ -588,27 +305,9 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 
-        <script type="text/x-template" title="searchResultsGrid">
-    <table class="aui">
-        <thead>
-            <tr class="header">
-                <th class="search-result-title">Page Title</th>
-                <th class="search-result-space">Space</th>
-                <th class="search-result-date">Updated</th>
-            </tr>
-        </thead>
-    </table>
-</script>
-<script type="text/x-template" title="searchResultsGridCount">
-    <p class="search-result-count">{0}</p>
-</script>
-<script type="text/x-template" title="searchResultsGridRow">
-    <tr class="search-result">
-        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
-        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
-        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
-    </tr>
-</script>
+        
+
+
         
     
     
@@ -634,7 +333,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-page-restrictions-hidden" href="The+Roku+Channel+Developer+Program.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+    <a id="content-metadata-page-restrictions-hidden" href="The+Roku+Channel+Developer+Program.html#" rel="nofollow" class="hidden" title="Unrestricted">
                 <span>
                         
         </span>    </a>
@@ -646,7 +345,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737027&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment"  accessKey="t"  title="8 attachments">
+    <a id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737027&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment" accesskey="t" title="8 attachments">
                 <span>
                         
         </span>    </a>
@@ -659,11 +358,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     
         
             
-            Created by <span class='author'>     <a href="../~breid.html"
-                       class="url fn"
-                            >Bill Reid</a></span>, last modified by <span class='editor'>     <a href="../~kcooper.html"
-                       class="url fn"
-                            >Kevin Cooper</a></span> on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3737027&amp;selectedPageVersions=12&amp;selectedPageVersions=13'>Mar 02, 2016</a>
+            Created by <span class="author">     <a href="../~breid.html" class="url fn">Bill Reid</a></span>, last modified by <span class="editor">     <a href="../~kcooper.html" class="url fn">Kevin Cooper</a></span> on <a class="last-modified" title="Show changes" href="https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3737027&amp;selectedPageVersions=12&amp;selectedPageVersions=13">Mar 02, 2016</a>
                 </li>
         </ul>
     </div>
@@ -679,7 +374,757 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
         <div id="main-content" class="wiki-content">
                            
-        <hr/><p style="text-align: center;"><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-name="toc"> </div></p><hr/><p>Roku offers content owners and publishers the ability to create their own channels on the Roku devices and to make those channels available to Roku users. The Roku SDK documentation contains the necessary information for creating a Roku channel, including design tools and sample applications. The <a class="external-link" href="http://www.roku.com/developer/sdk-license" rel="nofollow">Roku SDK License Agreement</a> contains the terms of use of the Roku SDK. After creating a channel application, content owners and publishers may upload the application to the Roku Developer Site for distribution to Roku users. They have to agree to the terms of <a class="external-link" href="http://www.roku.com/developer/distribution-agreement" rel="nofollow">Roku Application Distribution Agreement</a> to distribute their content on the Roku Platform. The agreement stipulates commercial terms including revenue and/or advertising inventory revenue share.</p><p>There are two methods for distributing Roku channels through the Roku Developer Site after they have been uploaded: the Roku Channel Store for Public Channels, or as a Private Channel.</p><p><strong>Roku Public Channels</strong> <br class="atl-forced-newline"/>Public Channels created for the Channel Store should be those intended for the widest possible distribution, without restriction other than as required for business reasons, such as payment of a monthly subscription. Public channels should be submitted to Roku for acceptance into the Channel Store. If accepted by Roku, a channel is made available through the Channel Store to all Roku users.</p><p><strong>Roku Private Channels</strong> <br class="atl-forced-newline"/>A channel may be uploaded to the Roku Developer Site and made available to users through the Private Channel mechanism. These channels are not available through the Channel Store, but can be accessed by Roku users by means of a unique channel access code provided to users. Channels intended for a very narrow audience, or carrying restrictions on access, such as membership in a group or organization, are better suited for Private Channels. There is no Roku approval process necessary to publish a Private Channel.</p><h2 id="TheRokuChannelDeveloperProgram-WelcometotheRokuStreamingPlayerDeveloperGuide">Welcome to the Roku Streaming Player Developer Guide</h2><p>This Developer Guide is designed to help you quickly come up to speed on the Roku platform architecture, Channel Store, and the basics of how to develop and deploy an application to the Roku player in development mode, and to the Channel Store as a published application to end users. In this Developer Guide we refer to the development of new channels on the Roku player as &quot;applications&quot; since they consist of a set of scripts and related assets. Channels can access video streams, music, photos, or perform other functions enabled by the SDK.</p><h2 id="TheRokuChannelDeveloperProgram-DevelopingwiththeRokuSDK">Developing with the Roku SDK</h2><p>The Roku SDK consists of a set of documentation, design guidelines, and sample applications that enable channels to be developed for the Roku Streaming Player. To understand the Roku SDK, here are the key documents:</p><ul><li>The Developer Guide covers the architecture, programming language, development process, and channel deployment requirements.</li></ul><ul><li>The BrightScript Reference Manual will bring you up to speed on the language and serves as a reference for the core components. BrightScript is the programming language used to develop channel applications on the Roku Streaming Player. BrightScript is a scripting language optimized to be the high level glue that ties together BrightScript Components and the Internet.</li></ul><ul><li>The Component Reference guide describes the Roku Streaming Player platform components that expose APIs to BrightScript.</li></ul><p>The entire documentation set includes the following: </p><div class="table-wrap"><table class="confluenceTable"><thead><tr><th class="confluenceTh"><div class="tablesorter-header-inner"><div class="tablesorter-header-inner">Manual</div></div></th><th colspan="1" class="confluenceTh">Section </th><th class="confluenceTh"><div class="tablesorter-header-inner"><div class="tablesorter-header-inner">Description</div></div></th></tr></thead><tbody><tr><td class="confluenceTd"><a class="external-link" href="Developer+Guide.html" rel="nofollow">Developer Guide</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">An introduction to developing for the Roku platform (this manual)</td></tr><tr><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><a class="external-link" href="Device+Registration+And+Linking.html" rel="nofollow">Device Registration and Linking</a></td><td colspan="1" class="confluenceTd">Linking the Roku Streaming Player channel to an account on your site</td></tr><tr><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><a href="Video+Streaming.html">Video Streaming</a></td><td colspan="1" class="confluenceTd">Contains information on video encoding guidelines, trick play, and closed caption support</td></tr><tr><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><a href="Debugging+Your+Application.html#DebuggingYourApplication-DebugConsoleCommands">Debug Console Commands</a> </td><td colspan="1" class="confluenceTd">Summarizes the debugging console commands</td></tr><tr><td class="confluenceTd"><a class="external-link" href="BrightScript+Language+Reference.html" rel="nofollow">BrightScript Language Reference</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">BrightScript programming language reference information</td></tr><tr><td class="confluenceTd"><a href="BrightScript+Component+Reference.html">BrightScript Component Reference</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">Reference information for the components exposed to the BrightScript programming language</td></tr><tr><td class="confluenceTd"><a href="Channel+Packaging+And+Publishing.html">Channel Packaging And Publishing</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">Information on creating a channel package and uploading it to the Developer Site</td></tr><tr><td class="confluenceTd"><a href="Design+Guidelines.html">Design Guidelines</a><a class="external-link" href="http://sdkdocs.roku.com/pages/createpage.action?spaceKey=RokuMLDocs&amp;title=Design+Guidelines&amp;linkCreation=true&amp;fromPageId=3736238" rel="nofollow"></a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">User Experience guidelines and standard art dimensions</td></tr><tr><td class="confluenceTd"><a class="external-link" href="Eclipse+Plugin+Guide.html" rel="nofollow">Eclipse Plugin Guide</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">Installing and using the Brightscript programming language in the Eclipse IDE</td></tr><tr><td class="confluenceTd"><a class="external-link" href="External+Control+Guide.html" rel="nofollow">External Control Guide</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">Information on the external control protocol that allows control of the Roku player over the network</td></tr><tr><td class="confluenceTd"><a class="external-link" href="Web+Service+API.html" rel="nofollow">Web Service API</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">Information on the web service APIs developers can use to connect to the Channel Store</td></tr><tr><td colspan="1" class="confluenceTd"><a href="Roku+Advertising+Framework.html">Roku Advertising Framework</a></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd">Information on using the Roku ad insertion API</td></tr><tr><td class="confluenceTd"><a class="external-link" href="Scene+Graph+XML+Guide.html" rel="nofollow">Scene Graph XML Guide</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">A guide for developing applications using the Roku Scene Graph XML APIs</td></tr><tr><td class="confluenceTd"><a class="external-link" href="Scene+Graph+Reference.html" rel="nofollow">Scene Graph Reference</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">Reference material for the Roku Scene Graph XML APIs</td></tr><tr><td class="confluenceTd"><a class="external-link" href="Scene+Graph+XML+Tutorial.html" rel="nofollow">Scene Graph XML Tutorial</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">A tutorial walk-through that builds an entire application using the Roku Scene Graph XML APIs</td></tr><tr><td class="confluenceTd"><a class="external-link" href="Release+Notes.html" rel="nofollow">Release Notes</a></td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd">A list of the SDK changes for each Roku player firmware revision</td></tr></tbody></table></div><p>In addition to the documentation, the SDK includes a set of application code samples that demonstrate some of the BrightScript and Roku Platform programming techniques. <span style="color: rgb(38,38,38);">You may reuse any of the code found in these samples as a basis for your own development, subject to the terms of the Roku SDK License.</span> A brief description of these samples follows:</p><div class="table-wrap"><table class="confluenceTable"><thead><tr><th class="confluenceTh"><div class="tablesorter-header-inner"><div class="tablesorter-header-inner">Sample</div></div></th><th class="confluenceTh"><div class="tablesorter-header-inner"><div class="tablesorter-header-inner">Description</div></div></th></tr></thead><tbody><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simpleposter.zip/download" rel="nofollow">simpleposter</a></td><td colspan="1" class="confluenceTd">Very simple poster screen with a filter banner</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simplevideoplayer.zip/download" rel="nofollow">simplevideoplayer</a></td><td colspan="1" class="confluenceTd">Uses the <code>roVideoScreen</code> component to play video with SRT subtitles</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/videoplayer.zip/download" rel="nofollow">videoplayer</a></td><td class="confluenceTd">Complete video channel using category based XML feeds </td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/audioapp.zip/download" rel="nofollow">audioapp</a></td><td class="confluenceTd">Uses the <code>roAudioPlayer</code> component to play audio</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/monitorsetup.zip/download" rel="nofollow">monitorsetup</a></td><td class="confluenceTd">Example use of the <code>roSlideShow</code> component</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/deviantart.zip/download" rel="nofollow">deviantart</a></td><td class="confluenceTd">Example use of the <code>roSlideShow</code> component and XML feeds</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/register.zip/download" rel="nofollow">register</a></td><td class="confluenceTd">Rendezvous style registration and account linking</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/twitterOAuth.zip/download" rel="nofollow">twitterOAuth</a></td><td class="confluenceTd">Uses the <code>roImageCanvas</code> to display tweets, with an OAuth implementation that uses <code>roUrlTransfer</code> and <code>roHMAC</code></td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/clock.zip/download" rel="nofollow">clock</a></td><td class="confluenceTd">A screensaver that uses <code>RunScreenSaver()</code> and <code>RunScreenSaverSettings()</code> entry points, with the <code>roImageCanvas</code> using rotations</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/paragraph.zip/download" rel="nofollow">paragraph</a></td><td class="confluenceTd">Displays images on the <code>roParagraphScreen</code></td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/customvideoplayer.zip/download" rel="nofollow">customvideoplayer</a></td><td class="confluenceTd">Uses the <code>roVideoPlayer</code> to play an HLS stream in an <code>roImageCanvas</code> window, is also an <code>roFontRegistry</code> example</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/filebrowser.zip/download" rel="nofollow">filebrowser</a></td><td class="confluenceTd">Simple <code>roFilesystem</code> and <code>roRegEx</code> example</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/usbplayer.zip/download" rel="nofollow">usbplayer</a></td><td class="confluenceTd">Plays media files from the USB drive, demonstrating the use of USB, <code>roFileSystem</code>, and <code>roRegEx</code></td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simplegrid.zip/download" rel="nofollow">simplegrid</a></td><td class="confluenceTd">A barebones grid screen example</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/usbgrid.zip/download" rel="nofollow">usbgrid</a></td><td colspan="1" class="confluenceTd">Uses the grid screen to browse a USB file system</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simpleinfo.zip/download" rel="nofollow">simpleinfo</a></td><td class="confluenceTd">Example of using the Info Button to pop up contextual information</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simple2d.zip/download" rel="nofollow">simple2d</a></td><td class="confluenceTd">A simple bouncing ball implementation using the 2D graphics system and the <code>roScreen</code> component</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/bs2dtest.zip/download" rel="nofollow">bs2dtest</a></td><td class="confluenceTd">Sample 2D graphics tests</td></tr><tr><td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/metadata.zip/download" rel="nofollow">metadata</a></td><td class="confluenceTd">Shows getting EXIF metadata from images and tag information from audio files, demonstrating <code>roImageMetaData</code> and <code>roAudioMetaData</code></td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/launchparams.zip/download" rel="nofollow">launchparams</a></td><td colspan="1" class="confluenceTd">Example of a channel that accepts parameters from ECP, demonstrating channels that respond to remote apps and clickable ads</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/scroll.zip/download" rel="nofollow">scroll</a></td><td colspan="1" class="confluenceTd">Scroll a large image on the viewable screen</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/snake.zip/download" rel="nofollow">snake</a></td><td colspan="1" class="confluenceTd">A sample 2D graphics game</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/socket_tests.zip/download" rel="nofollow">socket_tests</a></td><td colspan="1" class="confluenceTd">Simple example using <code>roStreamSocket</code> and <code>roDataGramSocket</code></td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/web_server.zip/download" rel="nofollow">web_server</a></td><td colspan="1" class="confluenceTd">Example of using <code>roStreamSocket</code></td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simpleInChannelPurchase.zip/download" rel="nofollow">simpleInChannelPurchase</a></td><td colspan="1" class="confluenceTd">Example of using the channel store purchase APIs</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/ecp_client.zip/download" rel="nofollow">ecp_client</a></td><td colspan="1" class="confluenceTd">Java examples utilizing the ECP protocol to control the Roku: a simple <code>Roku_Finder</code> that uses SSDP to detect Roku boxes on the network, and <code>android_remote</code>, a simple remote control application that runs on the Android platform</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/CaptionRenderer.zip/download" rel="nofollow">CaptionRenderer</a></td><td colspan="1" class="confluenceTd">Demonstrates the latest API capabilities for adding captions to videos</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/InAppPurchase.zip/download" rel="nofollow">InAppPurchase</a></td><td colspan="1" class="confluenceTd">A simple test channel application that allows users to purchase items within the application</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/CustomPlaybackScreen.zip/download" rel="nofollow">CustomPlaybackScreen</a></td><td colspan="1" class="confluenceTd">Demonstrates how to create a custom video player for your application using the <code>roVideoPlayer</code> component</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/ImageCanvas.zip/download" rel="nofollow">ImageCanvas</a></td><td colspan="1" class="confluenceTd">Creates a custom image canvas using the <code>roImageCanvas</code> component</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/Collisions.zip/download" rel="nofollow">Collisions</a></td><td colspan="1" class="confluenceTd">Demonstrates how to handle collisions between sprites in the 2D API <code>ifSprite</code> interface</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/SimpleAnimatedSprite.zip/download" rel="nofollow">SimpleAnimatedSprite</a></td><td colspan="1" class="confluenceTd">Demonstrates how to create a single animated sprite using the 2D API</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/Snowflakes.zip/download" rel="nofollow">Snowflakes</a></td><td colspan="1" class="confluenceTd">Creates multiple layers and several animated sprites using the 2D API double-buffering, animator, and compositor capabilities</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/TicTacToe.zip/download" rel="nofollow">TicTacToe</a><a class="external-link" href="http://tictactoe./" rel="nofollow"></a></td><td colspan="1" class="confluenceTd">Demonstrates the basic concepts of the 2D API by creating a simple Tic-Tac-Toe game</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/WebServices.zip/download" rel="nofollow">WebServices</a></td><td colspan="1" class="confluenceTd">Demonstrates the Web Services API by downloading and playing content from an example web page</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/BasicNavigation.zip/download" rel="nofollow">BasicNavigation</a></td><td colspan="1" class="confluenceTd">Demonstrates how to create navigation menus</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/Localization.zip/download" rel="nofollow">Localization</a></td><td colspan="1" class="confluenceTd">Demonstrates localization techniques for the Roku platform</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/ListScreen.zip/download" rel="nofollow">ListScreen</a></td><td colspan="1" class="confluenceTd">Demonstrates new capabilities for displaying lists in the <code>roListScreen</code> component</td></tr><tr><td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/JSONParsing.zip/download" rel="nofollow">JSONParsing</a></td><td colspan="1" class="confluenceTd">Demonstrates the new native JSON parsing capability of the Roku platform</td></tr></tbody></table></div><h2 id="TheRokuChannelDeveloperProgram-WhatDoINeedtoGetStarted?">What Do I Need to Get Started?</h2><p>Here's a list of the things you'll need to get started writing applications for the Roku Streaming Player:</p><ul><li>Roku Streaming Player with Software Release 2.7 or later</li><li>Roku SDK (Development Kit Documentation and Sample Applications)</li><li>Development Workstation with Text Editor and Terminal Application</li><li>Standard Web Browser (Firefox, Internet Explorer or equivalent)</li></ul><h2 id="TheRokuChannelDeveloperProgram-RokuModelsRokuModelsandFeatures"><span class="confluence-anchor-link conf-macro output-inline" data-hasbody="false" data-macro-name="anchor" id="TheRokuChannelDeveloperProgram-RokuModels"> </span>Roku Models and Features</h2><p>With the release of the Roku 2 platform, Roku's product line has expanded to the point that there are significant capability differences between many of the models. While all the models have the same basic streaming video playback support, the hardware internals of the models will support different levels of game play. There is even a new SDK method, <code>SetMaxVideoDecodeResolution()</code> (a member of <code>roVideoScreen</code> or <code>roVideoPlayer</code>), that only has an effect on units with an OpenGL implementation. Please see the <a href="BrightScript+Component+Reference.html">BrightScript Component Reference</a> for more details on this method. </p><p>The Roku models ship with incompatible power supplies as specified in the table below. If the wrong power supply is used, there is a risk of damaging the Roku unit when the power current of the supply is greater than what is specified for your Roku unit. On the other hand, if the power supply current is less than the Roku's specified power current, you run the risk of spontaneous reboots when the Roku cannot draw enough current.</p><p>When publishing your channel, you will have the opportunity to specify hardware requirements like &quot;USB&quot;, &quot;Roku 2&quot;, or &quot;Bluetooth Game Remote&quot;. The tables below should help you in determining the target models for your channel.</p><h3 id="TheRokuChannelDeveloperProgram-CurrentModels">Current Models</h3><div class="table-wrap"><table class="confluenceTable"><tbody style="margin-left: 30.0px;"><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>                                                </p></th><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku LT</strong></p></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku LT</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku 1</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku 2</strong></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku 2 HD</strong></p></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku 2 XD</strong></p></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku 2 XS</strong></p></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku 3</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku 4</strong></td><td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"> <strong>Roku TV</strong></td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">roDeviceInfo.GetModel()</p></th><td class="confluenceTd"><p style="text-align: center;">2400X 2450X</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">2700X</td><td colspan="1" style="text-align: center;" class="confluenceTd">2710X</td><td colspan="1" style="text-align: center;" class="confluenceTd">2720X</td><td class="confluenceTd"><p style="text-align: center;">3000X</p></td><td class="confluenceTd"><p style="text-align: center;">3050X</p></td><td class="confluenceTd"><p style="text-align: center;">3100X</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">4200X</td><td colspan="1" style="text-align: center;" class="confluenceTd">4400X</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">5000X</span></td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">Power Supply</p></th><td class="confluenceTd"><p style="text-align: center;">5V<br/>2.5A</p></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td class="confluenceTd"><p style="text-align: center;">5 V<br/>2.5 A</p></td><td class="confluenceTd"><p style="text-align: center;">5 V<br/>2.5 A</p></td><td class="confluenceTd"><p style="text-align: center;">5 V<br/>2.5 A</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">12 V<br/>1 A</td><td colspan="1" style="text-align: center;" class="confluenceTd">12 V<br/>2 A</td><td colspan="1" class="confluenceTd"> </td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">CPU</p></th><td style="text-align: center;" class="confluenceTd"><p>MIPS 400MHz<sup> 1</sup></p></td><td colspan="1" style="text-align: center;" class="confluenceTd">MIPS 600MHz</td><td colspan="1" class="confluenceTd"><p style="text-align: center;">MIPS 600MHz</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">MIPS 600MHz</td><td style="text-align: center;" class="confluenceTd"><p>ARM 600MHz</p></td><td style="text-align: center;" class="confluenceTd"><p>ARM 600MHz</p></td><td style="text-align: center;" class="confluenceTd"><p>ARM 600MHz</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">ARM dual core</td><td colspan="1" class="confluenceTd"><p style="text-align: center;"> ARM quad core</p></td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">MIPS 1GHz</span></td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">Accelerated Graphics API</p></th><td style="text-align: center;" class="confluenceTd"><p>none</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">none</td><td colspan="1" class="confluenceTd">none</td><td colspan="1" style="text-align: center;" class="confluenceTd">none</td><td style="text-align: center;" class="confluenceTd"><p>OpenGL ES 2.0<sup> 2</sup></p></td><td style="text-align: center;" class="confluenceTd"><p>OpenGL ES 2.0<sup> 2</sup></p></td><td style="text-align: center;" class="confluenceTd"><p>OpenGL ES 2.0<sup> 2</sup></p></td><td colspan="1" style="text-align: center;" class="confluenceTd">OpenGL ES 2.0<sup> 2</sup></td><td colspan="1" style="text-align: center;" class="confluenceTd">OpenGL ES 2.0<sup><span> 2</span></sup></td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">none</span></td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">RAM</p></th><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td><td class="confluenceTd"><p style="margin-left: 30.0px;">256 MB</p></td><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd">1.5 GB</td><td colspan="1" class="confluenceTd"> <span style="color: rgb(51,51,51);">512 MB</span></td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">NVM (Flash) Storage</p></th><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">256 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd">256 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd">256 MB</td><td class="confluenceTd"><p style="margin-left: 30.0px;">256 MB</p></td><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">256 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> <span style="color: rgb(51,51,51);">256 MB</span></td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">Composite Video Out</p></th><td style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">no</span></td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">HDMI 720p Video Out</p></th><td style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes<sup> 3</sup></span></td></tr><tr style="margin-left: 30.0px;"><th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p style="text-align: left;">HDMI 1080p Video Out</p></th><td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes<sup> 3</sup></span></td></tr><tr style="margin-left: 30.0px;"><th colspan="1" style="text-align: left;" class="confluenceTh">HDMI 2160p Video Out</th><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td></tr><tr style="margin-left: 30.0px;"><th colspan="1" class="confluenceTh">S/PDIF Port</th><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td></tr><tr><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>Wi-Fi (b/g/n)</p></th><td style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes</span></td></tr><tr><th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p>Wi-Fi (n 2x2)</p></th><td colspan="1" class="confluenceTd"><p> </p></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"><p> </p></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes</span></td></tr><tr><th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p>Ethernet Port</p></th><td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">no</span></td></tr><tr><th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p>USB 2.0</p></th><td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes</span></td></tr><tr><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>Max. Channel Size</p></th><td style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td><td style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td><td style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td><td style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd">&gt; 2 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd">&gt; 2 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td></tr><tr><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>microSD Slot</p></th><td style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(51,51,51);">no</span></td></tr><tr><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>Bluetooth Game Remote<sup> 4</sup></p></th><td style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(51,51,51);">no</span></td></tr><tr><th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>Wi-Fi Direct Game Remote</p></th><td style="text-align: center;" class="confluenceTd"><p>no</p></td><td colspan="1" class="confluenceTd"> </td><td colspan="1" class="confluenceTd"> </td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd"><p>no</p></td><td style="text-align: center;" class="confluenceTd"><p>no</p></td><td style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(51,51,51);">no</span></td></tr><tr><th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey">Voice Remote Search</th><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd"><span>no</span></td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td><td colspan="1" style="text-align: center;" class="confluenceTd">yes</td><td colspan="1" style="text-align: center;" class="confluenceTd">no</td></tr></tbody></table></div><p><strong>Notes</strong></p><p><sup>1</sup> Roku LT &quot;2400X&quot; started with the same ARM chip as Roku 2 models, but transitioned to the MIPS chip with model &quot;2450X&quot;</p><p><sup>2</sup> The OpenGL ES 2.0 API is currently only available under NDA to selected premium development partners. Roku desires to more openly share these low level APIs. We are hard at work tackling the security issues with this sharing that will simultaneously give content owners good reason to trust the uncompromising security of the box.</p><p><sup>3</sup> TV display resolution</p><p><sup>4</sup> Bluetooth Game Remote supports motion control and the instant replay button. The IR remote does not. The APIs for the motion control are only available under NDA at this time. </p><h3 id="TheRokuChannelDeveloperProgram-ClassicModels">Classic Models</h3><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p> </p></th><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku SD</strong></p></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku HD Classic</strong></p></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku XD</strong></p></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku XD|S Classic </strong></p></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey" style="text-align: center;"><strong>Roku XD|S</strong></td><td class="highlight-grey confluenceTd" data-highlight-colour="grey" style="text-align: center;"><strong>Roku HD</strong></td></tr><tr><th colspan="1" class="confluenceTh"><p style="text-align: left;">roDeviceInfo.GetModel()</p></th><td class="confluenceTd"><p style="text-align: center;">&quot;N1050&quot;</p></td><td class="confluenceTd"><p style="text-align: center;">&quot;N1000&quot; &quot;N1100&quot;</p></td><td class="confluenceTd"><p style="text-align: center;">&quot;2050X&quot;<br class="atl-forced-newline"/> &quot;2050N&quot;</p></td><td class="confluenceTd"><p style="text-align: center;">&quot;N1101&quot;</p></td><td style="text-align: center;" class="confluenceTd">&quot;2100X&quot; &quot;2100N&quot;</td><td style="text-align: center;" class="confluenceTd">&quot;2000C&quot;</td></tr><tr><th colspan="1" class="confluenceTh"><p style="text-align: left;">Power Supply</p></th><td class="confluenceTd"><p style="text-align: center;">5 V 1 A</p></td><td class="confluenceTd"><p style="text-align: center;">5 V 1 A</p></td><td class="confluenceTd"><p style="text-align: center;">5 V 1 A</p></td><td class="confluenceTd"><p style="text-align: center;">5 V 2.5 A</p></td><td style="text-align: center;" class="confluenceTd">5 V 2.5 A</td><td style="text-align: center;" class="confluenceTd">5 V 2.5 A</td></tr><tr><th colspan="1" class="confluenceTh"><p style="text-align: left;">CPU</p></th><td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td><td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td><td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td><td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td><td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td><td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td></tr><tr><th colspan="1" class="confluenceTh"><p style="text-align: left;">Accelerated Graphics API</p></th><td class="confluenceTd"><p style="text-align: center;">none</p></td><td class="confluenceTd"><p style="text-align: center;">none</p></td><td class="confluenceTd"><p style="text-align: center;">none</p></td><td class="confluenceTd"><p style="text-align: center;">none</p></td><td style="text-align: center;" class="confluenceTd">none</td><td style="text-align: center;" class="confluenceTd">none</td></tr><tr><th colspan="1" class="confluenceTh"><p>RAM</p></th><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td style="text-align: center;" class="confluenceTd">256 MB</td><td style="text-align: center;" class="confluenceTd">256 MB</td></tr><tr><th colspan="1" class="confluenceTh"><p>NVM (Flash) Storage</p></th><td class="confluenceTd"><p style="text-align: center;">64 MB</p></td><td class="confluenceTd"><p style="text-align: center;">64 MB</p></td><td class="confluenceTd"><p style="text-align: center;">64 MB</p></td><td class="confluenceTd"><p style="text-align: center;">256 MB</p></td><td style="text-align: center;" class="confluenceTd">256 MB</td><td style="text-align: center;" class="confluenceTd">256 MB</td></tr><tr><th colspan="1" class="confluenceTh"><p>Composite Video Out</p></th><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td></tr><tr><th colspan="1" class="confluenceTh"><p>HDMI 720p Video Out</p></th><td class="confluenceTd"><p style="text-align: center;">no</p></td><td class="confluenceTd"><p style="text-align: center;">yes</p></td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td></tr><tr><th colspan="1" class="confluenceTh"><p>HDMI 1080p Video Out</p></th><td class="confluenceTd"><p style="text-align: center;">no</p></td><td class="confluenceTd"><p style="text-align: center;">no</p></td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">no</td></tr><tr><th colspan="1" class="confluenceTh"><p>Wi-Fi (b/g/n)</p></th><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td></tr><tr><th colspan="1" class="confluenceTh"><p>Wi-Fi (n 2x2)</p></th><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td><td class="confluenceTd"> </td></tr><tr><th colspan="1" class="confluenceTh"><p>Ethernet Port</p></th><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td></tr><tr><th colspan="1" class="confluenceTh"><p>USB 2.0</p></th><td class="confluenceTd"><p style="text-align: center;">no</p></td><td class="confluenceTd"><p style="text-align: center;">no</p></td><td class="confluenceTd"><p style="text-align: center;">no</p></td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">yes</td><td style="text-align: center;" class="confluenceTd">no</td></tr><tr><th colspan="1" class="confluenceTh"><p>Max. Channel Size</p></th><td colspan="1" style="text-align: center;" class="confluenceTd"> 750 KB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> 750 KB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> 750 KB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> 2 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> 2 MB</td><td colspan="1" style="text-align: center;" class="confluenceTd"> 2 MB</td></tr></tbody></table></div><h3 id="TheRokuChannelDeveloperProgram-FHDUserInterfaceRequirementsandRecommendations">FHD User Interface Requirements and Recommendations</h3><p>The following are the requirements and recommendations for creating and using a 1080p user interface for your channel or application.</p><p>To create and use a 1080p user interface in a channel or application, you must set up the manifest file as described in Manifest File.</p><p>The following are the graphic image sizes and formats for a 1080p user interface.</p><div class="table-wrap"><table class="confluenceTable"><thead><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Graphic Image</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Size</div></th><th colspan="1" class="confluenceTh"><div class="tablesorter-header-inner">Format</div></th></tr></thead><tbody><tr><td class="confluenceTd">Channel logo</td><td class="confluenceTd">540x405 pixels</td><td colspan="1" class="confluenceTd">JPEG</td></tr><tr><td class="confluenceTd">Splash screen</td><td class="confluenceTd">1920x1080 pixels</td><td colspan="1" class="confluenceTd">JPEG</td></tr><tr><td class="confluenceTd">Roku Search channel buttons</td><td class="confluenceTd"><p>165x60 pixels</p></td><td colspan="1" class="confluenceTd">PNG</td></tr><tr><td colspan="1" class="confluenceTd">Roku Search brand tiles</td><td colspan="1" class="confluenceTd"><p>147x113 pixels</p></td><td colspan="1" class="confluenceTd">JPEG</td></tr></tbody></table></div>
+        <hr>
+<p style="text-align: center;"></p>
+<div class="toc-macro client-side-toc-macro  conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-macro-name="toc"> </div>
+<hr>
+<p>Roku offers content owners and publishers the ability to create their own channels on the Roku devices and to make those channels available to Roku users. The Roku SDK documentation contains the necessary information for creating a Roku channel, including design tools and sample applications. The <a class="external-link" href="http://www.roku.com/developer/sdk-license" rel="nofollow">Roku SDK License Agreement</a> contains the terms of use of the Roku SDK. After creating a channel application, content owners and publishers may upload the application to the Roku Developer Site for distribution to Roku users. They have to agree to the terms of <a class="external-link" href="http://www.roku.com/developer/distribution-agreement" rel="nofollow">Roku Application Distribution Agreement</a> to distribute their content on the Roku Platform. The agreement stipulates commercial terms including revenue and/or advertising inventory revenue share.</p>
+<p>There are two methods for distributing Roku channels through the Roku Developer Site after they have been uploaded: the Roku Channel Store for Public Channels, or as a Private Channel.</p>
+<p><strong>Roku Public Channels</strong> <br class="atl-forced-newline">Public Channels created for the Channel Store should be those intended for the widest possible distribution, without restriction other than as required for business reasons, such as payment of a monthly subscription. Public channels should be submitted to Roku for acceptance into the Channel Store. If accepted by Roku, a channel is made available through the Channel Store to all Roku users.</p>
+<p><strong>Roku Private Channels</strong> <br class="atl-forced-newline">A channel may be uploaded to the Roku Developer Site and made available to users through the Private Channel mechanism. These channels are not available through the Channel Store, but can be accessed by Roku users by means of a unique channel access code provided to users. Channels intended for a very narrow audience, or carrying restrictions on access, such as membership in a group or organization, are better suited for Private Channels. There is no Roku approval process necessary to publish a Private Channel.</p>
+<h2 id="TheRokuChannelDeveloperProgram-WelcometotheRokuStreamingPlayerDeveloperGuide">Welcome to the Roku Streaming Player Developer Guide</h2>
+<p>This Developer Guide is designed to help you quickly come up to speed on the Roku platform architecture, Channel Store, and the basics of how to develop and deploy an application to the Roku player in development mode, and to the Channel Store as a published application to end users. In this Developer Guide we refer to the development of new channels on the Roku player as "applications" since they consist of a set of scripts and related assets. Channels can access video streams, music, photos, or perform other functions enabled by the SDK.</p>
+<h2 id="TheRokuChannelDeveloperProgram-DevelopingwiththeRokuSDK">Developing with the Roku SDK</h2>
+<p>The Roku SDK consists of a set of documentation, design guidelines, and sample applications that enable channels to be developed for the Roku Streaming Player. To understand the Roku SDK, here are the key documents:</p>
+<ul><li>The Developer Guide covers the architecture, programming language, development process, and channel deployment requirements.</li></ul>
+<ul><li>The BrightScript Reference Manual will bring you up to speed on the language and serves as a reference for the core components. BrightScript is the programming language used to develop channel applications on the Roku Streaming Player. BrightScript is a scripting language optimized to be the high level glue that ties together BrightScript Components and the Internet.</li></ul>
+<ul><li>The Component Reference guide describes the Roku Streaming Player platform components that expose APIs to BrightScript.</li></ul>
+<p>The entire documentation set includes the following: </p>
+<div class="table-wrap"><table class="confluenceTable">
+<thead><tr>
+<th class="confluenceTh"><div class="tablesorter-header-inner"><div class="tablesorter-header-inner">Manual</div></div></th>
+<th colspan="1" class="confluenceTh">Section </th>
+<th class="confluenceTh"><div class="tablesorter-header-inner"><div class="tablesorter-header-inner">Description</div></div></th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="Developer+Guide.html" rel="nofollow">Developer Guide</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">An introduction to developing for the Roku platform (this manual)</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="Device+Registration+And+Linking.html" rel="nofollow">Device Registration and Linking</a></td>
+<td colspan="1" class="confluenceTd">Linking the Roku Streaming Player channel to an account on your site</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"><a href="Video+Streaming.html">Video Streaming</a></td>
+<td colspan="1" class="confluenceTd">Contains information on video encoding guidelines, trick play, and closed caption support</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd">
+<a href="Debugging+Your+Application.html#DebuggingYourApplication-DebugConsoleCommands">Debug Console Commands</a> </td>
+<td colspan="1" class="confluenceTd">Summarizes the debugging console commands</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="BrightScript+Language+Reference.html" rel="nofollow">BrightScript Language Reference</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">BrightScript programming language reference information</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a href="BrightScript+Component+Reference.html">BrightScript Component Reference</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">Reference information for the components exposed to the BrightScript programming language</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a href="Channel+Packaging+And+Publishing.html">Channel Packaging And Publishing</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">Information on creating a channel package and uploading it to the Developer Site</td>
+</tr>
+<tr>
+<td class="confluenceTd">
+<a href="Design+Guidelines.html">Design Guidelines</a><a class="external-link" href="http://sdkdocs.roku.com/pages/createpage.action?spaceKey=RokuMLDocs&amp;title=Design+Guidelines&amp;linkCreation=true&amp;fromPageId=3736238" rel="nofollow"></a>
+</td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">User Experience guidelines and standard art dimensions</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="Eclipse+Plugin+Guide.html" rel="nofollow">Eclipse Plugin Guide</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">Installing and using the Brightscript programming language in the Eclipse IDE</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="External+Control+Guide.html" rel="nofollow">External Control Guide</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">Information on the external control protocol that allows control of the Roku player over the network</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="Web+Service+API.html" rel="nofollow">Web Service API</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">Information on the web service APIs developers can use to connect to the Channel Store</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a href="Roku+Advertising+Framework.html">Roku Advertising Framework</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd">Information on using the Roku ad insertion API</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="Scene+Graph+XML+Guide.html" rel="nofollow">Scene Graph XML Guide</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">A guide for developing applications using the Roku Scene Graph XML APIs</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="Scene+Graph+Reference.html" rel="nofollow">Scene Graph Reference</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">Reference material for the Roku Scene Graph XML APIs</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="Scene+Graph+XML+Tutorial.html" rel="nofollow">Scene Graph XML Tutorial</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">A tutorial walk-through that builds an entire application using the Roku Scene Graph XML APIs</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="Release+Notes.html" rel="nofollow">Release Notes</a></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd">A list of the SDK changes for each Roku player firmware revision</td>
+</tr>
+</tbody>
+</table></div>
+<p>In addition to the documentation, the SDK includes a set of application code samples that demonstrate some of the BrightScript and Roku Platform programming techniques. <span style="color: rgb(38,38,38);">You may reuse any of the code found in these samples as a basis for your own development, subject to the terms of the Roku SDK License.</span> A brief description of these samples follows:</p>
+<div class="table-wrap"><table class="confluenceTable">
+<thead><tr>
+<th class="confluenceTh"><div class="tablesorter-header-inner"><div class="tablesorter-header-inner">Sample</div></div></th>
+<th class="confluenceTh"><div class="tablesorter-header-inner"><div class="tablesorter-header-inner">Description</div></div></th>
+</tr></thead>
+<tbody>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simpleposter.zip/download" rel="nofollow">simpleposter</a></td>
+<td colspan="1" class="confluenceTd">Very simple poster screen with a filter banner</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simplevideoplayer.zip/download" rel="nofollow">simplevideoplayer</a></td>
+<td colspan="1" class="confluenceTd">Uses the <code>roVideoScreen</code> component to play video with SRT subtitles</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/videoplayer.zip/download" rel="nofollow">videoplayer</a></td>
+<td class="confluenceTd">Complete video channel using category based XML feeds </td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/audioapp.zip/download" rel="nofollow">audioapp</a></td>
+<td class="confluenceTd">Uses the <code>roAudioPlayer</code> component to play audio</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/monitorsetup.zip/download" rel="nofollow">monitorsetup</a></td>
+<td class="confluenceTd">Example use of the <code>roSlideShow</code> component</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/deviantart.zip/download" rel="nofollow">deviantart</a></td>
+<td class="confluenceTd">Example use of the <code>roSlideShow</code> component and XML feeds</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/register.zip/download" rel="nofollow">register</a></td>
+<td class="confluenceTd">Rendezvous style registration and account linking</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/twitterOAuth.zip/download" rel="nofollow">twitterOAuth</a></td>
+<td class="confluenceTd">Uses the <code>roImageCanvas</code> to display tweets, with an OAuth implementation that uses <code>roUrlTransfer</code> and <code>roHMAC</code>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/clock.zip/download" rel="nofollow">clock</a></td>
+<td class="confluenceTd">A screensaver that uses <code>RunScreenSaver()</code> and <code>RunScreenSaverSettings()</code> entry points, with the <code>roImageCanvas</code> using rotations</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/paragraph.zip/download" rel="nofollow">paragraph</a></td>
+<td class="confluenceTd">Displays images on the <code>roParagraphScreen</code>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/customvideoplayer.zip/download" rel="nofollow">customvideoplayer</a></td>
+<td class="confluenceTd">Uses the <code>roVideoPlayer</code> to play an HLS stream in an <code>roImageCanvas</code> window, is also an <code>roFontRegistry</code> example</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/filebrowser.zip/download" rel="nofollow">filebrowser</a></td>
+<td class="confluenceTd">Simple <code>roFilesystem</code> and <code>roRegEx</code> example</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/usbplayer.zip/download" rel="nofollow">usbplayer</a></td>
+<td class="confluenceTd">Plays media files from the USB drive, demonstrating the use of USB, <code>roFileSystem</code>, and <code>roRegEx</code>
+</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simplegrid.zip/download" rel="nofollow">simplegrid</a></td>
+<td class="confluenceTd">A barebones grid screen example</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/usbgrid.zip/download" rel="nofollow">usbgrid</a></td>
+<td colspan="1" class="confluenceTd">Uses the grid screen to browse a USB file system</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simpleinfo.zip/download" rel="nofollow">simpleinfo</a></td>
+<td class="confluenceTd">Example of using the Info Button to pop up contextual information</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simple2d.zip/download" rel="nofollow">simple2d</a></td>
+<td class="confluenceTd">A simple bouncing ball implementation using the 2D graphics system and the <code>roScreen</code> component</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/bs2dtest.zip/download" rel="nofollow">bs2dtest</a></td>
+<td class="confluenceTd">Sample 2D graphics tests</td>
+</tr>
+<tr>
+<td class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/metadata.zip/download" rel="nofollow">metadata</a></td>
+<td class="confluenceTd">Shows getting EXIF metadata from images and tag information from audio files, demonstrating <code>roImageMetaData</code> and <code>roAudioMetaData</code>
+</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/launchparams.zip/download" rel="nofollow">launchparams</a></td>
+<td colspan="1" class="confluenceTd">Example of a channel that accepts parameters from ECP, demonstrating channels that respond to remote apps and clickable ads</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/scroll.zip/download" rel="nofollow">scroll</a></td>
+<td colspan="1" class="confluenceTd">Scroll a large image on the viewable screen</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/snake.zip/download" rel="nofollow">snake</a></td>
+<td colspan="1" class="confluenceTd">A sample 2D graphics game</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/socket_tests.zip/download" rel="nofollow">socket_tests</a></td>
+<td colspan="1" class="confluenceTd">Simple example using <code>roStreamSocket</code> and <code>roDataGramSocket</code>
+</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/web_server.zip/download" rel="nofollow">web_server</a></td>
+<td colspan="1" class="confluenceTd">Example of using <code>roStreamSocket</code>
+</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/simpleInChannelPurchase.zip/download" rel="nofollow">simpleInChannelPurchase</a></td>
+<td colspan="1" class="confluenceTd">Example of using the channel store purchase APIs</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/ecp_client.zip/download" rel="nofollow">ecp_client</a></td>
+<td colspan="1" class="confluenceTd">Java examples utilizing the ECP protocol to control the Roku: a simple <code>Roku_Finder</code> that uses SSDP to detect Roku boxes on the network, and <code>android_remote</code>, a simple remote control application that runs on the Android platform</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/CaptionRenderer.zip/download" rel="nofollow">CaptionRenderer</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates the latest API capabilities for adding captions to videos</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/InAppPurchase.zip/download" rel="nofollow">InAppPurchase</a></td>
+<td colspan="1" class="confluenceTd">A simple test channel application that allows users to purchase items within the application</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/CustomPlaybackScreen.zip/download" rel="nofollow">CustomPlaybackScreen</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates how to create a custom video player for your application using the <code>roVideoPlayer</code> component</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/ImageCanvas.zip/download" rel="nofollow">ImageCanvas</a></td>
+<td colspan="1" class="confluenceTd">Creates a custom image canvas using the <code>roImageCanvas</code> component</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/Collisions.zip/download" rel="nofollow">Collisions</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates how to handle collisions between sprites in the 2D API <code>ifSprite</code> interface</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/SimpleAnimatedSprite.zip/download" rel="nofollow">SimpleAnimatedSprite</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates how to create a single animated sprite using the 2D API</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/Snowflakes.zip/download" rel="nofollow">Snowflakes</a></td>
+<td colspan="1" class="confluenceTd">Creates multiple layers and several animated sprites using the 2D API double-buffering, animator, and compositor capabilities</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">
+<a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/TicTacToe.zip/download" rel="nofollow">TicTacToe</a><a class="external-link" href="http://tictactoe./" rel="nofollow"></a>
+</td>
+<td colspan="1" class="confluenceTd">Demonstrates the basic concepts of the 2D API by creating a simple Tic-Tac-Toe game</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/WebServices.zip/download" rel="nofollow">WebServices</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates the Web Services API by downloading and playing content from an example web page</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/BasicNavigation.zip/download" rel="nofollow">BasicNavigation</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates how to create navigation menus</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/Localization.zip/download" rel="nofollow">Localization</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates localization techniques for the Roku platform</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/ListScreen.zip/download" rel="nofollow">ListScreen</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates new capabilities for displaying lists in the <code>roListScreen</code> component</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd"><a class="external-link" href="http://sourceforge.net/projects/rokusdkexamples/files/JSONParsing.zip/download" rel="nofollow">JSONParsing</a></td>
+<td colspan="1" class="confluenceTd">Demonstrates the new native JSON parsing capability of the Roku platform</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="TheRokuChannelDeveloperProgram-WhatDoINeedtoGetStarted?">What Do I Need to Get Started?</h2>
+<p>Here's a list of the things you'll need to get started writing applications for the Roku Streaming Player:</p>
+<ul>
+<li>Roku Streaming Player with Software Release 2.7 or later</li>
+<li>Roku SDK (Development Kit Documentation and Sample Applications)</li>
+<li>Development Workstation with Text Editor and Terminal Application</li>
+<li>Standard Web Browser (Firefox, Internet Explorer or equivalent)</li>
+</ul>
+<h2 id="TheRokuChannelDeveloperProgram-RokuModelsRokuModelsandFeatures">
+<span class="confluence-anchor-link conf-macro output-inline" data-hasbody="false" data-macro-name="anchor" id="TheRokuChannelDeveloperProgram-RokuModels"> </span>Roku Models and Features</h2>
+<p>With the release of the Roku 2 platform, Roku's product line has expanded to the point that there are significant capability differences between many of the models. While all the models have the same basic streaming video playback support, the hardware internals of the models will support different levels of game play. There is even a new SDK method, <code>SetMaxVideoDecodeResolution()</code> (a member of <code>roVideoScreen</code> or <code>roVideoPlayer</code>), that only has an effect on units with an OpenGL implementation. Please see the <a href="BrightScript+Component+Reference.html">BrightScript Component Reference</a> for more details on this method. </p>
+<p>The Roku models ship with incompatible power supplies as specified in the table below. If the wrong power supply is used, there is a risk of damaging the Roku unit when the power current of the supply is greater than what is specified for your Roku unit. On the other hand, if the power supply current is less than the Roku's specified power current, you run the risk of spontaneous reboots when the Roku cannot draw enough current.</p>
+<p>When publishing your channel, you will have the opportunity to specify hardware requirements like "USB", "Roku 2", or "Bluetooth Game Remote". The tables below should help you in determining the target models for your channel.</p>
+<h3 id="TheRokuChannelDeveloperProgram-CurrentModels">Current Models</h3>
+<div class="table-wrap"><table class="confluenceTable"><tbody style="margin-left: 30.0px;">
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>                                                </p></th>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku LT</strong></p></td>
+<td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku LT</strong></td>
+<td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku 1</strong></td>
+<td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku 2</strong></td>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku 2 HD</strong></p></td>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku 2 XD</strong></p></td>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku 2 XS</strong></p></td>
+<td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku 3</strong></td>
+<td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"><strong>Roku 4</strong></td>
+<td class="highlight-grey confluenceTd" colspan="1" data-highlight-colour="grey" style="text-align: center;"> <strong>Roku TV</strong>
+</td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">roDeviceInfo.GetModel()</p></th>
+<td class="confluenceTd"><p style="text-align: center;">2400X 2450X</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">2700X</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">2710X</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">2720X</td>
+<td class="confluenceTd"><p style="text-align: center;">3000X</p></td>
+<td class="confluenceTd"><p style="text-align: center;">3050X</p></td>
+<td class="confluenceTd"><p style="text-align: center;">3100X</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">4200X</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">4400X</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">5000X</span></td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">Power Supply</p></th>
+<td class="confluenceTd"><p style="text-align: center;">5V<br>2.5A</p></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"> </td>
+<td class="confluenceTd"><p style="text-align: center;">5 V<br>2.5 A</p></td>
+<td class="confluenceTd"><p style="text-align: center;">5 V<br>2.5 A</p></td>
+<td class="confluenceTd"><p style="text-align: center;">5 V<br>2.5 A</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">12 V<br>1 A</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">12 V<br>2 A</td>
+<td colspan="1" class="confluenceTd"> </td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">CPU</p></th>
+<td style="text-align: center;" class="confluenceTd"><p>MIPS 400MHz<sup> 1</sup></p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">MIPS 600MHz</td>
+<td colspan="1" class="confluenceTd"><p style="text-align: center;">MIPS 600MHz</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">MIPS 600MHz</td>
+<td style="text-align: center;" class="confluenceTd"><p>ARM 600MHz</p></td>
+<td style="text-align: center;" class="confluenceTd"><p>ARM 600MHz</p></td>
+<td style="text-align: center;" class="confluenceTd"><p>ARM 600MHz</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">ARM dual core</td>
+<td colspan="1" class="confluenceTd"><p style="text-align: center;"> ARM quad core</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">MIPS 1GHz</span></td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">Accelerated Graphics API</p></th>
+<td style="text-align: center;" class="confluenceTd"><p>none</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">none</td>
+<td colspan="1" class="confluenceTd">none</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">none</td>
+<td style="text-align: center;" class="confluenceTd"><p>OpenGL ES 2.0<sup> 2</sup></p></td>
+<td style="text-align: center;" class="confluenceTd"><p>OpenGL ES 2.0<sup> 2</sup></p></td>
+<td style="text-align: center;" class="confluenceTd"><p>OpenGL ES 2.0<sup> 2</sup></p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">OpenGL ES 2.0<sup> 2</sup>
+</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">OpenGL ES 2.0<sup><span> 2</span></sup>
+</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">none</span></td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">RAM</p></th>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td>
+<td class="confluenceTd"><p style="margin-left: 30.0px;">256 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">1.5 GB</td>
+<td colspan="1" class="confluenceTd"> <span style="color: rgb(51,51,51);">512 MB</span>
+</td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">NVM (Flash) Storage</p></th>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">256 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">256 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">256 MB</td>
+<td class="confluenceTd"><p style="margin-left: 30.0px;">256 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">256 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">512 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> <span style="color: rgb(51,51,51);">256 MB</span>
+</td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">Composite Video Out</p></th>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">no</span></td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p style="text-align: left;">HDMI 720p Video Out</p></th>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes<sup> 3</sup></span></td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p style="text-align: left;">HDMI 1080p Video Out</p></th>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes<sup> 3</sup></span></td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th colspan="1" style="text-align: left;" class="confluenceTh">HDMI 2160p Video Out</th>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+</tr>
+<tr style="margin-left: 30.0px;">
+<th colspan="1" class="confluenceTh">S/PDIF Port</th>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>Wi-Fi (b/g/n)</p></th>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes</span></td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p>Wi-Fi (n 2x2)</p></th>
+<td colspan="1" class="confluenceTd"><p> </p></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"><p> </p></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes</span></td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p>Ethernet Port</p></th>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">no</span></td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p>USB 2.0</p></th>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(0,0,0);">yes</span></td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>Max. Channel Size</p></th>
+<td style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td>
+<td style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td>
+<td style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td>
+<td style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">&gt; 2 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">&gt; 2 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> &gt; 2 MB</td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>microSD Slot</p></th>
+<td style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(51,51,51);">no</span></td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>Bluetooth Game Remote<sup> 4</sup></p></th>
+<td style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(51,51,51);">no</span></td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" data-highlight-colour="grey"><p>Wi-Fi Direct Game Remote</p></th>
+<td style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" class="confluenceTd"> </td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td style="text-align: center;" class="confluenceTd"><p>no</p></td>
+<td style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span style="color: rgb(51,51,51);">no</span></td>
+</tr>
+<tr>
+<th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey">Voice Remote Search</th>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"><span>no</span></td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">yes</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd">no</td>
+</tr>
+</tbody></table></div>
+<p><strong>Notes</strong></p>
+<p><sup>1</sup> Roku LT "2400X" started with the same ARM chip as Roku 2 models, but transitioned to the MIPS chip with model "2450X"</p>
+<p><sup>2</sup> The OpenGL ES 2.0 API is currently only available under NDA to selected premium development partners. Roku desires to more openly share these low level APIs. We are hard at work tackling the security issues with this sharing that will simultaneously give content owners good reason to trust the uncompromising security of the box.</p>
+<p><sup>3</sup> TV display resolution</p>
+<p><sup>4</sup> Bluetooth Game Remote supports motion control and the instant replay button. The IR remote does not. The APIs for the motion control are only available under NDA at this time. </p>
+<h3 id="TheRokuChannelDeveloperProgram-ClassicModels">Classic Models</h3>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="highlight-grey confluenceTh" colspan="1" data-highlight-colour="grey"><p> </p></th>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku SD</strong></p></td>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku HD Classic</strong></p></td>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku XD</strong></p></td>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey"><p style="text-align: center;"><strong>Roku XD|S Classic </strong></p></td>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey" style="text-align: center;"><strong>Roku XD|S</strong></td>
+<td class="highlight-grey confluenceTd" data-highlight-colour="grey" style="text-align: center;"><strong>Roku HD</strong></td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p style="text-align: left;">roDeviceInfo.GetModel()</p></th>
+<td class="confluenceTd"><p style="text-align: center;">"N1050"</p></td>
+<td class="confluenceTd"><p style="text-align: center;">"N1000" "N1100"</p></td>
+<td class="confluenceTd"><p style="text-align: center;">"2050X"<br class="atl-forced-newline"> "2050N"</p></td>
+<td class="confluenceTd"><p style="text-align: center;">"N1101"</p></td>
+<td style="text-align: center;" class="confluenceTd">"2100X" "2100N"</td>
+<td style="text-align: center;" class="confluenceTd">"2000C"</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p style="text-align: left;">Power Supply</p></th>
+<td class="confluenceTd"><p style="text-align: center;">5 V 1 A</p></td>
+<td class="confluenceTd"><p style="text-align: center;">5 V 1 A</p></td>
+<td class="confluenceTd"><p style="text-align: center;">5 V 1 A</p></td>
+<td class="confluenceTd"><p style="text-align: center;">5 V 2.5 A</p></td>
+<td style="text-align: center;" class="confluenceTd">5 V 2.5 A</td>
+<td style="text-align: center;" class="confluenceTd">5 V 2.5 A</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p style="text-align: left;">CPU</p></th>
+<td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td>
+<td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td>
+<td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td>
+<td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td>
+<td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td>
+<td class="confluenceTd"><p style="text-align: center;">MIPS 400MHz</p></td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p style="text-align: left;">Accelerated Graphics API</p></th>
+<td class="confluenceTd"><p style="text-align: center;">none</p></td>
+<td class="confluenceTd"><p style="text-align: center;">none</p></td>
+<td class="confluenceTd"><p style="text-align: center;">none</p></td>
+<td class="confluenceTd"><p style="text-align: center;">none</p></td>
+<td style="text-align: center;" class="confluenceTd">none</td>
+<td style="text-align: center;" class="confluenceTd">none</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>RAM</p></th>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td style="text-align: center;" class="confluenceTd">256 MB</td>
+<td style="text-align: center;" class="confluenceTd">256 MB</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>NVM (Flash) Storage</p></th>
+<td class="confluenceTd"><p style="text-align: center;">64 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">64 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">64 MB</p></td>
+<td class="confluenceTd"><p style="text-align: center;">256 MB</p></td>
+<td style="text-align: center;" class="confluenceTd">256 MB</td>
+<td style="text-align: center;" class="confluenceTd">256 MB</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>Composite Video Out</p></th>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>HDMI 720p Video Out</p></th>
+<td class="confluenceTd"><p style="text-align: center;">no</p></td>
+<td class="confluenceTd"><p style="text-align: center;">yes</p></td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>HDMI 1080p Video Out</p></th>
+<td class="confluenceTd"><p style="text-align: center;">no</p></td>
+<td class="confluenceTd"><p style="text-align: center;">no</p></td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">no</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>Wi-Fi (b/g/n)</p></th>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>Wi-Fi (n 2x2)</p></th>
+<td class="confluenceTd"> </td>
+<td class="confluenceTd"> </td>
+<td class="confluenceTd"> </td>
+<td class="confluenceTd"> </td>
+<td class="confluenceTd"> </td>
+<td class="confluenceTd"> </td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>Ethernet Port</p></th>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>USB 2.0</p></th>
+<td class="confluenceTd"><p style="text-align: center;">no</p></td>
+<td class="confluenceTd"><p style="text-align: center;">no</p></td>
+<td class="confluenceTd"><p style="text-align: center;">no</p></td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">yes</td>
+<td style="text-align: center;" class="confluenceTd">no</td>
+</tr>
+<tr>
+<th colspan="1" class="confluenceTh"><p>Max. Channel Size</p></th>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> 750 KB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> 750 KB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> 750 KB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> 2 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> 2 MB</td>
+<td colspan="1" style="text-align: center;" class="confluenceTd"> 2 MB</td>
+</tr>
+</tbody></table></div>
+<h3 id="TheRokuChannelDeveloperProgram-FHDUserInterfaceRequirementsandRecommendations">FHD User Interface Requirements and Recommendations</h3>
+<p>The following are the requirements and recommendations for creating and using a 1080p user interface for your channel or application.</p>
+<p>To create and use a 1080p user interface in a channel or application, you must set up the manifest file as described in Manifest File.</p>
+<p>The following are the graphic image sizes and formats for a 1080p user interface.</p>
+<div class="table-wrap"><table class="confluenceTable">
+<thead><tr>
+<th class="confluenceTh"><div class="tablesorter-header-inner">Graphic Image</div></th>
+<th class="confluenceTh"><div class="tablesorter-header-inner">Size</div></th>
+<th colspan="1" class="confluenceTh"><div class="tablesorter-header-inner">Format</div></th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="confluenceTd">Channel logo</td>
+<td class="confluenceTd">540x405 pixels</td>
+<td colspan="1" class="confluenceTd">JPEG</td>
+</tr>
+<tr>
+<td class="confluenceTd">Splash screen</td>
+<td class="confluenceTd">1920x1080 pixels</td>
+<td colspan="1" class="confluenceTd">JPEG</td>
+</tr>
+<tr>
+<td class="confluenceTd">Roku Search channel buttons</td>
+<td class="confluenceTd"><p>165x60 pixels</p></td>
+<td colspan="1" class="confluenceTd">PNG</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Roku Search brand tiles</td>
+<td colspan="1" class="confluenceTd"><p>147x113 pixels</p></td>
+<td colspan="1" class="confluenceTd">JPEG</td>
+</tr>
+</tbody>
+</table></div>
 
                 
         
@@ -777,45 +1222,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
             
             
 
-<div id="footer" role="contentinfo">
-    <section class="footer-body">
 
-                                                    
-        
-
-        <ul id="poweredby">
-            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
-            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
-            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
-            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
-        </ul>
-
-        
-
-        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-
-                    <script>
-var footer = document.getElementById('poweredby');
-footer.removeChild(footer.children[2]);
-footer.removeChild(footer.children[2]);
-
-var pDiv = document.createElement('li');
-pDiv.className='noprint';
-pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
-footer.appendChild(pDiv);
-</script>
-
-<script>
-    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
-    if ( modinfo != undefined ) {
-        modinfo.style.display = "none" ;
-    }
-
-</script>
-
-        
-    </section>
-</div>
 
     </div>
 </body>

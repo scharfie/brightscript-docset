@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Roku Advertising Framework - Roku SDK Documentation - Developer Documentation</title>
 
         
@@ -21,9 +22,7 @@
 
 
 <meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
-<script type="text/javascript">
-        var contextPath = '';
-</script>
+
 
     
 
@@ -70,21 +69,9 @@
     <link rel="shortcut icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
     <link rel="icon" type="image/x-icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
 
-<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation">
 
-<script>
-window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
-</script>
+
 <link type="text/css" rel="stylesheet" href="../../s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css%3Fbuild-number=6150.css" media="all">
 <!--[if lt IE 9]>
 <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
@@ -102,47 +89,31 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <link type="text/css" rel="stylesheet" href="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
-<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js" ></script>
-<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
-<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js" ></script>
-<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init.js%3Flocale=en-GB" ></script>
+<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js"></script>
+<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true"></script>
+<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js"></script>
+<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init.js%3Flocale=en-GB"></script>
 
 
         
     
 
         
-        <meta name="ajs-site-title" content="Developer Documentation" />
+        <meta name="ajs-site-title" content="Developer Documentation">
 
     
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-67357911-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    
 
 <!-- Google Tag Manager -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <!-- End Google Tag Manager -->
 
 <!-- New Relic -->
-<script type="text/javascript">
-window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
-;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
-</script>
+
 <!-- End New Relic -->
 
     
@@ -153,11 +124,10 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 </head>
 
-<body             onload="placeFocus()"
-     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+<body onload="placeFocus()" id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
 
         
-            <div id='stp-licenseStatus-banner'></div>
+            <div id="stp-licenseStatus-banner"></div>
     <div id="full-height-container">
     <div id="header-precursor">
         
@@ -170,12 +140,14 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 <header id="header" role="banner">
-    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary">
+<h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation"><span class="aui-header-logo-text">Developer Documentation</span></a></h1>
+<ul class="aui-nav">
                             <li>
             
         
         
-<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+<a id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action" class=" aui-nav-imagelink" title="Spaces">
             <span>Spaces</span>
     </a>
         </li>
@@ -187,32 +159,32 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     </a>
     <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
                     <div class="aui-dropdown2-section">
-                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                <ul id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
                                             <li>
     
             
-<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+<a id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    " title="Browse pages in the Roku SDK Documentation space">
         Pages
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+<a id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    " title="Browse blogs in the Roku SDK Documentation space">
         Blog
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+<a id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    " title="Browse labels in the Roku SDK Documentation space">
         Labels
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+<a id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    " title="Browse additional space functions in the Roku SDK Documentation space">
         Space Operations
 </a>
 </li>
@@ -224,292 +196,35 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                         <li class="aui-buttons">
             </li>
     </ul>
-</div><div class="aui-header-secondary"><ul class="aui-nav">
-            <li>
-        
-    
-            
-<a  id="doctheme-anchor" href="Roku+Advertising+Framework.html#"  class=" aui-nav-imagelink"   title="">
-            <span></span>
-    </a>
-    </li>
-                    <li>
-        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
-    </li>
-        <li>
-            
-        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Roku+Advertising+Framework.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
-        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
-    </a>
-    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                    <div class="aui-dropdown2-section">
-                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
-                                            <li>
-        
-            
-<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
->
-        Online Help
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="keyboard-shortcuts-link" href="Roku+Advertising+Framework.html#" class="    "      title="View available keyboard shortcuts" >
-        Keyboard Shortcuts
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
-        Feed Builder
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
-        What’s new
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="gadget-directory-link" href="Roku+Advertising+Framework.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
-        Available Gadgets
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
-        About Confluence
-</a>
-</li>
-                                    </ul>
-            </div>
-            </nav>
-    
-    </li>
-        <li>
-                
-    
-    </li>
-        <li>
-            
-    </li>
-        <li>
-                                            <li>
-        
-            
-<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FRoku%2BAdvertising%2BFramework" class="   user-item login-link "      title="" >
-        Log in
-</a>
-</li>
-                        
-    </li>
-    </ul>
-</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+</div></div>
+<!-- .aui-header-inner--></nav><!-- .aui-header -->
     <br class="clear">
 </header>
 
     <div id="splitter">
-    <div id="splitter-sidebar"  class="padding-div" >
+    <div id="splitter-sidebar" class="padding-div">
         
 
                     
     
 
 
-<div class="plugin_pagetree">
 
-        
-        
-    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
-        <div class="plugin_pagetree_children">
-        </div>
-    </ul>
-
-    <fieldset class="hidden">
-        <input type="hidden" name="treeId" value="">
-        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
-        <input type="hidden" name="treePageId" value="3737569">
-
-        <input type="hidden" name="noRoot" value="false">
-        <input type="hidden" name="rootPageId" value="1611307">
-
-        <input type="hidden" name="rootPage" value="">
-        <input type="hidden" name="startDepth" value="0">
-        <input type="hidden" name="spaceKey" value="sdkdoc" >
-
-        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
-        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
-        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
-        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DRoku%2BAdvertising%2BFramework">
-        <input type="hidden" name="mobile" value="false">
-
-                <fieldset class="hidden">
-                                                <input type="hidden" name="ancestorId" value="1611307">
-                                    </fieldset>
-    </fieldset>
-</div>
 
 
 
             </div>
     <div id="splitter-content">
 
-        <script>InitDocThemeSidebar()</script>
+        
 
                         
             
-<div id="main"  class="aui-page-panel" >
+<div id="main" class="aui-page-panel">
     <div id="main-header">
         
         
-    <div id="navigation" class="content-navigation view">
-                    <ul class="ajs-menu-bar">
-                                            
-        <li class="normal ajs-menu-item">
-        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="Roku+Advertising+Framework.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
-            <span>
-                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
-                                
-            </span>
-        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-primary"                         class="section-primary first">
-                                                    <li>
-
     
-        
-                                            
-    
-    
-    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737569" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
-                <span>
-                        A<u>t</u>tachments (2)
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=3737569" rel="nofollow" class="action-view-history"   title="">
-                <span>
-                        Page History
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737569" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
-                <span>
-                        Restrictions
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-secondary"                         class="section-secondary">
-                                                    <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737569" rel="nofollow" class="action-view-info"   title="">
-                <span>
-                        Page Information
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-            
-                                            
-    
-    
-    <a  id="view-resolved-comments" href="Roku+Advertising+Framework.html#" rel="nofollow" class=""   title="">
-                <span>
-                        Resolved comments
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737569" rel="nofollow" class=""   title="Link to this Page">
-                <span>
-                        Link to this Page…
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=3737569#selectedPageInHierarchy" rel="nofollow" class=""   title="">
-                <span>
-                        View in Hierarchy
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=3737569" rel="nofollow" class="action-view-source popup-link"   title="">
-                <span>
-                        View Source
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=3737569" rel="nofollow" class=""   title="">
-                <span>
-                        Export to PDF
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=3737569" rel="nofollow" class="action-export-word"   title="">
-                <span>
-                        Export to Word
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                    </div>
-    </li>
-            </ul>
-    </div>
 
         
                 <div id="title-heading" class="pagetitle with-breadcrumbs">
@@ -522,15 +237,17 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     <ol id="breadcrumbs">
                                         
                         
-        <li class="first" >
+        <li class="first">
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
                                                                     
                         
-        <li>
+        </li>
+<li>
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
-                                                    </ol>
+                                                    </li>
+</ol>
 
 
                 </div>
@@ -588,27 +305,9 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 
-        <script type="text/x-template" title="searchResultsGrid">
-    <table class="aui">
-        <thead>
-            <tr class="header">
-                <th class="search-result-title">Page Title</th>
-                <th class="search-result-space">Space</th>
-                <th class="search-result-date">Updated</th>
-            </tr>
-        </thead>
-    </table>
-</script>
-<script type="text/x-template" title="searchResultsGridCount">
-    <p class="search-result-count">{0}</p>
-</script>
-<script type="text/x-template" title="searchResultsGridRow">
-    <tr class="search-result">
-        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
-        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
-        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
-    </tr>
-</script>
+        
+
+
         
     
     
@@ -634,7 +333,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-page-restrictions-hidden" href="Roku+Advertising+Framework.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+    <a id="content-metadata-page-restrictions-hidden" href="Roku+Advertising+Framework.html#" rel="nofollow" class="hidden" title="Unrestricted">
                 <span>
                         
         </span>    </a>
@@ -646,7 +345,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737569&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment"  accessKey="t"  title="2 attachments">
+    <a id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737569&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment" accesskey="t" title="2 attachments">
                 <span>
                         
         </span>    </a>
@@ -659,11 +358,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     
         
             
-            Created by <span class='author'>     <a href="../~breid.html"
-                       class="url fn"
-                            >Bill Reid</a></span>, last modified by <span class='editor'>     <a href="../~rburdick.html"
-                       class="url fn"
-                            >Robert Burdick</a></span> on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3737569&amp;selectedPageVersions=51&amp;selectedPageVersions=52'>Jan 20, 2016</a>
+            Created by <span class="author">     <a href="../~breid.html" class="url fn">Bill Reid</a></span>, last modified by <span class="editor">     <a href="../~rburdick.html" class="url fn">Robert Burdick</a></span> on <a class="last-modified" title="Show changes" href="https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3737569&amp;selectedPageVersions=51&amp;selectedPageVersions=52">Jan 20, 2016</a>
                 </li>
         </ul>
     </div>
@@ -679,7 +374,169 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
         <div id="main-content" class="wiki-content">
                            
-        <hr/><p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div></p><hr/><p>With the 6.2 release of the Roku firmware, Roku introduced the Roku Advertising Framework.  This is a <span>universal video ad solution integrated directly into the core Roku SDK.  This framework n</span><span>atively integrates baseline &amp; advanced advertising capabilities, including:</span></p><ul><li><div class="O1">IAB VAST 2.0/3.0 processing</div></li><li><div class="O1"><div class="O1">IAB VMAP playlist management</div></div></li><li><div class="O1"><div class="O1">Interactive ad units (via Innovid in RAF V1)</div></div></li><li><div class="O1"><div class="O1"><div class="O1">Roku’s new privacy-friendly device ID (“RIDA”).  See <a href="ifDeviceInfo.html#ifDeviceInfo-GetAdvertisingId()asString">GetAdvertisingId()</a>, <a href="ifDeviceInfo.html#ifDeviceInfo-IsAdIdTrackingDisabled()asBoolean">IsAdIdTrackingDisabled()</a>, and <a href="ifDeviceInfo.html#ifDeviceInfo-GetPublisherId()asString">GetPublisherId()</a> for details.</div></div></div></li><li><div class="O1">Support for Nielsen DAR.</div></li></ul><p>Other benefits of the framework include:</p><ul><li>Allows developers to <span>continue using their preferred ad server (e.g. Freewheel, DFP)</span></li><li><p>Automatically updates without rebuilding/resubmitting your app</p></li><li><p>Standardizes client-side ad insertion across all apps</p></li></ul><p>The Roku advertising framework is intended to provide advanced advertising fulfillment and rendering capabilities to applications. The library supports a variety of ad services and rendering of both video ads and interactive ads. By deploying as a common library, we reduce the overhead of implementation and maintenance for individual app developers and provide a consistent user experience for all applications. The library is designed to support multiple use cases, providing applications with flexibility to control as little or as much of the ad rendering process as desired.</p><p>Two sample channels that utilize the framework can be downloaded:</p><ul><li>A sample channel: <a href="https://sdkdocs.roku.com/download/attachments/3737569/RokuAdFrameworkSample.zip?version=1&amp;modificationDate=1451520155672&amp;api=v2" data-linked-resource-id="3737992" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="RokuAdFrameworkSample.zip" data-nice-type="Zip Archive" data-linked-resource-content-type="application/zip" data-linked-resource-container-id="3737569" data-linked-resource-container-version="52">RokuAdFrameworkSample.zip</a></li><li>A sample <a href="Scene+Graph+XML+Guide.html">Scene Graph</a> channel: <a href="https://sdkdocs.roku.com/download/attachments/3737569/RokuAdSceneGraphSample.zip?version=2&amp;modificationDate=1447794951843&amp;api=v2" data-linked-resource-id="3737651" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="RokuAdSceneGraphSample.zip" data-nice-type="Zip Archive" data-linked-resource-content-type="application/zip" data-linked-resource-container-id="3737569" data-linked-resource-container-version="52">RokuAdSceneGraphSample.zip</a></li></ul><h2 id="RokuAdvertisingFramework-Advantages">Advantages</h2><p>The Roku Advertising Framework (RAF) positions the publisher for the future of video advertising on the Roku Platform. RAF exists as a universal ad structure across all channels and Roku devices – all channels that have integrated RAF will benefit from Roku’s development of new ad features.</p><ul><li>RAF eases the inherit complexities of enabling a Roku channel for video advertising while providing a robust and powerful feature set. From the ground up, RAF is designed for simple integration.</li><li>Implementation of the framework is mutually beneficial to all involved parties and will grow the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AVOD">AVOD</a> ecosystem  beyond its current limit of capability: <br/>– Consumers – Better ad experience (e.g., interactivity, frequency capping) means significantly increased consumption of free content on AVOD channels. <br/>– Channels – Superior tools for monetization of publisher inventory. RAF addresses long-standing obstacles for advertisers who want to buy media on Roku.</li><li>New features added to RAF will not require further integration work as the functionality resides within the Roku OS.</li><li>RAF and all further RAF releases are certified to function on the Roku platform and will receive full support from Roku.</li><li>RAF is fully compatible with any <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VAST">VAST</a> 2.0 ad server and replaces existing VAST library code.</li></ul><h2 id="RokuAdvertisingFramework-CurrentFeatures">Current Features</h2><ul><li>Automatic appending of key targeting parameters in the ad request (Roku ID for Advertising, content genre, display dimensions, etc.)</li><li><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-IAB">IAB</a> <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VAST">VAST</a> 2.0/3.0 parsing</li><li>IAB <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a> parsing</li><li>FreeWheel <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-SmartXML">SmartXML</a> parsing</li><li>Interactive ad rendering</li><li>Audience measurement</li></ul><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">VAST 2.0 Feature</th><th class="confluenceTh">Supported</th></tr><tr><td class="confluenceTd">Wrapper and Inline Ads</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">Tracking Events</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">Linear Ads</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">ClickThrough (interactive ads)</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">Companion Ads</td><td class="confluenceTd">“image/jpeg”, “image/png” (parsing only, not rendered)</td></tr><tr><td class="confluenceTd">MediaFile</td><td class="confluenceTd">“video/mp4”, “video/x-mp4”, “application/x-mpegurl”, “application/json”</td></tr><tr><td class="confluenceTd">Non-Linear Ads</td><td class="confluenceTd">N</td></tr><tr><td class="confluenceTd">Extension elements</td><td class="confluenceTd">N</td></tr></tbody></table></div><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">VAST 3.0 Feature</th><th class="confluenceTh">Supported</th></tr><tr><td class="confluenceTd">Ad pods via sequence attribute</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">Extended error tracking</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">VAST tracking macros</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">Ad “buffet” selection</td><td class="confluenceTd">N</td></tr><tr><td class="confluenceTd">Skippable linear ads</td><td class="confluenceTd">N</td></tr><tr><td class="confluenceTd">OBA industry icon</td><td class="confluenceTd">N</td></tr></tbody></table></div><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">VMAP Feature</th><th class="confluenceTh">Supported</th></tr><tr><td class="confluenceTd">Ad pods playlists</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">Tracking events</td><td class="confluenceTd">Y</td></tr><tr><td class="confluenceTd">‘repeatAfter’ AdBreak attribute</td><td class="confluenceTd">N</td></tr><tr><td class="confluenceTd">Extension elements</td><td class="confluenceTd">N</td></tr></tbody></table></div><h2 id="RokuAdvertisingFramework-GettingStarted">Getting Started</h2><p>The library is intended to allow developers to focus their effort on the core design of their applications and provide them with the ability to quickly and easily integrate video advertising features with minimal impact to the rest of their application. This section provides an overview of the fundamental steps required to integrate with such applications. Other developers may wish to have more control over certain features within their applications, such as rendering the ads with custom UI or integrating the event tracking with a 3rd-party analytics API. The <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Interface">Interface</a> section provides more detailed information on the video ad API and the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-UseCases">Use Cases</a> section offers code examples designed to cover a variety of different use case scenarios.</p><p>The video ad features are provided as a common library deployed and managed as a hidden channel.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>The following line must be placed in the manifest file for any applications using the Roku Ad Framework library:</p><p style="margin-left: 30.0px;"><code>bs_libs_required=roku_ads_lib</code></p></div></div><p>Client applications do not include any additional <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-BrightScript">BrightScript</a> modules as part of their own channel package. Instead, the “Library” keyword is used:</p><p style="margin-left: 30.0px;"><code>Library &quot;Roku_Ads.brs&quot;</code></p><p>The library interface is obtained by calling the constructor with no arguments:</p><p style="margin-left: 30.0px;"><code>adIface = Roku_Ads()</code></p><p>If the client application is using Roku’s default ad server to fill ads, no other configuration is required. Otherwise, configure the ad URL before making the ad request call:</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">You may wish to check <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-URLParameterMacros">URL Parameter Macros</a> to see if any parameter values in the ad URL should be replaced with the provided macros.</div></div><p style="margin-left: 30.0px;"><code>adIface.setAdUrl(myAdUrl)</code></p><p>Aside from the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Configuration">Configuration</a> interface, there are two main methods used to control ad parsing and rendering. The first, <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>, makes the initial request to the ad server, parses the server response, and returns the structure of ads to be rendered prior to or during playback of the selected content:</p><p style="margin-left: 30.0px;"><code>adPods = adIface.getAds()</code></p><p>Any preroll ads present in the returned set of ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pods</a> can be immediately rendered by calling:</p><p style="margin-left: 30.0px;"><code>shouldPlayContent = adIface.showAds(adPods)</code></p><p>Checking and acting on the return value here allows the application to determine if the user exited out of the ad (for example, by pressing the “Back” button on the remote) and return to the content selection screen before playing the main content.</p><p>If the application is only showing preroll ads, the above five lines are sufficient. If the ad server URL was configured for additional midroll and/or postroll ads, the client application should periodically call <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> with the message from the content video playback loop to determine when to halt the content playback and render the ads:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Calling getAds() in a while Loop</b></div><div class="codeContent panelContent pdl">
+        <hr>
+<p></p>
+<div class="toc-macro client-side-toc-macro  conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div>
+<hr>
+<p>With the 6.2 release of the Roku firmware, Roku introduced the Roku Advertising Framework.  This is a <span>universal video ad solution integrated directly into the core Roku SDK.  This framework n</span><span>atively integrates baseline &amp; advanced advertising capabilities, including:</span></p>
+<ul>
+<li><div class="O1">IAB VAST 2.0/3.0 processing</div></li>
+<li><div class="O1"><div class="O1">IAB VMAP playlist management</div></div></li>
+<li><div class="O1"><div class="O1">Interactive ad units (via Innovid in RAF V1)</div></div></li>
+<li><div class="O1"><div class="O1"><div class="O1">Roku’s new privacy-friendly device ID (“RIDA”).  See <a href="ifDeviceInfo.html#ifDeviceInfo-GetAdvertisingId()asString">GetAdvertisingId()</a>, <a href="ifDeviceInfo.html#ifDeviceInfo-IsAdIdTrackingDisabled()asBoolean">IsAdIdTrackingDisabled()</a>, and <a href="ifDeviceInfo.html#ifDeviceInfo-GetPublisherId()asString">GetPublisherId()</a> for details.</div></div></div></li>
+<li><div class="O1">Support for Nielsen DAR.</div></li>
+</ul>
+<p>Other benefits of the framework include:</p>
+<ul>
+<li>Allows developers to <span>continue using their preferred ad server (e.g. Freewheel, DFP)</span>
+</li>
+<li><p>Automatically updates without rebuilding/resubmitting your app</p></li>
+<li><p>Standardizes client-side ad insertion across all apps</p></li>
+</ul>
+<p>The Roku advertising framework is intended to provide advanced advertising fulfillment and rendering capabilities to applications. The library supports a variety of ad services and rendering of both video ads and interactive ads. By deploying as a common library, we reduce the overhead of implementation and maintenance for individual app developers and provide a consistent user experience for all applications. The library is designed to support multiple use cases, providing applications with flexibility to control as little or as much of the ad rendering process as desired.</p>
+<p>Two sample channels that utilize the framework can be downloaded:</p>
+<ul>
+<li>A sample channel: <a href="https://sdkdocs.roku.com/download/attachments/3737569/RokuAdFrameworkSample.zip?version=1&amp;modificationDate=1451520155672&amp;api=v2" data-linked-resource-id="3737992" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="RokuAdFrameworkSample.zip" data-nice-type="Zip Archive" data-linked-resource-content-type="application/zip" data-linked-resource-container-id="3737569" data-linked-resource-container-version="52">RokuAdFrameworkSample.zip</a>
+</li>
+<li>A sample <a href="Scene+Graph+XML+Guide.html">Scene Graph</a> channel: <a href="https://sdkdocs.roku.com/download/attachments/3737569/RokuAdSceneGraphSample.zip?version=2&amp;modificationDate=1447794951843&amp;api=v2" data-linked-resource-id="3737651" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="RokuAdSceneGraphSample.zip" data-nice-type="Zip Archive" data-linked-resource-content-type="application/zip" data-linked-resource-container-id="3737569" data-linked-resource-container-version="52">RokuAdSceneGraphSample.zip</a>
+</li>
+</ul>
+<h2 id="RokuAdvertisingFramework-Advantages">Advantages</h2>
+<p>The Roku Advertising Framework (RAF) positions the publisher for the future of video advertising on the Roku Platform. RAF exists as a universal ad structure across all channels and Roku devices – all channels that have integrated RAF will benefit from Roku’s development of new ad features.</p>
+<ul>
+<li>RAF eases the inherit complexities of enabling a Roku channel for video advertising while providing a robust and powerful feature set. From the ground up, RAF is designed for simple integration.</li>
+<li>Implementation of the framework is mutually beneficial to all involved parties and will grow the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AVOD">AVOD</a> ecosystem  beyond its current limit of capability: <br>– Consumers – Better ad experience (e.g., interactivity, frequency capping) means significantly increased consumption of free content on AVOD channels. <br>– Channels – Superior tools for monetization of publisher inventory. RAF addresses long-standing obstacles for advertisers who want to buy media on Roku.</li>
+<li>New features added to RAF will not require further integration work as the functionality resides within the Roku OS.</li>
+<li>RAF and all further RAF releases are certified to function on the Roku platform and will receive full support from Roku.</li>
+<li>RAF is fully compatible with any <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VAST">VAST</a> 2.0 ad server and replaces existing VAST library code.</li>
+</ul>
+<h2 id="RokuAdvertisingFramework-CurrentFeatures">Current Features</h2>
+<ul>
+<li>Automatic appending of key targeting parameters in the ad request (Roku ID for Advertising, content genre, display dimensions, etc.)</li>
+<li>
+<a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-IAB">IAB</a> <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VAST">VAST</a> 2.0/3.0 parsing</li>
+<li>IAB <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a> parsing</li>
+<li>FreeWheel <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-SmartXML">SmartXML</a> parsing</li>
+<li>Interactive ad rendering</li>
+<li>Audience measurement</li>
+</ul>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh">VAST 2.0 Feature</th>
+<th class="confluenceTh">Supported</th>
+</tr>
+<tr>
+<td class="confluenceTd">Wrapper and Inline Ads</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">Tracking Events</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">Linear Ads</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">ClickThrough (interactive ads)</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">Companion Ads</td>
+<td class="confluenceTd">“image/jpeg”, “image/png” (parsing only, not rendered)</td>
+</tr>
+<tr>
+<td class="confluenceTd">MediaFile</td>
+<td class="confluenceTd">“video/mp4”, “video/x-mp4”, “application/x-mpegurl”, “application/json”</td>
+</tr>
+<tr>
+<td class="confluenceTd">Non-Linear Ads</td>
+<td class="confluenceTd">N</td>
+</tr>
+<tr>
+<td class="confluenceTd">Extension elements</td>
+<td class="confluenceTd">N</td>
+</tr>
+</tbody></table></div>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh">VAST 3.0 Feature</th>
+<th class="confluenceTh">Supported</th>
+</tr>
+<tr>
+<td class="confluenceTd">Ad pods via sequence attribute</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">Extended error tracking</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">VAST tracking macros</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">Ad “buffet” selection</td>
+<td class="confluenceTd">N</td>
+</tr>
+<tr>
+<td class="confluenceTd">Skippable linear ads</td>
+<td class="confluenceTd">N</td>
+</tr>
+<tr>
+<td class="confluenceTd">OBA industry icon</td>
+<td class="confluenceTd">N</td>
+</tr>
+</tbody></table></div>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh">VMAP Feature</th>
+<th class="confluenceTh">Supported</th>
+</tr>
+<tr>
+<td class="confluenceTd">Ad pods playlists</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">Tracking events</td>
+<td class="confluenceTd">Y</td>
+</tr>
+<tr>
+<td class="confluenceTd">‘repeatAfter’ AdBreak attribute</td>
+<td class="confluenceTd">N</td>
+</tr>
+<tr>
+<td class="confluenceTd">Extension elements</td>
+<td class="confluenceTd">N</td>
+</tr>
+</tbody></table></div>
+<h2 id="RokuAdvertisingFramework-GettingStarted">Getting Started</h2>
+<p>The library is intended to allow developers to focus their effort on the core design of their applications and provide them with the ability to quickly and easily integrate video advertising features with minimal impact to the rest of their application. This section provides an overview of the fundamental steps required to integrate with such applications. Other developers may wish to have more control over certain features within their applications, such as rendering the ads with custom UI or integrating the event tracking with a 3rd-party analytics API. The <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Interface">Interface</a> section provides more detailed information on the video ad API and the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-UseCases">Use Cases</a> section offers code examples designed to cover a variety of different use case scenarios.</p>
+<p>The video ad features are provided as a common library deployed and managed as a hidden channel.</p>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">
+<p>The following line must be placed in the manifest file for any applications using the Roku Ad Framework library:</p>
+<p style="margin-left: 30.0px;"><code>bs_libs_required=roku_ads_lib</code></p>
+</div>
+</div>
+<p>Client applications do not include any additional <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-BrightScript">BrightScript</a> modules as part of their own channel package. Instead, the “Library” keyword is used:</p>
+<p style="margin-left: 30.0px;"><code>Library "Roku_Ads.brs"</code></p>
+<p>The library interface is obtained by calling the constructor with no arguments:</p>
+<p style="margin-left: 30.0px;"><code>adIface = Roku_Ads()</code></p>
+<p>If the client application is using Roku’s default ad server to fill ads, no other configuration is required. Otherwise, configure the ad URL before making the ad request call:</p>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">You may wish to check <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-URLParameterMacros">URL Parameter Macros</a> to see if any parameter values in the ad URL should be replaced with the provided macros.</div>
+</div>
+<p style="margin-left: 30.0px;"><code>adIface.setAdUrl(myAdUrl)</code></p>
+<p>Aside from the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Configuration">Configuration</a> interface, there are two main methods used to control ad parsing and rendering. The first, <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>, makes the initial request to the ad server, parses the server response, and returns the structure of ads to be rendered prior to or during playback of the selected content:</p>
+<p style="margin-left: 30.0px;"><code>adPods = adIface.getAds()</code></p>
+<p>Any preroll ads present in the returned set of ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pods</a> can be immediately rendered by calling:</p>
+<p style="margin-left: 30.0px;"><code>shouldPlayContent = adIface.showAds(adPods)</code></p>
+<p>Checking and acting on the return value here allows the application to determine if the user exited out of the ad (for example, by pressing the “Back” button on the remote) and return to the content selection screen before playing the main content.</p>
+<p>If the application is only showing preroll ads, the above five lines are sufficient. If the ad server URL was configured for additional midroll and/or postroll ads, the client application should periodically call <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> with the message from the content video playback loop to determine when to halt the content playback and render the ads:</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Calling getAds() in a while Loop</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[while shouldPlayContent
   videoMsg = wait(0, contentVideoScreen.GetMessagePort())
   adPods = adIface.getAds(videoMsg)
@@ -692,7 +549,27 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
   end if
   &#39; *** Insert client app’s video event handler code here 
 end while]]></script>
-</div></div><h2 id="RokuAdvertisingFramework-UseCases">Use Cases</h2><p>The video ad library is intended to support a variety of use cases, depending on the requirements of the application. The sample code presented here is provided for illustrative purposes of each of these cases, and is not intended to represent required or optimal usage in client applications. For clarity and concision, error and object validity checking are omitted in these examples.</p><p>In all cases, the library must first be included and its interface constructed as described in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-GettingStarted">Getting Started</a>. Additionally, unless the client application is using Roku’s default ad URL (which currently provides only a single ad), the ad URL must be configured before requesting an ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a>:</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">You may wish to check <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-URLParameterMacros">URL Parameter Macros</a> to see if any parameter values in the ad URL should be replaced with the provided macros.</div></div><p style="margin-left: 30.0px;"><code>Library &quot;Roku_Ads.brs&quot; </code><br/><code>adIface = Roku_Ads() </code><br/><code>adIface.setAdUrl(myAdUrl) </code><br/><code>adPods = adIface.getAds()</code></p><p>At this point, the ad server response has been fully parsed and is available in the adPods <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>.</p><h3 id="RokuAdvertisingFramework-DefaultAdRendering">Default Ad Rendering</h3><p>If the client application has no need for custom UI or user interaction during ad rendering, it is recommended to use the default rendering method <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a>. This method handles rendering and control of interactive and video ads, as well as displaying basic messaging UI (e.g., “Your program will continue after these messages”) and feedback UI (“Ad 1 of 3”). Calling <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a> with an array of ad pods (such as the structure returned from the initial call to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>) will render the first pod scheduled as a preroll. Calling it with a single ad pod will render that pod, regardless of its <code>renderSequence</code> attribute.</p><h4 id="RokuAdvertisingFramework-SinglePrerollAdPod">Single Preroll Ad Pod</h4><p>Just call <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a> with the adPods value that the application obtained above:</p><p style="margin-left: 30.0px;"><code>shouldPlayContent = adIface.showAds(adPods)</code></p><p>Note that the return value should still be checked to see if the user exited the ad, and therefore should also exit out of content playback back to a selection screen.</p><h4 id="RokuAdvertisingFramework-SequentialRendering">Sequential Rendering</h4><p>Typically, if the ad service URL is configured to return a slate of ad pods to be presented throughout the presentation of the content, it is sufficient to use <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> as an event listener in the content video event loop, as described in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-GettingStarted">Getting Started</a>, to determine when the scheduled ad breaks should occur:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Sequential Ad Pod Rendering Example</b></div><div class="codeContent panelContent pdl">
+</div>
+</div>
+<h2 id="RokuAdvertisingFramework-UseCases">Use Cases</h2>
+<p>The video ad library is intended to support a variety of use cases, depending on the requirements of the application. The sample code presented here is provided for illustrative purposes of each of these cases, and is not intended to represent required or optimal usage in client applications. For clarity and concision, error and object validity checking are omitted in these examples.</p>
+<p>In all cases, the library must first be included and its interface constructed as described in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-GettingStarted">Getting Started</a>. Additionally, unless the client application is using Roku’s default ad URL (which currently provides only a single ad), the ad URL must be configured before requesting an ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a>:</p>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">You may wish to check <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-URLParameterMacros">URL Parameter Macros</a> to see if any parameter values in the ad URL should be replaced with the provided macros.</div>
+</div>
+<p style="margin-left: 30.0px;"><code>Library "Roku_Ads.brs" </code><br><code>adIface = Roku_Ads() </code><br><code>adIface.setAdUrl(myAdUrl) </code><br><code>adPods = adIface.getAds()</code></p>
+<p>At this point, the ad server response has been fully parsed and is available in the adPods <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>.</p>
+<h3 id="RokuAdvertisingFramework-DefaultAdRendering">Default Ad Rendering</h3>
+<p>If the client application has no need for custom UI or user interaction during ad rendering, it is recommended to use the default rendering method <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a>. This method handles rendering and control of interactive and video ads, as well as displaying basic messaging UI (e.g., “Your program will continue after these messages”) and feedback UI (“Ad 1 of 3”). Calling <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a> with an array of ad pods (such as the structure returned from the initial call to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>) will render the first pod scheduled as a preroll. Calling it with a single ad pod will render that pod, regardless of its <code>renderSequence</code> attribute.</p>
+<h4 id="RokuAdvertisingFramework-SinglePrerollAdPod">Single Preroll Ad Pod</h4>
+<p>Just call <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a> with the adPods value that the application obtained above:</p>
+<p style="margin-left: 30.0px;"><code>shouldPlayContent = adIface.showAds(adPods)</code></p>
+<p>Note that the return value should still be checked to see if the user exited the ad, and therefore should also exit out of content playback back to a selection screen.</p>
+<h4 id="RokuAdvertisingFramework-SequentialRendering">Sequential Rendering</h4>
+<p>Typically, if the ad service URL is configured to return a slate of ad pods to be presented throughout the presentation of the content, it is sufficient to use <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> as an event listener in the content video event loop, as described in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-GettingStarted">Getting Started</a>, to determine when the scheduled ad breaks should occur:</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Sequential Ad Pod Rendering Example</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[shouldPlayContent = adIface.showAds(adPods)
 while shouldPlayContent
   videoMsg = wait(0, contentVideoScreen.GetMessagePort())
@@ -706,7 +583,14 @@ while shouldPlayContent
   end if
   &#39; *** Insert client app’s video event handler code here
 end while]]></script>
-</div></div><p>This usage of <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> also automatically implements the default policy that determines whether to re-render ads that have already been viewed. This policy permits the user to rewind content up to 5 minutes before a scheduled ad break before displaying that ad pod again.</p><h4 id="RokuAdvertisingFramework-CustomScheduling">Custom Scheduling</h4><p>Alternatively, there may be instances where the application must have greater control over when ad breaks occur. As an example, if the ad service is configured to return a <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VAST">VAST</a> 2.0 response without temporal ad breaks, the application could re-interpret this unstructured response and schedule rendering of those ads as necessary:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Custom Ad Scheduling Example</b></div><div class="codeContent panelContent pdl">
+</div>
+</div>
+<p>This usage of <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> also automatically implements the default policy that determines whether to re-render ads that have already been viewed. This policy permits the user to rewind content up to 5 minutes before a scheduled ad break before displaying that ad pod again.</p>
+<h4 id="RokuAdvertisingFramework-CustomScheduling">Custom Scheduling</h4>
+<p>Alternatively, there may be instances where the application must have greater control over when ad breaks occur. As an example, if the ad service is configured to return a <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VAST">VAST</a> 2.0 response without temporal ad breaks, the application could re-interpret this unstructured response and schedule rendering of those ads as necessary:</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Custom Ad Scheduling Example</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[adBreakSchedule = [adBreakTime1, adBreakTime2, adBreakTime3] 
 scheduledPods = [] 
 adBreakIndex = 0 
@@ -720,7 +604,13 @@ for each ad in adPods[0].ad
                       })
   adBreakIndex = adBreakIndex + 1 
 end for]]></script>
-</div></div><p>Default sequential rendering could then be used by first importing this new <code>scheduledPods</code> ad structure, as described  in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-CustomAdParsing">Custom Ad Parsing</a>.</p><p>Or, if the library’s ad rendering features are desired without the default ad scheduling mechanism, the application may completely control which ads are scheduled for rendering:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Complete Ad Rendering Control Example</b></div><div class="codeContent panelContent pdl">
+</div>
+</div>
+<p>Default sequential rendering could then be used by first importing this new <code>scheduledPods</code> ad structure, as described  in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-CustomAdParsing">Custom Ad Parsing</a>.</p>
+<p>Or, if the library’s ad rendering features are desired without the default ad scheduling mechanism, the application may completely control which ads are scheduled for rendering:</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Complete Ad Rendering Control Example</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[shouldPlayContent = true 
 adBreakIndex = 0 
 while shouldPlayContent
@@ -739,11 +629,270 @@ while shouldPlayContent
   end if
   &#39; *** Insert client app’s video event handler code here 
 end while]]></script>
-</div></div><p>This type of custom ad scheduling may also be necessary if the client application relies on multiple ad services to fill its ad slots. For this case, separate calls are made to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdUrl()">setAdUrl()</a>, followed by <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>, to get the ads from each service. Then scheduling and rendering can be done using one of the methods described above.</p><h3 id="RokuAdvertisingFramework-CustomAdRendering(IncludingServer-SideAdInsertion)">Custom Ad Rendering (Including Server-Side Ad Insertion)</h3><p>Client applications may elect to control the ad rendering within the application, either to provide custom UI while loading ads, or because the ads are rendered by a method unsupported by the video ad library (e.g., by server-side video stitching). It is sufficient to make a single call to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> to get the entire <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>. The client application is then responsible for using the <code>streams</code> data to render the ads, and also must trigger the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a> events when the requisite conditions are met.</p><p>The <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-fireTrackingEvents()">fireTrackingEvents()</a> method is used to trigger event tracking, including client macro replacement and processing of Nielsen DAR beacons. The <code>adStructure</code> parameter passed in to this method can be either an <code>adPod</code> or a single ad from <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>, depending on whether the event is relevant for the entire pod (such as <code>PodStart</code> or <code>PodComplete</code>) or for a single ad (all other event types). The <code>ctx</code> parameter should contain either a <code>type</code> string from the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a> events or a <code>time</code> numerical value for firing time-dependent events such as quartile beacons. If both are specified, the <code>type</code> value takes precedence. Custom tracking event types can be added and fired as well, but client code should attempt to use conventional event types such as “Impression” where appropriate, as certain operations like Nielsen DAR parameter substitution rely on the “Impression” event type.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">The :brs:data‘type‘ values are case-sensitive, so will only fire events with names that match exactly the type specified.</div></div><p>Client code should fire all supported tracking events specified by <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a> during ad rendering when the appropriate conditions are met. Some events need not be fired such as <code>Error</code>, which is specific to VAST parsing only. Events corresponding to operations unsupported during ad rendering also need not be fired, such as <code>Rewind</code>, <code>Mute</code>, or <code>AcceptInvitation</code> (which is specific to ads with interactive elements).</p><p>As an example, if <code>ad</code> contains the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a> for a video ad that the client application has just begun rendering, the <code>Impression</code> beacons for that ad could be fired with a single call:</p><p style="margin-left: 30.0px;"><code>adIface.fireTrackingEvents(ad, {type: &quot;Impression&quot;})</code></p><p>While the ad playback progresses, assuming the variable <code>adProgressTime</code> holds a value representing the number of seconds since the ad began rendering, the quartile beacons can be sent via:</p><p style="margin-left: 30.0px;"><code>adIface.fireTrackingEvents(ad, {time: adProgressTime})</code></p><p>If the ad were paused by the user, then the client app would fire the <code>Pause</code> beacons:</p><p style="margin-left: 30.0px;"><code>adIface.fireTrackingEvents(ad, {type: &quot;Pause&quot;})</code></p><h3 id="RokuAdvertisingFramework-CustomAdParsing">Custom Ad Parsing</h3><p>Some applications may use an ad service that returns an unsupported response format, but can still take advantage of the library’s ad rendering features. In this case, the application is reponsible for requesting and parsing the ad response and structuring the ads into an array of pods according to the required <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>. Scheduling and rendering can then proceed as described in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-DefaultAdRendering">Default Ad Rendering</a> by first calling the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-importAds()">importAds()</a> method with the ad structure constructed externally by the client:</p><p style="margin-left: 30.0px;"><code>adIface.importAds(myAdPodArray)</code></p><p>Changed in version 1.1: New interface method</p><h4 id="RokuAdvertisingFramework-NielsenDAR">Nielsen DAR</h4><p>Nielsen Digital Ad Ratings provides a comprehensive, next-day view of your ad’s online and mobile audience in a way comparable to the Nielsen TV ratings.</p><h4 id="RokuAdvertisingFramework-Agreement">Agreement</h4><p>Roku now offers Nielsen audience measurement software on the Roku platform. You may choose to turn on these Nielsen audience measurement features in your channel. By doing so, you acknowledge and agree: (i) that turning on these features will cause device and content viewing information provided by your Roku Channel to the Roku SDK to be automatically appended to Nielsen digital ad ratings (“DAR”) beacons received in VAST responses and sent to Nielsen; (ii) Nielsen may have personally identifiable information (“PII”) on certain end users of the Roku platform;</p><p>(iii) these features will enable third party advertisers, agencies and media resellers (including Roku’s ad sales team if Roku is a reseller of your ad inventory) to serve VAST responses with Nielsen DAR campaign beacons into your channel, and receive reports on the performance of those DAR campaigns; and (iv) if you are not a Nielsen DAR customer, you may not receive reports on DAR campaigns. If you choose to turn on the Nielsen audience measurement features, you hereby represent and warrant: (i) that you will notify your users of the occurrence of audience measurement; (ii) you have and will maintain a legally adequate privacy policy; (iii) you have and will maintain all necessary rights from Nielsen and consents from users to use the Nielsen audience measurement features; and (iv) your use of the Nielsen audience measurement features will comply with all applicable laws, rules and regulations.</p><p>In the event that Roku runs an ad campaign on your channel, Roku may, in its sole discretion, provide to you or your ad agency, as applicable, excerpts of the Nielsen DAR that relate to the delivery and performance of advertisements on your ad inventory. You hereby agree to (i) maintain the confidentiality of any Nielsen DAR reports provided to you by Roku; and (ii) maintain in the Nielsen DAR reports any sourcing and copyright information provided by Nielsen.</p><p>YOU AGREE YOU WILL NOT USE THE NIELSEN AUDIENCE MEASUREMENT SOFTWARE AND FEATURES  IN CONNECTION WITH CONTENT OR CHANNELS DIRECTED TOWARD CHILDREN OR IN CONNECTION  WITH USERS KNOWN TO BE CHILDREN. If Roku discovers or determines in its sole discretion that you are using the Nielsen audience measurement software and features in connection with content or channels directed toward children or with users known to be children, Roku reserves the right to disable or otherwise limit functionality.</p><p>YOU MAY NOT ENABLE THE NIELSEN AUDIENCE MEASUREMENT FEATURES IF YOU DO NOT AGREE TO ABOVE. PLEASE CONTACT ROKU OR NIELSEN FOR FURTHER INFORMATION.</p><h4 id="RokuAdvertisingFramework-Usage">Usage</h4><p>In order to maximize the value of audience measurement for publishers, it is important to provide as much metadata as possible about the video content prior to ad insertion.</p><p>There are a few extra RAF configuration methods that must be called in order to enable and use Nielsen DAR.</p><p>First, the feature must be explicitly enabled with <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-enableNielsenDAR()">enableNielsenDAR()</a>. This need only be done once and can be called at any point before any ads are rendered.</p><p>Similarly, the unique application ID assigned by Nielsen must be configured for accurate campaign measurement using <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenAppId()">setNielsenAppId()</a>. This also must only be done once at any point before ads are rendered.</p><p>Next, a single primary genre describing the content should be set according to the genre values defined by Nielsen in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-NielsenDARGenreTags">Nielsen DAR Genre Tags</a> using <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenGenre()">setNielsenGenre()</a>. When more than one such genre may be applicable, the best practice is to select the most specific genre that describes the content. This genre will generally vary whenever new content is selected by the user and the app must re-configure as necessary.</p><p>Example values: “CS” for an episode of “Seinfeld”, “N” for a “60 Minutes” episode.</p><p>The program ID should be set using <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenProgramId()">setNielsenProgramId()</a>. The value used here should be a movie or series title, and should not uniquely identify episodic content.</p><p>Example values: “The Price is Right”, “Beverly Hills 90210”, “Police Academy 7: Mission to Moscow”.</p><p>Finally, the content length should also be set using <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentLength()">setContentLength()</a>. The value set here is the total length in seconds.</p><p>The content-specific metadata should be set when new content is selected before any ads are rendered, so that the values can be added to the custom Nielsen impression tags for the ads. If any of these metadata are unknown for a particular piece of content (for example, live streams may not have a specific content length), applications should call the appropriate function with an empty parameter to clear the value.</p><h4 id="RokuAdvertisingFramework-AdditionalNotesRegardingNielsenandRAF">Additional Notes Regarding Nielsen and RAF</h4><h5 id="RokuAdvertisingFramework-WhenwillanadbetrackedbyNielsen?"><span>When will an ad be tracked by Nielsen?</span></h5><ul><li style="list-style-type: disc;"><p><span>Just turning on Nielsen in RAF does not automatically mean all ads in a channel will be tracked by Nielsen. Only ads that have Nielsen beacons will be tracked.</span></p></li><li style="list-style-type: disc;"><p><span>The ad provider puts the Nielsen beacons in the ad response on the server side. Nielsen beacons always include the domain </span><span><a class="external-link" href="http://imrworldwide.com" rel="nofollow">imrworldwide.com</a></span></p></li><li style="list-style-type: disc;"><p><span>When RAF detects a Nielsen beacon it appends several parameters to it before firing the beacon</span></p></li></ul><h5 id="RokuAdvertisingFramework-Example"><span>Example</span></h5><h5 id="RokuAdvertisingFramework-Beaconasitappearsintheadresponse"><span>Beacon as it appears in the ad response</span></h5><p><span style="color: rgb(0,0,0);"><a class="external-link" href="http://secure-gl.imrworldwide.com/cgi-bin/m?ci=nlsnci1087&amp;am=3&amp;at=view&amp;rt=banner&amp;st=image&amp;ca=nlsn32225&amp;cr=crtve&amp;pc=roku_plc0001&amp;ce=roku&amp;r=1452208721034" rel="nofollow">http://secure-gl.imrworldwide.com/cgi-bin/m?ci=nlsnci1087&amp;am=3&amp;at=view&amp;rt=banner&amp;st=image&amp;ca=nlsn32225&amp;cr=crtve&amp;pc=roku_plc0001&amp;ce=roku&amp;r=1452208721034</a></span></p><h5 id="RokuAdvertisingFramework-BeaconasitisfiredbyRAF"><span>Beacon as it is fired by RAF</span></h5><p><a class="external-link" href="http://secure-gl.imrworldwide.com/cgi-bin/m?ci=nlsnci1087&amp;am=3&amp;at=view&amp;rt=banner&amp;st=image&amp;ca=nlsn32225&amp;cr=crtve&amp;pc=roku_plc0001&amp;ce=roku&amp;r=1452208721034&amp;c13=asid,P9C7EAB03-05FD-4C90-81BA-A50208B30956&amp;c10=plt,DSK&amp;c41=prov,ROKU&amp;c14=osver,Roku%2FDVP-7.10%20%28047.10E01786A%29&amp;c42=provapn,dev&amp;c8=devgrp,OTT" rel="nofollow">http://secure-gl.imrworldwide.com/cgi-bin/m?ci=nlsnci1087&amp;am=3&amp;at=view&amp;rt=banner&amp;st=image&amp;ca=nlsn32225&amp;cr=crtve&amp;pc=roku_plc0001&amp;ce=roku&amp;r=1452208721034&amp;c13=asid,P9C7EAB03-05FD-4C90-81BA-A50208B30956&amp;c10=plt,DSK&amp;c41=prov,ROKU&amp;c14=osver,Roku%2FDVP-7.10%20%28047.10E01786A%29&amp;c42=provapn,dev&amp;c8=devgrp,OTT</a></p><h2 id="RokuAdvertisingFramework-Interface">Interface</h2><h3 id="RokuAdvertisingFramework-Construction">Construction</h3><h4 id="RokuAdvertisingFramework-Roku_Ads()">Roku_Ads()</h4><p>Returns the Roku ad parser/renderer object.</p><p>This is the main entry point for instantiating the ad interface. The object returned has global scope, since it is meant to represent interaction with external resources (the ad server and any tracking services) that have persistence and state independent of the ad rendering within a client application. Manages ad server requests, parses ad structure, schedules and renders ads, and triggers tracking beacons.</p><h3 id="RokuAdvertisingFramework-Control">Control</h3><h4 id="RokuAdvertisingFramework-getAds()">getAds()</h4><h5 id="RokuAdvertisingFramework-Synopsis">Synopsis</h5><p style="margin-left: 30.0px;"><code> getAds(msg as string) as Object</code></p><h5 id="RokuAdvertisingFramework-Arguments">Arguments</h5><ul><li>msg – Optional, depending on use case. Typically, this would be a message returned from a WaitMessage() call on the message port of the roVideoScreen or roVideoPlayer object during  content playback. This allows determination of which ads are scheduled for rendering based on playback position, user action, or other conditions.</li></ul><p><strong>Returns</strong> available ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a>(s) scheduled for rendering or invalid, if none are available.</p><p>Gets set of ads to be rendered now. When called with no parameters, this function returns the full list of all ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pods</a> parsed from the ad server response. When called with the msg parameter, this function can be used as an event listener in the client application’s main video playback loop to check whether midroll or postroll ads should be shown or not.</p><h4 id="RokuAdvertisingFramework-showAds()">showAds()</h4><h5 id="RokuAdvertisingFramework-Synopsis.1">Synopsis</h5><p style="margin-left: 30.0px;"><code>showAds(ads as Object, ctx as Object) as Boolean</code></p><h5 id="RokuAdvertisingFramework-Arguments.1">Arguments</h5><ul><li>ads – Ads to be rendered. Can represent either a single <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a> of ads or an array of ad pods.</li><li>ctx – Optional associative array that allows client code to provide new offset and total to ad counter to support use cases involving interleaving RAF rendering with custom rendering within a single pod of ads: <br/><code>{start: Integer, (display index of first ad in this pod)</code><br/><code>total: Integer (display total number of ads in pod)}</code></li></ul><p><strong>Returns</strong> true if ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a> was rendered to completion, false if user exited before render completion.</p><p>Render any ads scheduled for display. When called with an array of ad pods (e.g., using the value returned from the initial call to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>), this is interpreted to mean that any preroll ad pod present should be rendered. Client applications should always check the return value and, if false, should exit content playback and return to the content selection screen. Typically, this occurs when the user presses the “Back” button during ad playback.</p><p>Changed in version 1.3: New context parameter</p><h4 id="RokuAdvertisingFramework-fireTrackingEvents()">fireTrackingEvents()</h4><h5 id="RokuAdvertisingFramework-Synopsis.2">Synopsis</h5><p style="margin-left: 30.0px;"> <code>fireTrackingEvents(adStructure as Object, ctx as Object) as Boolean</code></p><h5 id="RokuAdvertisingFramework-Arguments.2">Arguments</h5><ul><li>adStructure – Can refer to a pod (array) of ads or a single ad. Must at least contain a <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a> array member, and may optionally contain an ‘adServer’ member string.</li><li>ctx – structure to capture context-specific trigger conditions. ‘type’ key-value pair used to trigger events of a specific type. ‘time’ key-value pair used to trigger time-dependent events at or prior to this time.</li></ul><p><strong>Returns</strong> true if all beacons of the requested type are successfully fired, otherwise false.</p><p>Triggers event tracking, including parameter substitution for Nielsen DAR, when library client code handles the ad rendering. Can be used in scenarios where the RAF ad renderer is not used (e.g., custom ad rendering or server-stitched ads).</p><p>Changed in version 1.2: New interface method</p><h3 id="RokuAdvertisingFramework-Configuration">Configuration</h3><h4 id="RokuAdvertisingFramework-setAdUrl()">setAdUrl()</h4><h5 id="RokuAdvertisingFramework-Synopsis.3">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setAdUrl(url as string)</code></p><h5 id="RokuAdvertisingFramework-Arguments.3">Arguments</h5><ul><li>url – URL to set as the current ad service request (or omit this parameter to use the default Roku ad service).</li></ul><p>Sets ad URL to use for a new <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> request.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">You can only receive payment for ads shown in your application when the Roku Ad Framework is properly configured with a valid URL assigned by your ad service or by Roku. Please contact <a class="external-link" href="mailto:advertising@roku.com" rel="nofollow">advertising@roku.com</a> to discuss monetization options and obtain an ad URL if you wish to use Roku to fill ad inventory in your application. Using the default URL is useful only for development and testing purposes and you will not receive payment for ad impressions from the default URL.</div></div><h4 id="RokuAdvertisingFramework-getAdUrl()">getAdUrl()</h4><h5 id="RokuAdvertisingFramework-Synopsis.4">Synopsis</h5><p style="margin-left: 30.0px;"> <code>getAdUrl() as string</code></p><p><strong>Returns</strong> current ad URL.</p><p>Convenience function to get the currently-configured ad URL, or the default Roku ad server URL if none has been configured.</p><h4 id="RokuAdvertisingFramework-enableNielsenDAR()">enableNielsenDAR()</h4><h5 id="RokuAdvertisingFramework-Synopsis.5">Synopsis</h5><p style="margin-left: 30.0px;"> <code>enableNielsenDAR(enabled as Boolean)</code></p><h5 id="RokuAdvertisingFramework-Arguments.4">Arguments</h5><ul><li>enabled – Boolean value to enable/disable custom Nielsen <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-DAR">DAR</a> tags.</li></ul><p>Applications using Nielsen DAR must explicitly enable the framework to operate on the custom impression tag parameters.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">This is a provisional feature that is presently only available to select Roku partners. Please contact <a class="external-link" href="mailto:advertising@roku.com" rel="nofollow">advertising@roku.com</a> for more information.</div></div><p>Changed in version 1.1: New interface method</p><h4 id="RokuAdvertisingFramework-setContentGenre()">setContentGenre()</h4><h5 id="RokuAdvertisingFramework-Synopsis.6">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setContentGenre(genres as string)</code></p><h5 id="RokuAdvertisingFramework-Arguments.5">Arguments</h5><ul><li>genres – Comma-delimited string or array of genre tag strings.</li></ul><p>Allows potential ad targeting by specifying a set of genre tags to associate with the content or the ad request. Can clear genre tags by passing an empty string or omitting the parameter. The semantics and implementation of targeting based on genre values are dependent on the configured ad server, but for a list of currently-supported tags supported by the Roku ad server, refer to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-RokuGenreTags">Roku Genre Tags</a>.</p><h4 id="RokuAdvertisingFramework-setContentId()">setContentId()</h4><h5 id="RokuAdvertisingFramework-Synopsis.7">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setContentId(id as string)</code></p><h5 id="RokuAdvertisingFramework-Arguments.6">Arguments</h5><ul><li>id – String value representing content to allow potential ad targeting.</li></ul><p>Allows potential ad targeting by specifying an identifier for the content video. Passing an empty string or omitting the parameter will clear the content ID.</p><h4 id="RokuAdvertisingFramework-setContentLength()">setContentLength()</h4><h5 id="RokuAdvertisingFramework-Synopsis.8">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setContentLength(length as integer)</code></p><h5 id="RokuAdvertisingFramework-Arguments.7">Arguments</h5><ul><li>length – Integer value representing total length of content (in seconds).</li></ul><p>Configures content length to extend ad targeting properties for Nielsen <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-DAR">DAR</a>. Also used for determining VMAP relative ad break times. If called with no parameter, will clear any prior content length set.</p><p>Changed in version 1.1: New interface method</p><h4 id="RokuAdvertisingFramework-setNielsenGenre()">setNielsenGenre()</h4><h5 id="RokuAdvertisingFramework-Synopsis.9">Synopsis</h5><p style="margin-left: 30.0px;"> setNielsenGenre(genre as string)</p><h5 id="RokuAdvertisingFramework-Arguments.8">Arguments</h5><ul><li>genre – String identifying primary content genre for Nielsen DAR tags.</li></ul><p>Allows for ad campaign measurement using Nielsen DAR tags by specifying a primary genre for the content being played, according to the Nielsen genres defined in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-NielsenDARGenreTags">Nielsen DAR Genre Tags</a>. Examples: “CS” for an episode of “Seinfeld”, “N” for a “60 Minutes” episode.</p><p>Changed in version 1.1: New interface method</p><h4 id="RokuAdvertisingFramework-setNielsenAppId()">setNielsenAppId()</h4><h5 id="RokuAdvertisingFramework-Synopsis.10">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setNielsenAppId(id as string)</code></p><h5 id="RokuAdvertisingFramework-Arguments.9">Arguments</h5><ul><li>id – String identifying Nielsen-assigned application ID.</li></ul><p>Allows for ad campaign measurement using Nielsen DAR tags. The value of this application ID is uniquely assigned to your application by Nielsen and must be configured before rendering any ads containing Nielsen beacons.</p><p>Changed in version 1.2: New interface method</p><h4 id="RokuAdvertisingFramework-setNielsenProgramId()">setNielsenProgramId()</h4><h5 id="RokuAdvertisingFramework-Synopsis.11">Synopsis</h5><p style="margin-left: 30.0px;"> setNielsenProgramId(id as string)</p><h5 id="RokuAdvertisingFramework-Arguments.10">Arguments</h5><ul><li>id – String identifying content program for Nielsen DAR tags.</li></ul><p>Allows for ad campaign measurement using Nielsen DAR tags. The value of this program ID should consistently reflect the program (movie title or series name) and should not uniquely identify episodic content. Examples: “The Price is Right”, “Beverly Hills 90210”, “Police Academy 7: Mission to Moscow”.</p><p>Changed in version 1.2: New interface method</p><h4 id="RokuAdvertisingFramework-setAdPrefs()">setAdPrefs()</h4><h5 id="RokuAdvertisingFramework-Synopsis.12">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setAdPrefs(useRokuAdsAsFallback = true as Boolean, maxRequests = 2 as integer)</code></p><h5 id="RokuAdvertisingFramework-Arguments.11">Arguments</h5><ul><li>useRokuAdsAsFallback – Indicates whether the default Roku backfill ad service URL should be used in case the client-configured URL fails to return any renderable ads.</li><li>maxRequests – Maximum number of retries allowed if the ad service fails to return any renderable ads.</li></ul><p>Configures general ad request preferences.</p><h4 id="RokuAdvertisingFramework-setAdConstraints()">setAdConstraints()</h4><h5 id="RokuAdvertisingFramework-Synopsis.13">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setAdConstraints(maxHeight as integer, maxWidth as integer, maxBitrate as integer, supportedMimeTypes as object)</code></p><h5 id="RokuAdvertisingFramework-Arguments.12">Arguments</h5><ul><li>maxHeight – Maximum vertical dimension of renderable ad (in pixels).</li><li>maxWidth – Maximum horizontal dimension of renderable ad (in pixels).</li><li>maxBitrate – Maximum allowable bitrate for renderable ad streams (in Kbps).</li><li>supportedMimeTypes – Associative array with entries of the form {“mimeType” : “stream- Format”}.</li></ul><p>Configure media constraints to filter renderable video ads. By default, the MIME types are configured for “video/mp4”, “video/mp4-h264”, “video/x-mp4”, “application/x-mpegurl”, and “application/json”. Any additional known types can be mapped to their stream format by setting this parameter before calling <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>.</p><h4 id="RokuAdvertisingFramework-setAdBreaks()">setAdBreaks()</h4><h5 id="RokuAdvertisingFramework-Synopsis.14">Synopsis</h5><p style="margin-left: 30.0px;"><code> setAdBreaks(contentLength as integer, adBreakTimes as integer)</code></p><h5 id="RokuAdvertisingFramework-Arguments.13">Arguments</h5><ul><li>contentLength – Total length of video content (in seconds).</li><li>adBreakTimes – Array of suggested offsets into content playback to insert ad breaks (in s).</li></ul><p>Configures content playback parameters, which can be used for scheduling relative-positioned ad breaks in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a> ad service responses. If you know that your application uses <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a> ad URLs and they are configured to use “nn%” timeOffset values, then you must specify the contentLength prior to calling <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>. If <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a> is configured to use “#mm” timeOffset values, you must first specify a set of ad break times. Calling with empty parameters will reset these to invalid values. The content length can also be set independently via <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentLength()">setContentLength()</a> if ad break times are not required.</p><h4 id="RokuAdvertisingFramework-setAdExit()">setAdExit()</h4><h5 id="RokuAdvertisingFramework-Synopsis.15">Synopsis</h5><p style="margin-left: 30.0px;"><code>setAdExit(enabled = true as Boolean)</code> </p><h5 id="RokuAdvertisingFramework-Arguments.14">Arguments</h5><ul><li>enabled – Configures ad exit behavior during rendering.</li></ul><p>The default behavior is to enable exiting ad render (e.g., via “Back” button) to return to content selection screen in the application. Some use cases may require disabling this behavior if the user should not be allowed to skip ads when there is no applicable content selection mechanism.</p><p>Changed in version 1.1: New interface method</p><h4 id="RokuAdvertisingFramework-importAds()">importAds()</h4><h5 id="RokuAdvertisingFramework-Synopsis.16">Synopsis</h5><p style="margin-left: 30.0px;"> <code>importAds(adPodArray as Object)</code></p><h5 id="RokuAdvertisingFramework-Arguments.15">Arguments</h5><ul><li>adPodArray – Array of ad pods structured in accordance with the required <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>.</li></ul><p>Resets the internal ad pod cache to allow client code to import a set of ads from unsupported ad service response formats or when aggregating ads from multiple ad services. The application is reponsible for ensuring that the ad pods in the array contain all the required data members.</p><p>Changed in version 1.1: New interface method</p><h4 id="RokuAdvertisingFramework-setTrackingCallback()">setTrackingCallback()</h4><h5 id="RokuAdvertisingFramework-Synopsis.17">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setTrackingCallback(callback as function, obj as Object)</code></p><h5 id="RokuAdvertisingFramework-Arguments.16">Arguments</h5><ul><li>callback – function matching the required function signature.</li><li>obj – an opaque object supplied by client to be passed to callback.</li></ul><p>Allows library client to set a callback function to be called when ad tracking events are fired or checked. Callback functions must have the signature:</p><p style="margin-left: 30.0px;"><code>Sub CallbackFunc(obj = Invalid as Dynamic, <br/>                 eventType = Invalid as Dynamic, <br/>                 </code><code>ctx = Invalid as Dynamic)</code></p><p>The <code>obj</code> parameter is an opaque object always passed through to the callback. The <code>eventType</code>, if set, is a string specifying a tracking event that is fired. Event names correspond to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a>. The <code>ctx</code> is an optional associative array that encapsulates metadata associated with VAST-specified macros or ad render progress. Each member of the <code>ctx</code> array should separately be considered optional (i.e., client code should check for valid values before operating on these data members). Generally, if <code>ctx.eventType</code> is not set, then <code>ctx.time</code> should be set and indicates ad render progress:</p><p style="margin-left: 30.0px;"><code>{errType: String,</code><br/><code> errCode: String,</code><br/><code> errMsg : String,<br/> time : Int | Float (playback position, in s),<br/> url : String (rendered asset URI),<br/> ad : Associative Array representing ad structure for current ad,<br/> adIndex: Int (logical index of current ad within ad pod)<br/></code><code>}</code></p><p>Changed in version 1.1: New interface method <br/>Changed in version 1.4: New ad, adIndex context members</p><h4 id="RokuAdvertisingFramework-setDebugOutput()">setDebugOutput()</h4><h5 id="RokuAdvertisingFramework-Synopsis.18">Synopsis</h5><p style="margin-left: 30.0px;"> <code>setDebugOutput(enable as Boolean)</code></p><h5 id="RokuAdvertisingFramework-Arguments.17">Arguments</h5><ul><li>enable – Boolean value to enable/disable extended debug logging.</li></ul><p>Allows library client to configure extended debug output. Disabled by default.</p><p>Changed in version 1.2: New interface method</p><h4 id="RokuAdvertisingFramework-getLibVersion()">getLibVersion()</h4><h5 id="RokuAdvertisingFramework-Synopsis.19">Synopsis</h5><p style="margin-left: 30.0px;"> <code>getLibVersion() as string</code></p><p><strong>Returns</strong> version string of the form “&lt;major&gt;.&lt;minor&gt;”</p><p>Allows client applications to get the SDK library version.</p><h3 id="RokuAdvertisingFramework-URLParameterMacros">URL Parameter Macros</h3><p>The video ad library allows parameter values to be substituted in ad request and tracking URLs. This allows for dynamic configuration of values that are either not directly exposed to the client application or are unnecessary for it to initialize and maintain. These values are typically used for ad targeting, interaction tracking, and development purposes or to optimize the ad experience for the user’s device.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_TRACKING_ID">ROKU_ADS_TRACKING_ID</h4><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-RIDA">RIDA</a> value used for device identification.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_APP_ID">ROKU_ADS_APP_ID</h4><p>Identifies the client application making the ad request.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_CONTENT_ID">ROKU_ADS_CONTENT_ID</h4><p>Identifies the content to allow for ad targeting.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_CONTENT_GENRE">ROKU_ADS_CONTENT_GENRE</h4><p>Identifies the content categorization to allow for ad targeting.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_CONTENT_LENGTH">ROKU_ADS_CONTENT_LENGTH</h4><p>Improves ad targeting by providing length of content (in number of seconds).</p><p>Changed in version 1.1: New parameter value</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_USER_AGENT">ROKU_ADS_USER_AGENT</h4><p>Device model and firmware version.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_EXTERNAL_IP">ROKU_ADS_EXTERNAL_IP</h4><p>External IP address of the device.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_DISPLAY_WIDTH">ROKU_ADS_DISPLAY_WIDTH</h4><p>Width of device display.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_DISPLAY_HEIGHT">ROKU_ADS_DISPLAY_HEIGHT</h4><p>Height of device display.</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_TIMESTAMP">ROKU_ADS_TIMESTAMP</h4><p>Current timestamp value (number of milliseconds elapsed since 00:00:00 1/1/1970 GMT).</p><p>Changed in version 1.2: Increased resolution from seconds to milliseconds</p><h4 id="RokuAdvertisingFramework-ROKU_ADS_CACHE_BUSTER">ROKU_ADS_CACHE_BUSTER</h4><p>Makes the URL unique to avoid retrieving cached ad server responses or to ensure proper counting of unique event tracking beacons.</p><h4 id="RokuAdvertisingFramework-Example.1">Example</h4><p>For example, to make an ad request that requires the application ID, user agent, and timestamp values, the client could first call <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdUrl()">setAdUrl()</a> with the appropriate parameter values set:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>setAdUrl example</b></div><div class="codeContent panelContent pdl">
+</div>
+</div>
+<p>This type of custom ad scheduling may also be necessary if the client application relies on multiple ad services to fill its ad slots. For this case, separate calls are made to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdUrl()">setAdUrl()</a>, followed by <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>, to get the ads from each service. Then scheduling and rendering can be done using one of the methods described above.</p>
+<h3 id="RokuAdvertisingFramework-CustomAdRendering(IncludingServer-SideAdInsertion)">Custom Ad Rendering (Including Server-Side Ad Insertion)</h3>
+<p>Client applications may elect to control the ad rendering within the application, either to provide custom UI while loading ads, or because the ads are rendered by a method unsupported by the video ad library (e.g., by server-side video stitching). It is sufficient to make a single call to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> to get the entire <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>. The client application is then responsible for using the <code>streams</code> data to render the ads, and also must trigger the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a> events when the requisite conditions are met.</p>
+<p>The <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-fireTrackingEvents()">fireTrackingEvents()</a> method is used to trigger event tracking, including client macro replacement and processing of Nielsen DAR beacons. The <code>adStructure</code> parameter passed in to this method can be either an <code>adPod</code> or a single ad from <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>, depending on whether the event is relevant for the entire pod (such as <code>PodStart</code> or <code>PodComplete</code>) or for a single ad (all other event types). The <code>ctx</code> parameter should contain either a <code>type</code> string from the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a> events or a <code>time</code> numerical value for firing time-dependent events such as quartile beacons. If both are specified, the <code>type</code> value takes precedence. Custom tracking event types can be added and fired as well, but client code should attempt to use conventional event types such as “Impression” where appropriate, as certain operations like Nielsen DAR parameter substitution rely on the “Impression” event type.</p>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">The :brs:data‘type‘ values are case-sensitive, so will only fire events with names that match exactly the type specified.</div>
+</div>
+<p>Client code should fire all supported tracking events specified by <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a> during ad rendering when the appropriate conditions are met. Some events need not be fired such as <code>Error</code>, which is specific to VAST parsing only. Events corresponding to operations unsupported during ad rendering also need not be fired, such as <code>Rewind</code>, <code>Mute</code>, or <code>AcceptInvitation</code> (which is specific to ads with interactive elements).</p>
+<p>As an example, if <code>ad</code> contains the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a> for a video ad that the client application has just begun rendering, the <code>Impression</code> beacons for that ad could be fired with a single call:</p>
+<p style="margin-left: 30.0px;"><code>adIface.fireTrackingEvents(ad, {type: "Impression"})</code></p>
+<p>While the ad playback progresses, assuming the variable <code>adProgressTime</code> holds a value representing the number of seconds since the ad began rendering, the quartile beacons can be sent via:</p>
+<p style="margin-left: 30.0px;"><code>adIface.fireTrackingEvents(ad, {time: adProgressTime})</code></p>
+<p>If the ad were paused by the user, then the client app would fire the <code>Pause</code> beacons:</p>
+<p style="margin-left: 30.0px;"><code>adIface.fireTrackingEvents(ad, {type: "Pause"})</code></p>
+<h3 id="RokuAdvertisingFramework-CustomAdParsing">Custom Ad Parsing</h3>
+<p>Some applications may use an ad service that returns an unsupported response format, but can still take advantage of the library’s ad rendering features. In this case, the application is reponsible for requesting and parsing the ad response and structuring the ads into an array of pods according to the required <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>. Scheduling and rendering can then proceed as described in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-DefaultAdRendering">Default Ad Rendering</a> by first calling the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-importAds()">importAds()</a> method with the ad structure constructed externally by the client:</p>
+<p style="margin-left: 30.0px;"><code>adIface.importAds(myAdPodArray)</code></p>
+<p>Changed in version 1.1: New interface method</p>
+<h4 id="RokuAdvertisingFramework-NielsenDAR">Nielsen DAR</h4>
+<p>Nielsen Digital Ad Ratings provides a comprehensive, next-day view of your ad’s online and mobile audience in a way comparable to the Nielsen TV ratings.</p>
+<h4 id="RokuAdvertisingFramework-Agreement">Agreement</h4>
+<p>Roku now offers Nielsen audience measurement software on the Roku platform. You may choose to turn on these Nielsen audience measurement features in your channel. By doing so, you acknowledge and agree: (i) that turning on these features will cause device and content viewing information provided by your Roku Channel to the Roku SDK to be automatically appended to Nielsen digital ad ratings (“DAR”) beacons received in VAST responses and sent to Nielsen; (ii) Nielsen may have personally identifiable information (“PII”) on certain end users of the Roku platform;</p>
+<p>(iii) these features will enable third party advertisers, agencies and media resellers (including Roku’s ad sales team if Roku is a reseller of your ad inventory) to serve VAST responses with Nielsen DAR campaign beacons into your channel, and receive reports on the performance of those DAR campaigns; and (iv) if you are not a Nielsen DAR customer, you may not receive reports on DAR campaigns. If you choose to turn on the Nielsen audience measurement features, you hereby represent and warrant: (i) that you will notify your users of the occurrence of audience measurement; (ii) you have and will maintain a legally adequate privacy policy; (iii) you have and will maintain all necessary rights from Nielsen and consents from users to use the Nielsen audience measurement features; and (iv) your use of the Nielsen audience measurement features will comply with all applicable laws, rules and regulations.</p>
+<p>In the event that Roku runs an ad campaign on your channel, Roku may, in its sole discretion, provide to you or your ad agency, as applicable, excerpts of the Nielsen DAR that relate to the delivery and performance of advertisements on your ad inventory. You hereby agree to (i) maintain the confidentiality of any Nielsen DAR reports provided to you by Roku; and (ii) maintain in the Nielsen DAR reports any sourcing and copyright information provided by Nielsen.</p>
+<p>YOU AGREE YOU WILL NOT USE THE NIELSEN AUDIENCE MEASUREMENT SOFTWARE AND FEATURES  IN CONNECTION WITH CONTENT OR CHANNELS DIRECTED TOWARD CHILDREN OR IN CONNECTION  WITH USERS KNOWN TO BE CHILDREN. If Roku discovers or determines in its sole discretion that you are using the Nielsen audience measurement software and features in connection with content or channels directed toward children or with users known to be children, Roku reserves the right to disable or otherwise limit functionality.</p>
+<p>YOU MAY NOT ENABLE THE NIELSEN AUDIENCE MEASUREMENT FEATURES IF YOU DO NOT AGREE TO ABOVE. PLEASE CONTACT ROKU OR NIELSEN FOR FURTHER INFORMATION.</p>
+<h4 id="RokuAdvertisingFramework-Usage">Usage</h4>
+<p>In order to maximize the value of audience measurement for publishers, it is important to provide as much metadata as possible about the video content prior to ad insertion.</p>
+<p>There are a few extra RAF configuration methods that must be called in order to enable and use Nielsen DAR.</p>
+<p>First, the feature must be explicitly enabled with <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-enableNielsenDAR()">enableNielsenDAR()</a>. This need only be done once and can be called at any point before any ads are rendered.</p>
+<p>Similarly, the unique application ID assigned by Nielsen must be configured for accurate campaign measurement using <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenAppId()">setNielsenAppId()</a>. This also must only be done once at any point before ads are rendered.</p>
+<p>Next, a single primary genre describing the content should be set according to the genre values defined by Nielsen in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-NielsenDARGenreTags">Nielsen DAR Genre Tags</a> using <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenGenre()">setNielsenGenre()</a>. When more than one such genre may be applicable, the best practice is to select the most specific genre that describes the content. This genre will generally vary whenever new content is selected by the user and the app must re-configure as necessary.</p>
+<p>Example values: “CS” for an episode of “Seinfeld”, “N” for a “60 Minutes” episode.</p>
+<p>The program ID should be set using <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenProgramId()">setNielsenProgramId()</a>. The value used here should be a movie or series title, and should not uniquely identify episodic content.</p>
+<p>Example values: “The Price is Right”, “Beverly Hills 90210”, “Police Academy 7: Mission to Moscow”.</p>
+<p>Finally, the content length should also be set using <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentLength()">setContentLength()</a>. The value set here is the total length in seconds.</p>
+<p>The content-specific metadata should be set when new content is selected before any ads are rendered, so that the values can be added to the custom Nielsen impression tags for the ads. If any of these metadata are unknown for a particular piece of content (for example, live streams may not have a specific content length), applications should call the appropriate function with an empty parameter to clear the value.</p>
+<h4 id="RokuAdvertisingFramework-AdditionalNotesRegardingNielsenandRAF">Additional Notes Regarding Nielsen and RAF</h4>
+<h5 id="RokuAdvertisingFramework-WhenwillanadbetrackedbyNielsen?"><span>When will an ad be tracked by Nielsen?</span></h5>
+<ul>
+<li style="list-style-type: disc;"><p><span>Just turning on Nielsen in RAF does not automatically mean all ads in a channel will be tracked by Nielsen. Only ads that have Nielsen beacons will be tracked.</span></p></li>
+<li style="list-style-type: disc;"><p><span>The ad provider puts the Nielsen beacons in the ad response on the server side. Nielsen beacons always include the domain </span><span><a class="external-link" href="http://imrworldwide.com" rel="nofollow">imrworldwide.com</a></span></p></li>
+<li style="list-style-type: disc;"><p><span>When RAF detects a Nielsen beacon it appends several parameters to it before firing the beacon</span></p></li>
+</ul>
+<h5 id="RokuAdvertisingFramework-Example"><span>Example</span></h5>
+<h5 id="RokuAdvertisingFramework-Beaconasitappearsintheadresponse"><span>Beacon as it appears in the ad response</span></h5>
+<p><span style="color: rgb(0,0,0);"><a class="external-link" href="http://secure-gl.imrworldwide.com/cgi-bin/m?ci=nlsnci1087&amp;am=3&amp;at=view&amp;rt=banner&amp;st=image&amp;ca=nlsn32225&amp;cr=crtve&amp;pc=roku_plc0001&amp;ce=roku&amp;r=1452208721034" rel="nofollow">http://secure-gl.imrworldwide.com/cgi-bin/m?ci=nlsnci1087&amp;am=3&amp;at=view&amp;rt=banner&amp;st=image&amp;ca=nlsn32225&amp;cr=crtve&amp;pc=roku_plc0001&amp;ce=roku&amp;r=1452208721034</a></span></p>
+<h5 id="RokuAdvertisingFramework-BeaconasitisfiredbyRAF"><span>Beacon as it is fired by RAF</span></h5>
+<p><a class="external-link" href="http://secure-gl.imrworldwide.com/cgi-bin/m?ci=nlsnci1087&amp;am=3&amp;at=view&amp;rt=banner&amp;st=image&amp;ca=nlsn32225&amp;cr=crtve&amp;pc=roku_plc0001&amp;ce=roku&amp;r=1452208721034&amp;c13=asid,P9C7EAB03-05FD-4C90-81BA-A50208B30956&amp;c10=plt,DSK&amp;c41=prov,ROKU&amp;c14=osver,Roku%2FDVP-7.10%20%28047.10E01786A%29&amp;c42=provapn,dev&amp;c8=devgrp,OTT" rel="nofollow">http://secure-gl.imrworldwide.com/cgi-bin/m?ci=nlsnci1087&amp;am=3&amp;at=view&amp;rt=banner&amp;st=image&amp;ca=nlsn32225&amp;cr=crtve&amp;pc=roku_plc0001&amp;ce=roku&amp;r=1452208721034&amp;c13=asid,P9C7EAB03-05FD-4C90-81BA-A50208B30956&amp;c10=plt,DSK&amp;c41=prov,ROKU&amp;c14=osver,Roku%2FDVP-7.10%20%28047.10E01786A%29&amp;c42=provapn,dev&amp;c8=devgrp,OTT</a></p>
+<h2 id="RokuAdvertisingFramework-Interface">Interface</h2>
+<h3 id="RokuAdvertisingFramework-Construction">Construction</h3>
+<h4 id="RokuAdvertisingFramework-Roku_Ads()">Roku_Ads()</h4>
+<p>Returns the Roku ad parser/renderer object.</p>
+<p>This is the main entry point for instantiating the ad interface. The object returned has global scope, since it is meant to represent interaction with external resources (the ad server and any tracking services) that have persistence and state independent of the ad rendering within a client application. Manages ad server requests, parses ad structure, schedules and renders ads, and triggers tracking beacons.</p>
+<h3 id="RokuAdvertisingFramework-Control">Control</h3>
+<h4 id="RokuAdvertisingFramework-getAds()">getAds()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis">Synopsis</h5>
+<p style="margin-left: 30.0px;"><code> getAds(msg as string) as Object</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments">Arguments</h5>
+<ul><li>msg – Optional, depending on use case. Typically, this would be a message returned from a WaitMessage() call on the message port of the roVideoScreen or roVideoPlayer object during  content playback. This allows determination of which ads are scheduled for rendering based on playback position, user action, or other conditions.</li></ul>
+<p><strong>Returns</strong> available ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a>(s) scheduled for rendering or invalid, if none are available.</p>
+<p>Gets set of ads to be rendered now. When called with no parameters, this function returns the full list of all ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pods</a> parsed from the ad server response. When called with the msg parameter, this function can be used as an event listener in the client application’s main video playback loop to check whether midroll or postroll ads should be shown or not.</p>
+<h4 id="RokuAdvertisingFramework-showAds()">showAds()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.1">Synopsis</h5>
+<p style="margin-left: 30.0px;"><code>showAds(ads as Object, ctx as Object) as Boolean</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.1">Arguments</h5>
+<ul>
+<li>ads – Ads to be rendered. Can represent either a single <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a> of ads or an array of ad pods.</li>
+<li>ctx – Optional associative array that allows client code to provide new offset and total to ad counter to support use cases involving interleaving RAF rendering with custom rendering within a single pod of ads: <br><code>{start: Integer, (display index of first ad in this pod)</code><br><code>total: Integer (display total number of ads in pod)}</code>
+</li>
+</ul>
+<p><strong>Returns</strong> true if ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a> was rendered to completion, false if user exited before render completion.</p>
+<p>Render any ads scheduled for display. When called with an array of ad pods (e.g., using the value returned from the initial call to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>), this is interpreted to mean that any preroll ad pod present should be rendered. Client applications should always check the return value and, if false, should exit content playback and return to the content selection screen. Typically, this occurs when the user presses the “Back” button during ad playback.</p>
+<p>Changed in version 1.3: New context parameter</p>
+<h4 id="RokuAdvertisingFramework-fireTrackingEvents()">fireTrackingEvents()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.2">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>fireTrackingEvents(adStructure as Object, ctx as Object) as Boolean</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.2">Arguments</h5>
+<ul>
+<li>adStructure – Can refer to a pod (array) of ads or a single ad. Must at least contain a <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a> array member, and may optionally contain an ‘adServer’ member string.</li>
+<li>ctx – structure to capture context-specific trigger conditions. ‘type’ key-value pair used to trigger events of a specific type. ‘time’ key-value pair used to trigger time-dependent events at or prior to this time.</li>
+</ul>
+<p><strong>Returns</strong> true if all beacons of the requested type are successfully fired, otherwise false.</p>
+<p>Triggers event tracking, including parameter substitution for Nielsen DAR, when library client code handles the ad rendering. Can be used in scenarios where the RAF ad renderer is not used (e.g., custom ad rendering or server-stitched ads).</p>
+<p>Changed in version 1.2: New interface method</p>
+<h3 id="RokuAdvertisingFramework-Configuration">Configuration</h3>
+<h4 id="RokuAdvertisingFramework-setAdUrl()">setAdUrl()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.3">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setAdUrl(url as string)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.3">Arguments</h5>
+<ul><li>url – URL to set as the current ad service request (or omit this parameter to use the default Roku ad service).</li></ul>
+<p>Sets ad URL to use for a new <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> request.</p>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">You can only receive payment for ads shown in your application when the Roku Ad Framework is properly configured with a valid URL assigned by your ad service or by Roku. Please contact <a class="external-link" href="mailto:advertising@roku.com" rel="nofollow">advertising@roku.com</a> to discuss monetization options and obtain an ad URL if you wish to use Roku to fill ad inventory in your application. Using the default URL is useful only for development and testing purposes and you will not receive payment for ad impressions from the default URL.</div>
+</div>
+<h4 id="RokuAdvertisingFramework-getAdUrl()">getAdUrl()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.4">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>getAdUrl() as string</code></p>
+<p><strong>Returns</strong> current ad URL.</p>
+<p>Convenience function to get the currently-configured ad URL, or the default Roku ad server URL if none has been configured.</p>
+<h4 id="RokuAdvertisingFramework-enableNielsenDAR()">enableNielsenDAR()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.5">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>enableNielsenDAR(enabled as Boolean)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.4">Arguments</h5>
+<ul><li>enabled – Boolean value to enable/disable custom Nielsen <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-DAR">DAR</a> tags.</li></ul>
+<p>Applications using Nielsen DAR must explicitly enable the framework to operate on the custom impression tag parameters.</p>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">This is a provisional feature that is presently only available to select Roku partners. Please contact <a class="external-link" href="mailto:advertising@roku.com" rel="nofollow">advertising@roku.com</a> for more information.</div>
+</div>
+<p>Changed in version 1.1: New interface method</p>
+<h4 id="RokuAdvertisingFramework-setContentGenre()">setContentGenre()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.6">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setContentGenre(genres as string)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.5">Arguments</h5>
+<ul><li>genres – Comma-delimited string or array of genre tag strings.</li></ul>
+<p>Allows potential ad targeting by specifying a set of genre tags to associate with the content or the ad request. Can clear genre tags by passing an empty string or omitting the parameter. The semantics and implementation of targeting based on genre values are dependent on the configured ad server, but for a list of currently-supported tags supported by the Roku ad server, refer to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-RokuGenreTags">Roku Genre Tags</a>.</p>
+<h4 id="RokuAdvertisingFramework-setContentId()">setContentId()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.7">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setContentId(id as string)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.6">Arguments</h5>
+<ul><li>id – String value representing content to allow potential ad targeting.</li></ul>
+<p>Allows potential ad targeting by specifying an identifier for the content video. Passing an empty string or omitting the parameter will clear the content ID.</p>
+<h4 id="RokuAdvertisingFramework-setContentLength()">setContentLength()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.8">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setContentLength(length as integer)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.7">Arguments</h5>
+<ul><li>length – Integer value representing total length of content (in seconds).</li></ul>
+<p>Configures content length to extend ad targeting properties for Nielsen <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-DAR">DAR</a>. Also used for determining VMAP relative ad break times. If called with no parameter, will clear any prior content length set.</p>
+<p>Changed in version 1.1: New interface method</p>
+<h4 id="RokuAdvertisingFramework-setNielsenGenre()">setNielsenGenre()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.9">Synopsis</h5>
+<p style="margin-left: 30.0px;"> setNielsenGenre(genre as string)</p>
+<h5 id="RokuAdvertisingFramework-Arguments.8">Arguments</h5>
+<ul><li>genre – String identifying primary content genre for Nielsen DAR tags.</li></ul>
+<p>Allows for ad campaign measurement using Nielsen DAR tags by specifying a primary genre for the content being played, according to the Nielsen genres defined in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-NielsenDARGenreTags">Nielsen DAR Genre Tags</a>. Examples: “CS” for an episode of “Seinfeld”, “N” for a “60 Minutes” episode.</p>
+<p>Changed in version 1.1: New interface method</p>
+<h4 id="RokuAdvertisingFramework-setNielsenAppId()">setNielsenAppId()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.10">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setNielsenAppId(id as string)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.9">Arguments</h5>
+<ul><li>id – String identifying Nielsen-assigned application ID.</li></ul>
+<p>Allows for ad campaign measurement using Nielsen DAR tags. The value of this application ID is uniquely assigned to your application by Nielsen and must be configured before rendering any ads containing Nielsen beacons.</p>
+<p>Changed in version 1.2: New interface method</p>
+<h4 id="RokuAdvertisingFramework-setNielsenProgramId()">setNielsenProgramId()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.11">Synopsis</h5>
+<p style="margin-left: 30.0px;"> setNielsenProgramId(id as string)</p>
+<h5 id="RokuAdvertisingFramework-Arguments.10">Arguments</h5>
+<ul><li>id – String identifying content program for Nielsen DAR tags.</li></ul>
+<p>Allows for ad campaign measurement using Nielsen DAR tags. The value of this program ID should consistently reflect the program (movie title or series name) and should not uniquely identify episodic content. Examples: “The Price is Right”, “Beverly Hills 90210”, “Police Academy 7: Mission to Moscow”.</p>
+<p>Changed in version 1.2: New interface method</p>
+<h4 id="RokuAdvertisingFramework-setAdPrefs()">setAdPrefs()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.12">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setAdPrefs(useRokuAdsAsFallback = true as Boolean, maxRequests = 2 as integer)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.11">Arguments</h5>
+<ul>
+<li>useRokuAdsAsFallback – Indicates whether the default Roku backfill ad service URL should be used in case the client-configured URL fails to return any renderable ads.</li>
+<li>maxRequests – Maximum number of retries allowed if the ad service fails to return any renderable ads.</li>
+</ul>
+<p>Configures general ad request preferences.</p>
+<h4 id="RokuAdvertisingFramework-setAdConstraints()">setAdConstraints()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.13">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setAdConstraints(maxHeight as integer, maxWidth as integer, maxBitrate as integer, supportedMimeTypes as object)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.12">Arguments</h5>
+<ul>
+<li>maxHeight – Maximum vertical dimension of renderable ad (in pixels).</li>
+<li>maxWidth – Maximum horizontal dimension of renderable ad (in pixels).</li>
+<li>maxBitrate – Maximum allowable bitrate for renderable ad streams (in Kbps).</li>
+<li>supportedMimeTypes – Associative array with entries of the form {“mimeType” : “stream- Format”}.</li>
+</ul>
+<p>Configure media constraints to filter renderable video ads. By default, the MIME types are configured for “video/mp4”, “video/mp4-h264”, “video/x-mp4”, “application/x-mpegurl”, and “application/json”. Any additional known types can be mapped to their stream format by setting this parameter before calling <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>.</p>
+<h4 id="RokuAdvertisingFramework-setAdBreaks()">setAdBreaks()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.14">Synopsis</h5>
+<p style="margin-left: 30.0px;"><code> setAdBreaks(contentLength as integer, adBreakTimes as integer)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.13">Arguments</h5>
+<ul>
+<li>contentLength – Total length of video content (in seconds).</li>
+<li>adBreakTimes – Array of suggested offsets into content playback to insert ad breaks (in s).</li>
+</ul>
+<p>Configures content playback parameters, which can be used for scheduling relative-positioned ad breaks in <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a> ad service responses. If you know that your application uses <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a> ad URLs and they are configured to use “nn%” timeOffset values, then you must specify the contentLength prior to calling <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>. If <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a> is configured to use “#mm” timeOffset values, you must first specify a set of ad break times. Calling with empty parameters will reset these to invalid values. The content length can also be set independently via <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentLength()">setContentLength()</a> if ad break times are not required.</p>
+<h4 id="RokuAdvertisingFramework-setAdExit()">setAdExit()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.15">Synopsis</h5>
+<p style="margin-left: 30.0px;"><code>setAdExit(enabled = true as Boolean)</code> </p>
+<h5 id="RokuAdvertisingFramework-Arguments.14">Arguments</h5>
+<ul><li>enabled – Configures ad exit behavior during rendering.</li></ul>
+<p>The default behavior is to enable exiting ad render (e.g., via “Back” button) to return to content selection screen in the application. Some use cases may require disabling this behavior if the user should not be allowed to skip ads when there is no applicable content selection mechanism.</p>
+<p>Changed in version 1.1: New interface method</p>
+<h4 id="RokuAdvertisingFramework-importAds()">importAds()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.16">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>importAds(adPodArray as Object)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.15">Arguments</h5>
+<ul><li>adPodArray – Array of ad pods structured in accordance with the required <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a>.</li></ul>
+<p>Resets the internal ad pod cache to allow client code to import a set of ads from unsupported ad service response formats or when aggregating ads from multiple ad services. The application is reponsible for ensuring that the ad pods in the array contain all the required data members.</p>
+<p>Changed in version 1.1: New interface method</p>
+<h4 id="RokuAdvertisingFramework-setTrackingCallback()">setTrackingCallback()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.17">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setTrackingCallback(callback as function, obj as Object)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.16">Arguments</h5>
+<ul>
+<li>callback – function matching the required function signature.</li>
+<li>obj – an opaque object supplied by client to be passed to callback.</li>
+</ul>
+<p>Allows library client to set a callback function to be called when ad tracking events are fired or checked. Callback functions must have the signature:</p>
+<p style="margin-left: 30.0px;"><code>Sub CallbackFunc(obj = Invalid as Dynamic, <br>                 eventType = Invalid as Dynamic, <br>                 </code><code>ctx = Invalid as Dynamic)</code></p>
+<p>The <code>obj</code> parameter is an opaque object always passed through to the callback. The <code>eventType</code>, if set, is a string specifying a tracking event that is fired. Event names correspond to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Tracking">Tracking</a>. The <code>ctx</code> is an optional associative array that encapsulates metadata associated with VAST-specified macros or ad render progress. Each member of the <code>ctx</code> array should separately be considered optional (i.e., client code should check for valid values before operating on these data members). Generally, if <code>ctx.eventType</code> is not set, then <code>ctx.time</code> should be set and indicates ad render progress:</p>
+<p style="margin-left: 30.0px;"><code>{errType: String,</code><br><code> errCode: String,</code><br><code> errMsg : String,<br> time : Int | Float (playback position, in s),<br> url : String (rendered asset URI),<br> ad : Associative Array representing ad structure for current ad,<br> adIndex: Int (logical index of current ad within ad pod)<br></code><code>}</code></p>
+<p>Changed in version 1.1: New interface method <br>Changed in version 1.4: New ad, adIndex context members</p>
+<h4 id="RokuAdvertisingFramework-setDebugOutput()">setDebugOutput()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.18">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>setDebugOutput(enable as Boolean)</code></p>
+<h5 id="RokuAdvertisingFramework-Arguments.17">Arguments</h5>
+<ul><li>enable – Boolean value to enable/disable extended debug logging.</li></ul>
+<p>Allows library client to configure extended debug output. Disabled by default.</p>
+<p>Changed in version 1.2: New interface method</p>
+<h4 id="RokuAdvertisingFramework-getLibVersion()">getLibVersion()</h4>
+<h5 id="RokuAdvertisingFramework-Synopsis.19">Synopsis</h5>
+<p style="margin-left: 30.0px;"> <code>getLibVersion() as string</code></p>
+<p><strong>Returns</strong> version string of the form “&lt;major&gt;.&lt;minor&gt;”</p>
+<p>Allows client applications to get the SDK library version.</p>
+<h3 id="RokuAdvertisingFramework-URLParameterMacros">URL Parameter Macros</h3>
+<p>The video ad library allows parameter values to be substituted in ad request and tracking URLs. This allows for dynamic configuration of values that are either not directly exposed to the client application or are unnecessary for it to initialize and maintain. These values are typically used for ad targeting, interaction tracking, and development purposes or to optimize the ad experience for the user’s device.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_TRACKING_ID">ROKU_ADS_TRACKING_ID</h4>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-RIDA">RIDA</a> value used for device identification.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_APP_ID">ROKU_ADS_APP_ID</h4>
+<p>Identifies the client application making the ad request.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_CONTENT_ID">ROKU_ADS_CONTENT_ID</h4>
+<p>Identifies the content to allow for ad targeting.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_CONTENT_GENRE">ROKU_ADS_CONTENT_GENRE</h4>
+<p>Identifies the content categorization to allow for ad targeting.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_CONTENT_LENGTH">ROKU_ADS_CONTENT_LENGTH</h4>
+<p>Improves ad targeting by providing length of content (in number of seconds).</p>
+<p>Changed in version 1.1: New parameter value</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_USER_AGENT">ROKU_ADS_USER_AGENT</h4>
+<p>Device model and firmware version.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_EXTERNAL_IP">ROKU_ADS_EXTERNAL_IP</h4>
+<p>External IP address of the device.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_DISPLAY_WIDTH">ROKU_ADS_DISPLAY_WIDTH</h4>
+<p>Width of device display.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_DISPLAY_HEIGHT">ROKU_ADS_DISPLAY_HEIGHT</h4>
+<p>Height of device display.</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_TIMESTAMP">ROKU_ADS_TIMESTAMP</h4>
+<p>Current timestamp value (number of milliseconds elapsed since 00:00:00 1/1/1970 GMT).</p>
+<p>Changed in version 1.2: Increased resolution from seconds to milliseconds</p>
+<h4 id="RokuAdvertisingFramework-ROKU_ADS_CACHE_BUSTER">ROKU_ADS_CACHE_BUSTER</h4>
+<p>Makes the URL unique to avoid retrieving cached ad server responses or to ensure proper counting of unique event tracking beacons.</p>
+<h4 id="RokuAdvertisingFramework-Example.1">Example</h4>
+<p>For example, to make an ad request that requires the application ID, user agent, and timestamp values, the client could first call <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdUrl()">setAdUrl()</a> with the appropriate parameter values set:</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>setAdUrl example</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[rokuAds = Roku_Ads()
 url = &quot;http://my.ad.server.net/?my_first_param=MyFirstValue&amp;my_app_id=ROKU_ADS_APP_ID&amp;my_user_agent=ROKU_ADS_USER_AGENT&amp;my_timestamp=ROKU_ADS_TIMESTAMP&amp;other_param=SomeOtherValue&quot;
 rokuAds.setAdUrl(url)]]></script>
-</div></div><h3 id="RokuAdvertisingFramework-AdStructure">Ad Structure</h3><p>For a client application that must implement its own ad rendering, it is necessary to understand how the ad structure is represented in the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-BrightScript">BrightScript</a> object returned from <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>. Following is a description of the ad structure. Ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pods</a> passed to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a> must conform to this structure.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">Square brackets ‘[ ]’ indicate BrightScript arrays, prefix ‘+’ indicates a required data member.</div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Ad Structure</b></div><div class="codeContent panelContent pdl">
+</div>
+</div>
+<h3 id="RokuAdvertisingFramework-AdStructure">Ad Structure</h3>
+<p>For a client application that must implement its own ad rendering, it is necessary to understand how the ad structure is represented in the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-BrightScript">BrightScript</a> object returned from <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a>. Following is a description of the ad structure. Ad <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pods</a> passed to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a> must conform to this structure.</p>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">Square brackets ‘[ ]’ indicate BrightScript arrays, prefix ‘+’ indicates a required data member.</div>
+</div>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Ad Structure</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[adPods : [
           +viewed : Boolean,
           +renderSequence : &quot;preroll&quot; | &quot;midroll&quot; | &quot;postroll&quot;,
@@ -787,7 +936,312 @@ rokuAds.setAdUrl(url)]]></script>
                   ]
            ]
 ]]]></script>
-</div></div><p>The object returned from a new call to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> with no parameters is an array of adPods in this format.</p><p>Changed in version 1.1: New adServer member <br/>Changed in version 1.2: New advertiser member <br/>Changed in version 1.3: New backfilled member <br/>Changed in version 1.4: New adTitle, creativeId members</p><h3 id="RokuAdvertisingFramework-Tracking">Tracking</h3><p>Tracking events are triggered automatically during ad rendering by <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a>. For client applications that perform their own ad rendering, the valid event types that must be handled are represented in the <code>tracking</code> array of the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a> by:</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Event name</th><th class="confluenceTh">Trigger condition</th></tr><tr><td class="confluenceTd">Impression</td><td class="confluenceTd">Start of ad render (e.g., first frame of a video ad displayed)</td></tr><tr><td class="confluenceTd">PodStart</td><td class="confluenceTd">Beginning of ad pod render</td></tr><tr><td class="confluenceTd">PodComplete</td><td class="confluenceTd">Completed rendering ad pod</td></tr><tr><td class="confluenceTd">FirstQuartile</td><td class="confluenceTd">25% of video ad rendered</td></tr><tr><td class="confluenceTd">Midpoint</td><td class="confluenceTd">50% of video ad rendered</td></tr><tr><td class="confluenceTd">ThirdQuartile</td><td class="confluenceTd">75% of video ad rendered</td></tr><tr><td class="confluenceTd">Complete</td><td class="confluenceTd">100% of video ad rendered</td></tr><tr><td class="confluenceTd">Error</td><td class="confluenceTd">Error during ad parsing or rendering (VAST 3.0)</td></tr><tr><td class="confluenceTd">Close</td><td class="confluenceTd">User exited out of ad rendering before completion</td></tr><tr><td class="confluenceTd">Skip</td><td class="confluenceTd">User skipped ad (if skippable)</td></tr><tr><td class="confluenceTd">Pause</td><td class="confluenceTd">User paused ad</td></tr><tr><td class="confluenceTd">Resume</td><td class="confluenceTd">User resumed ad</td></tr><tr><td class="confluenceTd">Rewind</td><td class="confluenceTd">User rewound ad</td></tr><tr><td class="confluenceTd">Mute</td><td class="confluenceTd">User muted ad</td></tr><tr><td class="confluenceTd">Unmute</td><td class="confluenceTd">User un-muted ad</td></tr><tr><td class="confluenceTd">AcceptInvitation</td><td class="confluenceTd">User launched another portion of an ad (for interactive ads)</td></tr></tbody></table></div><h3 id="RokuAdvertisingFramework-RokuGenreTags">Roku Genre Tags</h3><p>Tagging content by genre via <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentGenre()">setContentGenre()</a> is specific to the ad provider, and may not be uniformly implemented.  For ads provided by the Roku ad service, there is currently a canonical set of genre tags that can be used to improve ad targeting:</p><ul><li>Action</li><li>Adventure</li><li>Animated</li><li>Ballet</li><li>Biography</li><li>Children</li><li>Comedy</li><li>Comedy drama</li><li>Crime drama</li><li>Cuisine</li><li>Dark comedy</li><li>Docudrama</li><li>Documentary</li><li>Drama</li><li>Entertainment</li><li>Fantasy</li><li>Historical drama</li><li>Horror</li><li>Martial arts</li><li>Music</li><li>Musical</li><li>Musical comedy</li><li>Mystery</li><li>Performing arts</li><li>Romance</li><li>Romantic comedy</li><li>Science fiction</li><li>Special</li><li>Suspense</li><li>Talk</li><li>Theater</li><li>Thriller</li><li>Travel</li><li>War</li><li>Western</li></ul><h3 id="RokuAdvertisingFramework-NielsenDARGenreTags">Nielsen DAR Genre Tags</h3><p>Tagging content by genre via <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenGenre()">setNielsenGenre()</a> requires a single primary genre code for the selected content from the following set of values. Publishers should provide the most specific category applicable to the content for which ads are to be shown.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Description</th><th class="confluenceTh">Code</th></tr><tr><td class="confluenceTd">Adventure</td><td class="confluenceTd">A</td></tr><tr><td class="confluenceTd">Audience Participation</td><td class="confluenceTd">AP</td></tr><tr><td class="confluenceTd">Award Ceremonies &amp; Pageants </td><td class="confluenceTd">AC</td></tr><tr><td class="confluenceTd">Children’s Programming</td><td class="confluenceTd">CP</td></tr><tr><td class="confluenceTd">Comedy Variety</td><td class="confluenceTd">CV</td></tr><tr><td class="confluenceTd">Concert Music</td><td class="confluenceTd">CM</td></tr><tr><td class="confluenceTd">Conversation, Colloquies</td><td class="confluenceTd">CC</td></tr><tr><td class="confluenceTd">Daytime Drama</td><td class="confluenceTd">DD</td></tr><tr><td class="confluenceTd">Devotional</td><td class="confluenceTd">D</td></tr><tr><td class="confluenceTd">Documentary, General </td><td class="confluenceTd">DO</td></tr><tr><td class="confluenceTd">Documentary, News</td><td class="confluenceTd">DN</td></tr><tr><td class="confluenceTd">Evening Animation</td><td class="confluenceTd">EA</td></tr><tr><td class="confluenceTd">Feature Film</td><td class="confluenceTd">FF</td></tr><tr><td class="confluenceTd">General Drama </td><td class="confluenceTd">GD</td></tr><tr><td class="confluenceTd">General Variety</td><td class="confluenceTd">GV</td></tr><tr><td class="confluenceTd">Instructions, Advice </td><td class="confluenceTd">IA</td></tr><tr><td class="confluenceTd">Musical Drama</td><td class="confluenceTd">MD</td></tr><tr><td class="confluenceTd">News</td><td class="confluenceTd">N</td></tr><tr><td class="confluenceTd">Official Police</td><td class="confluenceTd">OP</td></tr><tr><td colspan="1" class="confluenceTd">Paid Political</td><td colspan="1" class="confluenceTd">P  </td></tr><tr><td colspan="1" class="confluenceTd">Participation Variety</td><td colspan="1" class="confluenceTd">PV</td></tr><tr><td colspan="1" class="confluenceTd">Popular Music -Contemporary </td><td colspan="1" class="confluenceTd">PC</td></tr><tr><td colspan="1" class="confluenceTd">Popular Music -Standard </td><td colspan="1" class="confluenceTd">PS</td></tr><tr><td colspan="1" class="confluenceTd">Private Detective </td><td colspan="1" class="confluenceTd">PD</td></tr><tr><td colspan="1" class="confluenceTd">Quiz -Give Away</td><td colspan="1" class="confluenceTd">QG</td></tr><tr><td colspan="1" class="confluenceTd">Quiz -Panel</td><td colspan="1" class="confluenceTd">QP  </td></tr><tr><td colspan="1" class="confluenceTd">Science Fiction </td><td colspan="1" class="confluenceTd">SF </td></tr><tr><td colspan="1" class="confluenceTd">Situation Comedy</td><td colspan="1" class="confluenceTd">CS</td></tr><tr><td colspan="1" class="confluenceTd">Sports Anthology </td><td colspan="1" class="confluenceTd">SA</td></tr><tr><td colspan="1" class="confluenceTd">Sports Commentary </td><td colspan="1" class="confluenceTd">SC </td></tr><tr><td colspan="1" class="confluenceTd">Sports News </td><td colspan="1" class="confluenceTd">SN </td></tr><tr><td colspan="1" class="confluenceTd">Sports Event </td><td colspan="1" class="confluenceTd">SE </td></tr><tr><td colspan="1" class="confluenceTd">Suspense/Mystery </td><td colspan="1" class="confluenceTd">SM</td></tr><tr><td colspan="1" class="confluenceTd">Western Drama</td><td colspan="1" class="confluenceTd">EW</td></tr></tbody></table></div><h2 id="RokuAdvertisingFramework-GLOSSARY">GLOSSARY</h2><h5 id="RokuAdvertisingFramework-AVOD">AVOD</h5><p>Advertising Video On Demand refers to a streaming video service that relies on selling advertisements as a revenue stream.</p><h5 id="RokuAdvertisingFramework-BrightScript">BrightScript</h5><p>Roku BrightScript is a powerful scripting language that makes it easy and quick to build media and networked applications for embedded devices.</p><h5 id="RokuAdvertisingFramework-DAR">DAR</h5><p>Nielsen Digital Ad Ratings provides aggregated reporting on the viewable audiences across ad campaigns.</p><h5 id="RokuAdvertisingFramework-IAB">IAB</h5><p>The International Advertising Bureau is an organization comprised of 650+ media and technology companies. The IAB evaluates and recommends standards and practices and conducts research on interactive advertising.</p><h5 id="RokuAdvertisingFramework-OBA">OBA</h5><p>Online Behavioral Advertising refers to the practice of collecting information about online activity to target ads based on relevance.</p><h5 id="RokuAdvertisingFramework-pod">pod</h5><p>In the context of ad delivery, a pod is a sequence of ads that is rendered consecutively during a single ad break. An ad pod may also consist of a single ad.</p><h5 id="RokuAdvertisingFramework-RIDA">RIDA</h5><p>The Roku ID for Advertising is an anonymized device identifier to track activity for development and marketing  purposes. It is designed to generally follow the guidelines established for the IDFA (Identifier for Advertising)  used by other platforms. The RIDA protects users’ identifying information and allows the ability to opt-out of remarketing or reset the ID at any time.</p><h5 id="RokuAdvertisingFramework-SmartXML">SmartXML</h5><p>FreeWheel’s proprietary standard combines ad payload and ad scheduling in a single XML file.</p><h5 id="RokuAdvertisingFramework-VAST">VAST</h5><p>Video Ad Serving Template is an IAB specification for a universal XML schema for serving ads to digital video players.</p><h5 id="RokuAdvertisingFramework-VMAP">VMAP</h5><p>Video Multiple Ad Playlist is an IAB specification for an XML template that video content owners can use to describe the structure for ad inventory insertion. It is commonly used in conjunction with VAST to structure ads into ad pods.</p><h2 id="RokuAdvertisingFramework-INDEX">INDEX</h2><p><strong>A</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AVOD">AVOD</a></p><p><strong>B</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-BrightScript">BrightScript</a></p><p><strong>D</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-DAR">DAR</a></p><p><strong>E</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-enableNielsenDAR()">enableNielsenDAR()</a> (built-in function)</p><p><strong>F</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-fireTrackingEvents()">fireTrackingEvents()</a> (built-in function)</p><p><strong>G</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAdUrl()">getAdUrl()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getLibVersion()">getLibVersion()</a> (built-in function)</p><p><strong>I</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-IAB">IAB</a><br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-importAds()">importAds()</a> (built-in function)</p><p><strong>O</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-OBA">OBA</a></p><p><strong>P</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a></p><p><strong>R</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-RIDA">RIDA</a><br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Roku_Ads()">Roku_Ads()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_APP_ID">ROKU_ADS_APP_ID</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_CACHE_BUSTER">ROKU_ADS_CACHE_BUSTER</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_CONTENT_GENRE">ROKU_ADS_CONTENT_GENRE</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_CONTENT_ID">ROKU_ADS_CONTENT_ID</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_CONTENT_LENGTH">ROKU_ADS_CONTENT_LENGTH</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_DISPLAY_HEIGHT">ROKU_ADS_DISPLAY_HEIGHT</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_DISPLAY_WIDTH">ROKU_ADS_DISPLAY_WIDTH</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_EXTERNAL_IP">ROKU_ADS_EXTERNAL_IP</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_TIMESTAMP">ROKU_ADS_TIMESTAMP</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_TRACKING_ID">ROKU_ADS_TRACKING_ID</a> (global variable or constant)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_USER_AGENT">ROKU_ADS_USER_AGENT</a> (global variable or constant)</p><p><strong>S</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdBreaks()">setAdBreaks()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdConstraints()">setAdConstraints()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdExit()">setAdExit()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdPrefs()">setAdPrefs()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdUrl()">setAdUrl()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentGenre()">setContentGenre()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentId()">setContentId()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentLength()">setContentLength()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setDebugOutput()">setDebugOutput()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenAppId()">setNielsenAppId()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenGenre()">setNielsenGenre()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenProgramId()">setNielsenProgramId()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setTrackingCallback()">setTrackingCallback()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a> (built-in function)<br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-SmartXML">SmartXML</a></p><p><strong>V</strong></p><p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VAST">VAST</a><br/><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a></p><p> </p>
+</div>
+</div>
+<p>The object returned from a new call to <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> with no parameters is an array of adPods in this format.</p>
+<p>Changed in version 1.1: New adServer member <br>Changed in version 1.2: New advertiser member <br>Changed in version 1.3: New backfilled member <br>Changed in version 1.4: New adTitle, creativeId members</p>
+<h3 id="RokuAdvertisingFramework-Tracking">Tracking</h3>
+<p>Tracking events are triggered automatically during ad rendering by <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a>. For client applications that perform their own ad rendering, the valid event types that must be handled are represented in the <code>tracking</code> array of the <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AdStructure">Ad Structure</a> by:</p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh">Event name</th>
+<th class="confluenceTh">Trigger condition</th>
+</tr>
+<tr>
+<td class="confluenceTd">Impression</td>
+<td class="confluenceTd">Start of ad render (e.g., first frame of a video ad displayed)</td>
+</tr>
+<tr>
+<td class="confluenceTd">PodStart</td>
+<td class="confluenceTd">Beginning of ad pod render</td>
+</tr>
+<tr>
+<td class="confluenceTd">PodComplete</td>
+<td class="confluenceTd">Completed rendering ad pod</td>
+</tr>
+<tr>
+<td class="confluenceTd">FirstQuartile</td>
+<td class="confluenceTd">25% of video ad rendered</td>
+</tr>
+<tr>
+<td class="confluenceTd">Midpoint</td>
+<td class="confluenceTd">50% of video ad rendered</td>
+</tr>
+<tr>
+<td class="confluenceTd">ThirdQuartile</td>
+<td class="confluenceTd">75% of video ad rendered</td>
+</tr>
+<tr>
+<td class="confluenceTd">Complete</td>
+<td class="confluenceTd">100% of video ad rendered</td>
+</tr>
+<tr>
+<td class="confluenceTd">Error</td>
+<td class="confluenceTd">Error during ad parsing or rendering (VAST 3.0)</td>
+</tr>
+<tr>
+<td class="confluenceTd">Close</td>
+<td class="confluenceTd">User exited out of ad rendering before completion</td>
+</tr>
+<tr>
+<td class="confluenceTd">Skip</td>
+<td class="confluenceTd">User skipped ad (if skippable)</td>
+</tr>
+<tr>
+<td class="confluenceTd">Pause</td>
+<td class="confluenceTd">User paused ad</td>
+</tr>
+<tr>
+<td class="confluenceTd">Resume</td>
+<td class="confluenceTd">User resumed ad</td>
+</tr>
+<tr>
+<td class="confluenceTd">Rewind</td>
+<td class="confluenceTd">User rewound ad</td>
+</tr>
+<tr>
+<td class="confluenceTd">Mute</td>
+<td class="confluenceTd">User muted ad</td>
+</tr>
+<tr>
+<td class="confluenceTd">Unmute</td>
+<td class="confluenceTd">User un-muted ad</td>
+</tr>
+<tr>
+<td class="confluenceTd">AcceptInvitation</td>
+<td class="confluenceTd">User launched another portion of an ad (for interactive ads)</td>
+</tr>
+</tbody></table></div>
+<h3 id="RokuAdvertisingFramework-RokuGenreTags">Roku Genre Tags</h3>
+<p>Tagging content by genre via <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentGenre()">setContentGenre()</a> is specific to the ad provider, and may not be uniformly implemented.  For ads provided by the Roku ad service, there is currently a canonical set of genre tags that can be used to improve ad targeting:</p>
+<ul>
+<li>Action</li>
+<li>Adventure</li>
+<li>Animated</li>
+<li>Ballet</li>
+<li>Biography</li>
+<li>Children</li>
+<li>Comedy</li>
+<li>Comedy drama</li>
+<li>Crime drama</li>
+<li>Cuisine</li>
+<li>Dark comedy</li>
+<li>Docudrama</li>
+<li>Documentary</li>
+<li>Drama</li>
+<li>Entertainment</li>
+<li>Fantasy</li>
+<li>Historical drama</li>
+<li>Horror</li>
+<li>Martial arts</li>
+<li>Music</li>
+<li>Musical</li>
+<li>Musical comedy</li>
+<li>Mystery</li>
+<li>Performing arts</li>
+<li>Romance</li>
+<li>Romantic comedy</li>
+<li>Science fiction</li>
+<li>Special</li>
+<li>Suspense</li>
+<li>Talk</li>
+<li>Theater</li>
+<li>Thriller</li>
+<li>Travel</li>
+<li>War</li>
+<li>Western</li>
+</ul>
+<h3 id="RokuAdvertisingFramework-NielsenDARGenreTags">Nielsen DAR Genre Tags</h3>
+<p>Tagging content by genre via <a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenGenre()">setNielsenGenre()</a> requires a single primary genre code for the selected content from the following set of values. Publishers should provide the most specific category applicable to the content for which ads are to be shown.</p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh">Description</th>
+<th class="confluenceTh">Code</th>
+</tr>
+<tr>
+<td class="confluenceTd">Adventure</td>
+<td class="confluenceTd">A</td>
+</tr>
+<tr>
+<td class="confluenceTd">Audience Participation</td>
+<td class="confluenceTd">AP</td>
+</tr>
+<tr>
+<td class="confluenceTd">Award Ceremonies &amp; Pageants </td>
+<td class="confluenceTd">AC</td>
+</tr>
+<tr>
+<td class="confluenceTd">Children’s Programming</td>
+<td class="confluenceTd">CP</td>
+</tr>
+<tr>
+<td class="confluenceTd">Comedy Variety</td>
+<td class="confluenceTd">CV</td>
+</tr>
+<tr>
+<td class="confluenceTd">Concert Music</td>
+<td class="confluenceTd">CM</td>
+</tr>
+<tr>
+<td class="confluenceTd">Conversation, Colloquies</td>
+<td class="confluenceTd">CC</td>
+</tr>
+<tr>
+<td class="confluenceTd">Daytime Drama</td>
+<td class="confluenceTd">DD</td>
+</tr>
+<tr>
+<td class="confluenceTd">Devotional</td>
+<td class="confluenceTd">D</td>
+</tr>
+<tr>
+<td class="confluenceTd">Documentary, General </td>
+<td class="confluenceTd">DO</td>
+</tr>
+<tr>
+<td class="confluenceTd">Documentary, News</td>
+<td class="confluenceTd">DN</td>
+</tr>
+<tr>
+<td class="confluenceTd">Evening Animation</td>
+<td class="confluenceTd">EA</td>
+</tr>
+<tr>
+<td class="confluenceTd">Feature Film</td>
+<td class="confluenceTd">FF</td>
+</tr>
+<tr>
+<td class="confluenceTd">General Drama </td>
+<td class="confluenceTd">GD</td>
+</tr>
+<tr>
+<td class="confluenceTd">General Variety</td>
+<td class="confluenceTd">GV</td>
+</tr>
+<tr>
+<td class="confluenceTd">Instructions, Advice </td>
+<td class="confluenceTd">IA</td>
+</tr>
+<tr>
+<td class="confluenceTd">Musical Drama</td>
+<td class="confluenceTd">MD</td>
+</tr>
+<tr>
+<td class="confluenceTd">News</td>
+<td class="confluenceTd">N</td>
+</tr>
+<tr>
+<td class="confluenceTd">Official Police</td>
+<td class="confluenceTd">OP</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Paid Political</td>
+<td colspan="1" class="confluenceTd">P  </td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Participation Variety</td>
+<td colspan="1" class="confluenceTd">PV</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Popular Music -Contemporary </td>
+<td colspan="1" class="confluenceTd">PC</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Popular Music -Standard </td>
+<td colspan="1" class="confluenceTd">PS</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Private Detective </td>
+<td colspan="1" class="confluenceTd">PD</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Quiz -Give Away</td>
+<td colspan="1" class="confluenceTd">QG</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Quiz -Panel</td>
+<td colspan="1" class="confluenceTd">QP  </td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Science Fiction </td>
+<td colspan="1" class="confluenceTd">SF </td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Situation Comedy</td>
+<td colspan="1" class="confluenceTd">CS</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Sports Anthology </td>
+<td colspan="1" class="confluenceTd">SA</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Sports Commentary </td>
+<td colspan="1" class="confluenceTd">SC </td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Sports News </td>
+<td colspan="1" class="confluenceTd">SN </td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Sports Event </td>
+<td colspan="1" class="confluenceTd">SE </td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Suspense/Mystery </td>
+<td colspan="1" class="confluenceTd">SM</td>
+</tr>
+<tr>
+<td colspan="1" class="confluenceTd">Western Drama</td>
+<td colspan="1" class="confluenceTd">EW</td>
+</tr>
+</tbody></table></div>
+<h2 id="RokuAdvertisingFramework-GLOSSARY">GLOSSARY</h2>
+<h5 id="RokuAdvertisingFramework-AVOD">AVOD</h5>
+<p>Advertising Video On Demand refers to a streaming video service that relies on selling advertisements as a revenue stream.</p>
+<h5 id="RokuAdvertisingFramework-BrightScript">BrightScript</h5>
+<p>Roku BrightScript is a powerful scripting language that makes it easy and quick to build media and networked applications for embedded devices.</p>
+<h5 id="RokuAdvertisingFramework-DAR">DAR</h5>
+<p>Nielsen Digital Ad Ratings provides aggregated reporting on the viewable audiences across ad campaigns.</p>
+<h5 id="RokuAdvertisingFramework-IAB">IAB</h5>
+<p>The International Advertising Bureau is an organization comprised of 650+ media and technology companies. The IAB evaluates and recommends standards and practices and conducts research on interactive advertising.</p>
+<h5 id="RokuAdvertisingFramework-OBA">OBA</h5>
+<p>Online Behavioral Advertising refers to the practice of collecting information about online activity to target ads based on relevance.</p>
+<h5 id="RokuAdvertisingFramework-pod">pod</h5>
+<p>In the context of ad delivery, a pod is a sequence of ads that is rendered consecutively during a single ad break. An ad pod may also consist of a single ad.</p>
+<h5 id="RokuAdvertisingFramework-RIDA">RIDA</h5>
+<p>The Roku ID for Advertising is an anonymized device identifier to track activity for development and marketing  purposes. It is designed to generally follow the guidelines established for the IDFA (Identifier for Advertising)  used by other platforms. The RIDA protects users’ identifying information and allows the ability to opt-out of remarketing or reset the ID at any time.</p>
+<h5 id="RokuAdvertisingFramework-SmartXML">SmartXML</h5>
+<p>FreeWheel’s proprietary standard combines ad payload and ad scheduling in a single XML file.</p>
+<h5 id="RokuAdvertisingFramework-VAST">VAST</h5>
+<p>Video Ad Serving Template is an IAB specification for a universal XML schema for serving ads to digital video players.</p>
+<h5 id="RokuAdvertisingFramework-VMAP">VMAP</h5>
+<p>Video Multiple Ad Playlist is an IAB specification for an XML template that video content owners can use to describe the structure for ad inventory insertion. It is commonly used in conjunction with VAST to structure ads into ad pods.</p>
+<h2 id="RokuAdvertisingFramework-INDEX">INDEX</h2>
+<p><strong>A</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-AVOD">AVOD</a></p>
+<p><strong>B</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-BrightScript">BrightScript</a></p>
+<p><strong>D</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-DAR">DAR</a></p>
+<p><strong>E</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-enableNielsenDAR()">enableNielsenDAR()</a> (built-in function)</p>
+<p><strong>F</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-fireTrackingEvents()">fireTrackingEvents()</a> (built-in function)</p>
+<p><strong>G</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAds()">getAds()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getAdUrl()">getAdUrl()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-getLibVersion()">getLibVersion()</a> (built-in function)</p>
+<p><strong>I</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-IAB">IAB</a><br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-importAds()">importAds()</a> (built-in function)</p>
+<p><strong>O</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-OBA">OBA</a></p>
+<p><strong>P</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-pod">pod</a></p>
+<p><strong>R</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-RIDA">RIDA</a><br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-Roku_Ads()">Roku_Ads()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_APP_ID">ROKU_ADS_APP_ID</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_CACHE_BUSTER">ROKU_ADS_CACHE_BUSTER</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_CONTENT_GENRE">ROKU_ADS_CONTENT_GENRE</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_CONTENT_ID">ROKU_ADS_CONTENT_ID</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_CONTENT_LENGTH">ROKU_ADS_CONTENT_LENGTH</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_DISPLAY_HEIGHT">ROKU_ADS_DISPLAY_HEIGHT</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_DISPLAY_WIDTH">ROKU_ADS_DISPLAY_WIDTH</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_EXTERNAL_IP">ROKU_ADS_EXTERNAL_IP</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_TIMESTAMP">ROKU_ADS_TIMESTAMP</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_TRACKING_ID">ROKU_ADS_TRACKING_ID</a> (global variable or constant)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-ROKU_ADS_USER_AGENT">ROKU_ADS_USER_AGENT</a> (global variable or constant)</p>
+<p><strong>S</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdBreaks()">setAdBreaks()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdConstraints()">setAdConstraints()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdExit()">setAdExit()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdPrefs()">setAdPrefs()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setAdUrl()">setAdUrl()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentGenre()">setContentGenre()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentId()">setContentId()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setContentLength()">setContentLength()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setDebugOutput()">setDebugOutput()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenAppId()">setNielsenAppId()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenGenre()">setNielsenGenre()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setNielsenProgramId()">setNielsenProgramId()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-setTrackingCallback()">setTrackingCallback()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-showAds()">showAds()</a> (built-in function)<br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-SmartXML">SmartXML</a></p>
+<p><strong>V</strong></p>
+<p><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VAST">VAST</a><br><a href="Roku+Advertising+Framework.html#RokuAdvertisingFramework-VMAP">VMAP</a></p>
+<p> </p>
 
                 
         
@@ -885,45 +1339,7 @@ rokuAds.setAdUrl(url)]]></script>
             
             
 
-<div id="footer" role="contentinfo">
-    <section class="footer-body">
 
-                                                    
-        
-
-        <ul id="poweredby">
-            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
-            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
-            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
-            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
-        </ul>
-
-        
-
-        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-
-                    <script>
-var footer = document.getElementById('poweredby');
-footer.removeChild(footer.children[2]);
-footer.removeChild(footer.children[2]);
-
-var pDiv = document.createElement('li');
-pDiv.className='noprint';
-pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
-footer.appendChild(pDiv);
-</script>
-
-<script>
-    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
-    if ( modinfo != undefined ) {
-        modinfo.style.display = "none" ;
-    }
-
-</script>
-
-        
-    </section>
-</div>
 
     </div>
 </body>

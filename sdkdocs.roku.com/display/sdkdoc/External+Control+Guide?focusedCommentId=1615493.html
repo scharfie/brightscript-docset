@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>External Control Guide - Roku SDK Documentation - Developer Documentation</title>
 
         
@@ -21,9 +22,7 @@
 
 
 <meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
-<script type="text/javascript">
-        var contextPath = '';
-</script>
+
 
     
 
@@ -71,21 +70,9 @@
     <link rel="shortcut icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
     <link rel="icon" type="image/x-icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
 
-<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation">
 
-<script>
-window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
-</script>
+
 <link type="text/css" rel="stylesheet" href="../../s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css%3Fbuild-number=6150.css" media="all">
 <!--[if lt IE 9]>
 <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
@@ -103,47 +90,31 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <link type="text/css" rel="stylesheet" href="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
-<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js" ></script>
-<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
-<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js" ></script>
-<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init.js%3Flocale=en-GB" ></script>
+<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js"></script>
+<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true"></script>
+<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js"></script>
+<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init.js%3Flocale=en-GB"></script>
 
 
         
     
 
         
-        <meta name="ajs-site-title" content="Developer Documentation" />
+        <meta name="ajs-site-title" content="Developer Documentation">
 
     
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-67357911-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    
 
 <!-- Google Tag Manager -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <!-- End Google Tag Manager -->
 
 <!-- New Relic -->
-<script type="text/javascript">
-window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
-;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
-</script>
+
 <!-- End New Relic -->
 
     
@@ -154,11 +125,10 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 </head>
 
-<body             onload="placeFocus()"
-     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+<body onload="placeFocus()" id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
 
         
-            <div id='stp-licenseStatus-banner'></div>
+            <div id="stp-licenseStatus-banner"></div>
     <div id="full-height-container">
     <div id="header-precursor">
         
@@ -171,12 +141,14 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 <header id="header" role="banner">
-    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary">
+<h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation"><span class="aui-header-logo-text">Developer Documentation</span></a></h1>
+<ul class="aui-nav">
                             <li>
             
         
         
-<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+<a id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action" class=" aui-nav-imagelink" title="Spaces">
             <span>Spaces</span>
     </a>
         </li>
@@ -188,32 +160,32 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     </a>
     <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
                     <div class="aui-dropdown2-section">
-                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                <ul id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
                                             <li>
     
             
-<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+<a id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    " title="Browse pages in the Roku SDK Documentation space">
         Pages
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+<a id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    " title="Browse blogs in the Roku SDK Documentation space">
         Blog
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+<a id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    " title="Browse labels in the Roku SDK Documentation space">
         Labels
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+<a id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    " title="Browse additional space functions in the Roku SDK Documentation space">
         Space Operations
 </a>
 </li>
@@ -225,292 +197,35 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                         <li class="aui-buttons">
             </li>
     </ul>
-</div><div class="aui-header-secondary"><ul class="aui-nav">
-            <li>
-        
-    
-            
-<a  id="doctheme-anchor" href="External+Control+Guide%3FfocusedCommentId=1615493.html#"  class=" aui-nav-imagelink"   title="">
-            <span></span>
-    </a>
-    </li>
-                    <li>
-        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
-    </li>
-        <li>
-            
-        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="External+Control+Guide%3FfocusedCommentId=1615493.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
-        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
-    </a>
-    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                    <div class="aui-dropdown2-section">
-                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
-                                            <li>
-        
-            
-<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
->
-        Online Help
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="keyboard-shortcuts-link" href="External+Control+Guide%3FfocusedCommentId=1615493.html#" class="    "      title="View available keyboard shortcuts" >
-        Keyboard Shortcuts
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
-        Feed Builder
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
-        What’s new
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="gadget-directory-link" href="External+Control+Guide%3FfocusedCommentId=1615493.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
-        Available Gadgets
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
-        About Confluence
-</a>
-</li>
-                                    </ul>
-            </div>
-            </nav>
-    
-    </li>
-        <li>
-                
-    
-    </li>
-        <li>
-            
-    </li>
-        <li>
-                                            <li>
-        
-            
-<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FExternal%2BControl%2BGuide%3FfocusedCommentId%3D1615493" class="   user-item login-link "      title="" >
-        Log in
-</a>
-</li>
-                        
-    </li>
-    </ul>
-</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+</div></div>
+<!-- .aui-header-inner--></nav><!-- .aui-header -->
     <br class="clear">
 </header>
 
     <div id="splitter">
-    <div id="splitter-sidebar"  class="padding-div" >
+    <div id="splitter-sidebar" class="padding-div">
         
 
                     
     
 
 
-<div class="plugin_pagetree">
 
-        
-        
-    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
-        <div class="plugin_pagetree_children">
-        </div>
-    </ul>
-
-    <fieldset class="hidden">
-        <input type="hidden" name="treeId" value="">
-        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
-        <input type="hidden" name="treePageId" value="1611563">
-
-        <input type="hidden" name="noRoot" value="false">
-        <input type="hidden" name="rootPageId" value="1611307">
-
-        <input type="hidden" name="rootPage" value="">
-        <input type="hidden" name="startDepth" value="0">
-        <input type="hidden" name="spaceKey" value="sdkdoc" >
-
-        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
-        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
-        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
-        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DExternal%2BControl%2BGuide%26focusedCommentId%3D1615493">
-        <input type="hidden" name="mobile" value="false">
-
-                <fieldset class="hidden">
-                                                <input type="hidden" name="ancestorId" value="1611307">
-                                    </fieldset>
-    </fieldset>
-</div>
 
 
 
             </div>
     <div id="splitter-content">
 
-        <script>InitDocThemeSidebar()</script>
+        
 
                         
             
-<div id="main"  class="aui-page-panel" >
+<div id="main" class="aui-page-panel">
     <div id="main-header">
         
         
-    <div id="navigation" class="content-navigation view">
-                    <ul class="ajs-menu-bar">
-                                            
-        <li class="normal ajs-menu-item">
-        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="External+Control+Guide%3FfocusedCommentId=1615493.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
-            <span>
-                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
-                                
-            </span>
-        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-primary"                         class="section-primary first">
-                                                    <li>
-
     
-        
-                                            
-    
-    
-    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=1611563" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
-                <span>
-                        A<u>t</u>tachments (2)
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=1611563" rel="nofollow" class="action-view-history"   title="">
-                <span>
-                        Page History
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611563" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
-                <span>
-                        Restrictions
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-secondary"                         class="section-secondary">
-                                                    <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611563" rel="nofollow" class="action-view-info"   title="">
-                <span>
-                        Page Information
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-            
-                                            
-    
-    
-    <a  id="view-resolved-comments" href="External+Control+Guide%3FfocusedCommentId=1615493.html#" rel="nofollow" class=""   title="">
-                <span>
-                        Resolved comments
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611563" rel="nofollow" class=""   title="Link to this Page">
-                <span>
-                        Link to this Page…
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=1611563#selectedPageInHierarchy" rel="nofollow" class=""   title="">
-                <span>
-                        View in Hierarchy
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=1611563" rel="nofollow" class="action-view-source popup-link"   title="">
-                <span>
-                        View Source
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=1611563" rel="nofollow" class=""   title="">
-                <span>
-                        Export to PDF
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=1611563" rel="nofollow" class="action-export-word"   title="">
-                <span>
-                        Export to Word
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                    </div>
-    </li>
-            </ul>
-    </div>
 
         
                 <div id="title-heading" class="pagetitle with-breadcrumbs">
@@ -523,15 +238,17 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     <ol id="breadcrumbs">
                                         
                         
-        <li class="first" >
+        <li class="first">
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
                                                                     
                         
-        <li>
+        </li>
+<li>
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
-                                                    </ol>
+                                                    </li>
+</ol>
 
 
                 </div>
@@ -589,27 +306,9 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 
-        <script type="text/x-template" title="searchResultsGrid">
-    <table class="aui">
-        <thead>
-            <tr class="header">
-                <th class="search-result-title">Page Title</th>
-                <th class="search-result-space">Space</th>
-                <th class="search-result-date">Updated</th>
-            </tr>
-        </thead>
-    </table>
-</script>
-<script type="text/x-template" title="searchResultsGridCount">
-    <p class="search-result-count">{0}</p>
-</script>
-<script type="text/x-template" title="searchResultsGridRow">
-    <tr class="search-result">
-        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
-        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
-        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
-    </tr>
-</script>
+        
+
+
         
     
     
@@ -635,7 +334,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-page-restrictions-hidden" href="External+Control+Guide%3FfocusedCommentId=1615493.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+    <a id="content-metadata-page-restrictions-hidden" href="External+Control+Guide%3FfocusedCommentId=1615493.html#" rel="nofollow" class="hidden" title="Unrestricted">
                 <span>
                         
         </span>    </a>
@@ -647,7 +346,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=1611563&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment"  accessKey="t"  title="2 attachments">
+    <a id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=1611563&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment" accesskey="t" title="2 attachments">
                 <span>
                         
         </span>    </a>
@@ -660,11 +359,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     
         
             
-            Created by <span class='author'>     <a href="../~jbush.html"
-                       class="url fn"
-                            >Jeff Bush</a></span>, last modified by <span class='editor'>     <a href="../~kcooper.html"
-                       class="url fn"
-                            >Kevin Cooper</a></span> on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=1611563&amp;selectedPageVersions=21&amp;selectedPageVersions=22'>Mar 03, 2016</a>
+            Created by <span class="author">     <a href="../~jbush.html" class="url fn">Jeff Bush</a></span>, last modified by <span class="editor">     <a href="../~kcooper.html" class="url fn">Kevin Cooper</a></span> on <a class="last-modified" title="Show changes" href="https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=1611563&amp;selectedPageVersions=21&amp;selectedPageVersions=22">Mar 03, 2016</a>
                 </li>
         </ul>
     </div>
@@ -680,7 +375,80 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
         <div id="main-content" class="wiki-content">
                            
-        <p><div class="toc-macro client-side-toc-macro manualtoc conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div></p><h1 id="ExternalControlGuide-1.0Overview">1.0 Overview</h1><p>The External Control Protocol enables the Roku to be controlled via the network. The External Control Service is discoverable via SSDP (Simple Service Discovery Protocol). The service is a simple RESTful API that can be accessed by programs in virtually any programming environment.</p><h1 id="ExternalControlGuide-2.0SSDP(SimpleServiceDiscoveryProtocol)">2.0 SSDP (Simple Service Discovery Protocol)</h1><p>SSDP is an industry IETF standard network protocol for the discovery of network services. Roku boxes will advertise their External Control Protocol through SSDP so that programs can discover the IP address of Roku's in the area by using the multicast ssdp protocol. There is a standard SSDP multicast address and port (239.255.255.250:1900) that is used for local network communication. The Roku responds to M-SEARCH queries on this ip address and port.</p><p>In order to query for the roku ip address, your program can send the following request using the http protocol to 239.255.255.250 port 1900:</p><pre><br class="atl-forced-newline"/> M-SEARCH * HTTP/1.1<br/> Host: 239.255.255.250:1900<br/> Man: &quot;ssdp:discover&quot;<br/> ST: roku:ecp </pre><p><br class="atl-forced-newline"/> Remember that there must be a blank line at the end of the file above. If the above request is put into the file roku_ecp_req.txt, you can issue the following command on most Linux machines to test the request. <br class="atl-forced-newline"/> % ncat 239.255.255.250 1900 &lt; roku_ecp_req.txt</p><p><br class="atl-forced-newline"/> If you view the response via wireshark and filter on port 1900 you can see the Roku's response. Ncat has trouble receiving multicast traffic so viewing the response using ncat does not work. The response has the following format:</p><pre><br class="atl-forced-newline"/> HTTP/1.1 200 OK<br/> Cache-Control: max-age=300<br/> ST: roku:ecp<br/> Location: <a class="external-link" href="http://192.168.1.134:8060/" rel="nofollow">http://192.168.1.134:8060/</a><br/> USN: uuid:roku:ecp:P0A070000007</pre><p><br class="atl-forced-newline"/> When you get a 200 status response, the Location header will be valid. You can parse out the URL for the Roku ECP service from the Location header. The Roku serial number is contained in the USN line after uuid:roku:ecp. Note that if there are multiple Roku boxes in your local network, you will get multiple responses. Your program could keep a map of USNs to location URLs and allow the user to select which Roku on your network to send commands to. It's probably best to also let the user give his own names to the USNs</p><p>When parsing headers in the response, in accordance with the UPnP Device Architecture specification, field names should not be treated as case sensitive.  That means that, for example, the Location header may begin with either &quot;Location:&quot; or &quot;LOCATION:&quot; or &quot;location:&quot;, etc.</p><p>Please note the Cache-Control header, we multicast NOTIFY messages periodically (approximately every 20 minutes). It is safe to assume the unit is no longer available if you haven't received a new NOTIFY message before the Cache-Control max-age time expires.</p><h1 id="ExternalControlGuide-3.0ExternalControlProtocolServices">3.0 External Control Protocol Services</h1><p>The External Control Service is a simple, RESTful service accessed via the http protocol on port 8060. Once you have the Roku ipaddress to connect to, you can issue the following External Control commands to the Roku:</p><ul><li><strong>query/apps</strong> This 'query/apps' returns a map of all the channels installed on the Roku box paired with their app id. This command is accessed via an http GET.</li><li><strong>keydown</strong> is followed by a slash and the name of the key pressed. Keydown is equivalent to pressing down the remote key whose value is the argument passed. This command is sent via a POST with no body.</li><li><strong>keyup</strong> is followed by a slash and the name of the key to release. Keyup is equivalent to releasing the remote key whose value is the argument passed. This command is sent via a POST with no body.</li><li><strong>keypress</strong> is followed by a slash and the name of the key pressed. Keypress is equivalent to pressing down and releasing the remote key whose value is the argument passed. This command is sent via a POST with no body.</li><li><strong>launch</strong> is followed by a slash and an app id, optionally followed by a question mark and a list of URL parameters that are sent to the app id as an roAssociativeArray passed to the RunUserInterface() or Main() entry point. This command is sent via a POST with no body.</li></ul><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">The launch command should not be used to implement deep-linking to an uninstalled channel, because it will fail to launch uninstalled channels. Use the install command instead for uninstalled channels.  </div></div><ul><li><strong>install </strong>exits the current channel and launches the Channel Store details screen of the channel with the given ID. The Install command is followed by a slash and an application ID, optionally by a question mark, and a list of URL launch parameters that are sent to the application ID as an roAssociativeArray passed to the RunUserInterface() or Main() entry point. If launch parameters are given, the channel is launched immediately after user installs the channel, and deep-links to content provided in the launch parameters. This command is sent via a POST with no body.</li><li><strong>query/device-info</strong> <span>retrieves device information similar to that returned by roDeviceInfo.  This command is accessed using an HTTP GET.</span></li><li><strong>query/icon</strong> is followed by a slash and an app id and returns an icon corresponding to that app. The binary data with an identifying MIME-type header is returned. This command is accessed using an HTTP GET. Example:</li></ul><p style="margin-left: 60.0px;"><code>GET /query/icon/12</code></p><ul><li><strong>input</strong> enables a developer to send custom events to their Brightscript application. It takes a user defined list of name-value pairs sent as query string uri parameters. The external control server places these name-value pairs into a BrightScript associative array and passes them directly through to the currently executing channel script via a Message Port attached to a created roInput object. Please refer to Section 3.1 below for more detailed recommendations on how to pass your data. Messages of type roInputEvent have a GetInfo() method that will obtain the associative array. The arguments must be URL-encoded. This command is sent via a POST with no body.</li></ul><p>Example: POST /input?acceleration.x=0.0&amp;acceleration.y=0.0&amp;acceleration.z=9.8</p><h1 id="ExternalControlGuide-3.1ExternalControlInputCommandConventions">3.1 External Control Input Command Conventions</h1><p>As the firmware simply marshals the arguments to the <strong>input</strong> command and passes them to the channel script, the forms below compose a conventional way to communicate input from several common input device types. <br class="atl-forced-newline"/> <strong>Sensor Input</strong> <br class="atl-forced-newline"/> There are four sensor values to report, accelerometer, orientation, gyroscope (rotation), and magnetometer (magnetic). <br class="atl-forced-newline"/> All except orientation are vectors in a cartesian coordinate system relative to the device in its default orientation:<br/> +x = to the right of the front face of the device (usually the short side)<br/> +y = to the top of the front face of the device (usually the long side)<br/> +z = out of the front face of the device (toward the viewer) <br class="atl-forced-newline"/> Orientation's coordinate system is relative to the point on Earth's surface between the device and the Earth's center:<br/> +x = east<br/> +y = north<br/> +z = towards Earth's center (down). <br class="atl-forced-newline"/> The type in all such cases is a string representation of a signed floating point number with or without an explicit decimal and with or without a signed integer exponent following the letter E. A missing decimal will be presumed after the rightmost present digit, and a missing exponent will be presumed 0. <br class="atl-forced-newline"/> <strong>Accelerometer</strong>:<br/> indicates: acceleration in each dimension relative to free fall<br/> units: meters/sec^2<br/> names: acceleration.x, acceleration.y, acceleration.z <br class="atl-forced-newline"/> <strong>Orientation</strong>:<br/> indicates: angular displacement from flat/level and true (or magnetic?) north.<br/> units: radians<br/> names: orientation.x, orientation.y, orientation.z<br/> notes: Accurate indication of this is not generally possible without correlation with other sensors or assumptions. Devices make assumptions to flip the display, for example, that assume that the device is usually not moving (much) so that all force is simply opposed to gravity, and that can be assumed to be the &quot;up&quot; direction. Deviation from magnetic north depends on a magnetometer, and deviation from true north also depends on geolocation. <br class="atl-forced-newline"/> <strong>Gyroscope</strong>:<br/> indicates: angular rotation rate about each axis using the right hand rule for sign<br/> units: radians/sec<br/> names: rotation.x, rotation.y, rotation.z <br class="atl-forced-newline"/> <strong>Magnetometer</strong>:<br/> indicates: magnetic field strength<br/> units: micro-Tesla<br/> names: magnetic.x, magnetic.y, magnetic.z <br class="atl-forced-newline"/> <strong>Touch and Multi-touch</strong> <br class="atl-forced-newline"/> Touch and Multi-touch commands take the same form. The resource is the same &quot;input&quot; as all other generic input commands. <br class="atl-forced-newline"/> Each action is decomposed to an argument in each dimension (of 2, x and y with the same orientation as for the sensor inputs, with origin in lower left). There is an additional &quot;op&quot; argument which can specify down, up, press (down and up), move, or cancel. Each input is also qualified with a pointer id that indicates the initial order of down touches in a multi-touch gesture. <br class="atl-forced-newline"/> Several such points can be specified in a single POST, especially a move, but a full triad of x, y, and op arguments should be sent and expected for each point within a POST that contains any of them. <br class="atl-forced-newline"/> Other information you might want to pass via the <strong>input</strong> command may include:<br/> 1. sensor accuracy<br/> 2. geolocation (from GPS)<br/> 3. device-provided derivations of above sensor readings, for example &quot;shake&quot; from accelerometer, or &quot;pinch&quot; from multi-touch.</p><h1 id="ExternalControlGuide-3.2ExternalControlProtocolExamples">3.2 External Control Protocol Examples</h1><p>The following are some example ECP commands sent via the curl command.</p><p>1. The following command gets a list of channels and their corresponding app ids.</p><pre>$ curl http://192.168.1.134:8060/query/apps<br/>&lt;apps&gt;<br/>&lt;app id=&quot;11&quot;&gt;Roku Channel Store&lt;/app&gt;<br/>&lt;app id=&quot;12&quot;&gt;Netflix&lt;/app&gt;<br/>&lt;app id=&quot;13&quot;&gt;Amazon Video on Demand&lt;/app&gt;<br/>&lt;app id=&quot;14&quot;&gt;MLB.TV®&lt;/app&gt;<br/>&lt;app id=&quot;26&quot;&gt;Free FrameChannel Service&lt;/app&gt;<br/>&lt;app id=&quot;27&quot;&gt;Mediafly&lt;/app&gt;<br/>&lt;app id=&quot;28&quot;&gt;Pandora&lt;/app&gt;<br/>&lt;/apps&gt;</pre><p>2. The following command simulates a user hitting the &quot;Home&quot; button</p><pre>$ curl -d '' http://192.168.1.134:8060/keypress/home</pre><p>3. The following commands move the cursor to the far left by holding down the Left key for 10 seconds</p><pre>$ curl -d '' http://192.168.1.134:8060/keydown/left<br/>$ sleep 10<br/>$ curl -d '' http://192.168.1.134:8060/keyup/left</pre><p>4. The following command will launch the dev app on the box. The simplevideoplayer app that comes with the SDK will process the &quot;url&quot; and &quot;streamformat&quot; parameters and launch the roVideoScreen to play the passed in video. We assume simplevideoplayer is installed as the side-loaded developer application.</p><pre>$ curl -d '' 'http://192.168.1.134:8060/launch/dev?streamformat=mp4&amp;url=http%3A%2F%2Fvideo.ted.com%2Ftalks%2Fpodcast%2FVilayanurRamachandran_2007_480.mp4' </pre><p>5. The following command will launch the dev app on the box. The launchparams app that comes with the SDK will process the &quot;contentID&quot; and &quot;options&quot; parameters and display them on a SpringBoard page. We assume launchparams is installed as the side-loaded developer application. This technique is a useful way to create &quot;clickable&quot; ads that launch a springboard page for a particular title in your channel. Roku now supports clickable ads on the home screen as well.</p><pre>$ curl -d '' 'http://192.168.1.134:8060/launch/dev?contentID=my_content_id&amp;options=my_options'</pre><p>6. The following command will launch the channel store app (11) on the box with a contentID equal to 14 (the MLB app). You can get the plugin ID for your app using the /query/apps example above. It returns the installed apps on a Roku player (you should test that the channel is installed before using the launch command, and use the install command for uninstalled channels). This technique would be useful in creating clickable ads in a free &quot;Lite&quot; version of a paid app. When a user clicks on the ad, the channel store page to purchase the full version could be launched.</p><pre>$ curl -d '' '<span class="nolink">http://192.168.1.134:8060</span>/launch/11?contentID=14'</pre><p>7. This following command will return the icon for the channel with id 12 (Netflix). The response will be raw binary picture data after http headers including one with the MIME type of the picture data.</p><pre>$ curl 'http://192.168.1.134:8060/query/icon/12' &gt; img.png</pre><p>8. The following command passes three components of acceleration through to the channel app. All query string parameters are passed to the currently running app.  The remote app and the currently running app just need to agree on the query string parameters and any communication can be developed.</p><pre>$ curl -d '' 'http://192.168.1.134:8060/input?acceleration.x=0.0&amp;acceleration.y=0.0&amp;acceleration.z=9.8'</pre><p>9. The following command indicates that a touch at the given x and y has touched down on the screen.</p><pre> $ curl -d '' '<span>http://192.168.1.134:8060</span>/input?touch.0.x=200.0&amp;touch.0.y=135.0&amp;touch.0.op=down'</pre><p>10. Below is an example query/device-info request and response.</p><p>$ curl 'http://192.168.1.134:8060/query/device-info'</p><p>&lt;device-info&gt;<br/>    &lt;udn&gt;015e5108-9000-1046-8035-b0a737964dfb&lt;/udn&gt;<br/>    &lt;serial-number&gt;1GU48T017973&lt;/serial-number&gt;<br/>    &lt;device-id&gt;1GU48T017973&lt;/device-id&gt;<br/>    &lt;vendor-name&gt;Roku&lt;/vendor-name&gt;<br/>    &lt;model-number&gt;4200X&lt;/model-number&gt;<br/>    &lt;model-name&gt;Roku 3&lt;/model-name&gt;<br/>    &lt;wifi-mac&gt;b0:a7:37:96:4d:fb&lt;/wifi-mac&gt;<br/>    &lt;ethernet-mac&gt;b0:a7:37:96:4d:fa&lt;/ethernet-mac&gt;<br/>    &lt;network-type&gt;ethernet&lt;/network-type&gt;<br/>    &lt;user-device-name/&gt;<br/>    &lt;software-version&gt;7.00&lt;/software-version&gt;<br/>    &lt;software-build&gt;09021&lt;/software-build&gt;<br/>    &lt;secure-device&gt;true&lt;/secure-device&gt;<br/>    &lt;language&gt;en&lt;/language&gt;<br/>    &lt;country&gt;US&lt;/country&gt;<br/>    &lt;locale&gt;en_US&lt;/locale&gt;<br/>    &lt;time-zone&gt;US/Pacific&lt;/time-zone&gt;<br/>    &lt;time-zone-offset&gt;-480&lt;/time-zone-offset&gt;<br/>    &lt;power-mode&gt;PowerOn&lt;/power-mode&gt;<br/>    &lt;developer-enabled&gt;true&lt;/developer-enabled&gt;<br/>    &lt;keyed-developer-id&gt;70f6ed9c90cf60718a26f3a7c3e5af1c3ec29558&lt;/keyed-developer-id&gt;<br/>    &lt;search-enabled&gt;true&lt;/search-enabled&gt;<br/>    &lt;voice-search-enabled&gt;true&lt;/voice-search-enabled&gt;<br/>    &lt;notifications-enabled&gt;true&lt;/notifications-enabled&gt;<br/>    &lt;notifications-first-use&gt;false&lt;/notifications-first-use&gt;<br/>    &lt;headphones-connected&gt;false&lt;/headphones-connected&gt;<br/>&lt;/device-info&gt;</p><h1 id="ExternalControlGuide-3.3ImplementingDeepLinkinginaChannel">3.3 Implementing Deep Linking in a Channel</h1><p>One of the most common ways that channel developers encounter ECP is when implementing deep linking.  Deep linking on Roku is used by the Roku search service to launch titles as well as to launch channels and play specific content in response to the user clicking on an ad in the Roku home screen.  Deep linking uses the optional parameters that are sent via the External Control Protocol from an ad or the search engine to the entry point of the channel BrightScript code. Typical BrightScript code to implement deep linking looks like this:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Deep Linking BrightScript Code</b></div><div class="codeContent panelContent pdl">
+        <p></p>
+<div class="toc-macro client-side-toc-macro manualtoc conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div>
+<h1 id="ExternalControlGuide-1.0Overview">1.0 Overview</h1>
+<p>The External Control Protocol enables the Roku to be controlled via the network. The External Control Service is discoverable via SSDP (Simple Service Discovery Protocol). The service is a simple RESTful API that can be accessed by programs in virtually any programming environment.</p>
+<h1 id="ExternalControlGuide-2.0SSDP(SimpleServiceDiscoveryProtocol)">2.0 SSDP (Simple Service Discovery Protocol)</h1>
+<p>SSDP is an industry IETF standard network protocol for the discovery of network services. Roku boxes will advertise their External Control Protocol through SSDP so that programs can discover the IP address of Roku's in the area by using the multicast ssdp protocol. There is a standard SSDP multicast address and port (239.255.255.250:1900) that is used for local network communication. The Roku responds to M-SEARCH queries on this ip address and port.</p>
+<p>In order to query for the roku ip address, your program can send the following request using the http protocol to 239.255.255.250 port 1900:</p>
+<pre><br class="atl-forced-newline"> M-SEARCH * HTTP/1.1<br> Host: 239.255.255.250:1900<br> Man: "ssdp:discover"<br> ST: roku:ecp </pre>
+<p><br class="atl-forced-newline"> Remember that there must be a blank line at the end of the file above. If the above request is put into the file roku_ecp_req.txt, you can issue the following command on most Linux machines to test the request. <br class="atl-forced-newline"> % ncat 239.255.255.250 1900 &lt; roku_ecp_req.txt</p>
+<p><br class="atl-forced-newline"> If you view the response via wireshark and filter on port 1900 you can see the Roku's response. Ncat has trouble receiving multicast traffic so viewing the response using ncat does not work. The response has the following format:</p>
+<pre><br class="atl-forced-newline"> HTTP/1.1 200 OK<br> Cache-Control: max-age=300<br> ST: roku:ecp<br> Location: <a class="external-link" href="http://192.168.1.134:8060/" rel="nofollow">http://192.168.1.134:8060/</a><br> USN: uuid:roku:ecp:P0A070000007</pre>
+<p><br class="atl-forced-newline"> When you get a 200 status response, the Location header will be valid. You can parse out the URL for the Roku ECP service from the Location header. The Roku serial number is contained in the USN line after uuid:roku:ecp. Note that if there are multiple Roku boxes in your local network, you will get multiple responses. Your program could keep a map of USNs to location URLs and allow the user to select which Roku on your network to send commands to. It's probably best to also let the user give his own names to the USNs</p>
+<p>When parsing headers in the response, in accordance with the UPnP Device Architecture specification, field names should not be treated as case sensitive.  That means that, for example, the Location header may begin with either "Location:" or "LOCATION:" or "location:", etc.</p>
+<p>Please note the Cache-Control header, we multicast NOTIFY messages periodically (approximately every 20 minutes). It is safe to assume the unit is no longer available if you haven't received a new NOTIFY message before the Cache-Control max-age time expires.</p>
+<h1 id="ExternalControlGuide-3.0ExternalControlProtocolServices">3.0 External Control Protocol Services</h1>
+<p>The External Control Service is a simple, RESTful service accessed via the http protocol on port 8060. Once you have the Roku ipaddress to connect to, you can issue the following External Control commands to the Roku:</p>
+<ul>
+<li>
+<strong>query/apps</strong> This 'query/apps' returns a map of all the channels installed on the Roku box paired with their app id. This command is accessed via an http GET.</li>
+<li>
+<strong>keydown</strong> is followed by a slash and the name of the key pressed. Keydown is equivalent to pressing down the remote key whose value is the argument passed. This command is sent via a POST with no body.</li>
+<li>
+<strong>keyup</strong> is followed by a slash and the name of the key to release. Keyup is equivalent to releasing the remote key whose value is the argument passed. This command is sent via a POST with no body.</li>
+<li>
+<strong>keypress</strong> is followed by a slash and the name of the key pressed. Keypress is equivalent to pressing down and releasing the remote key whose value is the argument passed. This command is sent via a POST with no body.</li>
+<li>
+<strong>launch</strong> is followed by a slash and an app id, optionally followed by a question mark and a list of URL parameters that are sent to the app id as an roAssociativeArray passed to the RunUserInterface() or Main() entry point. This command is sent via a POST with no body.</li>
+</ul>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">The launch command should not be used to implement deep-linking to an uninstalled channel, because it will fail to launch uninstalled channels. Use the install command instead for uninstalled channels.  </div>
+</div>
+<ul>
+<li>
+<strong>install </strong>exits the current channel and launches the Channel Store details screen of the channel with the given ID. The Install command is followed by a slash and an application ID, optionally by a question mark, and a list of URL launch parameters that are sent to the application ID as an roAssociativeArray passed to the RunUserInterface() or Main() entry point. If launch parameters are given, the channel is launched immediately after user installs the channel, and deep-links to content provided in the launch parameters. This command is sent via a POST with no body.</li>
+<li>
+<strong>query/device-info</strong> <span>retrieves device information similar to that returned by roDeviceInfo.  This command is accessed using an HTTP GET.</span>
+</li>
+<li>
+<strong>query/icon</strong> is followed by a slash and an app id and returns an icon corresponding to that app. The binary data with an identifying MIME-type header is returned. This command is accessed using an HTTP GET. Example:</li>
+</ul>
+<p style="margin-left: 60.0px;"><code>GET /query/icon/12</code></p>
+<ul><li>
+<strong>input</strong> enables a developer to send custom events to their Brightscript application. It takes a user defined list of name-value pairs sent as query string uri parameters. The external control server places these name-value pairs into a BrightScript associative array and passes them directly through to the currently executing channel script via a Message Port attached to a created roInput object. Please refer to Section 3.1 below for more detailed recommendations on how to pass your data. Messages of type roInputEvent have a GetInfo() method that will obtain the associative array. The arguments must be URL-encoded. This command is sent via a POST with no body.</li></ul>
+<p>Example: POST /input?acceleration.x=0.0&amp;acceleration.y=0.0&amp;acceleration.z=9.8</p>
+<h1 id="ExternalControlGuide-3.1ExternalControlInputCommandConventions">3.1 External Control Input Command Conventions</h1>
+<p>As the firmware simply marshals the arguments to the <strong>input</strong> command and passes them to the channel script, the forms below compose a conventional way to communicate input from several common input device types. <br class="atl-forced-newline"> <strong>Sensor Input</strong> <br class="atl-forced-newline"> There are four sensor values to report, accelerometer, orientation, gyroscope (rotation), and magnetometer (magnetic). <br class="atl-forced-newline"> All except orientation are vectors in a cartesian coordinate system relative to the device in its default orientation:<br> +x = to the right of the front face of the device (usually the short side)<br> +y = to the top of the front face of the device (usually the long side)<br> +z = out of the front face of the device (toward the viewer) <br class="atl-forced-newline"> Orientation's coordinate system is relative to the point on Earth's surface between the device and the Earth's center:<br> +x = east<br> +y = north<br> +z = towards Earth's center (down). <br class="atl-forced-newline"> The type in all such cases is a string representation of a signed floating point number with or without an explicit decimal and with or without a signed integer exponent following the letter E. A missing decimal will be presumed after the rightmost present digit, and a missing exponent will be presumed 0. <br class="atl-forced-newline"> <strong>Accelerometer</strong>:<br> indicates: acceleration in each dimension relative to free fall<br> units: meters/sec^2<br> names: acceleration.x, acceleration.y, acceleration.z <br class="atl-forced-newline"> <strong>Orientation</strong>:<br> indicates: angular displacement from flat/level and true (or magnetic?) north.<br> units: radians<br> names: orientation.x, orientation.y, orientation.z<br> notes: Accurate indication of this is not generally possible without correlation with other sensors or assumptions. Devices make assumptions to flip the display, for example, that assume that the device is usually not moving (much) so that all force is simply opposed to gravity, and that can be assumed to be the "up" direction. Deviation from magnetic north depends on a magnetometer, and deviation from true north also depends on geolocation. <br class="atl-forced-newline"> <strong>Gyroscope</strong>:<br> indicates: angular rotation rate about each axis using the right hand rule for sign<br> units: radians/sec<br> names: rotation.x, rotation.y, rotation.z <br class="atl-forced-newline"> <strong>Magnetometer</strong>:<br> indicates: magnetic field strength<br> units: micro-Tesla<br> names: magnetic.x, magnetic.y, magnetic.z <br class="atl-forced-newline"> <strong>Touch and Multi-touch</strong> <br class="atl-forced-newline"> Touch and Multi-touch commands take the same form. The resource is the same "input" as all other generic input commands. <br class="atl-forced-newline"> Each action is decomposed to an argument in each dimension (of 2, x and y with the same orientation as for the sensor inputs, with origin in lower left). There is an additional "op" argument which can specify down, up, press (down and up), move, or cancel. Each input is also qualified with a pointer id that indicates the initial order of down touches in a multi-touch gesture. <br class="atl-forced-newline"> Several such points can be specified in a single POST, especially a move, but a full triad of x, y, and op arguments should be sent and expected for each point within a POST that contains any of them. <br class="atl-forced-newline"> Other information you might want to pass via the <strong>input</strong> command may include:<br> 1. sensor accuracy<br> 2. geolocation (from GPS)<br> 3. device-provided derivations of above sensor readings, for example "shake" from accelerometer, or "pinch" from multi-touch.</p>
+<h1 id="ExternalControlGuide-3.2ExternalControlProtocolExamples">3.2 External Control Protocol Examples</h1>
+<p>The following are some example ECP commands sent via the curl command.</p>
+<p>1. The following command gets a list of channels and their corresponding app ids.</p>
+<pre>$ curl http://192.168.1.134:8060/query/apps<br>&lt;apps&gt;<br>&lt;app id="11"&gt;Roku Channel Store&lt;/app&gt;<br>&lt;app id="12"&gt;Netflix&lt;/app&gt;<br>&lt;app id="13"&gt;Amazon Video on Demand&lt;/app&gt;<br>&lt;app id="14"&gt;MLB.TV®&lt;/app&gt;<br>&lt;app id="26"&gt;Free FrameChannel Service&lt;/app&gt;<br>&lt;app id="27"&gt;Mediafly&lt;/app&gt;<br>&lt;app id="28"&gt;Pandora&lt;/app&gt;<br>&lt;/apps&gt;</pre>
+<p>2. The following command simulates a user hitting the "Home" button</p>
+<pre>$ curl -d '' http://192.168.1.134:8060/keypress/home</pre>
+<p>3. The following commands move the cursor to the far left by holding down the Left key for 10 seconds</p>
+<pre>$ curl -d '' http://192.168.1.134:8060/keydown/left<br>$ sleep 10<br>$ curl -d '' http://192.168.1.134:8060/keyup/left</pre>
+<p>4. The following command will launch the dev app on the box. The simplevideoplayer app that comes with the SDK will process the "url" and "streamformat" parameters and launch the roVideoScreen to play the passed in video. We assume simplevideoplayer is installed as the side-loaded developer application.</p>
+<pre>$ curl -d '' 'http://192.168.1.134:8060/launch/dev?streamformat=mp4&amp;url=http%3A%2F%2Fvideo.ted.com%2Ftalks%2Fpodcast%2FVilayanurRamachandran_2007_480.mp4' </pre>
+<p>5. The following command will launch the dev app on the box. The launchparams app that comes with the SDK will process the "contentID" and "options" parameters and display them on a SpringBoard page. We assume launchparams is installed as the side-loaded developer application. This technique is a useful way to create "clickable" ads that launch a springboard page for a particular title in your channel. Roku now supports clickable ads on the home screen as well.</p>
+<pre>$ curl -d '' 'http://192.168.1.134:8060/launch/dev?contentID=my_content_id&amp;options=my_options'</pre>
+<p>6. The following command will launch the channel store app (11) on the box with a contentID equal to 14 (the MLB app). You can get the plugin ID for your app using the /query/apps example above. It returns the installed apps on a Roku player (you should test that the channel is installed before using the launch command, and use the install command for uninstalled channels). This technique would be useful in creating clickable ads in a free "Lite" version of a paid app. When a user clicks on the ad, the channel store page to purchase the full version could be launched.</p>
+<pre>$ curl -d '' '<span class="nolink">http://192.168.1.134:8060</span>/launch/11?contentID=14'</pre>
+<p>7. This following command will return the icon for the channel with id 12 (Netflix). The response will be raw binary picture data after http headers including one with the MIME type of the picture data.</p>
+<pre>$ curl 'http://192.168.1.134:8060/query/icon/12' &gt; img.png</pre>
+<p>8. The following command passes three components of acceleration through to the channel app. All query string parameters are passed to the currently running app.  The remote app and the currently running app just need to agree on the query string parameters and any communication can be developed.</p>
+<pre>$ curl -d '' 'http://192.168.1.134:8060/input?acceleration.x=0.0&amp;acceleration.y=0.0&amp;acceleration.z=9.8'</pre>
+<p>9. The following command indicates that a touch at the given x and y has touched down on the screen.</p>
+<pre> $ curl -d '' '<span>http://192.168.1.134:8060</span>/input?touch.0.x=200.0&amp;touch.0.y=135.0&amp;touch.0.op=down'</pre>
+<p>10. Below is an example query/device-info request and response.</p>
+<p>$ curl 'http://192.168.1.134:8060/query/device-info'</p>
+<p>&lt;device-info&gt;<br>    &lt;udn&gt;015e5108-9000-1046-8035-b0a737964dfb&lt;/udn&gt;<br>    &lt;serial-number&gt;1GU48T017973&lt;/serial-number&gt;<br>    &lt;device-id&gt;1GU48T017973&lt;/device-id&gt;<br>    &lt;vendor-name&gt;Roku&lt;/vendor-name&gt;<br>    &lt;model-number&gt;4200X&lt;/model-number&gt;<br>    &lt;model-name&gt;Roku 3&lt;/model-name&gt;<br>    &lt;wifi-mac&gt;b0:a7:37:96:4d:fb&lt;/wifi-mac&gt;<br>    &lt;ethernet-mac&gt;b0:a7:37:96:4d:fa&lt;/ethernet-mac&gt;<br>    &lt;network-type&gt;ethernet&lt;/network-type&gt;<br>    &lt;user-device-name/&gt;<br>    &lt;software-version&gt;7.00&lt;/software-version&gt;<br>    &lt;software-build&gt;09021&lt;/software-build&gt;<br>    &lt;secure-device&gt;true&lt;/secure-device&gt;<br>    &lt;language&gt;en&lt;/language&gt;<br>    &lt;country&gt;US&lt;/country&gt;<br>    &lt;locale&gt;en_US&lt;/locale&gt;<br>    &lt;time-zone&gt;US/Pacific&lt;/time-zone&gt;<br>    &lt;time-zone-offset&gt;-480&lt;/time-zone-offset&gt;<br>    &lt;power-mode&gt;PowerOn&lt;/power-mode&gt;<br>    &lt;developer-enabled&gt;true&lt;/developer-enabled&gt;<br>    &lt;keyed-developer-id&gt;70f6ed9c90cf60718a26f3a7c3e5af1c3ec29558&lt;/keyed-developer-id&gt;<br>    &lt;search-enabled&gt;true&lt;/search-enabled&gt;<br>    &lt;voice-search-enabled&gt;true&lt;/voice-search-enabled&gt;<br>    &lt;notifications-enabled&gt;true&lt;/notifications-enabled&gt;<br>    &lt;notifications-first-use&gt;false&lt;/notifications-first-use&gt;<br>    &lt;headphones-connected&gt;false&lt;/headphones-connected&gt;<br>&lt;/device-info&gt;</p>
+<h1 id="ExternalControlGuide-3.3ImplementingDeepLinkinginaChannel">3.3 Implementing Deep Linking in a Channel</h1>
+<p>One of the most common ways that channel developers encounter ECP is when implementing deep linking.  Deep linking on Roku is used by the Roku search service to launch titles as well as to launch channels and play specific content in response to the user clicking on an ad in the Roku home screen.  Deep linking uses the optional parameters that are sent via the External Control Protocol from an ad or the search engine to the entry point of the channel BrightScript code. Typical BrightScript code to implement deep linking looks like this:</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Deep Linking BrightScript Code</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: java; gutter: false; theme: Confluence"><![CDATA[Function Main(args as Dynamic) as void
      
     if (args &lt;&gt; invalid)
@@ -690,7 +458,64 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
         &#39;...     
     end if
 End Function]]></script>
-</div></div><p><span>The standard for deep linking parameters enforced by Roku to support ads or universal search is that channels use the following parameters:</span></p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Parameter</th><th class="confluenceTh">Description</th><th class="confluenceTh">Possible Values</th></tr><tr><td class="confluenceTd">contentID</td><td class="confluenceTd">Partner defined unique identifier for a specific piece of content</td><td class="confluenceTd">contentID=12345, etc.</td></tr><tr><td class="confluenceTd">mediaType</td><td class="confluenceTd">Optional parameter to give context to the type of contentID passed.<br/>For example, these are sometimes used by Roku search to differentiate<br/>between searches for single titles, series, actors, etc. </td><td class="confluenceTd"><p>clip</p><p>event</p><p>channel</p><p><span style="line-height: 13.0pt;font-size: 10.0pt;">sport</span></p><p><span style="line-height: 13.0pt;font-size: 10.0pt;">league</span></p><p>movie</p><p>special</p><p>series</p><p>person</p><p>episode</p><p>game</p><p>channel</p><p>personseries</p><p>personmovie</p><p>personepisode</p>appScreen (application specific parameter indicating a specific screen to navigate to)</td></tr></tbody></table></div><p><span style="line-height: 1.4285;"> </span></p><p>When implementing deep-linking to a channel, you should first test if the channel is installed or not, because the launch command will not launch uninstalled channels. The following shows how this should be done in pseudo-code:</p><p><span style="line-height: 1.4285;"> </span></p><p style="margin-left: 30.0px;"><code>if  IsChannelIstalled(<em>channelID</em>) then <br/>  </code><code>ECP_Command(“launch/<em>channelID</em>?<em>contentID</em>=<em>deep_link_param</em>) <br/></code><code>else <br/>  </code><code>ECP_Command(“install/<em>channelID</em>?<em>contentID</em>=<em>deep_link_param</em>) <br/></code><code>end if</code></p><p><span style="line-height: 1.4285;">Developers can test deep linking by invoking the appropriate ECP command from the command line.  For example, the install command below launches the side loaded channel on the Roku device on IP address 192.168.1.114 and passes the content ID 13234.</span></p><p style="margin-left: 30.0px;"><code>curl -d '' <a class="external-link" href="http://192.168.1.114:8060/launch/dev?contentID=13234" rel="nofollow">http://192.168.1.114:8060/launch/dev?contentID=13234</a></code></p><p>This example shows using the install command for uninstalled channels:</p><p style="margin-left: 30.0px;"><code><span><code>curl -d '' <a class="external-link" href="http://192.168.1.114:8060/launch/dev?contentID=13234" rel="nofollow">http://192.168.1.114:8060</a></code>/install/8378?contentid=MV005011860000</span></code></p><h1 id="ExternalControlGuide-3.4Keypresskeyvalues">3.4 Keypress key values</h1><p>When the current screen on the Roku box includes an on-screen keyboard, any keyboard character can be sent via the keyup, keydown, and keypress commands.<br/>The key parameter can either be a key name, such as the name of a button on a remote control, or a printable character value specified with the prefix &quot;Lit_&quot;.<br/><br/>Printable ASCII character code values can be transmitted &quot;as-is&quot; with the &quot;Lit_&quot; prefix. For example, you can send a 'r' with &quot;Lit_r&quot;. <br/>In addition, any UTF-8 encoded character can be sent by URL-encoding it. For example, the euro symbol can be sent with &quot;Lit_%E2%82%AC&quot;. <br/><br/>There are even some keys you can send that are not available on any physical remote.<br/><em>Enter</em> is for completing keyboard entry fields, such as search fields. (It is not the same as Select). <br/><em>Search</em> is useful for short-cutting directly to search screens.<br/><br/>The following are the key names that are recognized by ECP:</p><pre> Home<br/> Rev<br/> Fwd<br/> Play<br/> Select<br/> Left<br/> Right<br/> Down<br/> Up<br/> Back<br/> InstantReplay<br/> Info<br/> Backspace<br/> Search<br/> Enter</pre><p>Some Roku devices, such as Roku TVs, also support:</p><pre> VolumeDown<br/> VolumeMute<br/> VolumeUp</pre><p>On the on-screen keyboard, the string 'roku' can be sent via the following commands:</p><pre>$ curl -d '' http://192.168.1.134:8060/keypress/Lit_r<br/>$ curl -d '' http://192.168.1.134:8060/keypress/Lit_o<br/>$ curl -d '' http://192.168.1.134:8060/keypress/Lit_k<br/>$ curl -d '' http://192.168.1.134:8060/keypress/Lit_u</pre><h1 id="ExternalControlGuide-3.5SecurityImplications">3.5 Security Implications</h1><p>Note that with the launch command, anyone could write a program that could pass arbitrary parameters to your BrightScript channel. It is important that you validate any parameters that are passed to your program and check what they may do to your program flow. The launch command can be very powerful to provide all kinds of interaction between network devices and your program. We envision internet catalogs browsed on the internet that could instantly be watched in your channel on the Roku. The door is open to many creative uses. <br class="atl-forced-newline"/> If you prefer to shut this door on your channel, you can choose to not process any passed parameters. This will mean external control programs could launch your channel, but they could not change the program flow within your channel.</p><h1 id="ExternalControlGuide-3.6ExamplePrograms">3.6 Example Programs</h1><p>The SDK includes a sample External Control Protocol application that requires only glibc to compile. The program is self contained in the /examples/rokuExternalControl.c file of the SDK. You can compile and run it with the following commands: <br class="atl-forced-newline"/> % cd &lt;SDK Directory&gt;<br/> % gcc ./examples/rokuExternalControl.c –o rokuExternalControl<br/> % ./rokuExternalControl <br class="atl-forced-newline"/> On Windows, it can be compiled with the following line: <br class="atl-forced-newline"/> % cl /D &quot;WIN32&quot; rokuExternalControl.c <br class="atl-forced-newline"/> The program first uses SSDP to query for Roku boxes on the local network. The first box that responds is the one that the program then sends commands to. All requests and responses are printed to stdout so that you can easily follow what the program is doing. The program next moves the cursor to the home screen and highlights the &quot;Netflix&quot; program. It does this by sending the Home key command and then holding down the left key for twelve seconds. Then it sends the Right key three times. After keeping the &quot;Netflix&quot; program highlighted for five seconds, the program launches the simplevideoplayer application with url and streamformat as keys in the roAssociativeArray passed to the Main() entry point. <br class="atl-forced-newline"/> The simplevideoplayer application immediately launches the roVideoScreen when it is launched with an roAssociativeArray containing valid url and streamformat keys. <br class="atl-forced-newline"/> With the External Control Protocol, you have complete control of your Roku box over the network. We can't wait to see what kind of solutions our developer community can create. The sample C program can be quickly modified to run in a variety of environments including firefox, IE, and other browser plugins, iPhone, iPad, and other mobile device environments. <br class="atl-forced-newline"/> The SDK also includes a couple of java applications. There is an android remote app in examples/source/ecp_client/android_remote and a simple applications to find Roku boxes on the local LAN in examples/source/ecp_client/Roku_Finder.</p><h1 id="ExternalControlGuide-3.7DIAL(DiscoveryandLaunch)">3.7 DIAL (Discovery and Launch)</h1><p>The Roku platform supports the DIAL (Discovery and Launch) protocol.  DIAL is a simple network protocol for discovering first screen devices and applications from a second screen (such as a mobile iOS or Android application,) and for launching first screen applications on the first screen device from the second screen app.  In the context of the Roku platform, the first screen device is the Roku device itself.  A first screen application is a DIAL-aware channel installed on the Roku device.  Complete details of the DIAL specification can be found here: <a class="external-link" href="http://www.dial-multiscreen.org/dial-protocol-specification" rel="nofollow">http://www.dial-multiscreen.org/dial-protocol-specification</a>.</p><p>Many current Roku developers are familiar with the Roku external control protocol (ECP) which includes functionality similar to DIAL.  An experienced Roku developer may thus fairly ask the question “why do I need DIAL?”  One reason is that you may already have a DIAL based second screen implementation for use with other platforms.  DIAL support on Roku means that you don’t need to add a second protocol to your current application for discovery and launch.</p><p><span><a href="https://sdkdocs.roku.com/download/attachments/1611563/RokuDIALSDK.zip?version=1&amp;modificationDate=1402699594000&amp;api=v2" data-linked-resource-id="1613381" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="RokuDIALSDK.zip" data-nice-type="Zip Archive" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611563" data-linked-resource-container-version="22">The Roku DIAL SDK</a> contains detailed documentation of Roku's DIAL support, as well as BrightScript, Android, and iOS sample applications.  In DIAL parlance, the BrightScript sample is the first screen application, and the Android and iOS apps are the second screen apps.  These samples applications should help you get started with your own Roku DIAL support.</span></p>
+</div>
+</div>
+<p><span>The standard for deep linking parameters enforced by Roku to support ads or universal search is that channels use the following parameters:</span></p>
+<div class="table-wrap"><table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh">Parameter</th>
+<th class="confluenceTh">Description</th>
+<th class="confluenceTh">Possible Values</th>
+</tr>
+<tr>
+<td class="confluenceTd">contentID</td>
+<td class="confluenceTd">Partner defined unique identifier for a specific piece of content</td>
+<td class="confluenceTd">contentID=12345, etc.</td>
+</tr>
+<tr>
+<td class="confluenceTd">mediaType</td>
+<td class="confluenceTd">Optional parameter to give context to the type of contentID passed.<br>For example, these are sometimes used by Roku search to differentiate<br>between searches for single titles, series, actors, etc. </td>
+<td class="confluenceTd">
+<p>clip</p>
+<p>event</p>
+<p>channel</p>
+<p><span style="line-height: 13.0pt;font-size: 10.0pt;">sport</span></p>
+<p><span style="line-height: 13.0pt;font-size: 10.0pt;">league</span></p>
+<p>movie</p>
+<p>special</p>
+<p>series</p>
+<p>person</p>
+<p>episode</p>
+<p>game</p>
+<p>channel</p>
+<p>personseries</p>
+<p>personmovie</p>
+<p>personepisode</p>appScreen (application specific parameter indicating a specific screen to navigate to)</td>
+</tr>
+</tbody></table></div>
+<p><span style="line-height: 1.4285;"> </span></p>
+<p>When implementing deep-linking to a channel, you should first test if the channel is installed or not, because the launch command will not launch uninstalled channels. The following shows how this should be done in pseudo-code:</p>
+<p><span style="line-height: 1.4285;"> </span></p>
+<p style="margin-left: 30.0px;"><code>if  IsChannelIstalled(<em>channelID</em>) then <br>  </code><code>ECP_Command(“launch/<em>channelID</em>?<em>contentID</em>=<em>deep_link_param</em>) <br></code><code>else <br>  </code><code>ECP_Command(“install/<em>channelID</em>?<em>contentID</em>=<em>deep_link_param</em>) <br></code><code>end if</code></p>
+<p><span style="line-height: 1.4285;">Developers can test deep linking by invoking the appropriate ECP command from the command line.  For example, the install command below launches the side loaded channel on the Roku device on IP address 192.168.1.114 and passes the content ID 13234.</span></p>
+<p style="margin-left: 30.0px;"><code>curl -d '' <a class="external-link" href="http://192.168.1.114:8060/launch/dev?contentID=13234" rel="nofollow">http://192.168.1.114:8060/launch/dev?contentID=13234</a></code></p>
+<p>This example shows using the install command for uninstalled channels:</p>
+<p style="margin-left: 30.0px;"><code><span><code>curl -d '' <a class="external-link" href="http://192.168.1.114:8060/launch/dev?contentID=13234" rel="nofollow">http://192.168.1.114:8060</a></code>/install/8378?contentid=MV005011860000</span></code></p>
+<h1 id="ExternalControlGuide-3.4Keypresskeyvalues">3.4 Keypress key values</h1>
+<p>When the current screen on the Roku box includes an on-screen keyboard, any keyboard character can be sent via the keyup, keydown, and keypress commands.<br>The key parameter can either be a key name, such as the name of a button on a remote control, or a printable character value specified with the prefix "Lit_".<br><br>Printable ASCII character code values can be transmitted "as-is" with the "Lit_" prefix. For example, you can send a 'r' with "Lit_r". <br>In addition, any UTF-8 encoded character can be sent by URL-encoding it. For example, the euro symbol can be sent with "Lit_%E2%82%AC". <br><br>There are even some keys you can send that are not available on any physical remote.<br><em>Enter</em> is for completing keyboard entry fields, such as search fields. (It is not the same as Select). <br><em>Search</em> is useful for short-cutting directly to search screens.<br><br>The following are the key names that are recognized by ECP:</p>
+<pre> Home<br> Rev<br> Fwd<br> Play<br> Select<br> Left<br> Right<br> Down<br> Up<br> Back<br> InstantReplay<br> Info<br> Backspace<br> Search<br> Enter</pre>
+<p>Some Roku devices, such as Roku TVs, also support:</p>
+<pre> VolumeDown<br> VolumeMute<br> VolumeUp</pre>
+<p>On the on-screen keyboard, the string 'roku' can be sent via the following commands:</p>
+<pre>$ curl -d '' http://192.168.1.134:8060/keypress/Lit_r<br>$ curl -d '' http://192.168.1.134:8060/keypress/Lit_o<br>$ curl -d '' http://192.168.1.134:8060/keypress/Lit_k<br>$ curl -d '' http://192.168.1.134:8060/keypress/Lit_u</pre>
+<h1 id="ExternalControlGuide-3.5SecurityImplications">3.5 Security Implications</h1>
+<p>Note that with the launch command, anyone could write a program that could pass arbitrary parameters to your BrightScript channel. It is important that you validate any parameters that are passed to your program and check what they may do to your program flow. The launch command can be very powerful to provide all kinds of interaction between network devices and your program. We envision internet catalogs browsed on the internet that could instantly be watched in your channel on the Roku. The door is open to many creative uses. <br class="atl-forced-newline"> If you prefer to shut this door on your channel, you can choose to not process any passed parameters. This will mean external control programs could launch your channel, but they could not change the program flow within your channel.</p>
+<h1 id="ExternalControlGuide-3.6ExamplePrograms">3.6 Example Programs</h1>
+<p>The SDK includes a sample External Control Protocol application that requires only glibc to compile. The program is self contained in the /examples/rokuExternalControl.c file of the SDK. You can compile and run it with the following commands: <br class="atl-forced-newline"> % cd &lt;SDK Directory&gt;<br> % gcc ./examples/rokuExternalControl.c –o rokuExternalControl<br> % ./rokuExternalControl <br class="atl-forced-newline"> On Windows, it can be compiled with the following line: <br class="atl-forced-newline"> % cl /D "WIN32" rokuExternalControl.c <br class="atl-forced-newline"> The program first uses SSDP to query for Roku boxes on the local network. The first box that responds is the one that the program then sends commands to. All requests and responses are printed to stdout so that you can easily follow what the program is doing. The program next moves the cursor to the home screen and highlights the "Netflix" program. It does this by sending the Home key command and then holding down the left key for twelve seconds. Then it sends the Right key three times. After keeping the "Netflix" program highlighted for five seconds, the program launches the simplevideoplayer application with url and streamformat as keys in the roAssociativeArray passed to the Main() entry point. <br class="atl-forced-newline"> The simplevideoplayer application immediately launches the roVideoScreen when it is launched with an roAssociativeArray containing valid url and streamformat keys. <br class="atl-forced-newline"> With the External Control Protocol, you have complete control of your Roku box over the network. We can't wait to see what kind of solutions our developer community can create. The sample C program can be quickly modified to run in a variety of environments including firefox, IE, and other browser plugins, iPhone, iPad, and other mobile device environments. <br class="atl-forced-newline"> The SDK also includes a couple of java applications. There is an android remote app in examples/source/ecp_client/android_remote and a simple applications to find Roku boxes on the local LAN in examples/source/ecp_client/Roku_Finder.</p>
+<h1 id="ExternalControlGuide-3.7DIAL(DiscoveryandLaunch)">3.7 DIAL (Discovery and Launch)</h1>
+<p>The Roku platform supports the DIAL (Discovery and Launch) protocol.  DIAL is a simple network protocol for discovering first screen devices and applications from a second screen (such as a mobile iOS or Android application,) and for launching first screen applications on the first screen device from the second screen app.  In the context of the Roku platform, the first screen device is the Roku device itself.  A first screen application is a DIAL-aware channel installed on the Roku device.  Complete details of the DIAL specification can be found here: <a class="external-link" href="http://www.dial-multiscreen.org/dial-protocol-specification" rel="nofollow">http://www.dial-multiscreen.org/dial-protocol-specification</a>.</p>
+<p>Many current Roku developers are familiar with the Roku external control protocol (ECP) which includes functionality similar to DIAL.  An experienced Roku developer may thus fairly ask the question “why do I need DIAL?”  One reason is that you may already have a DIAL based second screen implementation for use with other platforms.  DIAL support on Roku means that you don’t need to add a second protocol to your current application for discovery and launch.</p>
+<p><span><a href="https://sdkdocs.roku.com/download/attachments/1611563/RokuDIALSDK.zip?version=1&amp;modificationDate=1402699594000&amp;api=v2" data-linked-resource-id="1613381" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="RokuDIALSDK.zip" data-nice-type="Zip Archive" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611563" data-linked-resource-container-version="22">The Roku DIAL SDK</a> contains detailed documentation of Roku's DIAL support, as well as BrightScript, Android, and iOS sample applications.  In DIAL parlance, the BrightScript sample is the first screen application, and the Android and iOS apps are the second screen apps.  These samples applications should help you get started with your own Roku DIAL support.</span></p>
 
                 
         
@@ -759,10 +584,10 @@ End Function]]></script>
                     <li id="comment-thread-1615487" class="comment-thread">
         <div class="comment  " id="comment-1615487">
         <p class="comment-user-logo">
-            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png"
-           alt="User icon: " title="">        </p>
+            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png" alt="User icon: " title="">        </p>
         <div class="comment-header">
-            <h4 class="author">    <span class="anonymous-user">Anonymous</span></h4>
+            <h4 class="author">    <span class="anonymous-user">Anonymous</span>
+</h4>
         </div>
         <div class="comment-body">
             <div class="comment-content wiki-content">
@@ -770,12 +595,10 @@ End Function]]></script>
             </div>
             <div class="comment-actions">
                                                 <ul class="comment-actions-secondary">
-                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615487.html#comment-1615487"
-                 id="comment-permalink-1615487"                     ><span>Permalink</span></a></li>
+                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615487.html#comment-1615487" id="comment-permalink-1615487"><span>Permalink</span></a></li>
             </ul>
                                     <ul class="comment-actions-primary">
-                                                              <li class="first comment-date"><a title="Apr 11, 2013 14:55" href="External+Control+Guide%3FfocusedCommentId=1615487.html#comment-1615487"
-                                    ><span>Apr 11, 2013</span></a></li>
+                                                              <li class="first comment-date"><a title="Apr 11, 2013 14:55" href="External+Control+Guide%3FfocusedCommentId=1615487.html#comment-1615487"><span>Apr 11, 2013</span></a></li>
             </ul>
                 </div>
         </div>
@@ -798,23 +621,21 @@ End Function]]></script>
                                 <li id="comment-thread-1615491" class="comment-thread">
         <div class="comment  " id="comment-1615491">
         <p class="comment-user-logo">
-            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png"
-           alt="User icon: " title="">        </p>
+            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png" alt="User icon: " title="">        </p>
         <div class="comment-header">
-            <h4 class="author">    <span class="anonymous-user">Anonymous</span></h4>
+            <h4 class="author">    <span class="anonymous-user">Anonymous</span>
+</h4>
         </div>
         <div class="comment-body">
             <div class="comment-content wiki-content">
-                <p>&quot;\ &quot; im sure with the escape char</p>
+                <p>"\ " im sure with the escape char</p>
             </div>
             <div class="comment-actions">
                                                 <ul class="comment-actions-secondary">
-                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615491.html#comment-1615491"
-                 id="comment-permalink-1615491"                     ><span>Permalink</span></a></li>
+                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615491.html#comment-1615491" id="comment-permalink-1615491"><span>Permalink</span></a></li>
             </ul>
                                     <ul class="comment-actions-primary">
-                                                              <li class="first comment-date"><a title="Jun 02, 2013 12:20" href="External+Control+Guide%3FfocusedCommentId=1615491.html#comment-1615491"
-                                    ><span>Jun 02, 2013</span></a></li>
+                                                              <li class="first comment-date"><a title="Jun 02, 2013 12:20" href="External+Control+Guide%3FfocusedCommentId=1615491.html#comment-1615491"><span>Jun 02, 2013</span></a></li>
             </ul>
                 </div>
         </div>
@@ -839,23 +660,21 @@ End Function]]></script>
                     <li id="comment-thread-1615488" class="comment-thread">
         <div class="comment  " id="comment-1615488">
         <p class="comment-user-logo">
-            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png"
-           alt="User icon: " title="">        </p>
+            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png" alt="User icon: " title="">        </p>
         <div class="comment-header">
-            <h4 class="author">    <span class="anonymous-user">Anonymous</span></h4>
+            <h4 class="author">    <span class="anonymous-user">Anonymous</span>
+</h4>
         </div>
         <div class="comment-body">
             <div class="comment-content wiki-content">
-                <p>URLEncode characters and it works great.  URLEncode(&quot; &quot;) == &quot;+&quot; </p>
+                <p>URLEncode characters and it works great.  URLEncode(" ") == "+" </p>
             </div>
             <div class="comment-actions">
                                                 <ul class="comment-actions-secondary">
-                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615488.html#comment-1615488"
-                 id="comment-permalink-1615488"                     ><span>Permalink</span></a></li>
+                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615488.html#comment-1615488" id="comment-permalink-1615488"><span>Permalink</span></a></li>
             </ul>
                                     <ul class="comment-actions-primary">
-                                                              <li class="first comment-date"><a title="Jun 04, 2013 18:57" href="External+Control+Guide%3FfocusedCommentId=1615488.html#comment-1615488"
-                                    ><span>Jun 04, 2013</span></a></li>
+                                                              <li class="first comment-date"><a title="Jun 04, 2013 18:57" href="External+Control+Guide%3FfocusedCommentId=1615488.html#comment-1615488"><span>Jun 04, 2013</span></a></li>
             </ul>
                 </div>
         </div>
@@ -878,10 +697,10 @@ End Function]]></script>
                     <li id="comment-thread-1615494" class="comment-thread">
         <div class="comment  " id="comment-1615494">
         <p class="comment-user-logo">
-            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png"
-           alt="User icon: " title="">        </p>
+            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png" alt="User icon: " title="">        </p>
         <div class="comment-header">
-            <h4 class="author">    <span class="anonymous-user">Anonymous</span></h4>
+            <h4 class="author">    <span class="anonymous-user">Anonymous</span>
+</h4>
         </div>
         <div class="comment-body">
             <div class="comment-content wiki-content">
@@ -889,12 +708,10 @@ End Function]]></script>
             </div>
             <div class="comment-actions">
                                                 <ul class="comment-actions-secondary">
-                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615494.html#comment-1615494"
-                 id="comment-permalink-1615494"                     ><span>Permalink</span></a></li>
+                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615494.html#comment-1615494" id="comment-permalink-1615494"><span>Permalink</span></a></li>
             </ul>
                                     <ul class="comment-actions-primary">
-                                                              <li class="first comment-date"><a title="Sep 05, 2013 02:23" href="External+Control+Guide%3FfocusedCommentId=1615494.html#comment-1615494"
-                                    ><span>Sep 05, 2013</span></a></li>
+                                                              <li class="first comment-date"><a title="Sep 05, 2013 02:23" href="External+Control+Guide%3FfocusedCommentId=1615494.html#comment-1615494"><span>Sep 05, 2013</span></a></li>
             </ul>
                 </div>
         </div>
@@ -917,10 +734,10 @@ End Function]]></script>
                     <li id="comment-thread-1615493" class="comment-thread">
         <div class="comment  focused  " id="comment-1615493">
         <p class="comment-user-logo">
-            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png"
-           alt="User icon: " title="">        </p>
+            <img class="userLogo logo anonymous" src="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/images/icons/profilepics/anonymous.png" alt="User icon: " title="">        </p>
         <div class="comment-header">
-            <h4 class="author">    <span class="anonymous-user">Anonymous</span></h4>
+            <h4 class="author">    <span class="anonymous-user">Anonymous</span>
+</h4>
         </div>
         <div class="comment-body">
             <div class="comment-content wiki-content">
@@ -928,12 +745,10 @@ End Function]]></script>
             </div>
             <div class="comment-actions">
                                                 <ul class="comment-actions-secondary">
-                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615493.html#comment-1615493"
-                 id="comment-permalink-1615493"                     ><span>Permalink</span></a></li>
+                                                              <li class="first comment-permalink"><a title="Permanent link to this comment" href="External+Control+Guide%3FfocusedCommentId=1615493.html#comment-1615493" id="comment-permalink-1615493"><span>Permalink</span></a></li>
             </ul>
                                     <ul class="comment-actions-primary">
-                                                              <li class="first comment-date"><a title="Sep 08, 2013 04:06" href="External+Control+Guide%3FfocusedCommentId=1615493.html#comment-1615493"
-                                    ><span>Sep 08, 2013</span></a></li>
+                                                              <li class="first comment-date"><a title="Sep 08, 2013 04:06" href="External+Control+Guide%3FfocusedCommentId=1615493.html#comment-1615493"><span>Sep 08, 2013</span></a></li>
             </ul>
                 </div>
         </div>
@@ -992,45 +807,7 @@ End Function]]></script>
             
             
 
-<div id="footer" role="contentinfo">
-    <section class="footer-body">
 
-                                                    
-        
-
-        <ul id="poweredby">
-            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
-            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
-            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
-            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
-        </ul>
-
-        
-
-        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-
-                    <script>
-var footer = document.getElementById('poweredby');
-footer.removeChild(footer.children[2]);
-footer.removeChild(footer.children[2]);
-
-var pDiv = document.createElement('li');
-pDiv.className='noprint';
-pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
-footer.appendChild(pDiv);
-</script>
-
-<script>
-    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
-    if ( modinfo != undefined ) {
-        modinfo.style.display = "none" ;
-    }
-
-</script>
-
-        
-    </section>
-</div>
 
     </div>
 </body>

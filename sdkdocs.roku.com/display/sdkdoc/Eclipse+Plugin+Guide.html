@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Eclipse Plugin Guide - Roku SDK Documentation - Developer Documentation</title>
 
         
@@ -21,9 +22,7 @@
 
 
 <meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
-<script type="text/javascript">
-        var contextPath = '';
-</script>
+
 
     
 
@@ -70,21 +69,9 @@
     <link rel="shortcut icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
     <link rel="icon" type="image/x-icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
 
-<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation">
 
-<script>
-window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
-</script>
+
 <link type="text/css" rel="stylesheet" href="../../s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css%3Fbuild-number=6150.css" media="all">
 <!--[if lt IE 9]>
 <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
@@ -99,43 +86,27 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <link type="text/css" rel="stylesheet" href="../../s/35e02545dc3a2fc430eccbb927fe7227-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/css/theme.doc/batch.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/3.7.2/_/download/batch/confluence.extra.information:information-plugin-adg-styles/confluence.extra.information:information-plugin-adg-styles.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
-<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
-<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
-<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB" ></script>
+<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150"></script>
+<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true"></script>
+<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB"></script>
 
 
         
     
 
         
-        <meta name="ajs-site-title" content="Developer Documentation" />
+        <meta name="ajs-site-title" content="Developer Documentation">
 
     
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-67357911-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    
 
 <!-- Google Tag Manager -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <!-- End Google Tag Manager -->
 
 <!-- New Relic -->
-<script type="text/javascript">
-window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
-;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
-</script>
+
 <!-- End New Relic -->
 
     
@@ -146,11 +117,10 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 </head>
 
-<body             onload="placeFocus()"
-     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+<body onload="placeFocus()" id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
 
         
-            <div id='stp-licenseStatus-banner'></div>
+            <div id="stp-licenseStatus-banner"></div>
     <div id="full-height-container">
     <div id="header-precursor">
         
@@ -163,12 +133,14 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 <header id="header" role="banner">
-    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary">
+<h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation"><span class="aui-header-logo-text">Developer Documentation</span></a></h1>
+<ul class="aui-nav">
                             <li>
             
         
         
-<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+<a id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action" class=" aui-nav-imagelink" title="Spaces">
             <span>Spaces</span>
     </a>
         </li>
@@ -180,32 +152,32 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     </a>
     <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
                     <div class="aui-dropdown2-section">
-                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                <ul id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
                                             <li>
     
             
-<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+<a id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    " title="Browse pages in the Roku SDK Documentation space">
         Pages
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+<a id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    " title="Browse blogs in the Roku SDK Documentation space">
         Blog
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+<a id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    " title="Browse labels in the Roku SDK Documentation space">
         Labels
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+<a id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    " title="Browse additional space functions in the Roku SDK Documentation space">
         Space Operations
 </a>
 </li>
@@ -217,292 +189,35 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                         <li class="aui-buttons">
             </li>
     </ul>
-</div><div class="aui-header-secondary"><ul class="aui-nav">
-            <li>
-        
-    
-            
-<a  id="doctheme-anchor" href="Eclipse+Plugin+Guide.html#"  class=" aui-nav-imagelink"   title="">
-            <span></span>
-    </a>
-    </li>
-                    <li>
-        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
-    </li>
-        <li>
-            
-        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Eclipse+Plugin+Guide.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
-        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
-    </a>
-    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                    <div class="aui-dropdown2-section">
-                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
-                                            <li>
-        
-            
-<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
->
-        Online Help
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="keyboard-shortcuts-link" href="Eclipse+Plugin+Guide.html#" class="    "      title="View available keyboard shortcuts" >
-        Keyboard Shortcuts
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
-        Feed Builder
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
-        What’s new
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="gadget-directory-link" href="Eclipse+Plugin+Guide.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
-        Available Gadgets
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
-        About Confluence
-</a>
-</li>
-                                    </ul>
-            </div>
-            </nav>
-    
-    </li>
-        <li>
-                
-    
-    </li>
-        <li>
-            
-    </li>
-        <li>
-                                            <li>
-        
-            
-<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FEclipse%2BPlugin%2BGuide" class="   user-item login-link "      title="" >
-        Log in
-</a>
-</li>
-                        
-    </li>
-    </ul>
-</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+</div></div>
+<!-- .aui-header-inner--></nav><!-- .aui-header -->
     <br class="clear">
 </header>
 
     <div id="splitter">
-    <div id="splitter-sidebar"  class="padding-div" >
+    <div id="splitter-sidebar" class="padding-div">
         
 
                     
     
 
 
-<div class="plugin_pagetree">
 
-        
-        
-    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
-        <div class="plugin_pagetree_children">
-        </div>
-    </ul>
-
-    <fieldset class="hidden">
-        <input type="hidden" name="treeId" value="">
-        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
-        <input type="hidden" name="treePageId" value="1611567">
-
-        <input type="hidden" name="noRoot" value="false">
-        <input type="hidden" name="rootPageId" value="1611307">
-
-        <input type="hidden" name="rootPage" value="">
-        <input type="hidden" name="startDepth" value="0">
-        <input type="hidden" name="spaceKey" value="sdkdoc" >
-
-        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
-        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
-        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
-        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DEclipse%2BPlugin%2BGuide">
-        <input type="hidden" name="mobile" value="false">
-
-                <fieldset class="hidden">
-                                                <input type="hidden" name="ancestorId" value="1611307">
-                                    </fieldset>
-    </fieldset>
-</div>
 
 
 
             </div>
     <div id="splitter-content">
 
-        <script>InitDocThemeSidebar()</script>
+        
 
                         
             
-<div id="main"  class="aui-page-panel" >
+<div id="main" class="aui-page-panel">
     <div id="main-header">
         
         
-    <div id="navigation" class="content-navigation view">
-                    <ul class="ajs-menu-bar">
-                                            
-        <li class="normal ajs-menu-item">
-        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="Eclipse+Plugin+Guide.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
-            <span>
-                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
-                                
-            </span>
-        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-primary"                         class="section-primary first">
-                                                    <li>
-
     
-        
-                                            
-    
-    
-    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=1611567" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
-                <span>
-                        A<u>t</u>tachments (12)
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=1611567" rel="nofollow" class="action-view-history"   title="">
-                <span>
-                        Page History
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611567" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
-                <span>
-                        Restrictions
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-secondary"                         class="section-secondary">
-                                                    <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611567" rel="nofollow" class="action-view-info"   title="">
-                <span>
-                        Page Information
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-            
-                                            
-    
-    
-    <a  id="view-resolved-comments" href="Eclipse+Plugin+Guide.html#" rel="nofollow" class=""   title="">
-                <span>
-                        Resolved comments
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611567" rel="nofollow" class=""   title="Link to this Page">
-                <span>
-                        Link to this Page…
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=1611567#selectedPageInHierarchy" rel="nofollow" class=""   title="">
-                <span>
-                        View in Hierarchy
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=1611567" rel="nofollow" class="action-view-source popup-link"   title="">
-                <span>
-                        View Source
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=1611567" rel="nofollow" class=""   title="">
-                <span>
-                        Export to PDF
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=1611567" rel="nofollow" class="action-export-word"   title="">
-                <span>
-                        Export to Word
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                    </div>
-    </li>
-            </ul>
-    </div>
 
         
                 <div id="title-heading" class="pagetitle with-breadcrumbs">
@@ -515,15 +230,17 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     <ol id="breadcrumbs">
                                         
                         
-        <li class="first" >
+        <li class="first">
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
                                                                     
                         
-        <li>
+        </li>
+<li>
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
-                                                    </ol>
+                                                    </li>
+</ol>
 
 
                 </div>
@@ -581,27 +298,9 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 
-        <script type="text/x-template" title="searchResultsGrid">
-    <table class="aui">
-        <thead>
-            <tr class="header">
-                <th class="search-result-title">Page Title</th>
-                <th class="search-result-space">Space</th>
-                <th class="search-result-date">Updated</th>
-            </tr>
-        </thead>
-    </table>
-</script>
-<script type="text/x-template" title="searchResultsGridCount">
-    <p class="search-result-count">{0}</p>
-</script>
-<script type="text/x-template" title="searchResultsGridRow">
-    <tr class="search-result">
-        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
-        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
-        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
-    </tr>
-</script>
+        
+
+
         
     
     
@@ -627,7 +326,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-page-restrictions-hidden" href="Eclipse+Plugin+Guide.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+    <a id="content-metadata-page-restrictions-hidden" href="Eclipse+Plugin+Guide.html#" rel="nofollow" class="hidden" title="Unrestricted">
                 <span>
                         
         </span>    </a>
@@ -639,7 +338,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=1611567&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment"  accessKey="t"  title="12 attachments">
+    <a id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=1611567&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment" accesskey="t" title="12 attachments">
                 <span>
                         
         </span>    </a>
@@ -652,11 +351,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     
         
             
-            Created by <span class='author'>     <a href="../~jbush.html"
-                       class="url fn"
-                            >Jeff Bush</a></span>, last modified by <span class='editor'>     <a href="../~breid.html"
-                       class="url fn"
-                            >Bill Reid</a></span> on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=1611567&amp;selectedPageVersions=15&amp;selectedPageVersions=16'>Mar 10, 2015</a>
+            Created by <span class="author">     <a href="../~jbush.html" class="url fn">Jeff Bush</a></span>, last modified by <span class="editor">     <a href="../~breid.html" class="url fn">Bill Reid</a></span> on <a class="last-modified" title="Show changes" href="https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=1611567&amp;selectedPageVersions=15&amp;selectedPageVersions=16">Mar 10, 2015</a>
                 </li>
         </ul>
     </div>
@@ -672,7 +367,175 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
         <div id="main-content" class="wiki-content">
                            
-        <h1 class="wiki-content" id="EclipsePluginGuide-1.0Installation">1.0 Installation</h1><p class="wiki-content">First, you will need to install eclipse. We have tested against the Helios release v3.6 and this should be considered the minimum eclipse version supported. It is compatible with releases up through v4.2 Juno.  We have only tested against the Eclipse IDE for Java Developers so please install that version.</p><p class="wiki-content">When installing on Linux, in order to install to a location shared by multiple users, you must be an administrator. So please su before launching eclipse and doing the install. If you are not the super user, you may get the following errors when trying to install the plugin: </p><p class="wiki-content" style="margin-left: 30.0px;">Cannot complete the install because one or more required items could not be found.<br/>Software currently installed: Shared profile 1.0.0.1316138634362 (SharedProfile_epp.package.java 1.0.0.1316138634362)<br/>Missing requirement: Shared profile 1.0.0.1316138634362 (SharedProfile_epp.package.java 1.0.0.1316138634362) requires 'org.maven.ide.eclipse [1.0.100.20110804-1717]' but it could not be found</p><p class="wiki-content">If you are trying to run on eclipse 3.7 Indigo or later, you will have to add a couple of other update sites to get the DLTK 2.0 dependencies automatically resolved. These update sites are:<a class="external-link" href="http://download.eclipse.org/modeling/emf/updates/releases/" rel="nofollow">http://download.eclipse.org/modeling/emf/updates/releases/</a> and <a class="external-link" href="http://download.eclipse.org/technology/dltk/updates/" rel="nofollow">http://download.eclipse.org/technology/dltk/updates/</a> </p><p class="wiki-content">Under the menu item Help-&gt;Install New Software you will get the following dialog where you can enter the update site: <a class="external-link" href="http://rokudev.roku.com/updates" rel="nofollow">http://rokudev.roku.com/updates</a>. In the dialog, select the BrightScript feature and be sure that &quot;Contact all update sites during install to find required software&quot; is selected. Then click on &quot;Next&quot;. </p><p class="wiki-content"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig1.png?version=1&amp;modificationDate=1367965305000&amp;api=v2" data-image-src="/download/attachments/1611567/fig1.png?version=1&amp;modificationDate=1367965305000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606604" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig1.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p><p class="wiki-content"><br class="atl-forced-newline"/>Select BrightScript Core and click &quot;Next&quot; <br class="atl-forced-newline"/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig2.png?version=1&amp;modificationDate=1367966467000&amp;api=v2" data-image-src="/download/attachments/1611567/fig2.png?version=1&amp;modificationDate=1367966467000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606605" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig2.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span> <br class="atl-forced-newline"/><br class="atl-forced-newline"/>Review and accept the license: <br class="atl-forced-newline"/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig3.png?version=1&amp;modificationDate=1367966483000&amp;api=v2" data-image-src="/download/attachments/1611567/fig3.png?version=1&amp;modificationDate=1367966483000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606606" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig3.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p><p class="wiki-content"><br class="atl-forced-newline"/>Once the Brightscript plugin is installed, you'll be able to run it as a regular user. After launching eclipse, you will click on arrow to the far right of the screen to enter the functional Workbench: <br class="atl-forced-newline"/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig4.png?version=1&amp;modificationDate=1367966497000&amp;api=v2" data-image-src="/download/attachments/1611567/fig4.png?version=1&amp;modificationDate=1367966497000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606622" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig4.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p><h1 class="wiki-content" id="EclipsePluginGuide-2.0RuntheBrightScriptPlugin">2.0 Run the BrightScript Plugin</h1><p class="wiki-content">Open the BrightScript Perspective by selecting Window-&gt;Open Perspective-&gt;Other… <br class="atl-forced-newline"/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig5.png?version=1&amp;modificationDate=1367966512000&amp;api=v2" data-image-src="/download/attachments/1611567/fig5.png?version=1&amp;modificationDate=1367966512000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606623" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig5.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span><br/><br class="atl-forced-newline"/>If you select File-&gt;New-&gt;BrightScript Project you can bring up the new project wizard and select from a few sample project templates on which to base your project. We encourage you to support as many regional channel stores as you can (that you have content rights for). The Brightscript plugin has integrated translation services on the web to help with the localization effort.</p><p class="wiki-content"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig6.jpg?version=1&amp;modificationDate=1367966526000&amp;api=v2" data-image-src="/download/attachments/1611567/fig6.jpg?version=1&amp;modificationDate=1367966526000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606624" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig6.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p><p class="wiki-content"> </p><p class="wiki-content">The editor does syntax highlighting. At this point, you may see some false positives on syntax errors. We will improve the syntax checker in the future. <br class="atl-forced-newline"/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig7.png?version=1&amp;modificationDate=1367966546000&amp;api=v2" data-image-src="/download/attachments/1611567/fig7.png?version=1&amp;modificationDate=1367966546000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606625" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig7.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span> .<br/>In order to install your project onto a Roku, select File-&gt;Export which will side load your project onto a box in developer mode or create a package. The Export wizard will also offer to generate a new key and save your packaging key password. <br class="atl-forced-newline"/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig8.png?version=1&amp;modificationDate=1367966559000&amp;api=v2" data-image-src="/download/attachments/1611567/fig8.png?version=1&amp;modificationDate=1367966559000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606620" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig8.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span> <br class="atl-forced-newline"/><br class="atl-forced-newline"/>The console window has a drop down list of Roku boxes on your network. Once you select one, the plugin will telnet to that box using port 8085 so you can debug in an eclipse window. <br class="atl-forced-newline"/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig9.png?version=1&amp;modificationDate=1367966572000&amp;api=v2" data-image-src="/download/attachments/1611567/fig9.png?version=1&amp;modificationDate=1367966572000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606621" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig9.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p><h1 class="wiki-content" id="EclipsePluginGuide-3.0BrightScriptLanguageDocumentationGenerator">3.0 BrightScript Language Documentation Generator </h1><p class="wiki-content"><span>Like many other development environments, the BrightScript plug in can produce in-line documentation through the simple use of special tags in source code comments.  An example of the kind of hover help documentation that can be generated is shown below.</span></p><p class="wiki-content"><span><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/docgen.jpg?version=1&amp;modificationDate=1401482755000&amp;api=v2" data-image-src="/download/attachments/1611567/docgen.jpg?version=1&amp;modificationDate=1401482755000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1613457" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="docgen.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></span><span>.</span></p><p class="wiki-content"><span><span>The complete specification and comment syntax for the documentation generation system, called BrightScriptDoc, <a href="https://sdkdocs.roku.com/download/attachments/1611567/DocumentationGenerator.pdf?version=1&amp;modificationDate=1401483207000&amp;api=v2" data-linked-resource-id="1613467" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="DocumentationGenerator.pdf" data-nice-type="PDF Document" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16">can be found at this link.</a></span></span></p><h1 class="wiki-content" id="EclipsePluginGuide-4.0ReleaseNotes4/10/2012">4.0 Release Notes 4/10/2012</h1><p class="wiki-content">ll Summary:</p><p class="wiki-content">This release concentrated on improvements to several areas of the plugin, <br/>including but not limited to:<br/>a) Any known bugs that could cause hangs or visible stacktraces in the error log<br/>b) Roku box discovery (SSDP)<br/>c) The Debug Console<br/>d) The BrightScript language parser<br/>e) User preferences<br/>f) Logging<br/>g) Manifest editing and validation</p><p class="wiki-content">The first 4 items (a-d) above were top priorities given potential impact to the usability of the plugin.<br/>The remaining items were addressed to improve the overall user experience.</p><p class="wiki-content">Both (b) and (c) are of particular note, since many of the issues reported on the Eclipse plugin thread have to do with the usability<br/>and accuracy of the Roku boxes IP address drop-down list in the Debug Console.</p><p class="wiki-content">(g) Manifest editing and validation - is also something worth checking out. <br/>The manifest file now has an associated multipage editor, which adds a form-based validating editor for the manifest, which synchronizes with the<br/>pre-existing text editor. Errors and warnings related to the manifest are a bit more clearly marked in the form-based editor page, and total known manifest property names are clearly shown. Note that eventually, the form fields will be enhanced with hover-help text derived from the SDK documentation, to further assist new developers in understanding the manifest contents. Also in the form editor are project browse buttons/dialogs for each of the icon file attributes. The dialogs show a treeview of the relevent project directories and files for icon selection. Only *.jpg and *.png files (and the folders in the project that hold them) are shown, making it easier to ensure the icon file path names in the manifest are correct. Verification of the icon file paths (along with all the other manifest validation checks) is also performed as part of the manifest validation process, which happens both in the editor and in the project builder using code that is now common to both areas.</p><p class="wiki-content"><br/>Aside from these areas, the following enhancements are small but significant:</p><p class="wiki-content">a) Add the error log view to the BrightScript perspective<br/>Adding the error log to the BrightScript perspective should improve reporting of errors by the developer community<br/>in both speed and accuracy, since most coding (not related to design or lack of feature) bugs should show up in some way in the error log.<br/>Logging, in general, was overhauled and specific message's log-levels and log-level user preferences and defaults were adjusted to ensure the error log<br/>is not filled up with debug and trace level messages by default, making the perspective-default exposure of the error log view practical at least as it relates to the BrightScript plugin.</p><p class="wiki-content"><br/>b) Installation - add dependency update sites to plugin feature manifest<br/>By adding the dependency update sites to the feature manifest, the additional update sites get added to the user's update sites list automatically the first time the Roku update site gets added manually by the user.</p><p class="wiki-content">Note however, those added sites are not enabled by default, so the user must still manually enable them before attempting the plugin install. <br/>This change slightly speeds up and reduces errors in the initial install process, since the user no longer needs to type in the URL and label of the additional dependency update sites (DLTK and EMF) - they just need to enable them once the Roku update site has been manually added and enabled.</p><p class="wiki-content">Bugfixes:</p><div class="wiki-content"><ul><li>File-&gt;Export-&gt;BrightScript-&gt;BrightScript Deployment non-response/null pointer</li><li>IDE hangs on startup when Project Explorer is open and 1 or more open BrightScript projects</li><li>Manifest is overwritten with plugin default when importing project files from another location</li><li>Telnet window IP address drop-down is spastic</li><li>Default values for code and comment folding prevent folding from working out of the box</li><li>Dropdown list of rokus for the console has items truncated</li><li>SSDP unicast response not seen in response to SSDP SEARCH query</li><li>Language parser - Add positive and negative test cases for BrightScript language parser module</li><li>Language parser - &quot;REM&quot; comment keyword embedded in sub or function name causes odd parser issues</li><li>Language parser - incorrectly marks syntax errors when parens and brackets are adjacent</li><li>Language parser - Reserved/key words that are also component method names are incorrectly flagged as syntax errors</li><li>Language parser doesn't know about the &quot;?&quot; shortcut for print</li><li>Syntax highlighter and language parser don't know about the &quot;Library&quot; keyword and syntax</li><li>Syntax highlighting is incorrect when string &quot;REM&quot; is encountered anywhere in a line</li><li>Code folding - Stacktrace in code folding routine</li><li>Todo tasks - Nullpointer exception when activating the todo task preference page</li></ul></div><p>Bugs determined to be Eclipse issues that can't be worked-around in code:</p><ul><li>Uninstalling plugin leaves behind old &lt;BrightScript&gt; perspective in menu</li></ul><p>Enhancements:</p><ul><li>Add plugin-level framework for user selectable preferences for log level by feature group</li><li>Add the error log view to the BrightScript perspective</li><li>Add user selectable preferences for Discover (SSDP) - logging, time-out, etc.</li><li>Add user selectable preferences for Debug Console - color, connect timeout, etc.</li><li>Create a custom Roku manifest editor</li></ul><p>Installation - add dependency update sites to plugin feature manifest<br/><br/></p><h1 id="EclipsePluginGuide-ReleaseNotes9/10/2012">Release Notes 9/10/2012</h1><p> </p><p>A major new feature set supporting channel localization was added in this release.  See the enhancements section below for a list of localization related features. </p><p>Some additional notes about the new channel localization support:</p><ul><li>Many of these localization features have associated user preferences pages (Windows-&gt;Preferences-&gt;BrightScript-&gt;Localization). </li><li>Each of the web translation services mentioned below also has its own separate user preferences page under the main localization page. </li><li>A new context (aka popup) sub-menu for localization actions has been added and is available for any item in a BrightScript project. </li><li>The localization context menu action taken will depend on the location of the file or directory selected:  Any item selected inside a specific locale's folder (including the folder itself) will cause that action to happen just for that locale.  Any item selected elsewhere in a BrightScript project will cause the action to happen for all locales folders already created within the project.  Any locale folders that do not correspond to a currently supported locale will be ignored.</li></ul><p>Additionally, this release focused on bugfixes and enhancements for several existing areas:</p><ol><li>Language Parser</li><li>Debug console</li><li>Manifest</li></ol><p><strong>BUGFIXES:</strong></p><p> </p><ul><li>Project templates should compile and run without errors</li><li>Debug Console - Heap OutOfMemoryError occurs if console accumulates enough output</li><li>Editor - Change of syntax color does not apply to already open editors</li><li>Language Parser - &quot;Stop&quot; cannot be used as a method name of a component       </li><li>Language Parser - Allow no-argument Print statements   </li><li>Language Parser - Allow paren'd sub-expressions in compound (dot) expressions              </li><li>Language Parser - Allow reserved words as keys in associative arrays</li><li>Language Parser - Empty For loops cause syntax error      </li><li>Language Parser - Empty If or Else blocks not allowed (when Else is present)         </li><li>Language Parser - Empty While loops cause syntax error                 </li><li>Language Parser - expression processing broken when functions are mixed with operator based expressions on the same line       </li><li>Language Parser - Mod operator keyword is not recognized          </li><li>Language Parser - NULL cannot be used as variable name               </li><li>Language Parser - The String(n As Integer, character As String) and Stringi methods aren't recognized       </li><li>Language Parser - undocumented endfor and endwhile cause syntax errors        </li><li>Language parser and Syntax highlighter don't know about the &quot;Library&quot; keyword and syntax         </li><li>Manifest Editor - Do not flag icon and splash values as warning or errors for screensavers               </li><li>Manifest Editor - entries representing binary items set to true/false but should instead set to 1/0           </li></ul><p><strong>ENHANCEMENTS:</strong><strong>  </strong></p><ul><li>Localization - Add auto-generation of translations.xml file source tags from scanning brs files for tr calls   </li><li>Localization - add localization checking to the BrightScript builder                </li><li>Localization - Add locale selection options to &quot;new project&quot; wizard that will automatically build directories and files to support a localized channel for 1 or more of the currently supported locales</li><li>Localization - add localization support to the manifest editor         </li><li>Localization - Add context menu items and new project wizard support for auto-translation of locale manifest entries: title, subtitle, and screensaver_title</li><li>Localization - Add context menu options for import and export of translations to/from TMX format           </li><li>Localization - Add support for machine translation calls to web-based translation services (general support)</li><li>Localization - Add support for machine translation calls to web-based translation service google translate               </li><li>Localization - Add support for machine translation calls to web-based translation service microsoft translator (aka bing translate)     </li><li>Localization - Add support for machine translation calls to web-based translation service mymemory.translated.net                                   </li><li>Localization - add syntax parsing and colorization support for new localization functions (tr, GetLocalizedAsset, GetPluralString)                  </li><li>Debug Console - Add &quot;Roku IP&quot; label for ip selection drop-down                 </li><li>Debug Console - Add a connect/disconnect toggle button to console toolbar          </li><li>Language Parser - Reparse source files for syntax checking as user types (delayed action)            </li><li>Manifest Editor - Add splash screen manifest settings support     </li><li>Manifest Editor - Allow unknown (to parser) user-entered props in text tab to be persistent between transitions to/from overview tab      </li><li>Manifest Editor - display description from docs in tooltip for for each manifest var in overview form       </li></ul><h1 id="EclipsePluginGuide-ReleaseNotes12/17/2012">Release Notes 12/17/2012</h1><p>This release focused primarily on adding support for editor code folding, improved language parsing, and laying the foundation of a type system.</p><p>The new Code folding features include new user preference settings and editor support for subs, function, loops, and if blocks.</p><p>While not listed below, one of the first visible benefits of the type system foundation is an initial improvement in the code assist and inline documentation display features.<br/>While the code editor has focus, hitting CTRL-Space will invoke the code assist window, which now includes in the list all global functions (in addition to the previous list of language keywords)<br/>along with the documentation window containing documentation for the currently selected global function. <br/>(Note that currently code assist intentionally does not respond while in the middle of a &quot;dot expression&quot; - this feature will be added in the next release in order to support code assist and docs display for <br/>components, interfaces, and events).</p><p><br/>Bugfixes:</p><p>Export Wizard - Very first run of export wizard after first plugin installation does not autofill the zipfile name<br/>Export Wizard - Top level locale folder not auto-selected when exporting a project<br/>Language Parser - a variable reference standing alone by itself outside of any valid statement is not flagged as a error<br/>Language Parser - Empty For loops cause syntax error<br/>Language Parser - Empty While loops cause syntax error<br/>Localization - Update translations context menu option fails with stacktrace<br/>New Project Wizard - Error when selecting locales</p><p>Enhancements:</p><p>Code Folding - Add support for associative arrays and ordinary arrays<br/>Code Folding - Add support for For Loops<br/>Code Folding - Add support for if/then/else blocks<br/>Code Folding - Add support for Subs and Functions<br/>Code Folding - Add support for While Loops<br/>Editor - Make double-click only select the surrounding brightscript word, not the locale language word<br/>Export Wizard - Add persistent checkbox for zip file overwrite response<br/>Export Wizard - Remember per-project user selected dirs and files between export runs<br/>Language Parser - BrightScript language parser should recover at least at beginning of new sub or function</p><h1 id="EclipsePluginGuide-ReleaseNotes5/16/2013">Release Notes 5/16/2013</h1><p>While there where several unrelated bugfixes and new features, this release focused primarily on finishing the foundation of the type system and improving other feature groups that benefit from the expanded type system.</p><p>The type system is the basis of other feature groups including autocompletion (code assist), hover docs, and various type-related parse and build-time checks.</p><p>The type system had previously provided the knowledge of BrightScript global functions, but has been expanded to include Components, Interfaces, Events, and each of their associated functions and subs. The embedded docs (used in hover and autocompletion) for each of these items are a work-in-progress and will be improved over the next few releases.</p><p>Autocompletion is now invoked automatically after a short delay in typing (user preference, defaults to 200ms), when the last character typed is a dot (&quot;.&quot;). The manual invocation of autocompletion at any point is still available via CTRL-Space. The relevant type system additions (interfaces, functions/subs) now show up in the autocompletion suggestions list window, along with their docs in the associated docs window. Additionally, the suggestions list includes variables defined in the current function/sub, including associative array member variables.</p><p>Hover docs - A documentation window will display when you hover the cursor over most variables function/sub calls, interface references, etc.... Note: there are several known bugs related to the new type system that sometimes prevent this from happening.</p><p>The docs processing has been improved with added support for annotation tags, similar to the docs annotation systems used by other languages (e.g. javadocs, doxygen, etc). <br/>Both the built-in type system and user code (i.e. functions/subs and variables) will be able to use these tags. More details on this topic in the coming releases as specifics are finalized.</p><p>The Debug console usability has been improved in a few ways. The long-standing cursor positioning bug has been fixed - the cursor should now be automatically and correctly shown at the end of the console output. The left arrow is also now prevented from moving into the prompt and output areas, although you may still manually place the cursor there for cut/paste purposes.</p><p>The Debug console now includes simple command history support. The up and down arrows move thru the command history stack. User-preferences for the command history size (defaults to 1000) and whether or not to persist across sessions (defaults to false) have been added.</p><p>Task tags (TODO, FIXME, user-defined, etc.) are now working as expected.</p><p><br/>Bugfixes:</p><p>Code folding - &quot;initially folding&quot; options are ignored<br/>Autocompletion - does not recognize interface names in already typed dot expression<br/>Autocompletion - fails when item to be completed is the last line (or part of last statement) of a function/sub<br/>Autocompletion - suggestions list does not include interface names<br/>Debug Console - Cursor incorrectly is always at the beginning of the line<br/>Language Parser - GetGlobalAA global function missing from parser grammar<br/>Language Parser - Some global function calls cause editor open failure with nullpointerexception<br/>Selection Engine - Highlighting a function reference and then selecting Show in-&gt; Outline View does not do anything<br/>Selection Engine - Open Declaration does not do anything<br/>TODO tasks don't show up in the Task view<br/>Type system - Erroneous type func/sub call error - says func/sub must be disambiguated by interface name, when the name matches but not the signatures do not<br/>Type System - Non-Windows platforms get stacktrace (NullPointerException) when attempting to open BrightScript source editor</p><p>Enhancements:</p><p>Debug Console - Add support for command history recall<br/>Docs system - Add support for docs annotation tags to improve help display<br/>Editor - Add line number display to left-hand margin<br/>Export Wizard - Improve error handling and error message for failed connections and provide exposed user preferences for each type of connection<br/>Language Parser - Add context-specific, fine-grained error recovery to parser<br/>Language parser - Add syntax checking, code completion, and help support for all pre-defined components<br/>Language parser - add type inference system to support type-related parse and build-time error checking and warning generation<br/>New Resource Wizards - Add a &quot;New BrightScript File&quot; wizard and menu entry<br/>Type System - Add a user preference to determine whether or not to perform type related warning/error checks</p><h1 id="EclipsePluginGuide-ReleaseNotes6/27/2013">Release Notes 6/27/2013</h1><p><span>This release addresses various bug fixes in the plugin.</span><br/><br/><br/><span>Bugfixes:</span><br/><span>Type System - use of ifAssociativeArray and ifEnum methods in any return expression beginning with m. cause all .brs source editors in a project to fail</span><br/><span>Type System - partial addition to support tracking specific event types expected on specific roMessagePort instances</span><br/><span>Export to BrightScript errors before IP field entry is complete</span><br/><span>Docs system - hypertext links embedded in the documentation html will not respond to clicks</span><br/><span>Docs system - Add support for docs window toolbar buttons: forward, backward, open declaration</span><br/><span>Docs system - Add support for field comments on same line</span><br/><span>Search - References searching doesn't return any results</span></p><p><span><br/></span></p><h1 id="EclipsePluginGuide-ReleaseNotes9/30/2013">Release Notes 9/30/2013</h1><p><span>This release is a large update containing bugfixes and enhancements for the communications sub-system, type sub-system, language parser, and export wizard.</span><br/><br/><span>Support for the new developer mode username/password authentication is in place, but is not used unless a given Roku box requires it ( i.e. firmware 5.2 or later ).</span><br/><br/><span><span><span style="color: rgb(191,0,0);">It is important to note that the plugin now requires Eclipse to be running under Java 1.7 or higher. If Eclipse's Java version is lower than 1.7, the plugin will be disabled.</span></span></span><br/><span>Non-compliance with the Java version requirement does not prevent plugin installation or Eclipse startup, but will result in no BrightScript plugin features being visible, including the BrightScript perspective.</span><br/><span>If you require an older version of Java as your machine default, you may still point any Eclipse instance to a different Java installation, by using the -vm argument in the eclipse.ini file (see Eclipse's help for details).</span><br/><br/><span>Enhancements:</span><br/><span>Comms - 5.2 Firmware Requires Username and Password for all to-box HTTP communications</span><br/><span>Comms - Adjustments to socket timeouts and enhanced language for adjusting the values</span><br/><span>Export wizard - Add user option for per-project auto-increment version number in manifest for each run</span><br/><span>Export Wizard - Automatically refresh project explorer after zipfile creation and package file creation</span><br/><span>Export Wizard - Use ECP to send &quot;Home&quot; keypress prior to start of sideload/package operation to prevent unnecessary timeouts and related errors</span><br/><span>Type system - Change single-valued type system to multi-valued type system with distinct single declared and multiple possibles</span><br/><br/><span>Bugfixes:</span><br/><span>Plugin dependencies - Change Java minimum requirement to 1.7 to avoid Java memory management bug</span><br/><span>Export Wizard - IP addresses typed in manually (or an empty address) are not checked for validity before attempting HTTP operations</span><br/><span>Export Wizard - Nullpointer exception and partial localization checks failure if 1 or more locale subfolders does not exactly name match one of the supported locales</span><br/><span>Export Wizard - Manually entered Roku Box IP addresses aren't persistent in either Export wizard or Debug console</span><br/><span>Export Wizard - Unexpected error while retrieving package file</span><br/><span>Language Parser - Add Function as a valid explicit parameter and return type</span><br/><span>Language Parser - Anonymous Functions with empty bodies cause NullpointerException during parsing, causing source files to not open in BrightScript editor</span><br/><span>Type System - Several type-related checks ignore user preference &quot;perform type checks&quot;</span><br/><span>Type System - AA var returned from func/sub calls don't contain their members</span><br/><span>Type System - Known callers check returns a false positive when all callers are associative arrays</span><br/><span>Type System - Return type check incorrectly sets return type to void if type of return expression is unknown</span><br/><span>Type System - Use of ifAssociativeArray and ifEnum methods in any return expression beginning with m. cause all .brs source editors in a project to fail</span></p><h1 id="EclipsePluginGuide-ReleaseNotes11/12/2013">Release Notes 11/12/2013</h1><p>This is a minor release containing bug fixes.  The build number is 1.0.0.20131029810</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><p class="title">Note</p><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p><span style="color: rgb(191,0,0);">It is important to note that the plugin now requires Eclipse to be running under Java 1.7 or higher. If Eclipse's Java version is lower than 1.7, the plugin will be disabled.</span><br />Non-compliance with the Java version requirement does not prevent plugin installation or Eclipse startup, but will result in no BrightScript plugin features being visible, including the BrightScript perspective.<br />If you require an older version of Java as your machine default, you may still point any Eclipse instance to a different Java installation, by using the -vm argument in the eclipse.ini file (see Eclipse's help for details).</p></div></div><p>Enhancements:<br/><span style="color: rgb(0,0,0);">- Export Wizard - Added option to automatically open and connect a debug console upon successful install<br/><span style="color: rgb(0,0,0);">- Code Folding - Added support for anonymous functions</span> </span></p><p>Bugfixes:<br/><span style="color: rgb(0,0,0);">- Bug fixes to correct exceptions and errors in SSDP discovery routines</span><br/><span style="color: rgb(0,0,0);">- Export Wizard - Corrects issue of zip and pkg files saved in &quot;out&quot; dir first time, but root dir all subsequent times</span><br/><span style="color: rgb(0,0,0);">- Export Wizard - Corrects issue where current package field is not populated even if there is a current package</span><br/><span style="color: rgb(0,0,0);line-height: normal;font-size: 1.8em;font-weight: bold;"> </span></p><h1 id="EclipsePluginGuide-ReleaseNotes1/7/2014">Release Notes 1/7/2014</h1><p>This is a minor release containing bug fixes.  <span style="line-height: 13.0pt;font-size: 10.0pt;">The build number is </span><span style="line-height: 13.0pt;font-size: 10.0pt;">1.0.0.201312101034</span></p><p><span>Bugfixes:<br/><span style="color: rgb(0,0,0);">- Minor bug fixes for BrightScript Doc parser</span></span></p><h1 id="EclipsePluginGuide-ReleaseNotes6/27/2014"><span><span style="color: rgb(0,0,0);">Release Notes 6/27/2014</span></span></h1><p><span><span style="color: rgb(0,0,0);">This is a large release containing a number of enhancements.  The build number is 1.0.0.201406201331.</span></span></p><p><span><span style="color: rgb(0,0,0);">Enhancements:</span></span></p><p><span><span style="color: rgb(0,0,0);">The Deployment preferences screen now let's you select file extensions of files to include in the channel deployment by default.</span></span></p><p><span><span style="color: rgb(0,0,0);">Added hyperlinking for error code/text in debugger output to a browser window for expanded help text about error.</span></span></p><p><span><span style="color: rgb(0,0,0);">Some updates to the documentation generator.</span></span></p><p><span><span style="color: rgb(0,0,0);">Added the ability for developers to create their own Eclipse code templates.  Go to Preferences | Editor | Templates and create a new code template.  These templates can then be inserted into your code by typing the template name followed by the autocompletion keystroke ctrl-space.</span></span></p><p><span><span style="color: rgb(0,0,0);">Sync source code editor window with debug console output via custom hyper-links for debugger references to source files/line numbers.</span></span></p><p><span><span style="color: rgb(0,0,0);">Set initial default value of auto-increment manifest version to &quot;Build&quot;.</span></span></p><p><span><span style="color: rgb(0,0,0);">Added support for pkg:/ prefixed files with autocompletion.</span></span></p><p><span><span style="color: rgb(0,0,0);">Added toolbar item and shortcut keystroke for running previous export without dialog.  On Windows &amp; Linux:  CTRL-ALT-E On OSX: COMMAND-OPTION-E.</span></span></p><p><span><span style="color: rgb(0,0,0);">Added a user pref for timeout value for manually entered IP addresses to the Preferences | Discovery wizard screen.</span></span></p><p><span><span style="color: rgb(0,0,0);">Added support for infinite timeout on manually entered IP addresses (by setting the IP address timeout described above to 0)and allow for manual removal of IPs from list.</span></span></p><p><span><span style="color: rgb(0,0,0);">Changed developer password field from regular textbox to password style.</span></span></p><p> </p>
+        <h1 class="wiki-content" id="EclipsePluginGuide-1.0Installation">1.0 Installation</h1>
+<p class="wiki-content">First, you will need to install eclipse. We have tested against the Helios release v3.6 and this should be considered the minimum eclipse version supported. It is compatible with releases up through v4.2 Juno.  We have only tested against the Eclipse IDE for Java Developers so please install that version.</p>
+<p class="wiki-content">When installing on Linux, in order to install to a location shared by multiple users, you must be an administrator. So please su before launching eclipse and doing the install. If you are not the super user, you may get the following errors when trying to install the plugin: </p>
+<p class="wiki-content" style="margin-left: 30.0px;">Cannot complete the install because one or more required items could not be found.<br>Software currently installed: Shared profile 1.0.0.1316138634362 (SharedProfile_epp.package.java 1.0.0.1316138634362)<br>Missing requirement: Shared profile 1.0.0.1316138634362 (SharedProfile_epp.package.java 1.0.0.1316138634362) requires 'org.maven.ide.eclipse [1.0.100.20110804-1717]' but it could not be found</p>
+<p class="wiki-content">If you are trying to run on eclipse 3.7 Indigo or later, you will have to add a couple of other update sites to get the DLTK 2.0 dependencies automatically resolved. These update sites are:<a class="external-link" href="http://download.eclipse.org/modeling/emf/updates/releases/" rel="nofollow">http://download.eclipse.org/modeling/emf/updates/releases/</a> and <a class="external-link" href="http://download.eclipse.org/technology/dltk/updates/" rel="nofollow">http://download.eclipse.org/technology/dltk/updates/</a> </p>
+<p class="wiki-content">Under the menu item Help-&gt;Install New Software you will get the following dialog where you can enter the update site: <a class="external-link" href="http://rokudev.roku.com/updates" rel="nofollow">http://rokudev.roku.com/updates</a>. In the dialog, select the BrightScript feature and be sure that "Contact all update sites during install to find required software" is selected. Then click on "Next". </p>
+<p class="wiki-content"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig1.png?version=1&amp;modificationDate=1367965305000&amp;api=v2" data-image-src="/download/attachments/1611567/fig1.png?version=1&amp;modificationDate=1367965305000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606604" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig1.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p>
+<p class="wiki-content"><br class="atl-forced-newline">Select BrightScript Core and click "Next" <br class="atl-forced-newline"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig2.png?version=1&amp;modificationDate=1367966467000&amp;api=v2" data-image-src="/download/attachments/1611567/fig2.png?version=1&amp;modificationDate=1367966467000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606605" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig2.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span> <br class="atl-forced-newline"><br class="atl-forced-newline">Review and accept the license: <br class="atl-forced-newline"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig3.png?version=1&amp;modificationDate=1367966483000&amp;api=v2" data-image-src="/download/attachments/1611567/fig3.png?version=1&amp;modificationDate=1367966483000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606606" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig3.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p>
+<p class="wiki-content"><br class="atl-forced-newline">Once the Brightscript plugin is installed, you'll be able to run it as a regular user. After launching eclipse, you will click on arrow to the far right of the screen to enter the functional Workbench: <br class="atl-forced-newline"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig4.png?version=1&amp;modificationDate=1367966497000&amp;api=v2" data-image-src="/download/attachments/1611567/fig4.png?version=1&amp;modificationDate=1367966497000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606622" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig4.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p>
+<h1 class="wiki-content" id="EclipsePluginGuide-2.0RuntheBrightScriptPlugin">2.0 Run the BrightScript Plugin</h1>
+<p class="wiki-content">Open the BrightScript Perspective by selecting Window-&gt;Open Perspective-&gt;Other… <br class="atl-forced-newline"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig5.png?version=1&amp;modificationDate=1367966512000&amp;api=v2" data-image-src="/download/attachments/1611567/fig5.png?version=1&amp;modificationDate=1367966512000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606623" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig5.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span><br><br class="atl-forced-newline">If you select File-&gt;New-&gt;BrightScript Project you can bring up the new project wizard and select from a few sample project templates on which to base your project. We encourage you to support as many regional channel stores as you can (that you have content rights for). The Brightscript plugin has integrated translation services on the web to help with the localization effort.</p>
+<p class="wiki-content"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig6.jpg?version=1&amp;modificationDate=1367966526000&amp;api=v2" data-image-src="/download/attachments/1611567/fig6.jpg?version=1&amp;modificationDate=1367966526000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606624" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig6.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p>
+<p class="wiki-content"> </p>
+<p class="wiki-content">The editor does syntax highlighting. At this point, you may see some false positives on syntax errors. We will improve the syntax checker in the future. <br class="atl-forced-newline"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig7.png?version=1&amp;modificationDate=1367966546000&amp;api=v2" data-image-src="/download/attachments/1611567/fig7.png?version=1&amp;modificationDate=1367966546000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606625" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig7.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span> .<br>In order to install your project onto a Roku, select File-&gt;Export which will side load your project onto a box in developer mode or create a package. The Export wizard will also offer to generate a new key and save your packaging key password. <br class="atl-forced-newline"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig8.png?version=1&amp;modificationDate=1367966559000&amp;api=v2" data-image-src="/download/attachments/1611567/fig8.png?version=1&amp;modificationDate=1367966559000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606620" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig8.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span> <br class="atl-forced-newline"><br class="atl-forced-newline">The console window has a drop down list of Roku boxes on your network. Once you select one, the plugin will telnet to that box using port 8085 so you can debug in an eclipse window. <br class="atl-forced-newline"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/fig9.png?version=1&amp;modificationDate=1367966572000&amp;api=v2" data-image-src="/download/attachments/1611567/fig9.png?version=1&amp;modificationDate=1367966572000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606621" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="fig9.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></p>
+<h1 class="wiki-content" id="EclipsePluginGuide-3.0BrightScriptLanguageDocumentationGenerator">3.0 BrightScript Language Documentation Generator </h1>
+<p class="wiki-content"><span>Like many other development environments, the BrightScript plug in can produce in-line documentation through the simple use of special tags in source code comments.  An example of the kind of hover help documentation that can be generated is shown below.</span></p>
+<p class="wiki-content"><span><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/1611567/docgen.jpg?version=1&amp;modificationDate=1401482755000&amp;api=v2" data-image-src="/download/attachments/1611567/docgen.jpg?version=1&amp;modificationDate=1401482755000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1613457" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="docgen.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16"></span></span><span>.</span></p>
+<p class="wiki-content"><span><span>The complete specification and comment syntax for the documentation generation system, called BrightScriptDoc, <a href="https://sdkdocs.roku.com/download/attachments/1611567/DocumentationGenerator.pdf?version=1&amp;modificationDate=1401483207000&amp;api=v2" data-linked-resource-id="1613467" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="DocumentationGenerator.pdf" data-nice-type="PDF Document" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611567" data-linked-resource-container-version="16">can be found at this link.</a></span></span></p>
+<h1 class="wiki-content" id="EclipsePluginGuide-4.0ReleaseNotes4/10/2012">4.0 Release Notes 4/10/2012</h1>
+<p class="wiki-content">ll Summary:</p>
+<p class="wiki-content">This release concentrated on improvements to several areas of the plugin, <br>including but not limited to:<br>a) Any known bugs that could cause hangs or visible stacktraces in the error log<br>b) Roku box discovery (SSDP)<br>c) The Debug Console<br>d) The BrightScript language parser<br>e) User preferences<br>f) Logging<br>g) Manifest editing and validation</p>
+<p class="wiki-content">The first 4 items (a-d) above were top priorities given potential impact to the usability of the plugin.<br>The remaining items were addressed to improve the overall user experience.</p>
+<p class="wiki-content">Both (b) and (c) are of particular note, since many of the issues reported on the Eclipse plugin thread have to do with the usability<br>and accuracy of the Roku boxes IP address drop-down list in the Debug Console.</p>
+<p class="wiki-content">(g) Manifest editing and validation - is also something worth checking out. <br>The manifest file now has an associated multipage editor, which adds a form-based validating editor for the manifest, which synchronizes with the<br>pre-existing text editor. Errors and warnings related to the manifest are a bit more clearly marked in the form-based editor page, and total known manifest property names are clearly shown. Note that eventually, the form fields will be enhanced with hover-help text derived from the SDK documentation, to further assist new developers in understanding the manifest contents. Also in the form editor are project browse buttons/dialogs for each of the icon file attributes. The dialogs show a treeview of the relevent project directories and files for icon selection. Only *.jpg and *.png files (and the folders in the project that hold them) are shown, making it easier to ensure the icon file path names in the manifest are correct. Verification of the icon file paths (along with all the other manifest validation checks) is also performed as part of the manifest validation process, which happens both in the editor and in the project builder using code that is now common to both areas.</p>
+<p class="wiki-content"><br>Aside from these areas, the following enhancements are small but significant:</p>
+<p class="wiki-content">a) Add the error log view to the BrightScript perspective<br>Adding the error log to the BrightScript perspective should improve reporting of errors by the developer community<br>in both speed and accuracy, since most coding (not related to design or lack of feature) bugs should show up in some way in the error log.<br>Logging, in general, was overhauled and specific message's log-levels and log-level user preferences and defaults were adjusted to ensure the error log<br>is not filled up with debug and trace level messages by default, making the perspective-default exposure of the error log view practical at least as it relates to the BrightScript plugin.</p>
+<p class="wiki-content"><br>b) Installation - add dependency update sites to plugin feature manifest<br>By adding the dependency update sites to the feature manifest, the additional update sites get added to the user's update sites list automatically the first time the Roku update site gets added manually by the user.</p>
+<p class="wiki-content">Note however, those added sites are not enabled by default, so the user must still manually enable them before attempting the plugin install. <br>This change slightly speeds up and reduces errors in the initial install process, since the user no longer needs to type in the URL and label of the additional dependency update sites (DLTK and EMF) - they just need to enable them once the Roku update site has been manually added and enabled.</p>
+<p class="wiki-content">Bugfixes:</p>
+<div class="wiki-content"><ul>
+<li>File-&gt;Export-&gt;BrightScript-&gt;BrightScript Deployment non-response/null pointer</li>
+<li>IDE hangs on startup when Project Explorer is open and 1 or more open BrightScript projects</li>
+<li>Manifest is overwritten with plugin default when importing project files from another location</li>
+<li>Telnet window IP address drop-down is spastic</li>
+<li>Default values for code and comment folding prevent folding from working out of the box</li>
+<li>Dropdown list of rokus for the console has items truncated</li>
+<li>SSDP unicast response not seen in response to SSDP SEARCH query</li>
+<li>Language parser - Add positive and negative test cases for BrightScript language parser module</li>
+<li>Language parser - "REM" comment keyword embedded in sub or function name causes odd parser issues</li>
+<li>Language parser - incorrectly marks syntax errors when parens and brackets are adjacent</li>
+<li>Language parser - Reserved/key words that are also component method names are incorrectly flagged as syntax errors</li>
+<li>Language parser doesn't know about the "?" shortcut for print</li>
+<li>Syntax highlighter and language parser don't know about the "Library" keyword and syntax</li>
+<li>Syntax highlighting is incorrect when string "REM" is encountered anywhere in a line</li>
+<li>Code folding - Stacktrace in code folding routine</li>
+<li>Todo tasks - Nullpointer exception when activating the todo task preference page</li>
+</ul></div>
+<p>Bugs determined to be Eclipse issues that can't be worked-around in code:</p>
+<ul><li>Uninstalling plugin leaves behind old &lt;BrightScript&gt; perspective in menu</li></ul>
+<p>Enhancements:</p>
+<ul>
+<li>Add plugin-level framework for user selectable preferences for log level by feature group</li>
+<li>Add the error log view to the BrightScript perspective</li>
+<li>Add user selectable preferences for Discover (SSDP) - logging, time-out, etc.</li>
+<li>Add user selectable preferences for Debug Console - color, connect timeout, etc.</li>
+<li>Create a custom Roku manifest editor</li>
+</ul>
+<p>Installation - add dependency update sites to plugin feature manifest<br><br></p>
+<h1 id="EclipsePluginGuide-ReleaseNotes9/10/2012">Release Notes 9/10/2012</h1>
+<p> </p>
+<p>A major new feature set supporting channel localization was added in this release.  See the enhancements section below for a list of localization related features. </p>
+<p>Some additional notes about the new channel localization support:</p>
+<ul>
+<li>Many of these localization features have associated user preferences pages (Windows-&gt;Preferences-&gt;BrightScript-&gt;Localization). </li>
+<li>Each of the web translation services mentioned below also has its own separate user preferences page under the main localization page. </li>
+<li>A new context (aka popup) sub-menu for localization actions has been added and is available for any item in a BrightScript project. </li>
+<li>The localization context menu action taken will depend on the location of the file or directory selected:  Any item selected inside a specific locale's folder (including the folder itself) will cause that action to happen just for that locale.  Any item selected elsewhere in a BrightScript project will cause the action to happen for all locales folders already created within the project.  Any locale folders that do not correspond to a currently supported locale will be ignored.</li>
+</ul>
+<p>Additionally, this release focused on bugfixes and enhancements for several existing areas:</p>
+<ol>
+<li>Language Parser</li>
+<li>Debug console</li>
+<li>Manifest</li>
+</ol>
+<p><strong>BUGFIXES:</strong></p>
+<p> </p>
+<ul>
+<li>Project templates should compile and run without errors</li>
+<li>Debug Console - Heap OutOfMemoryError occurs if console accumulates enough output</li>
+<li>Editor - Change of syntax color does not apply to already open editors</li>
+<li>Language Parser - "Stop" cannot be used as a method name of a component       </li>
+<li>Language Parser - Allow no-argument Print statements   </li>
+<li>Language Parser - Allow paren'd sub-expressions in compound (dot) expressions              </li>
+<li>Language Parser - Allow reserved words as keys in associative arrays</li>
+<li>Language Parser - Empty For loops cause syntax error      </li>
+<li>Language Parser - Empty If or Else blocks not allowed (when Else is present)         </li>
+<li>Language Parser - Empty While loops cause syntax error                 </li>
+<li>Language Parser - expression processing broken when functions are mixed with operator based expressions on the same line       </li>
+<li>Language Parser - Mod operator keyword is not recognized          </li>
+<li>Language Parser - NULL cannot be used as variable name               </li>
+<li>Language Parser - The String(n As Integer, character As String) and Stringi methods aren't recognized       </li>
+<li>Language Parser - undocumented endfor and endwhile cause syntax errors        </li>
+<li>Language parser and Syntax highlighter don't know about the "Library" keyword and syntax         </li>
+<li>Manifest Editor - Do not flag icon and splash values as warning or errors for screensavers               </li>
+<li>Manifest Editor - entries representing binary items set to true/false but should instead set to 1/0           </li>
+</ul>
+<p><strong>ENHANCEMENTS:</strong><strong>  </strong></p>
+<ul>
+<li>Localization - Add auto-generation of translations.xml file source tags from scanning brs files for tr calls   </li>
+<li>Localization - add localization checking to the BrightScript builder                </li>
+<li>Localization - Add locale selection options to "new project" wizard that will automatically build directories and files to support a localized channel for 1 or more of the currently supported locales</li>
+<li>Localization - add localization support to the manifest editor         </li>
+<li>Localization - Add context menu items and new project wizard support for auto-translation of locale manifest entries: title, subtitle, and screensaver_title</li>
+<li>Localization - Add context menu options for import and export of translations to/from TMX format           </li>
+<li>Localization - Add support for machine translation calls to web-based translation services (general support)</li>
+<li>Localization - Add support for machine translation calls to web-based translation service google translate               </li>
+<li>Localization - Add support for machine translation calls to web-based translation service microsoft translator (aka bing translate)     </li>
+<li>Localization - Add support for machine translation calls to web-based translation service mymemory.translated.net                                   </li>
+<li>Localization - add syntax parsing and colorization support for new localization functions (tr, GetLocalizedAsset, GetPluralString)                  </li>
+<li>Debug Console - Add "Roku IP" label for ip selection drop-down                 </li>
+<li>Debug Console - Add a connect/disconnect toggle button to console toolbar          </li>
+<li>Language Parser - Reparse source files for syntax checking as user types (delayed action)            </li>
+<li>Manifest Editor - Add splash screen manifest settings support     </li>
+<li>Manifest Editor - Allow unknown (to parser) user-entered props in text tab to be persistent between transitions to/from overview tab      </li>
+<li>Manifest Editor - display description from docs in tooltip for for each manifest var in overview form       </li>
+</ul>
+<h1 id="EclipsePluginGuide-ReleaseNotes12/17/2012">Release Notes 12/17/2012</h1>
+<p>This release focused primarily on adding support for editor code folding, improved language parsing, and laying the foundation of a type system.</p>
+<p>The new Code folding features include new user preference settings and editor support for subs, function, loops, and if blocks.</p>
+<p>While not listed below, one of the first visible benefits of the type system foundation is an initial improvement in the code assist and inline documentation display features.<br>While the code editor has focus, hitting CTRL-Space will invoke the code assist window, which now includes in the list all global functions (in addition to the previous list of language keywords)<br>along with the documentation window containing documentation for the currently selected global function. <br>(Note that currently code assist intentionally does not respond while in the middle of a "dot expression" - this feature will be added in the next release in order to support code assist and docs display for <br>components, interfaces, and events).</p>
+<p><br>Bugfixes:</p>
+<p>Export Wizard - Very first run of export wizard after first plugin installation does not autofill the zipfile name<br>Export Wizard - Top level locale folder not auto-selected when exporting a project<br>Language Parser - a variable reference standing alone by itself outside of any valid statement is not flagged as a error<br>Language Parser - Empty For loops cause syntax error<br>Language Parser - Empty While loops cause syntax error<br>Localization - Update translations context menu option fails with stacktrace<br>New Project Wizard - Error when selecting locales</p>
+<p>Enhancements:</p>
+<p>Code Folding - Add support for associative arrays and ordinary arrays<br>Code Folding - Add support for For Loops<br>Code Folding - Add support for if/then/else blocks<br>Code Folding - Add support for Subs and Functions<br>Code Folding - Add support for While Loops<br>Editor - Make double-click only select the surrounding brightscript word, not the locale language word<br>Export Wizard - Add persistent checkbox for zip file overwrite response<br>Export Wizard - Remember per-project user selected dirs and files between export runs<br>Language Parser - BrightScript language parser should recover at least at beginning of new sub or function</p>
+<h1 id="EclipsePluginGuide-ReleaseNotes5/16/2013">Release Notes 5/16/2013</h1>
+<p>While there where several unrelated bugfixes and new features, this release focused primarily on finishing the foundation of the type system and improving other feature groups that benefit from the expanded type system.</p>
+<p>The type system is the basis of other feature groups including autocompletion (code assist), hover docs, and various type-related parse and build-time checks.</p>
+<p>The type system had previously provided the knowledge of BrightScript global functions, but has been expanded to include Components, Interfaces, Events, and each of their associated functions and subs. The embedded docs (used in hover and autocompletion) for each of these items are a work-in-progress and will be improved over the next few releases.</p>
+<p>Autocompletion is now invoked automatically after a short delay in typing (user preference, defaults to 200ms), when the last character typed is a dot ("."). The manual invocation of autocompletion at any point is still available via CTRL-Space. The relevant type system additions (interfaces, functions/subs) now show up in the autocompletion suggestions list window, along with their docs in the associated docs window. Additionally, the suggestions list includes variables defined in the current function/sub, including associative array member variables.</p>
+<p>Hover docs - A documentation window will display when you hover the cursor over most variables function/sub calls, interface references, etc.... Note: there are several known bugs related to the new type system that sometimes prevent this from happening.</p>
+<p>The docs processing has been improved with added support for annotation tags, similar to the docs annotation systems used by other languages (e.g. javadocs, doxygen, etc). <br>Both the built-in type system and user code (i.e. functions/subs and variables) will be able to use these tags. More details on this topic in the coming releases as specifics are finalized.</p>
+<p>The Debug console usability has been improved in a few ways. The long-standing cursor positioning bug has been fixed - the cursor should now be automatically and correctly shown at the end of the console output. The left arrow is also now prevented from moving into the prompt and output areas, although you may still manually place the cursor there for cut/paste purposes.</p>
+<p>The Debug console now includes simple command history support. The up and down arrows move thru the command history stack. User-preferences for the command history size (defaults to 1000) and whether or not to persist across sessions (defaults to false) have been added.</p>
+<p>Task tags (TODO, FIXME, user-defined, etc.) are now working as expected.</p>
+<p><br>Bugfixes:</p>
+<p>Code folding - "initially folding" options are ignored<br>Autocompletion - does not recognize interface names in already typed dot expression<br>Autocompletion - fails when item to be completed is the last line (or part of last statement) of a function/sub<br>Autocompletion - suggestions list does not include interface names<br>Debug Console - Cursor incorrectly is always at the beginning of the line<br>Language Parser - GetGlobalAA global function missing from parser grammar<br>Language Parser - Some global function calls cause editor open failure with nullpointerexception<br>Selection Engine - Highlighting a function reference and then selecting Show in-&gt; Outline View does not do anything<br>Selection Engine - Open Declaration does not do anything<br>TODO tasks don't show up in the Task view<br>Type system - Erroneous type func/sub call error - says func/sub must be disambiguated by interface name, when the name matches but not the signatures do not<br>Type System - Non-Windows platforms get stacktrace (NullPointerException) when attempting to open BrightScript source editor</p>
+<p>Enhancements:</p>
+<p>Debug Console - Add support for command history recall<br>Docs system - Add support for docs annotation tags to improve help display<br>Editor - Add line number display to left-hand margin<br>Export Wizard - Improve error handling and error message for failed connections and provide exposed user preferences for each type of connection<br>Language Parser - Add context-specific, fine-grained error recovery to parser<br>Language parser - Add syntax checking, code completion, and help support for all pre-defined components<br>Language parser - add type inference system to support type-related parse and build-time error checking and warning generation<br>New Resource Wizards - Add a "New BrightScript File" wizard and menu entry<br>Type System - Add a user preference to determine whether or not to perform type related warning/error checks</p>
+<h1 id="EclipsePluginGuide-ReleaseNotes6/27/2013">Release Notes 6/27/2013</h1>
+<p><span>This release addresses various bug fixes in the plugin.</span><br><br><br><span>Bugfixes:</span><br><span>Type System - use of ifAssociativeArray and ifEnum methods in any return expression beginning with m. cause all .brs source editors in a project to fail</span><br><span>Type System - partial addition to support tracking specific event types expected on specific roMessagePort instances</span><br><span>Export to BrightScript errors before IP field entry is complete</span><br><span>Docs system - hypertext links embedded in the documentation html will not respond to clicks</span><br><span>Docs system - Add support for docs window toolbar buttons: forward, backward, open declaration</span><br><span>Docs system - Add support for field comments on same line</span><br><span>Search - References searching doesn't return any results</span></p>
+<p><span><br></span></p>
+<h1 id="EclipsePluginGuide-ReleaseNotes9/30/2013">Release Notes 9/30/2013</h1>
+<p><span>This release is a large update containing bugfixes and enhancements for the communications sub-system, type sub-system, language parser, and export wizard.</span><br><br><span>Support for the new developer mode username/password authentication is in place, but is not used unless a given Roku box requires it ( i.e. firmware 5.2 or later ).</span><br><br><span><span><span style="color: rgb(191,0,0);">It is important to note that the plugin now requires Eclipse to be running under Java 1.7 or higher. If Eclipse's Java version is lower than 1.7, the plugin will be disabled.</span></span></span><br><span>Non-compliance with the Java version requirement does not prevent plugin installation or Eclipse startup, but will result in no BrightScript plugin features being visible, including the BrightScript perspective.</span><br><span>If you require an older version of Java as your machine default, you may still point any Eclipse instance to a different Java installation, by using the -vm argument in the eclipse.ini file (see Eclipse's help for details).</span><br><br><span>Enhancements:</span><br><span>Comms - 5.2 Firmware Requires Username and Password for all to-box HTTP communications</span><br><span>Comms - Adjustments to socket timeouts and enhanced language for adjusting the values</span><br><span>Export wizard - Add user option for per-project auto-increment version number in manifest for each run</span><br><span>Export Wizard - Automatically refresh project explorer after zipfile creation and package file creation</span><br><span>Export Wizard - Use ECP to send "Home" keypress prior to start of sideload/package operation to prevent unnecessary timeouts and related errors</span><br><span>Type system - Change single-valued type system to multi-valued type system with distinct single declared and multiple possibles</span><br><br><span>Bugfixes:</span><br><span>Plugin dependencies - Change Java minimum requirement to 1.7 to avoid Java memory management bug</span><br><span>Export Wizard - IP addresses typed in manually (or an empty address) are not checked for validity before attempting HTTP operations</span><br><span>Export Wizard - Nullpointer exception and partial localization checks failure if 1 or more locale subfolders does not exactly name match one of the supported locales</span><br><span>Export Wizard - Manually entered Roku Box IP addresses aren't persistent in either Export wizard or Debug console</span><br><span>Export Wizard - Unexpected error while retrieving package file</span><br><span>Language Parser - Add Function as a valid explicit parameter and return type</span><br><span>Language Parser - Anonymous Functions with empty bodies cause NullpointerException during parsing, causing source files to not open in BrightScript editor</span><br><span>Type System - Several type-related checks ignore user preference "perform type checks"</span><br><span>Type System - AA var returned from func/sub calls don't contain their members</span><br><span>Type System - Known callers check returns a false positive when all callers are associative arrays</span><br><span>Type System - Return type check incorrectly sets return type to void if type of return expression is unknown</span><br><span>Type System - Use of ifAssociativeArray and ifEnum methods in any return expression beginning with m. cause all .brs source editors in a project to fail</span></p>
+<h1 id="EclipsePluginGuide-ReleaseNotes11/12/2013">Release Notes 11/12/2013</h1>
+<p>This is a minor release containing bug fixes.  The build number is 1.0.0.20131029810</p>
+<div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note">
+<p class="title">Note</p>
+<span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p><span style="color: rgb(191,0,0);">It is important to note that the plugin now requires Eclipse to be running under Java 1.7 or higher. If Eclipse's Java version is lower than 1.7, the plugin will be disabled.</span><br>Non-compliance with the Java version requirement does not prevent plugin installation or Eclipse startup, but will result in no BrightScript plugin features being visible, including the BrightScript perspective.<br>If you require an older version of Java as your machine default, you may still point any Eclipse instance to a different Java installation, by using the -vm argument in the eclipse.ini file (see Eclipse's help for details).</p></div>
+</div>
+<p>Enhancements:<br><span style="color: rgb(0,0,0);">- Export Wizard - Added option to automatically open and connect a debug console upon successful install<br><span style="color: rgb(0,0,0);">- Code Folding - Added support for anonymous functions</span> </span></p>
+<p>Bugfixes:<br><span style="color: rgb(0,0,0);">- Bug fixes to correct exceptions and errors in SSDP discovery routines</span><br><span style="color: rgb(0,0,0);">- Export Wizard - Corrects issue of zip and pkg files saved in "out" dir first time, but root dir all subsequent times</span><br><span style="color: rgb(0,0,0);">- Export Wizard - Corrects issue where current package field is not populated even if there is a current package</span><br><span style="color: rgb(0,0,0);line-height: normal;font-size: 1.8em;font-weight: bold;"> </span></p>
+<h1 id="EclipsePluginGuide-ReleaseNotes1/7/2014">Release Notes 1/7/2014</h1>
+<p>This is a minor release containing bug fixes.  <span style="line-height: 13.0pt;font-size: 10.0pt;">The build number is </span><span style="line-height: 13.0pt;font-size: 10.0pt;">1.0.0.201312101034</span></p>
+<p><span>Bugfixes:<br><span style="color: rgb(0,0,0);">- Minor bug fixes for BrightScript Doc parser</span></span></p>
+<h1 id="EclipsePluginGuide-ReleaseNotes6/27/2014"><span><span style="color: rgb(0,0,0);">Release Notes 6/27/2014</span></span></h1>
+<p><span><span style="color: rgb(0,0,0);">This is a large release containing a number of enhancements.  The build number is 1.0.0.201406201331.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Enhancements:</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">The Deployment preferences screen now let's you select file extensions of files to include in the channel deployment by default.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Added hyperlinking for error code/text in debugger output to a browser window for expanded help text about error.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Some updates to the documentation generator.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Added the ability for developers to create their own Eclipse code templates.  Go to Preferences | Editor | Templates and create a new code template.  These templates can then be inserted into your code by typing the template name followed by the autocompletion keystroke ctrl-space.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Sync source code editor window with debug console output via custom hyper-links for debugger references to source files/line numbers.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Set initial default value of auto-increment manifest version to "Build".</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Added support for pkg:/ prefixed files with autocompletion.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Added toolbar item and shortcut keystroke for running previous export without dialog.  On Windows &amp; Linux:  CTRL-ALT-E On OSX: COMMAND-OPTION-E.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Added a user pref for timeout value for manually entered IP addresses to the Preferences | Discovery wizard screen.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Added support for infinite timeout on manually entered IP addresses (by setting the IP address timeout described above to 0)and allow for manual removal of IPs from list.</span></span></p>
+<p><span><span style="color: rgb(0,0,0);">Changed developer password field from regular textbox to password style.</span></span></p>
+<p> </p>
 
                 
         
@@ -770,45 +633,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
             
             
 
-<div id="footer" role="contentinfo">
-    <section class="footer-body">
 
-                                                    
-        
-
-        <ul id="poweredby">
-            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
-            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
-            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
-            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
-        </ul>
-
-        
-
-        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-
-                    <script>
-var footer = document.getElementById('poweredby');
-footer.removeChild(footer.children[2]);
-footer.removeChild(footer.children[2]);
-
-var pDiv = document.createElement('li');
-pDiv.className='noprint';
-pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
-footer.appendChild(pDiv);
-</script>
-
-<script>
-    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
-    if ( modinfo != undefined ) {
-        modinfo.style.display = "none" ;
-    }
-
-</script>
-
-        
-    </section>
-</div>
 
     </div>
 </body>

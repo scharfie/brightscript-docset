@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Global Utility Functions - Roku SDK Documentation - Developer Documentation</title>
 
         
@@ -21,9 +22,7 @@
 
 
 <meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
-<script type="text/javascript">
-        var contextPath = '';
-</script>
+
 
     
 
@@ -70,21 +69,9 @@
     <link rel="shortcut icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
     <link rel="icon" type="image/x-icon" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
 
-<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation">
 
-<script>
-window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
-WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
-WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
-</script>
+
 <link type="text/css" rel="stylesheet" href="../../s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css%3Fbuild-number=6150.css" media="all">
 <!--[if lt IE 9]>
 <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
@@ -102,47 +89,31 @@ WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:
 <link type="text/css" rel="stylesheet" href="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence.css" media="all">
 <link type="text/css" rel="stylesheet" href="../../s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
-<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js" ></script>
-<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
-<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js" ></script>
-<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js" ></script>
-<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init.js%3Flocale=en-GB" ></script>
+<script type="text/javascript" src="../../s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js%3Fatlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js"></script>
+<script type="text/javascript" src="../../s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js%3Fanalytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true"></script>
+<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js%3Flocale=en-GB"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js"></script>
+<script type="text/javascript" src="../../s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js"></script>
+<script type="text/javascript" src="../../s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init.js%3Flocale=en-GB"></script>
 
 
         
     
 
         
-        <meta name="ajs-site-title" content="Developer Documentation" />
+        <meta name="ajs-site-title" content="Developer Documentation">
 
     
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-67357911-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    
 
 <!-- Google Tag Manager -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <!-- End Google Tag Manager -->
 
 <!-- New Relic -->
-<script type="text/javascript">
-window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
-;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
-</script>
+
 <!-- End New Relic -->
 
     
@@ -153,11 +124,10 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 </head>
 
-<body             onload="placeFocus()"
-     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+<body onload="placeFocus()" id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
 
         
-            <div id='stp-licenseStatus-banner'></div>
+            <div id="stp-licenseStatus-banner"></div>
     <div id="full-height-container">
     <div id="header-precursor">
         
@@ -170,12 +140,14 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 <header id="header" role="banner">
-    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary">
+<h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.1.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation"><span class="aui-header-logo-text">Developer Documentation</span></a></h1>
+<ul class="aui-nav">
                             <li>
             
         
         
-<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+<a id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action" class=" aui-nav-imagelink" title="Spaces">
             <span>Spaces</span>
     </a>
         </li>
@@ -187,32 +159,32 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     </a>
     <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
                     <div class="aui-dropdown2-section">
-                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                <ul id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
                                             <li>
     
             
-<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+<a id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    " title="Browse pages in the Roku SDK Documentation space">
         Pages
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+<a id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    " title="Browse blogs in the Roku SDK Documentation space">
         Blog
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+<a id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    " title="Browse labels in the Roku SDK Documentation space">
         Labels
 </a>
 </li>
                                             <li>
     
             
-<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+<a id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    " title="Browse additional space functions in the Roku SDK Documentation space">
         Space Operations
 </a>
 </li>
@@ -224,293 +196,35 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                         <li class="aui-buttons">
             </li>
     </ul>
-</div><div class="aui-header-secondary"><ul class="aui-nav">
-            <li>
-        
-    
-            
-<a  id="doctheme-anchor" href="Global+Utility+Functions.html#"  class=" aui-nav-imagelink"   title="">
-            <span></span>
-    </a>
-    </li>
-                    <li>
-        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
-    </li>
-        <li>
-            
-        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Global+Utility+Functions.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
-        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
-    </a>
-    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                    <div class="aui-dropdown2-section">
-                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
-                                            <li>
-        
-            
-<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
->
-        Online Help
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="keyboard-shortcuts-link" href="Global+Utility+Functions.html#" class="    "      title="View available keyboard shortcuts" >
-        Keyboard Shortcuts
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
-        Feed Builder
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
-        What’s new
-</a>
-</li>
-                                            <li>
-    
-                
-<a  id="gadget-directory-link" href="Global+Utility+Functions.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
-        Available Gadgets
-</a>
-</li>
-                                            <li>
-    
-            
-<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
-        About Confluence
-</a>
-</li>
-                                    </ul>
-            </div>
-            </nav>
-    
-    </li>
-        <li>
-                
-    
-    </li>
-        <li>
-            
-    </li>
-        <li>
-                                            <li>
-        
-            
-<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FGlobal%2BUtility%2BFunctions" class="   user-item login-link "      title="" >
-        Log in
-</a>
-</li>
-                        
-    </li>
-    </ul>
-</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+</div></div>
+<!-- .aui-header-inner--></nav><!-- .aui-header -->
     <br class="clear">
 </header>
 
     <div id="splitter">
-    <div id="splitter-sidebar"  class="padding-div" >
+    <div id="splitter-sidebar" class="padding-div">
         
 
                     
     
 
 
-<div class="plugin_pagetree">
 
-        
-        
-    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
-        <div class="plugin_pagetree_children">
-        </div>
-    </ul>
-
-    <fieldset class="hidden">
-        <input type="hidden" name="treeId" value="">
-        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
-        <input type="hidden" name="treePageId" value="3737203">
-
-        <input type="hidden" name="noRoot" value="false">
-        <input type="hidden" name="rootPageId" value="1611307">
-
-        <input type="hidden" name="rootPage" value="">
-        <input type="hidden" name="startDepth" value="0">
-        <input type="hidden" name="spaceKey" value="sdkdoc" >
-
-        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
-        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
-        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
-        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DGlobal%2BUtility%2BFunctions">
-        <input type="hidden" name="mobile" value="false">
-
-                <fieldset class="hidden">
-                                                <input type="hidden" name="ancestorId" value="3737186">
-                                    <input type="hidden" name="ancestorId" value="1611307">
-                                    </fieldset>
-    </fieldset>
-</div>
 
 
 
             </div>
     <div id="splitter-content">
 
-        <script>InitDocThemeSidebar()</script>
+        
 
                         
             
-<div id="main"  class="aui-page-panel" >
+<div id="main" class="aui-page-panel">
     <div id="main-header">
         
         
-    <div id="navigation" class="content-navigation view">
-                    <ul class="ajs-menu-bar">
-                                            
-        <li class="normal ajs-menu-item">
-        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="Global+Utility+Functions.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
-            <span>
-                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
-                                
-            </span>
-        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-primary"                         class="section-primary first">
-                                                    <li>
-
     
-        
-                                            
-    
-    
-    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737203" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
-                <span>
-                        A<u>t</u>tachments (0)
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=3737203" rel="nofollow" class="action-view-history"   title="">
-                <span>
-                        Page History
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737203" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
-                <span>
-                        Restrictions
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                            <div class="aui-dropdown2-section">
-                    <ul  id="action-menu-secondary"                         class="section-secondary">
-                                                    <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737203" rel="nofollow" class="action-view-info"   title="">
-                <span>
-                        Page Information
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-            
-                                            
-    
-    
-    <a  id="view-resolved-comments" href="Global+Utility+Functions.html#" rel="nofollow" class=""   title="">
-                <span>
-                        Resolved comments
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737203" rel="nofollow" class=""   title="Link to this Page">
-                <span>
-                        Link to this Page…
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=3737203#selectedPageInHierarchy" rel="nofollow" class=""   title="">
-                <span>
-                        View in Hierarchy
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=3737203" rel="nofollow" class="action-view-source popup-link"   title="">
-                <span>
-                        View Source
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=3737203" rel="nofollow" class=""   title="">
-                <span>
-                        Export to PDF
-        </span>    </a>
-</li>
-                                                <li>
-
-    
-        
-                                            
-    
-    
-    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=3737203" rel="nofollow" class="action-export-word"   title="">
-                <span>
-                        Export to Word
-        </span>    </a>
-</li>
-                                        </ul>
-                </div>
-                    </div>
-    </li>
-            </ul>
-    </div>
 
         
                 <div id="title-heading" class="pagetitle with-breadcrumbs">
@@ -523,20 +237,23 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     <ol id="breadcrumbs">
                                         
                         
-        <li class="first" >
+        <li class="first">
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
                                                                     
                         
-        <li>
+        </li>
+<li>
                         
                             <span class=""><a href="../sdkdoc.1.html">Roku SDK Documentation</a></span>
                                                                     
                         
-        <li>
+        </li>
+<li>
                         
                             <span class=""><a href="BrightScript+Language+Reference.html">BrightScript Language Reference</a></span>
-                                                    </ol>
+                                                    </li>
+</ol>
 
 
                 </div>
@@ -594,27 +311,9 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
 
 
-        <script type="text/x-template" title="searchResultsGrid">
-    <table class="aui">
-        <thead>
-            <tr class="header">
-                <th class="search-result-title">Page Title</th>
-                <th class="search-result-space">Space</th>
-                <th class="search-result-date">Updated</th>
-            </tr>
-        </thead>
-    </table>
-</script>
-<script type="text/x-template" title="searchResultsGridCount">
-    <p class="search-result-count">{0}</p>
-</script>
-<script type="text/x-template" title="searchResultsGridRow">
-    <tr class="search-result">
-        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
-        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
-        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
-    </tr>
-</script>
+        
+
+
         
     
     
@@ -640,7 +339,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
                                             
     
     
-    <a  id="content-metadata-page-restrictions-hidden" href="Global+Utility+Functions.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+    <a id="content-metadata-page-restrictions-hidden" href="Global+Utility+Functions.html#" rel="nofollow" class="hidden" title="Unrestricted">
                 <span>
                         
         </span>    </a>
@@ -653,9 +352,7 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
     
         
             
-            Created by <span class='author'>     <a href="../~breid.html"
-                       class="url fn"
-                            >Bill Reid</a></span>, last modified on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3737203&amp;selectedPageVersions=4&amp;selectedPageVersions=5'>Jan 26, 2016</a>
+            Created by <span class="author">     <a href="../~breid.html" class="url fn">Bill Reid</a></span>, last modified on <a class="last-modified" title="Show changes" href="https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3737203&amp;selectedPageVersions=4&amp;selectedPageVersions=5">Jan 26, 2016</a>
                 </li>
         </ul>
     </div>
@@ -671,18 +368,100 @@ window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){va
 
         <div id="main-content" class="wiki-content">
                            
-        <hr/><p><div class="toc-macro client-side-toc-macro manualtoc conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div></p><hr/><p>BrightScript has a set of standard, module scope, functions. These functions are stored in the global object. If the compiler sees a reference to one of the global functions, it directs the runtime to call the appropriate global object member.</p><h4 id="GlobalUtilityFunctions-Sleep(millisecondsasInteger)asVoid">Sleep(milliseconds as Integer) as Void</h4><p>This function causes the script to pause for the specified time, without wasting CPU cycles. There are 1000 milliseconds in one second.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+        <hr>
+<p></p>
+<div class="toc-macro client-side-toc-macro manualtoc conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div>
+<hr>
+<p>BrightScript has a set of standard, module scope, functions. These functions are stored in the global object. If the compiler sees a reference to one of the global functions, it directs the runtime to call the appropriate global object member.</p>
+<h4 id="GlobalUtilityFunctions-Sleep(millisecondsasInteger)asVoid">Sleep(milliseconds as Integer) as Void</h4>
+<p>This function causes the script to pause for the specified time, without wasting CPU cycles. There are 1000 milliseconds in one second.</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[sleep(1000) &#39; sleep for 1 second
 sleep(200) &#39; sleep 2/10 of a second
 sleep(3000) &#39; sleep three seconds]]></script>
-</div></div><h4 id="GlobalUtilityFunctions-Wait(timeoutasInteger,portasObject)asObject">Wait(timeout as Integer, port as Object) as Object</h4><p>This function waits on objects that are &quot;waitable&quot; (those that have a MessagePort interface). Wait() returns the event object that was posted to the message port. If timeout is zero, &quot;wait&quot; will wait for ever. Otherwise, Wait will return after timeout milliseconds if no messages are received. In this case, Wait returns a type &quot;invalid&quot;.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+</div>
+</div>
+<h4 id="GlobalUtilityFunctions-Wait(timeoutasInteger,portasObject)asObject">Wait(timeout as Integer, port as Object) as Object</h4>
+<p>This function waits on objects that are "waitable" (those that have a MessagePort interface). Wait() returns the event object that was posted to the message port. If timeout is zero, "wait" will wait for ever. Otherwise, Wait will return after timeout milliseconds if no messages are received. In this case, Wait returns a type "invalid".</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div>
+<div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[p = CreateObject(&quot;roMessagePort&quot;)
 s = CreateObject(&quot;roScreen&quot;)
 s.SetPort(p)
 msg = Wait(0, p) 
 print Type(msg) &#39; e.g. roUniversalControlEvent
 print msg.GetInt() &#39; button number]]></script>
-</div></div><h4 id="GlobalUtilityFunctions-GetInterface(objectasObject,ifnameasString)asInterface">GetInterface(object as Object, ifname as String) as Interface</h4><p>Each BrightScript Component has one or more interfaces. This function returns a value of type &quot;Interface&quot;. <br class="atl-forced-newline"/>Note that generally BrightScript Components allow you to skip the interface specification. In which case, the appropriate interface within the object is used. This works as long as the function names within the interfaces are unique.</p><h4 id="GlobalUtilityFunctions-FindMemberFunction(objectasObject,funNameasString)AsInterface">FindMemberFunction(object as Object, funName as String) As Interface</h4><p>Returns the interface from the object that provides the specified function, or invalid if not found.</p><p>Example:</p><pre>    print FindMemberFunction({}, &quot;Count&quot;) '= &lt;Interface: ifAssociativeArray&gt;</pre><p><em>This function is not available in the 3.1 firmware version.</em></p><h4 id="GlobalUtilityFunctions-UpTime(dummyasInteger)asFloat">UpTime(dummy as Integer) as Float</h4><p>Returns the uptime of the system since the last reboot in seconds.</p><h4 id="GlobalUtilityFunctions-RebootSystem()asVoid">RebootSystem() as Void</h4><p>Requests the system to perform a soft reboot. The Roku platform has disabled this feature.</p><h4 id="GlobalUtilityFunctions-ListDir(pathasString)asObject">ListDir(path as String) as Object</h4><p>Returns a List object containing the contents of the directory path specified. All files names are converted to all lowercase.</p><p>For example:</p><pre> BrightScript&gt; l=ListDir(&quot;pkg:/movies&quot;)<br/> BrightScript&gt; print l<br/> test_movie_3.vob<br/> test_movie_4.vob<br/> test_movie_1.vob<br/> test_movie_2.vob</pre><h4 id="GlobalUtilityFunctions-ReadAsciiFile(filepathasString)asString">ReadAsciiFile(filepath as String) as String</h4><p>This function reads the specified file and returns the data as a string.</p><p>The file should be encoded as UTF-8 (which includes the 7-bit ASCII subset).</p><p>An empty string is returned if the file can not be read.</p><p>Example:</p><pre>text=ReadAsciiFile(&quot;tmp:/config.txt&quot;)</pre><h4 id="GlobalUtilityFunctions-WriteAsciiFile(filepathasString,textasString)asBoolean">WriteAsciiFile(filepath as String, text as String) as Boolean</h4><p>This function writes the specified string data to a file at the specified location.</p><p>The string data is written as UTF-8 encoded (which includes the 7-bit ASCII subset).</p><p>The function returns true if the file was successfully written.</p><p>For example:</p><pre>WriteAsciiFile(&quot;tmp:/config.txt&quot;, &quot;the text to write&quot;)</pre><h4 id="GlobalUtilityFunctions-CopyFile(sourceasString,destinationasString)asBoolean">CopyFile(source as String, destination as String) as Boolean</h4><p>Make a copy of a file.</p><h4 id="GlobalUtilityFunctions-MoveFile(sourceasString,destinationasString)asBoolean">MoveFile(source as String, destination as String) as Boolean</h4><p>Rename a file.</p><h4 id="GlobalUtilityFunctions-MatchFiles(pathasString,pattern_inasString)asObject">MatchFiles(path as String, pattern_in as String) as Object</h4><p>Search a directory for filenames that match a certain pattern. <em>Pattern</em> is a wildmat expression. Returns a List object.<br class="atl-forced-newline"/>This function checks all the files in the directory specified against the pattern specified and places any matches in the returned roList.</p><p>The returned list contains only the part of the filename that is matched against the pattern not the full path. <br class="atl-forced-newline"/>The pattern may contain certain special characters:</p><ul><li>A '?' matches any single character.</li><li>A '*' matches zero or more arbitrary characters.</li><li>The character class '[...]' matches any single character specified within the brackets. The closing bracket is treated as a member of the character class if it immediately follows the opening bracket. i.e. '[]]' matches a single close bracket. Within the class '-' can be used to specify a range unless it is the first or last character. e.g. '[A-Cf-h]' is equivalent to '[ABCfgh]'.</li><li>A character class can be negated by specifying '^' as the first character. To match a literal '^' place it elsewhere within the class.</li><li>The characters '?', '*' and '[' lose their special meaning if preceded by a single '\'. A single '\' can be matched as '\\'.</li></ul><p>Example:</p><pre>files = MatchFiles(&quot;.&quot;, &quot;*.mpg&quot;)</pre><h4 id="GlobalUtilityFunctions-DeleteFile(fileasString)asBoolean">DeleteFile(file as String) as Boolean</h4><p>Delete the specified file.</p><h4 id="GlobalUtilityFunctions-DeleteDirectory(dirasString)asBoolean">DeleteDirectory(dir as String) as Boolean</h4><p>Deletes the specified directory.  It is only possible to delete an empty directory.</p><h4 id="GlobalUtilityFunctions-CreateDirectory(dirasString)asBoolean">CreateDirectory(dir as String) as Boolean</h4><p>Creates the specified Directory. Only one directory can be created at a time</p><h4 id="GlobalUtilityFunctions-FormatDrive(driveasString,fs_typeasString)asBoolean">FormatDrive(drive as String , fs_type as String) as Boolean</h4><p>Formats a specified drive using the specified filesystem.</p><h4 id="GlobalUtilityFunctions-StrToI(strasString)asDynamic">StrToI(str as String) as Dynamic</h4><p>Return the integer value of the string, or invalid if str is not a string.</p><h4 id="GlobalUtilityFunctions-RunGarbageCollector()asObject">RunGarbageCollector() as Object</h4><p>This function runs the garbage collector. It returns and Associative Array with some statistics regarding the garbage collection. <br class="atl-forced-newline"/>See the <a href="Component+Architecture.html#ComponentArchitecture-GarbageCollection">Garbage Collection</a> section of this manual for more detail. You don't normally need to call this function. <br class="atl-forced-newline"/><br class="atl-forced-newline"/>Example:</p><p>BrightScript Debugger&gt; a=[]<br/> BrightScript Debugger&gt; a[0]=a<br/> BrightScript Debugger&gt; a=invalid<br/> BrightScript Debugger&gt; print RunGarbageCollector()<br/> COUNT: 3<br/> ORPHANED: 1<br/> ROOT: 2</p><h4 id="GlobalUtilityFunctions-ParseJson(jsonStringasString)asObject">ParseJson(jsonString as String) as Object</h4><p>This function will parse a string formatted according to RFC4627 and return an equivalent BrightScript object (consisting of booleans, integer and floating point numbers, strings, roArray, and roAssociativeArray objects).  If the string is not syntactically correct, <strong>Invalid</strong> will be returned.  A few other things to note:</p><ul><li>Any roAssociativeArray objects in the returned objects will be <strong>case sensitive</strong>.</li><li>An error will be returned if arrays/associative arrays are nested more than 256 levels deep.</li></ul><div>For example, lets say your service returns a JSON object that contains a list of photo URLs:</div><div><p> </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+</div>
+</div>
+<h4 id="GlobalUtilityFunctions-GetInterface(objectasObject,ifnameasString)asInterface">GetInterface(object as Object, ifname as String) as Interface</h4>
+<p>Each BrightScript Component has one or more interfaces. This function returns a value of type "Interface". <br class="atl-forced-newline">Note that generally BrightScript Components allow you to skip the interface specification. In which case, the appropriate interface within the object is used. This works as long as the function names within the interfaces are unique.</p>
+<h4 id="GlobalUtilityFunctions-FindMemberFunction(objectasObject,funNameasString)AsInterface">FindMemberFunction(object as Object, funName as String) As Interface</h4>
+<p>Returns the interface from the object that provides the specified function, or invalid if not found.</p>
+<p>Example:</p>
+<pre>    print FindMemberFunction({}, "Count") '= &lt;Interface: ifAssociativeArray&gt;</pre>
+<p><em>This function is not available in the 3.1 firmware version.</em></p>
+<h4 id="GlobalUtilityFunctions-UpTime(dummyasInteger)asFloat">UpTime(dummy as Integer) as Float</h4>
+<p>Returns the uptime of the system since the last reboot in seconds.</p>
+<h4 id="GlobalUtilityFunctions-RebootSystem()asVoid">RebootSystem() as Void</h4>
+<p>Requests the system to perform a soft reboot. The Roku platform has disabled this feature.</p>
+<h4 id="GlobalUtilityFunctions-ListDir(pathasString)asObject">ListDir(path as String) as Object</h4>
+<p>Returns a List object containing the contents of the directory path specified. All files names are converted to all lowercase.</p>
+<p>For example:</p>
+<pre> BrightScript&gt; l=ListDir("pkg:/movies")<br> BrightScript&gt; print l<br> test_movie_3.vob<br> test_movie_4.vob<br> test_movie_1.vob<br> test_movie_2.vob</pre>
+<h4 id="GlobalUtilityFunctions-ReadAsciiFile(filepathasString)asString">ReadAsciiFile(filepath as String) as String</h4>
+<p>This function reads the specified file and returns the data as a string.</p>
+<p>The file should be encoded as UTF-8 (which includes the 7-bit ASCII subset).</p>
+<p>An empty string is returned if the file can not be read.</p>
+<p>Example:</p>
+<pre>text=ReadAsciiFile("tmp:/config.txt")</pre>
+<h4 id="GlobalUtilityFunctions-WriteAsciiFile(filepathasString,textasString)asBoolean">WriteAsciiFile(filepath as String, text as String) as Boolean</h4>
+<p>This function writes the specified string data to a file at the specified location.</p>
+<p>The string data is written as UTF-8 encoded (which includes the 7-bit ASCII subset).</p>
+<p>The function returns true if the file was successfully written.</p>
+<p>For example:</p>
+<pre>WriteAsciiFile("tmp:/config.txt", "the text to write")</pre>
+<h4 id="GlobalUtilityFunctions-CopyFile(sourceasString,destinationasString)asBoolean">CopyFile(source as String, destination as String) as Boolean</h4>
+<p>Make a copy of a file.</p>
+<h4 id="GlobalUtilityFunctions-MoveFile(sourceasString,destinationasString)asBoolean">MoveFile(source as String, destination as String) as Boolean</h4>
+<p>Rename a file.</p>
+<h4 id="GlobalUtilityFunctions-MatchFiles(pathasString,pattern_inasString)asObject">MatchFiles(path as String, pattern_in as String) as Object</h4>
+<p>Search a directory for filenames that match a certain pattern. <em>Pattern</em> is a wildmat expression. Returns a List object.<br class="atl-forced-newline">This function checks all the files in the directory specified against the pattern specified and places any matches in the returned roList.</p>
+<p>The returned list contains only the part of the filename that is matched against the pattern not the full path. <br class="atl-forced-newline">The pattern may contain certain special characters:</p>
+<ul>
+<li>A '?' matches any single character.</li>
+<li>A '*' matches zero or more arbitrary characters.</li>
+<li>The character class '[...]' matches any single character specified within the brackets. The closing bracket is treated as a member of the character class if it immediately follows the opening bracket. i.e. '[]]' matches a single close bracket. Within the class '-' can be used to specify a range unless it is the first or last character. e.g. '[A-Cf-h]' is equivalent to '[ABCfgh]'.</li>
+<li>A character class can be negated by specifying '^' as the first character. To match a literal '^' place it elsewhere within the class.</li>
+<li>The characters '?', '*' and '[' lose their special meaning if preceded by a single '\'. A single '\' can be matched as '\\'.</li>
+</ul>
+<p>Example:</p>
+<pre>files = MatchFiles(".", "*.mpg")</pre>
+<h4 id="GlobalUtilityFunctions-DeleteFile(fileasString)asBoolean">DeleteFile(file as String) as Boolean</h4>
+<p>Delete the specified file.</p>
+<h4 id="GlobalUtilityFunctions-DeleteDirectory(dirasString)asBoolean">DeleteDirectory(dir as String) as Boolean</h4>
+<p>Deletes the specified directory.  It is only possible to delete an empty directory.</p>
+<h4 id="GlobalUtilityFunctions-CreateDirectory(dirasString)asBoolean">CreateDirectory(dir as String) as Boolean</h4>
+<p>Creates the specified Directory. Only one directory can be created at a time</p>
+<h4 id="GlobalUtilityFunctions-FormatDrive(driveasString,fs_typeasString)asBoolean">FormatDrive(drive as String , fs_type as String) as Boolean</h4>
+<p>Formats a specified drive using the specified filesystem.</p>
+<h4 id="GlobalUtilityFunctions-StrToI(strasString)asDynamic">StrToI(str as String) as Dynamic</h4>
+<p>Return the integer value of the string, or invalid if str is not a string.</p>
+<h4 id="GlobalUtilityFunctions-RunGarbageCollector()asObject">RunGarbageCollector() as Object</h4>
+<p>This function runs the garbage collector. It returns and Associative Array with some statistics regarding the garbage collection. <br class="atl-forced-newline">See the <a href="Component+Architecture.html#ComponentArchitecture-GarbageCollection">Garbage Collection</a> section of this manual for more detail. You don't normally need to call this function. <br class="atl-forced-newline"><br class="atl-forced-newline">Example:</p>
+<p>BrightScript Debugger&gt; a=[]<br> BrightScript Debugger&gt; a[0]=a<br> BrightScript Debugger&gt; a=invalid<br> BrightScript Debugger&gt; print RunGarbageCollector()<br> COUNT: 3<br> ORPHANED: 1<br> ROOT: 2</p>
+<h4 id="GlobalUtilityFunctions-ParseJson(jsonStringasString)asObject">ParseJson(jsonString as String) as Object</h4>
+<p>This function will parse a string formatted according to RFC4627 and return an equivalent BrightScript object (consisting of booleans, integer and floating point numbers, strings, roArray, and roAssociativeArray objects).  If the string is not syntactically correct, <strong>Invalid</strong> will be returned.  A few other things to note:</p>
+<ul>
+<li>Any roAssociativeArray objects in the returned objects will be <strong>case sensitive</strong>.</li>
+<li>An error will be returned if arrays/associative arrays are nested more than 256 levels deep.</li>
+</ul>
+<div>For example, lets say your service returns a JSON object that contains a list of photo URLs:</div>
+<div>
+<p> </p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: javascript; gutter: false; theme: Confluence"><![CDATA[{
       &quot;photos&quot; : [
            {  
@@ -699,14 +478,27 @@ print msg.GetInt() &#39; button number]]></script>
            }
       ]
 }]]></script>
-</div></div><p>You could process it with something like the following:</p></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+</div></div>
+<p>You could process it with something like the following:</p>
+</div>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
 <script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[searchRequest = CreateObject(&quot;roUrlTransfer&quot;)
 searchRequest.SetURL(&quot;http://api.example.com/services/rest/getPhotos&quot;)
 response = ParseJson(searchRequest.GetToString())
 For Each photo In response.photos
     GetImage(photo.title, photo.url)
 End For]]></script>
-</div></div><p> </p><h4 id="GlobalUtilityFunctions-FormatJson(jsonasObject,flags=0asInteger)asString">FormatJson(json as Object, flags = 0 as Integer) as String</h4><p>Formats an Associative Array as a JSON string.</p><p>Data types supported are booleans, integer and floating point numbers, strings, roArray, and roAssociativeArray objects.</p><p>An error will be returned if arrays/associative arrays are nested more than 256 levels deep.</p><p>If an error occurs an empty string will be returned.</p><p>Normally non-ASCII characters are escaped in the output string as &quot;\uXXXX&quot; where XXXX is the hexadecimal representation of the Unicode character value.  If flags=1, non-ASCII characters are not escaped.</p><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">This function is not available in the 3.1 firmware version.</div></div>
+</div></div>
+<p> </p>
+<h4 id="GlobalUtilityFunctions-FormatJson(jsonasObject,flags=0asInteger)asString">FormatJson(json as Object, flags = 0 as Integer) as String</h4>
+<p>Formats an Associative Array as a JSON string.</p>
+<p>Data types supported are booleans, integer and floating point numbers, strings, roArray, and roAssociativeArray objects.</p>
+<p>An error will be returned if arrays/associative arrays are nested more than 256 levels deep.</p>
+<p>If an error occurs an empty string will be returned.</p>
+<p>Normally non-ASCII characters are escaped in the output string as "\uXXXX" where XXXX is the hexadecimal representation of the Unicode character value.  If flags=1, non-ASCII characters are not escaped.</p>
+<div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-name="info">
+<span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">This function is not available in the 3.1 firmware version.</div>
+</div>
 
                 
         
@@ -804,45 +596,7 @@ End For]]></script>
             
             
 
-<div id="footer" role="contentinfo">
-    <section class="footer-body">
 
-                                                    
-        
-
-        <ul id="poweredby">
-            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
-            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
-            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
-            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
-        </ul>
-
-        
-
-        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-
-                    <script>
-var footer = document.getElementById('poweredby');
-footer.removeChild(footer.children[2]);
-footer.removeChild(footer.children[2]);
-
-var pDiv = document.createElement('li');
-pDiv.className='noprint';
-pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
-footer.appendChild(pDiv);
-</script>
-
-<script>
-    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
-    if ( modinfo != undefined ) {
-        modinfo.style.display = "none" ;
-    }
-
-</script>
-
-        
-    </section>
-</div>
 
     </div>
 </body>
