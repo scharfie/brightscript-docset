@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expressions, Variables, and Types - Roku SDK Documentation - Developer Documentation</title>
+
+        
+
+                        
+    
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="https://sdkdocs.roku.com">
+
+<meta id="atlassian-token" name="atlassian-token" content="cf9af07fa4f17126b9ca84d360fa9a5e9b50ba76">
+
+
+<meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+    <meta name="confluence-request-time" content="1458510897259">
+        
+    
+        
+            <meta name="ajs-is-space-admin" content=""> <meta name="ajs-has-space-config" content="">
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-discovered-plugin-features" content="$discoveredList">
+            <meta name="ajs-keyboardshortcut-hash" content="6f3f47137c1b3ed14b1e16e051694721">
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            
+    
+    
+            <meta name="ajs-page-id" content="3737195">
+            <meta name="ajs-latest-page-id" content="3737195">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="Expressions, Variables, and Types">
+            <meta name="ajs-parent-page-title" content="BrightScript Language Reference">
+            <meta name="ajs-parent-page-id" content="3737186">
+            <meta name="ajs-space-key" content="sdkdoc">
+            <meta name="ajs-space-name" content="Roku SDK Documentation">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="https://sdkdocs.roku.com">
+            <meta name="ajs-version-number" content="5.9.1-OD-65-062">
+            <meta name="ajs-build-number" content="6150">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-remote-user-key" content="">
+            <meta name="ajs-current-user-fullname" content="">
+            <meta name="ajs-current-user-avatar-url" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="10485760">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="clc.quick.create,confluence-inline-comments-resolved,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareContentEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.mentions.api.ConfluenceMentionEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.security.ForgotPasswordEvent,pdf-preview,notification.plugin.api.enabled.com.atlassian.confluence.plugins.tasklist.event.SendTaskEmailEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageMovedEvent,previews.sharing,previews.versions,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentUpdateEvent,file-annotations,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.attachment.AttachmentBatchUploadCompletedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingLessUsersEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentRemoveEvent,confluence.wrap.macro,atlassian.aui.raphael.disabled,previews.conversion-service,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.follow.FollowEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageEditedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostCreateEvent,previews.trigger-all-file-types,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentResolveEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.like.LikeCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentCreateEvent,previews.sharing.pushstate,confluence-inline-comments-rich-editor,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostUpdateEvent,file-annotations.likes,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentMentionUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingNoSpaceCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.hipchat.api.events.HipChatUserMapped,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareAttachmentEvent,confluence-inline-comments,quick-reload-inline-comments-flags,confluence-inline-comments-dangling-comment,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostMovedEvent">
+            <meta name="ajs-atl-token" content="cf9af07fa4f17126b9ca84d360fa9a5e9b50ba76">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-user-date-pattern" content="dd MMM yyyy">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
+</script>
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?build-number=6150" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/css/toc-macro-client-impl/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d375ee99916b6b096207b53cf4260ab0-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.css?highlightactions=true&amp;flavour=VANILLA&amp;custom-site-logo=true" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/35e02545dc3a2fc430eccbb927fe7227-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/css/theme.doc/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/3.7.2/_/download/batch/confluence.extra.information:information-plugin-adg-styles/confluence.extra.information:information-plugin-adg-styles.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js?atlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js?analytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js?locale=en-GB" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init.js?locale=en-GB" ></script>
+
+
+        
+    
+
+        
+        <meta name="ajs-site-title" content="Developer Documentation" />
+
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67357911-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<!-- End Google Tag Manager -->
+
+<!-- New Relic -->
+<script type="text/javascript">
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
+</script>
+<!-- End New Relic -->
+
+    
+                <link rel="canonical" href="Expressions,+Variables,+and+Types.html">
+        <link rel="shortlink" href="https://sdkdocs.roku.com/x/awY5">
+    <meta name="wikilink" content="[sdkdoc:Expressions, Variables, and Types]">
+    <meta name="page-version" content="9">
+
+</head>
+
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+
+        
+            <div id='stp-licenseStatus-banner'></div>
+    <div id="full-height-container">
+    <div id="header-precursor">
+        
+                    </div>
+
+
+
+
+
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.2.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+                            <li>
+            
+        
+        
+<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+            <span>Spaces</span>
+    </a>
+        </li>
+                            <li id="browseMenu" role="menu">
+            
+    
+        <a id="browse-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Expressions,+Variables,+and+Types.html#" aria-haspopup="true" aria-owns="browse-menu-link-content" title="Browse">
+        <span class="browse">Browse</span>
+    </a>
+    <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+        Pages
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+        Blog
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+        Labels
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+        Space Operations
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+        </li>
+                        <li class="aui-buttons">
+            </li>
+    </ul>
+</div><div class="aui-header-secondary"><ul class="aui-nav">
+            <li>
+        
+    
+            
+<a  id="doctheme-anchor" href="Expressions,+Variables,+and+Types.html#"  class=" aui-nav-imagelink"   title="">
+            <span></span>
+    </a>
+    </li>
+                    <li>
+        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
+    </li>
+        <li>
+            
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Expressions,+Variables,+and+Types.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+        
+            
+<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="keyboard-shortcuts-link" href="Expressions,+Variables,+and+Types.html#" class="    "      title="View available keyboard shortcuts" >
+        Keyboard Shortcuts
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
+        Feed Builder
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
+        What’s new
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="gadget-directory-link" href="Expressions,+Variables,+and+Types.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
+        Available Gadgets
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
+        About Confluence
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+    </li>
+        <li>
+                
+    
+    </li>
+        <li>
+            
+    </li>
+        <li>
+                                            <li>
+        
+            
+<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FExpressions%252C%2BVariables%252C%2Band%2BTypes" class="   user-item login-link "      title="" >
+        Log in
+</a>
+</li>
+                        
+    </li>
+    </ul>
+</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    <br class="clear">
+</header>
+
+    <div id="splitter">
+    <div id="splitter-sidebar"  class="padding-div" >
+        
+
+                    
+    
+
+
+<div class="plugin_pagetree">
+
+        
+        
+    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+        <div class="plugin_pagetree_children">
+        </div>
+    </ul>
+
+    <fieldset class="hidden">
+        <input type="hidden" name="treeId" value="">
+        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
+        <input type="hidden" name="treePageId" value="3737195">
+
+        <input type="hidden" name="noRoot" value="false">
+        <input type="hidden" name="rootPageId" value="1611307">
+
+        <input type="hidden" name="rootPage" value="">
+        <input type="hidden" name="startDepth" value="0">
+        <input type="hidden" name="spaceKey" value="sdkdoc" >
+
+        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
+        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
+        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
+        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DExpressions%252C%2BVariables%252C%2Band%2BTypes">
+        <input type="hidden" name="mobile" value="false">
+
+                <fieldset class="hidden">
+                                                <input type="hidden" name="ancestorId" value="3737186">
+                                    <input type="hidden" name="ancestorId" value="1611307">
+                                    </fieldset>
+    </fieldset>
+</div>
+
+
+
+            </div>
+    <div id="splitter-content">
+
+        <script>InitDocThemeSidebar()</script>
+
+                        
+            
+<div id="main"  class="aui-page-panel" >
+    <div id="main-header">
+        
+        
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                                            
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="Expressions,+Variables,+and+Types.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
+            <span>
+                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
+                                
+            </span>
+        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                    <ul  id="action-menu-primary"                         class="section-primary first">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737195" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
+                <span>
+                        A<u>t</u>tachments (0)
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=3737195" rel="nofollow" class="action-view-history"   title="">
+                <span>
+                        Page History
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737195" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
+                <span>
+                        Restrictions
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="action-menu-secondary"                         class="section-secondary">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737195" rel="nofollow" class="action-view-info"   title="">
+                <span>
+                        Page Information
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+            
+                                            
+    
+    
+    <a  id="view-resolved-comments" href="Expressions,+Variables,+and+Types.html#" rel="nofollow" class=""   title="">
+                <span>
+                        Resolved comments
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737195" rel="nofollow" class=""   title="Link to this Page">
+                <span>
+                        Link to this Page…
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=3737195#selectedPageInHierarchy" rel="nofollow" class=""   title="">
+                <span>
+                        View in Hierarchy
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=3737195" rel="nofollow" class="action-view-source popup-link"   title="">
+                <span>
+                        View Source
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=3737195" rel="nofollow" class=""   title="">
+                <span>
+                        Export to PDF
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=3737195" rel="nofollow" class="action-export-word"   title="">
+                <span>
+                        Export to Word
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+        
+                <div id="title-heading" class="pagetitle with-breadcrumbs">
+        
+                                        
+                            <div id="breadcrumb-section">
+                    
+    
+    
+    <ol id="breadcrumbs">
+                                        
+                        
+        <li class="first" >
+                        
+                            <span class=""><a href="../sdkdoc.2.html">Roku SDK Documentation</a></span>
+                                                                    
+                        
+        <li>
+                        
+                            <span class=""><a href="../sdkdoc.2.html">Roku SDK Documentation</a></span>
+                                                                    
+                        
+        <li>
+                        
+                            <span class=""><a href="BrightScript+Language+Reference.html">BrightScript Language Reference</a></span>
+                                                    </ol>
+
+
+                </div>
+            
+            <h1 id="title-text" class="with-breadcrumbs">
+                                        <a href="Expressions,+Variables,+and+Types.html">Expressions, Variables, and Types</a>
+                            </h1>
+        </div>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+
+        
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+<div id="content" class="page view">
+    
+
+
+<div id="action-messages">
+                        </div>
+
+
+
+        <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>
+        
+    
+    
+        <fieldset class="hidden parameters">
+            <input type="hidden" title="parentPageId" value="3737186">
+        </fieldset>
+
+                            
+    
+
+                    
+
+        
+        <a href="Expressions,+Variables,+and+Types.html#page-metadata-end" class="assistive">Skip to end of metadata</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+                            <li class="page-metadata-item noprint">
+
+    
+            
+                                            
+    
+    
+    <a  id="content-metadata-page-restrictions-hidden" href="Expressions,+Variables,+and+Types.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+                <span>
+                        
+        </span>    </a>
+</li>
+                        <li class="page-metadata-modification-info">
+                
+        
+    
+        
+    
+        
+            
+            Created by <span class='author'>     <a href="../~breid.html"
+                       class="url fn"
+                            >Bill Reid</a></span>, last modified on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3737195&amp;selectedPageVersions=8&amp;selectedPageVersions=9'>Jan 27, 2016</a>
+                </li>
+        </ul>
+    </div>
+
+
+<a href="Expressions,+Variables,+and+Types.html#page-metadata-start" class="assistive">Go to start of metadata</a>
+<div id="page-metadata-end" class="assistive"></div>
+
+        
+        <fieldset class="hidden parameters">
+                        <input type="hidden" title="browsePageTreeMode" value="view">
+        </fieldset>
+
+        <div id="main-content" class="wiki-content">
+                           
+        <hr/><p><div class="toc-macro client-side-toc-macro manualtoc conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div></p><hr/><h1 id="Expressions,Variables,andTypes-Identifiers">Identifiers</h1><p>Identifiers (names of variables, functions, labels, or object member functions or interfaces (appear after a &quot;.&quot;)) have the following rules.</p><ul><li>must start with an alphabetic character (a – z) or the symbol &quot;_&quot; (underscore)</li><li>may consist of alphabetic characters, numbers, or the symbol &quot;_&quot; (underscore)</li><li>are not case sensitive</li><li>may be of any length</li><li>may not use a &quot;reserved word&quot; as the name (see <a href="Reserved+Words.html">Reserved Words</a> for list of reserved words).</li><li>if a variable: may end with an optional type designator character ($ for string, % for integer, ! for float, # for double) (function names do not support a type designator character).</li></ul><p><br class="atl-forced-newline"/> For example:</p><p style="margin-left: 30.0px;">a<br/> boy5<br/> super_man$</p><h2 id="Expressions,Variables,andTypes-Types">Types</h2><p>BrightScript uses dynamic typing. This means that every value also has a type determined at run time. However, BrightScript also supports declared types. This means that a variable can be made to always contain a value of a specific type. If a value is assigned to a variable which has a specific type, the type of the value assigned will be converted to the variables type, if possible. If not possible, a runtime error will result.</p><p><br class="atl-forced-newline"/> The following types are supported in BrightScript:</p><ul><li><strong>Boolean</strong> – Either true or false.</li><li><strong>Integer</strong> – A 32-bit signed integer number.</li><li><strong>LongInteger</strong> – A 64-bit signed integer number.   <em>This is available in firmware 7.0 or later.</em></li><li><strong>Float</strong> – A 32-bit IEEE floating point number.</li><li><strong>Double</strong> – A 64-bit IEEE floating point number. (Although Double is an intrinsically understood type, it is implemented internally with the roIntrinsicDouble component. This is generally hidden from the developer).</li><li><strong>String</strong> – A sequence of Unicode characters. Internally there are two intrinsic string states. The first is for constant strings. For example, s=&quot;astring&quot;, will create an intrinsic constant string. But once a string is used in an expression, it becomes an &quot;roString&quot;. For example: s=s+&quot;more&quot;, results in s becoming an &quot;roString&quot;. If this is followed by an s2=s, s2 will be a reference to s, not a copy.</li><li><strong>Object</strong> – A reference to a BrightScript Component (native component). Note that if you use the &quot;type()&quot; function, you will not get &quot;Object&quot;, but instead you will get the type of object. E.g.: &quot;roList&quot;, &quot;roVideoPlayer&quot;, etc. Also note that there is no special type for &quot;intrinsic&quot; BrightScript objects (versus a BrightScript Component). Intrinsic BrightScript objects are all built on the BrightScript Component type &quot;roAssociativeArray&quot;.</li><li><strong>Function</strong> – Functions (and Subs, which are functions with void return types) are an intrinsic type. They can be stored in variables and passed to functions.</li><li><strong>Interface</strong> – An interface in a BrightScript Component. If a &quot;dot operator&quot; is used on an interface type, the member must be static (since there is no object context).</li><li><strong>Invalid</strong> – The type invalid has only one value: invalid. It is returned in various cases, for example, when reading an array element that has never been set.</li><li><strong>Dynamic typing</strong> – Unless otherwise specified, a variable is dynamically typed. This means that the type is determined by the value assigned to it at assignment time. For example &quot;1&quot; is an integer, &quot;2.3&quot; is a float, &quot;hello&quot; is a string, etc. If a dynamically typed variable is assigned a new value, its type may change. For example: a=4 creates &quot;a&quot; as integer, then a = &quot;hello&quot;, changes the variable &quot;a&quot; to a string. All variables are dynamically typed, unless: (a) the variable ends in a type designator character, or (b) the &quot;As&quot; keyword is used in a function declaration with the variable.</li></ul><p> </p><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-name="info"><p class="title">BrightScript 3 Compatibility</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>BrightScript 3 has a few changes that affect types. These are hidden from the programmer, unless the new optional &quot;3&quot; parameter is passed to &quot;type()&quot;. Without this parameter, &quot;type()&quot; will return a BrightScript 2.1 compatible type. These are the changes:</p><ul><li>Non-constant strings are now stored in an &quot;roString&quot; component and reference counted when assigned (they were copied in version 2.1, and stored in an intrinsic type)</li><li>Double's are now stored in an &quot;roIntrinsicDouble&quot; component. However, their type is still &quot;Double&quot;. This change results in a memory use reduction most of the time (except when Doubles are actually used, then a bit more memory is used).</li><li>Container components now store intrinsic typed values, not an auto boxed values. In other words, a=[5] will store an integer 5 in an array, not an roInt component. This change causes less memory to be used, and execution to be faster.</li></ul></div></div><p><br class="atl-forced-newline"/> Here are some examples. Note: ? is a shortcut for the &quot;print&quot; statement.</p><pre><br class="atl-forced-newline"/> BrightScript&gt; ?type(1) <br/> Integer <br class="atl-forced-newline"/> BrightScript&gt; ?type(1.0) <br/> Float <br class="atl-forced-newline"/> BrightScript&gt; ?type(&quot;hello&quot;) <br/> String <br class="atl-forced-newline"/> BrightScript&gt; ?type(CreateObject(&quot;roList&quot;)) <br/> roList <br class="atl-forced-newline"/> BrightScript&gt; ?type(1%)<br/> Integer <br class="atl-forced-newline"/> BrightScript&gt; b!=1<br/> BrightScript&gt; ?type(b!)<br/> Float <br class="atl-forced-newline"/> BrightScript&gt; c$=&quot;hello&quot;<br/> BrightScript&gt; ?type(c$)<br/> String <br class="atl-forced-newline"/> BrightScript&gt; d=&quot;hello again&quot;<br/> BrightScript&gt; ?type(d)<br/> String <br class="atl-forced-newline"/> BrightScript&gt; d=d+d<br/> BrightScript&gt; ?type(d)<br/> String <br class="atl-forced-newline"/> BrightScript&gt; ?type(d, 3)<br/> roString <br class="atl-forced-newline"/> BrightScript&gt; d=1<br/> BrightScript&gt; ?type(d)<br/> Integer <br class="atl-forced-newline"/> BrightScript&gt; d=1.0<br/> BrightScript&gt; ?type(d)<br/> Float </pre><h2 id="Expressions,Variables,andTypes-Literals(Constants)">Literals (Constants)</h2><p>Type <strong>Boolean</strong>: true, false<br/> Type <strong>Invalid</strong>: invalid</p><h3 id="Expressions,Variables,andTypes-StringLiterals">String Literals</h3><p>Type <strong>String</strong>: String in quotes, e.g. &quot;this is a string&quot;.</p><p style="margin-left: 30.0px;">Note: The quotation mark character can be embedded in a string literal using two consecutive quotation marks. </p><p style="margin-left: 30.0px;">E.g. s=&quot;&quot;&quot;&quot; : ? len(s), asc(s) outputs 1, 34.</p><p style="margin-left: 30.0px;"><em>This feature is available in firmware 6.2 or later.</em></p><h3 id="Expressions,Variables,andTypes-NumericLiterals">Numeric Literals</h3><p>Type <strong>Integer</strong>: Hex integer, e.g. &amp;HFF, or decimal integer, e.g. 255<br/> Type <strong>Float</strong>: e.g. 2.01, 1.23456E+30, or 2!<br/> Type <strong>Double</strong>: e.g. 1.23456789D-12 or 2.3#<br/>Type <strong>LongInteger</strong>: Hex integer, e.g. &amp;hFEDCBA9876543210&amp;, or decimal integer, e.g. 9876543210&amp;.</p><p style="margin-left: 30.0px;"><em>This feature is available in firmware 7.0 or later.</em></p><p>The following rules determine how integers, doubles, and floats are determined:</p><ol><li>If a constant contains 10 or more digits, or if D is used in the exponent, that number is double precision. Adding a # declaration character also forces a constant to be double precision.</li><li>If the number is not double-precision, and if it contains a decimal point, then the number is float. If the number is expressed in exponential notation with E preceding the exponent, the number is float.</li><li>If neither of the above is true of the constant, then it is an integer.</li></ol><h3 id="Expressions,Variables,andTypes-SourceLiterals">Source Literals</h3><p>Type <strong>Integer</strong>: <strong>LINE_NUM</strong> – the current source line number. </p><h3 id="Expressions,Variables,andTypes-FunctionLiterals">Function Literals</h3><p>Type <strong>Function</strong>: e.g. MyFunction  </p><h3 id="Expressions,Variables,andTypes-ArrayLiterals">Array Literals</h3><p>The Array Operator [ ] can be used to declare an array. It may contain literals (constants), or expressions.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[myarray = [] &#39; empty array
+myarray = [ 1, 2, 3 ] &#39; array of three members
+myarray = [ x+5, true, 1&lt;&gt;2, [&quot;a&quot;,&quot;b&quot;] ] &#39; array of four members]]></script>
+</div></div><p> </p><p>Arrays can be specified in multi-line form: </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[a = [
+    &quot;able&quot;
+    &quot;baker&quot;
+]
+]]></script>
+</div></div><p>or</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[a = [
+    3.1415,
+    2.71828
+]
+]]></script>
+</div></div><h3 id="Expressions,Variables,andTypes-AssociativeArrayLiterals">Associative Array Literals</h3><p>The { } operator can be used to define an Associative Array. It can contain literals or expressions.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[aa = { }
+aa = { key1: &quot;value&quot;, key2: 55, key3: 5+3 } ]]></script>
+</div></div><p> </p><p>Key names must be valid identifiers.</p><p><em>In firmware 7.0 or later:</em></p><p>Key names can be specified as string literals.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[aa = { &quot;Jane Doe&quot;: 1001, &quot;John Doe&quot;: 1002 } ]]></script>
+</div></div><p><em><br/></em></p><p>Associative Arrays can be specified in multi-line form: </p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[aa = {
+    Myfunc1: aFunction
+    Myval1: &quot;the value&quot;
+}]]></script>
+</div></div><p>or</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[aa = {
+    alpha: 1,
+    zulu: 26
+}]]></script>
+</div></div><h2 id="Expressions,Variables,andTypes-Dynamicvs.ObjectTypes">Dynamic vs. Object Types</h2><div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-name="info"><p class="title">Note on Invalid vs. Object</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Certain functions that return objects can also return invalid (for example, in the case when there is no object to return). In which case, the variable accepting the result must be dynamic, since it may get &quot;invalid&quot; or it may get an &quot;object&quot;.</p><pre> l=[]<br /> a$=l.pop() </pre><p>This example will return a type mismatch (a$ is a string, and can not contain &quot;invalid&quot;). Many functions that return objects can return invalid as well.</p></div></div><h2 id="Expressions,Variables,andTypes-TypeDeclarationCharacters">Type Declaration Characters</h2><p>A type declaration character may be used at the end of either a variable or a literal to fix its type. Variables with the same identifier but separate types are separate variables. For example, a, a$, and a% are all different variables.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Character</p></td><td class="confluenceTd"><p>Type</p></td><td class="confluenceTd"><p>Examples</p></td><td colspan="1" class="confluenceTd">Notes</td></tr><tr><td class="confluenceTd"><p>$</p></td><td class="confluenceTd"><p>String</p></td><td class="confluenceTd"><p>A$, STR$</p></td><td colspan="1" class="confluenceTd"> </td></tr><tr><td class="confluenceTd"><p>%</p></td><td class="confluenceTd"><p>Integer</p></td><td class="confluenceTd"><p>A%, SUM%, 125%</p></td><td colspan="1" class="confluenceTd"> </td></tr><tr><td class="confluenceTd"><p>!</p></td><td class="confluenceTd"><p>Float</p></td><td class="confluenceTd"><p>A!, value!, 125!</p></td><td colspan="1" class="confluenceTd"> Single-precision</td></tr><tr><td class="confluenceTd">#</td><td class="confluenceTd"><p>Double</p></td><td class="confluenceTd"><p>A#, distance#, 125#</p></td><td colspan="1" class="confluenceTd"> Double-precision</td></tr><tr><td colspan="1" class="confluenceTd">&amp;</td><td colspan="1" class="confluenceTd">LongInteger</td><td colspan="1" class="confluenceTd">A&amp;, ID&amp; </td><td colspan="1" class="confluenceTd"><em>This is available in firmware 7.0 or later.</em></td></tr></tbody></table></div><h2 id="Expressions,Variables,andTypes-TypeConversion(Promotion)">Type Conversion (Promotion)</h2><p>When operations are performed on one or two numbers, the result must be typed as integer, double or single-precision (float). When a +, -, or * operation is performed, the result will have the same degree of precision as the most precise operand. For example, if one operand is integer, and the other double-precision, the result will be double precision. Only when both operands are integers will a result be integer.</p><p>Division follows the same rules as +, * and -, except that it is never done at the integer level: when both operators are integers, the operation is done as float with a float result.</p><p>During a compare operation (&lt;, &gt;, =, etc.) the operands are converted to the same type before they are compared. The less precise type will always be converted to the more precise type.</p><h2 id="Expressions,Variables,andTypes-EffectsofTypeConversionsonAccuracy">Effects of Type Conversions on Accuracy</h2><p>When a number is converted to integer type, it is &quot;rounded down&quot;; i.e., the largest integer, which is not greater than the number is used. (This is the same thing that happens when the INT function is applied to the number.)</p><p>When a number is converted from double to single precision, it is &quot;4/5 rounded&quot; (the least significant digit is rounded up if the fractional part &gt; =5. Otherwise, it is left unchanged).</p><p>When a single precision number is converted to double precision, only the seven most significant digits will be accurate.</p><h2 id="Expressions,Variables,andTypes-Operators">Operators</h2><p><br class="atl-forced-newline"/> Operations in the innermost level of parentheses are performed first, and then evaluation proceeds according to the precedence in the following table. Operations on the same precedence are left associative, except for exponentiation, which is right associative.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td colspan="1" class="confluenceTd">()</td><td class="confluenceTd"><p>Function call, or parentheses</p></td></tr><tr><td colspan="1" class="confluenceTd">.</td><td class="confluenceTd"><p>Dot operator</p></td></tr><tr><td colspan="1" class="confluenceTd">[ ]</td><td colspan="1" class="confluenceTd">Array operator</td></tr><tr><td colspan="1" class="confluenceTd">^</td><td class="confluenceTd"><p>Exponentiation</p></td></tr><tr><td colspan="1" class="confluenceTd">– , +</td><td class="confluenceTd"><p>Negation (unary)</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>* ,  / , MOD, \</p></td><td class="confluenceTd"><p>Multiplicative operators</p></td></tr><tr><td colspan="1" class="confluenceTd">– , +</td><td class="confluenceTd"><p>Additive operators</p></td></tr><tr><td colspan="1" class="confluenceTd">&lt;&lt;, &gt;&gt;</td><td colspan="1" class="confluenceTd">Integer bitshift operators</td></tr><tr><td colspan="1" class="confluenceTd"><p>&lt;, &gt;, = , &lt;&gt;, &lt;=, &gt;=</p></td><td class="confluenceTd"><p>Comparisons</p></td></tr><tr><td colspan="1" class="confluenceTd">NOT</td><td class="confluenceTd"><p>Unary logical NOT</p></td></tr><tr><td colspan="1" class="confluenceTd">AND</td><td class="confluenceTd"><p>Logical or bitwise</p></td></tr><tr><td colspan="1" class="confluenceTd">OR</td><td class="confluenceTd"><p>Logical or bitwise</p></td></tr></tbody></table></div><h3 id="Expressions,Variables,andTypes-FunctionCallOperator">Function Call Operator</h3><p>The function call operator &quot;( )&quot; can be used to call a function. When used on a function name, function literal, or variable containing a function reference, it calls the function.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[function five() as Integer
+	return 5
+end function
+
+print five()
+fivevar = five
+print fivevar()
+array[1] = fivevar
+print array[1]()
+]]></script>
+</div></div><h3 id="Expressions,Variables,andTypes-DotOperator">Dot Operator</h3><p>The dot operator can be used on any BrightScript Component. It also has special meaning when used on any roAssociativeArray, roXMLElement or roXMLList. When used on a BrightScript Component, it refers to an interface or a member function.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[i = CreateObject(&quot;roInt&quot;)
+i.ifInt.SetInt(5)
+i.SetInt(5)]]></script>
+</div></div><p>&quot;ifInt&quot; is the interface, and &quot;SetInt&quot; is the member function. Every member function of a BrightScript Component is part of an interface. However, specifying the interface with the dot operator is optional. If it is left out, as in the last line of the example above, each interface in the object is searched for the member function. If there is a conflict (a member function with the same name appearing in two interfaces), then the interface should be specified. </p><p>When the dot operator is used on an Associative Array, it is the same as calling the Lookup() or AddReplace() member of the AssociativeArray Object.  However the dot operator's parameters are set at compile time – they are not dynamic (unlike the Lookup() or AddReplace() functions).</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[aa = CreateObject(&quot;roAssociativeArray&quot;)
+aa.newkey = &quot;the value&quot;  &#39; same as: aa.AddReplace(&quot;newkey&quot;, &quot;the value&quot;)
+print aa.newkey          &#39; same as: print aa.Lookup(&quot;newkey&quot;)]]></script>
+</div></div><p>When used for lookups, the dot operator is always case insensitive, even if ifAssociativeArray.SetModeCaseSensitive() has been called. By convention, a statement like:</p><pre>  aa.NewKey = 55</pre><p>will actually create the Associative Array entry in all lower case (&quot;newkey&quot;).  Similarly, an AssociativeArray literal like this will also create the entry in lower case:</p><pre>  aa = { NewKey: 55 }</pre><p>To create mixed case keys, use the array operator or the ifAssociativeArray.AddReplace method:</p><pre>  aa[&quot;NewKey&quot;] = 55</pre><pre>  aa.AddReplace(&quot;NewKey&quot;, 55)</pre><p>See the section on XML support for details on using the dot operator on xml objects.</p><h3 id="Expressions,Variables,andTypes-ArrayOperator">Array Operator</h3><p>The &quot;[ ]&quot; operator is used to access an Array (any BrightScript Component that has an &quot;ifArray&quot; interface, such as roArray and roList). It can also be used as a synonym for the dot operator to access an AssociativeArray (except that the dot operator is case insensitive as described above).</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[array = CreateObject(&quot;roArray&quot;, 10, true)
+array[2] = &quot;two&quot;
+print array[2]]]></script>
+</div></div><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[aa = CreateObject(&quot;roAssociativeArray&quot;)
+aa[&quot;newkey&quot;] = &quot;the value&quot;
+print aa[&quot;newkey&quot;]
+]]></script>
+</div></div><p>The &quot;[ ]&quot; operator takes expressions that are evaluated at runtime and so is different than the dot operator in this way.  Thus the &quot;[ ]&quot; operator can be used in situations where dot cannot, such as when the value of the index contains a character which is invalid in a variable name.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[aa = {}
+aa.name = 1
+aa[&quot;name&quot;] = 1 &#39; same as previous line
+aa[&quot;name with spaces&quot;] = 2 &#39; cannot do this with dot operator
+]]></script>
+</div></div><p><br class="atl-forced-newline"/> Arrays in BrightScript are one dimensional. Multi-dimensional arrays are implemented as arrays of arrays. The &quot;[ ]&quot; operator will automatically map a list of indexes separated by commas to the appropriate sequence of indexing. For example, the following two expressions to fetch &quot;item&quot; are the same:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[dim array[5,5,5]
+item = array[1][2][3]
+item = array[1,2,3] ]]></script>
+</div></div><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>If a multi-dimension array grows beyond its hint size the new entries are not automatically set to roArray.</p></div></div><h3 id="Expressions,Variables,andTypes-ExponentiationOperator">Exponentiation Operator</h3><p>If x and y are integer, float or double, x^y evaluates to x raised to the power y.  Unlike other operators, exponentiation is right associative, so 2^3^2 = 2^(3^2) = 512, not (2^3)^2 = 64.</p><h3 id="Expressions,Variables,andTypes-NegationOperator">Negation Operator</h3><p>If x is integer, float or double, -x evaluates to the negation of x, and +x is equal to x.</p><h3 id="Expressions,Variables,andTypes-MultiplicativeOperators">Multiplicative Operators</h3><p>If x and y are integer, float or double, x * y evaluates to their product and x / y evaluates to their quotient. </p><p>x MOD y is the remainder when x is divided by y.</p><p>x \ y is the integer division result.  For example 7 \ 2 = 3.  <em>This operator is not available in the 3.1 firmware version.</em></p><p>x / y, x MOD y, and x \ y will all generate a runtime error if y is zero.</p><h3 id="Expressions,Variables,andTypes-AdditiveOperators">Additive Operators</h3><p>If x and y are integer, float or double, x+y evaluates to their arithmetic sum and x-y evaluates to their difference.  If x and y are strings, x+y is the concatenation of x and y.</p><h3 id="Expressions,Variables,andTypes-IntegerBitshiftOperators">Integer Bitshift Operators</h3><p>Given a number value, evaluated as an integer, and a shift value in the integer range 0..32, returns the integer value bitshifted accordingly.</p><p>A runtime error is generated if the shift value is out of range.</p><pre>Example:</pre><pre>    print 2 &lt;&lt; 10 '= 2048</pre><pre>    print 7 &gt;&gt; 1 '= 3 </pre><p>Note that right shifting treats the value as an unsigned integer, e.g. &amp;hFFFFFFFF &gt;&gt; 1 is equal to &amp;h7FFFFFFF.<em><br/></em></p><p><em>These operators are not available in the 3.1 firmware version.</em></p><h3 id="Expressions,Variables,andTypes-ComparisonOperators">Comparison Operators</h3><p>This table describes the comparison operators.  All operate on either numeric values (integer, float or double) or strings.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td colspan="1" class="confluenceTd"><strong>Operator</strong></td><td colspan="1" class="confluenceTd"><strong>Numeric</strong></td><td colspan="1" class="confluenceTd"><strong>String</strong></td></tr><tr><td class="confluenceTd">A = B</td><td colspan="1" class="confluenceTd">true if A equals B</td><td class="confluenceTd">true if strings A and B are identical</td></tr><tr><td class="confluenceTd">A &lt;&gt; B</td><td colspan="1" class="confluenceTd">true if A is not equal to B</td><td class="confluenceTd">true if strings A and B are different</td></tr><tr><td class="confluenceTd">A &lt; B</td><td colspan="1" class="confluenceTd">true if A is less than B</td><td class="confluenceTd">true if string A is lexically less than string B</td></tr><tr><td class="confluenceTd">A &lt;= B</td><td colspan="1" class="confluenceTd">true if (A &lt; B) or (A = B)</td><td class="confluenceTd">true if (A &lt; B) or (A = B)</td></tr><tr><td class="confluenceTd">A &gt; B</td><td colspan="1" class="confluenceTd">true if A is greater than B</td><td class="confluenceTd">true if string A is lexically greater than string B</td></tr><tr><td class="confluenceTd">A &gt;= B</td><td colspan="1" class="confluenceTd">true if (A &gt; B) or (A = B)</td><td class="confluenceTd">true if (A &gt; B) or (A = B)</td></tr></tbody></table></div><p>Note that string comparisons are case sensitive.  For example, (&quot;one&quot; = &quot;One&quot;) evaluates to false.</p><h3 id="Expressions,Variables,andTypes-LogicalandBitwiseOperators">Logical and Bitwise Operators</h3><p>AND, OR and NOT can be used both for constructing logical (Boolean) expressions and for bit manipulation. If the arguments to these operators are Boolean, then they perform a logical operation. If the arguments are numeric, they perform bitwise operations.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[x = 1 and 2 &#39; x is zero
+y = true and false &#39; y is false
+if a = c and not (b &gt; 40) then print &quot;success&quot;]]></script>
+</div></div><p>When AND and OR are used for logical operations, the clauses are evaluated from left to right, and only the necessary amount of the expression is executed (a feature sometimes called &quot;minimal evaluation&quot; or &quot;short-circuit evaluation&quot;). For example:</p><pre>if true or func()=0 then print &quot;ok&quot;</pre><p>The above statement will print &quot;ok&quot; but will not call func, since the expression is true no matter what func returns.  On the other hand</p><pre>if false or func()=0 then print &quot;ok&quot;</pre><p>will call func and print ok only if func returns a value of zero.</p><p>This feature can be used to write statements such as</p><pre>if count &gt; 0 and (total / count) &gt; 33 then ...</pre><p>Because of minimal evaluation, this will work correctly even when count is zero, while the following similar expression would not:</p><pre>if (total / count) &gt; 33 and count &gt; 0 then ... ' runtime error when count = 0</pre><h3 id="Expressions,Variables,andTypes-Noteonthe=Operator">Note on the = Operator</h3><p>&quot;=&quot; is used for both assignment and comparison.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[a=5
+if a=5 then print &quot;a is 5&quot;]]></script>
+</div></div><p>BrightScript does not support the use of the &quot;=&quot; assignment operator inside an expression (like C does). This is to eliminate the common class of bugs where a programmer meant &quot;comparison&quot;, not &quot;assignment&quot;. When an assignment occurs, intrinsic types (numbers, booleans, strings) are copied, but BrightScript objects (native objects, arrays, associative arrays) are reference counted.</p><p> </p><p> </p>
+
+                
+        
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://sdkdocs.roku.com/display/sdkdoc/Expressions%2C+Variables%2C+and+Types"
+    dc:identifier="https://sdkdocs.roku.com/display/sdkdoc/Expressions%2C+Variables%2C+and+Types"
+    dc:title="Expressions, Variables, and Types"
+    trackback:ping="https://sdkdocs.roku.com/rpc/trackback/3737195"/>
+</rdf:RDF>
+-->
+
+            
+    
+
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="3737195" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right ">
+            <li class="no-labels-message">
+            No labels
+        </li>
+            </ul>
+
+    </div>
+</div>
+</div>
+
+            
+            
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                        
+    
+<div id="comments-section" class="pageSection group">
+        
+    
+
+
+
+</div>
+
+
+            
+</div>
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+</div>
+  
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div id="footer" role="contentinfo">
+    <section class="footer-body">
+
+                                                    
+        
+
+        <ul id="poweredby">
+            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
+            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
+            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
+            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
+        </ul>
+
+        
+
+        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+
+                    <script>
+var footer = document.getElementById('poweredby');
+footer.removeChild(footer.children[2]);
+footer.removeChild(footer.children[2]);
+
+var pDiv = document.createElement('li');
+pDiv.className='noprint';
+pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
+footer.appendChild(pDiv);
+</script>
+
+<script>
+    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
+    if ( modinfo != undefined ) {
+        modinfo.style.display = "none" ;
+    }
+
+</script>
+
+        
+    </section>
+</div>
+
+    </div>
+</body>
+</html>

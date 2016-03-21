@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roku Search - Roku SDK Documentation - Developer Documentation</title>
+
+        
+
+                        
+    
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="https://sdkdocs.roku.com">
+
+<meta id="atlassian-token" name="atlassian-token" content="cf9af07fa4f17126b9ca84d360fa9a5e9b50ba76">
+
+
+<meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+    <meta name="confluence-request-time" content="1458510946773">
+        
+    
+        
+            <meta name="ajs-is-space-admin" content=""> <meta name="ajs-has-space-config" content="">
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-discovered-plugin-features" content="$discoveredList">
+            <meta name="ajs-keyboardshortcut-hash" content="6f3f47137c1b3ed14b1e16e051694721">
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            
+    
+    
+            <meta name="ajs-page-id" content="3737679">
+            <meta name="ajs-latest-page-id" content="3737679">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="Roku Search">
+            <meta name="ajs-parent-page-title" content="Roku SDK Documentation">
+            <meta name="ajs-parent-page-id" content="1611307">
+            <meta name="ajs-space-key" content="sdkdoc">
+            <meta name="ajs-space-name" content="Roku SDK Documentation">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="https://sdkdocs.roku.com">
+            <meta name="ajs-version-number" content="5.9.1-OD-65-062">
+            <meta name="ajs-build-number" content="6150">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-remote-user-key" content="">
+            <meta name="ajs-current-user-fullname" content="">
+            <meta name="ajs-current-user-avatar-url" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="10485760">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="clc.quick.create,confluence-inline-comments-resolved,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareContentEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.mentions.api.ConfluenceMentionEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.security.ForgotPasswordEvent,pdf-preview,notification.plugin.api.enabled.com.atlassian.confluence.plugins.tasklist.event.SendTaskEmailEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageMovedEvent,previews.sharing,previews.versions,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentUpdateEvent,file-annotations,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.attachment.AttachmentBatchUploadCompletedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingLessUsersEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentRemoveEvent,confluence.wrap.macro,atlassian.aui.raphael.disabled,previews.conversion-service,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.follow.FollowEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageEditedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostCreateEvent,previews.trigger-all-file-types,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentResolveEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.like.LikeCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentCreateEvent,previews.sharing.pushstate,confluence-inline-comments-rich-editor,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostUpdateEvent,file-annotations.likes,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentMentionUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingNoSpaceCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.hipchat.api.events.HipChatUserMapped,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareAttachmentEvent,confluence-inline-comments,quick-reload-inline-comments-flags,confluence-inline-comments-dangling-comment,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostMovedEvent">
+            <meta name="ajs-atl-token" content="cf9af07fa4f17126b9ca84d360fa9a5e9b50ba76">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-user-date-pattern" content="dd MMM yyyy">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
+</script>
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?build-number=6150" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/css/toc-macro-client-impl/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d375ee99916b6b096207b53cf4260ab0-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.css?highlightactions=true&amp;flavour=VANILLA&amp;custom-site-logo=true" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/35e02545dc3a2fc430eccbb927fe7227-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/css/theme.doc/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/3.7.2/_/download/batch/confluence.extra.information:information-plugin-adg-styles/confluence.extra.information:information-plugin-adg-styles.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence/com.atlassian.confluence.ext.newcode-macro-plugin:sh-theme-confluence.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js?atlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js?analytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js?locale=en-GB" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter.js" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-brushes.js" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/2.1.8/_/download/batch/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init/com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init.js?locale=en-GB" ></script>
+
+
+        
+    
+
+        
+        <meta name="ajs-site-title" content="Developer Documentation" />
+
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67357911-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<!-- End Google Tag Manager -->
+
+<!-- New Relic -->
+<script type="text/javascript">
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
+</script>
+<!-- End New Relic -->
+
+    
+                <link rel="canonical" href="Roku+Search.html">
+        <link rel="shortlink" href="https://sdkdocs.roku.com/x/Twg5">
+    <meta name="wikilink" content="[sdkdoc:Roku Search]">
+    <meta name="page-version" content="87">
+
+</head>
+
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+
+        
+            <div id='stp-licenseStatus-banner'></div>
+    <div id="full-height-container">
+    <div id="header-precursor">
+        
+                    </div>
+
+
+
+
+
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.2.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+                            <li>
+            
+        
+        
+<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+            <span>Spaces</span>
+    </a>
+        </li>
+                            <li id="browseMenu" role="menu">
+            
+    
+        <a id="browse-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Roku+Search.html#" aria-haspopup="true" aria-owns="browse-menu-link-content" title="Browse">
+        <span class="browse">Browse</span>
+    </a>
+    <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+        Pages
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+        Blog
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+        Labels
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+        Space Operations
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+        </li>
+                        <li class="aui-buttons">
+            </li>
+    </ul>
+</div><div class="aui-header-secondary"><ul class="aui-nav">
+            <li>
+        
+    
+            
+<a  id="doctheme-anchor" href="Roku+Search.html#"  class=" aui-nav-imagelink"   title="">
+            <span></span>
+    </a>
+    </li>
+                    <li>
+        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
+    </li>
+        <li>
+            
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Roku+Search.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+        
+            
+<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="keyboard-shortcuts-link" href="Roku+Search.html#" class="    "      title="View available keyboard shortcuts" >
+        Keyboard Shortcuts
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
+        Feed Builder
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
+        What’s new
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="gadget-directory-link" href="Roku+Search.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
+        Available Gadgets
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
+        About Confluence
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+    </li>
+        <li>
+                
+    
+    </li>
+        <li>
+            
+    </li>
+        <li>
+                                            <li>
+        
+            
+<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FRoku%2BSearch" class="   user-item login-link "      title="" >
+        Log in
+</a>
+</li>
+                        
+    </li>
+    </ul>
+</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    <br class="clear">
+</header>
+
+    <div id="splitter">
+    <div id="splitter-sidebar"  class="padding-div" >
+        
+
+                    
+    
+
+
+<div class="plugin_pagetree">
+
+        
+        
+    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+        <div class="plugin_pagetree_children">
+        </div>
+    </ul>
+
+    <fieldset class="hidden">
+        <input type="hidden" name="treeId" value="">
+        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
+        <input type="hidden" name="treePageId" value="3737679">
+
+        <input type="hidden" name="noRoot" value="false">
+        <input type="hidden" name="rootPageId" value="1611307">
+
+        <input type="hidden" name="rootPage" value="">
+        <input type="hidden" name="startDepth" value="0">
+        <input type="hidden" name="spaceKey" value="sdkdoc" >
+
+        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
+        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
+        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
+        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DRoku%2BSearch">
+        <input type="hidden" name="mobile" value="false">
+
+                <fieldset class="hidden">
+                                                <input type="hidden" name="ancestorId" value="1611307">
+                                    </fieldset>
+    </fieldset>
+</div>
+
+
+
+            </div>
+    <div id="splitter-content">
+
+        <script>InitDocThemeSidebar()</script>
+
+                        
+            
+<div id="main"  class="aui-page-panel" >
+    <div id="main-header">
+        
+        
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                                            
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="Roku+Search.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
+            <span>
+                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
+                                
+            </span>
+        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                    <ul  id="action-menu-primary"                         class="section-primary first">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737679" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
+                <span>
+                        A<u>t</u>tachments (18)
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=3737679" rel="nofollow" class="action-view-history"   title="">
+                <span>
+                        Page History
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737679" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
+                <span>
+                        Restrictions
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="action-menu-secondary"                         class="section-secondary">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737679" rel="nofollow" class="action-view-info"   title="">
+                <span>
+                        Page Information
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+            
+                                            
+    
+    
+    <a  id="view-resolved-comments" href="Roku+Search.html#" rel="nofollow" class=""   title="">
+                <span>
+                        Resolved comments
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3737679" rel="nofollow" class=""   title="Link to this Page">
+                <span>
+                        Link to this Page…
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=3737679#selectedPageInHierarchy" rel="nofollow" class=""   title="">
+                <span>
+                        View in Hierarchy
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=3737679" rel="nofollow" class="action-view-source popup-link"   title="">
+                <span>
+                        View Source
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=3737679" rel="nofollow" class=""   title="">
+                <span>
+                        Export to PDF
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=3737679" rel="nofollow" class="action-export-word"   title="">
+                <span>
+                        Export to Word
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+        
+                <div id="title-heading" class="pagetitle with-breadcrumbs">
+        
+                                        
+                            <div id="breadcrumb-section">
+                    
+    
+    
+    <ol id="breadcrumbs">
+                                        
+                        
+        <li class="first" >
+                        
+                            <span class=""><a href="../sdkdoc.2.html">Roku SDK Documentation</a></span>
+                                                                    
+                        
+        <li>
+                        
+                            <span class=""><a href="../sdkdoc.2.html">Roku SDK Documentation</a></span>
+                                                    </ol>
+
+
+                </div>
+            
+            <h1 id="title-text" class="with-breadcrumbs">
+                                        <a href="Roku+Search.html">Roku Search</a>
+                            </h1>
+        </div>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+
+        
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+<div id="content" class="page view">
+    
+
+
+<div id="action-messages">
+                        </div>
+
+
+
+        <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>
+        
+    
+    
+        <fieldset class="hidden parameters">
+            <input type="hidden" title="parentPageId" value="1611307">
+        </fieldset>
+
+                            
+    
+
+                    
+
+        
+        <a href="Roku+Search.html#page-metadata-end" class="assistive">Skip to end of metadata</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+                            <li class="page-metadata-item noprint">
+
+    
+            
+                                            
+    
+    
+    <a  id="content-metadata-page-restrictions-hidden" href="Roku+Search.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+                <span>
+                        
+        </span>    </a>
+</li>
+                            <li class="page-metadata-item noprint">
+
+    
+        
+                                            
+    
+    
+    <a  id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3737679&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment"  accessKey="t"  title="18 attachments">
+                <span>
+                        
+        </span>    </a>
+</li>
+                        <li class="page-metadata-modification-info">
+                
+        
+    
+        
+    
+        
+            
+            Created by <span class='author'>     <a href="../~breid.html"
+                       class="url fn"
+                            >Bill Reid</a></span>, last modified by <span class='editor'>     <a href="../~dmoffatt.html"
+                       class="url fn"
+                            >David Moffatt</a></span> on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3737679&amp;selectedPageVersions=86&amp;selectedPageVersions=87'>Feb 22, 2016</a>
+                </li>
+        </ul>
+    </div>
+
+
+<a href="Roku+Search.html#page-metadata-start" class="assistive">Go to start of metadata</a>
+<div id="page-metadata-end" class="assistive"></div>
+
+        
+        <fieldset class="hidden parameters">
+                        <input type="hidden" title="browsePageTreeMode" value="view">
+        </fieldset>
+
+        <div id="main-content" class="wiki-content">
+                           
+        <hr/><p><div class="toc-macro client-side-toc-macro  conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div></p><hr/><p>Roku Search provides another way to convert Roku users into customers of your VOD channel, besides the Roku Channel Store. Roku Search is located on the main menu of the Roku home screen, and allows Roku users to search for a particular movie, TV show/special, or actor/actress/director. Roku Search then allows users to see a list of providers and launch the provider's channel and go directly to the selected piece of content.</p><p>By participating in the Roku Search program, all of your content that matches any search, and your channel, is offered automatically to all Roku users who use Roku Search and can use your channel.   (Search results are not shown outside the country specified and TVEverywhere (TVE) results are not returned to those who don't have the specific TVE channel installed) </p><p>After completing a search, the user can also add the results to My Feed, which provides updates on the content they have expressed an interest in previously. </p><p style="margin-left: 30.0px;"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/3737679/searchalgo.jpg?version=1&amp;modificationDate=1449075470538&amp;api=v2" data-image-src="/download/attachments/3737679/searchalgo.jpg?version=1&amp;modificationDate=1449075470538&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3737876" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="searchalgo.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87"></span></p><p>Roku Search is only available in English, and only available in the U.S., Canada (English only), Ireland and the U.K. Roku Search only supports full-length movies and TV series, episodes, and specials. Roku Search does not support short-form or clip content.</p><h2 id="RokuSearch-RokuSearchAlgorithm">Roku Search Algorithm</h2><p>The algorithm for Roku Search is:</p><ol><li>A user selects Search from the Roku home-screen main menu.</li><li>The user is presented with a keypad to enter a search string and a panel of search results.   Initially the user also is presented with a list of previous search results.   The user does have the option of clearing their search history.</li><li>As the user enters the search string, suggested search results from the Roku Search database matching the string are presented. The user can select any search result at any time. <br/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/3737679/searchscreen80.jpg?version=1&amp;modificationDate=1447880765026&amp;api=v2" data-image-src="/download/attachments/3737679/searchscreen80.jpg?version=1&amp;modificationDate=1447880765026&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3737710" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="searchscreen80.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87"></span></li><li>After the user selects an actor or a director,  a list of content titles that were done by that person appear.   <br/><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="250" src="https://sdkdocs.roku.com/download/attachments/3737679/harrisonFord.jpg?version=2&amp;modificationDate=1455752053058&amp;api=v2" data-image-src="/download/attachments/3737679/harrisonFord.jpg?version=2&amp;modificationDate=1455752053058&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="4259934" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="harrisonFord.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87"></span></li><li>After the user selects a title then a content details screen will appear.   The user can also select a title directly in step #3.   This screen has a list of providers.</li><li>If the title is a series then a list of seasons appears.     Once the user selects a season then a list of providers will appear. <br/><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="250" src="https://sdkdocs.roku.com/download/attachments/3737679/GameOThrones.jpg?version=1&amp;modificationDate=1455752114441&amp;api=v2" data-image-src="/download/attachments/3737679/GameOThrones.jpg?version=1&amp;modificationDate=1455752114441&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="4259936" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="GameOThrones.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87"></span></li><li>Once the user selects a provider, that provider's channel is launched and you go directly to a spring board screen for the selected piece of content.</li><li>If the user does not have the provider's channel installed  it will prompt the user to install the channel.</li></ol><h3 id="RokuSearch-ContentDetailsScreen">Content Details Screen</h3><p>The content details screen includes:</p><ul><li>artwork, such as DVD cover art, or TV show banners</li><li>content information, such title, description, rating, actors, director, run time, production year, genre</li><li>a selectable list of content provider items for the movie or TV show, including an option to add the movie or TV show to the personal My Feed of the user</li></ul><p>Each item in the content provider list includes:</p><ul><li>the logo of the content provider</li><li>the terms to acquire the movie or TV show</li><li>an indication if the movie or TV show is available in HD</li><li>the number of episodes available for TV shows</li><li>a checkmark if the user has installed the content provider VOD channel on their Roku Media Player</li></ul><p>Each item, when selected by the user, will &quot;deep link&quot; into the content provider VOD channel. The link could be to a content provider movie details screen, TV season episode list screen, or TV episode details screen, or other screen, depending on the content selected, the content provider, and whether the user has installed the content provider VOD channel.</p><p style="margin-left: 30.0px;"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/3737679/searchresults80.jpg?version=1&amp;modificationDate=1447880864139&amp;api=v2" data-image-src="/download/attachments/3737679/searchresults80.jpg?version=1&amp;modificationDate=1447880864139&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3737711" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="searchresults80.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87"></span></p><h3 id="RokuSearch-ContentProviderListOrder">Content Provider List Order</h3><p>Content providers are listed on the content details screen in the following order*:</p><ol><li>Whether or not the channel is installed (represented by the checkmark icon)</li><li>By price (Free, Authenticated or Subscription, Purchase/Rental price)</li></ol><p>Search results for TV episodes results are ordered by:</p><ol><li>Whether or not the channel is installed (represented by the check mark icon)</li><li>Whether the channel has the latest episode</li><li>By number of episodes available</li></ol><p>When more than one content provider meets the same criteria, the order is randomized.</p><p>* There are a very few exceptions.</p><h3 id="RokuSearch-ContentMeta-DataDatabase">Content Meta-Data Database</h3><p>User search strings are compared to a master database of content meta-data maintained by Roku. Content providers who participate in the Roku Search program must supply Roku with an XML file listing their currently-available content and content meta-data, which is then incorporated into the Roku master database four times a day.   Currently content is pulled at 1:00am, 7:00am, 1:00pm and 7:00pm.   However the process of reconciling all of the data sources is quite long so we ask you to give us 24 hours for changes to propagate to production.</p><h2 id="RokuSearch-IntegratingYourVODChannelContentIntoRokuSearch">Integrating Your VOD Channel Content Into Roku Search</h2><p>This is what you need to do to participate in the Roku Search program:</p><ul><li>Create an up-to-date XML feed of your currently available content. – see below</li><li>Create search artwork (store and list artwork) – see below</li><li>Create a private channel with the name &lt;CHANNEL&gt;SearchBeta where &lt;CHANNEL&gt; is the name of your production channel.   Submit this and make sure it works.   (Private channels are published within about 20 seconds but only those with the channel code can install them.   Also the name of the channel is important we will not use other private channels)</li><li>Submit an up-to-date XML feed of your available content to Roku using the correct XML schema.   Here is the URL: <a class="external-link" href="https://developer.roku.com/search/feed_validator" rel="nofollow">https://developer.roku.com/search/feed_validator</a>.   We do not accept feeds which do not pass the validator.</li><li>Send email to <span style="color: rgb(0,0,0);">dl.searchsubmit@roku</span><span style="color: rgb(0,0,0);">.com with your private channel code, your feed URL, and your icons.   Tell us if you think your deeplinking already works.</span></li><li><span style="color: rgb(0,0,0);">We will configure your XML feed to your private channel and then you can test deep linking.    Because private channels publish automatically you can rapidly iterate to get the feature working.   </span></li><li><span style="color: rgb(0,0,0);">Once the private channel is ready send mail to <span style="color: rgb(0,0,0);">dl.searchsubmit@roku</span><span style="color: rgb(0,0,0);">.com or your account manager.    If you require a new version of your public channel you will have to go through both channel cert and search cert but they can be done together.</span></span></li><li><span style="color: rgb(0,0,0);"><span style="color: rgb(0,0,0);">Make sure you have infrastructure in place to keep the search feed up-to-date.   </span></span></li></ul><h3 id="RokuSearch-SearchArtwork">Search Artwork</h3><p>You must provide artwork to display in the Roku Search interface. The artwork you provide for the Roku Channel Store (and on the Roku homescreen, once installed) is used in the Roku Search screen to show the content providers participating in the Roku Search program, in a scrollable randomized horizontal list. You must separately provide a small icon of your logo for your item in the content providers list on the content details screen. This artwork should look similar to the artwork used to represent your channel in the Roku Channel Store, with your logo and brand colors. The following describes the requirements and usage of the artwork used in Roku Search.</p><h4 id="RokuSearch-ChannelStoreArtwork">Channel Store Artwork </h4><p>This should be the similar artwork used to represent your channel in the Roku Channel Store, and the portion of the Roku home-screen that lists installed channels. For Roku Search, it is resized as follows:</p><ul><li>PNG format only</li><li>Square corners</li><li>artwork size<ul><li>FHD 147w x 113h pixels </li><li>HD: 95w x 75h pixels </li><li>SD: 63w x 50h pixels </li></ul></li></ul><h4 id="RokuSearch-ContentProviderListArtwork">Content Provider List Artwork</h4><p>The artwork for the content providers list items in the content details screen should incorporate your channel logo and brand colors. The artwork is used in the default Scene Graph list configuration (see <a href="LabelList.html">LabelList</a>), so it must have specific size and appearance features to be incorporated into the list item. The artwork must conform to the following:</p><ul><li><p>PNG format only</p></li><li><p>rounded corners</p></li><li><p>artwork size</p><ul><li><p>FHD: 165w x 60h pixels </p></li><li><p>HD: 110w x 40h pixels</p></li><li><p>SD: 73w x 27h  pixels</p></li></ul></li><li><p>use an inner shadow effect to conform to the default Scene Graph list item focus appearance</p></li><li><p>if a gradient is applied to the artwork, use a gradient with the light source at the top of the artwork </p></li></ul><p>This illustrates the requirements of the content provider list artwork:</p><p style="margin-left: 30.0px;"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/3737679/searchlogodims.jpg?version=1&amp;modificationDate=1449092722858&amp;api=v2" data-image-src="/download/attachments/3737679/searchlogodims.jpg?version=1&amp;modificationDate=1449092722858&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3737888" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="searchlogodims.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="image/jpeg" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87"></span> </p><h4 id="RokuSearch-SearchArtworkTemplates">Search Artwork Templates</h4><p>The following PSD templates can be used in an illustration tool to create the Roku Search artwork.</p><ul><li><strong>Channel Store Artwork, HD:</strong> <a href="https://sdkdocs.roku.com/download/attachments/3737679/searchProviderTile_HD.psd?version=1&amp;modificationDate=1449093525933&amp;api=v2" data-linked-resource-id="3737889" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="searchProviderTile_HD.psd" data-nice-type="Image" data-linked-resource-content-type="image/photoshop" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87">searchProviderTile_HD.psd</a></li><li><strong>Channel Store Artwork, SD:</strong> <a href="https://sdkdocs.roku.com/download/attachments/3737679/searchProviderTile_SD.psd?version=1&amp;modificationDate=1449093571755&amp;api=v2" data-linked-resource-id="3737890" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="searchProviderTile_SD.psd" data-nice-type="Image" data-linked-resource-content-type="image/photoshop" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87">searchProviderTile_SD.psd</a></li><li><strong>Content Provider List Item Artwork, HD:</strong> <a href="https://sdkdocs.roku.com/download/attachments/3737679/partnerLogo_template_HD.psd?version=2&amp;modificationDate=1449093693712&amp;api=v2" data-linked-resource-id="3737891" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="partnerLogo_template_HD.psd" data-nice-type="Image" data-linked-resource-content-type="image/photoshop" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87">partnerLogo_template_HD.psd</a></li><li><strong>Content Provider List Item Artwork, SD:</strong> <a href="https://sdkdocs.roku.com/download/attachments/3737679/partnerLogo_template_SD.psd?version=1&amp;modificationDate=1449093750417&amp;api=v2" data-linked-resource-id="3737893" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="partnerLogo_template_SD.psd" data-nice-type="Image" data-linked-resource-content-type="image/photoshop" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87">partnerLogo_template_SD.psd</a></li></ul><h3 id="RokuSearch-XMLfeedsandDeepLinking">XML feeds and Deep Linking</h3><p>Your channel will need to be updated to support deep linking with the play IDs provided in your feed.    Deep linking works by sending command line arguments, via the roAssociativeArray named &quot;args&quot;,  your channel.   They should be parsed by the channel launch time.   Just launching the channel will not pass certification.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Play IDs and Deep Linking Example</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: vb; gutter: false; theme: Confluence"><![CDATA[Function Main(args as Dynamic) as void     
+   if (args &lt;&gt; invalid)
+        contentID    = args.contentID
+		contentType  = args.mediatype
+		LaunchSource = args.source
+        ...    
+   End Function]]></script>
+</div></div><p> </p><p><strong>A tricky item.  </strong>In your feed there is a tag called<strong> PlayID </strong>which gets passed into the channel as<strong> ContentID.  </strong></p><p><strong>A 2nd tricky item.  </strong>If you select a series, then a season, it will not send you the PlayID for the series.   It will send you one of the PlayIDs for one of the episodes in the selected season.   You can not search for episodes of a show just seasons of a show.</p><p>It is up to the the channel developer to write brightscript code to use this information to launch the correct springboard or episodic picker screen.   Here is a snippet from a working XML feed:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>Feed snippit</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: java; gutter: false; theme: Confluence"><![CDATA[&lt;movie tmsId=&quot;MV003837380000&quot;&gt;
+	&lt;title&gt;The Adventures of Chris Fable&lt;/title&gt;
+	&lt;videos&gt;
+		&lt;video&gt;
+			&lt;region&gt;us&lt;/region&gt;
+			&lt;playId&gt;bbtv://vod/asset_id/2dd3cf6fcf644453a0792cd1a60c3be2&lt;/playId&gt;
+			&lt;viewOptions&gt;
+				&lt;option&gt;
+					&lt;quality&gt;SD&lt;/quality&gt;
+					&lt;license&gt;rental&lt;/license&gt;
+					&lt;price&gt;1.99&lt;/price&gt;
+					&lt;currency&gt;USD&lt;/currency&gt;
+				&lt;/option&gt;
+			&lt;/viewOptions&gt;
+		&lt;/video&gt;
+	&lt;/videos&gt;
+&lt;/movie&gt;
+]]></script>
+</div></div><p>Here is what shows up in args when I launch this piece of content:</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>content of args</b></div><div class="codeContent panelContent pdl">
+<script type="syntaxhighlighter" class="brush: java; gutter: false; theme: Confluence"><![CDATA[splashTime: 1973
+source: meta-search
+contentid: bbtv://vod/asset_id/2dd3cf6fcf644453a0792cd1a60c3be2
+instant_on_run_mode: foreground
+mediatype: movie
+action: display
+lastExitOrTerminationReason: EXIT_UNKNOWN
+]]></script>
+</div></div><p> </p><h2 id="RokuSearch-Testingyourchannelforsearch">Testing your channel for search</h2><p>There are two ways to test.   The first one is to manually trigger the deep link via an ECP command.    This boils down to a &quot;curl&quot; to the ECP port where you specify the ContentID and the MediaType as parameters to the URL.    See <a href="External+Control+Guide.html#ExternalControlGuide-3.3ImplementingDeepLinkinginaChannel">External Control Guide#3.3ImplementingDeepLinkinginaChannel</a> </p><p>The other way is test with the live system.   This is the purpose of the &lt;channel name&gt;PrivateSearchBeta channel that we asked you to create above.   We configure your feed to point to this channel when we test it.   Because private channels are published automatically you can make changes, upload them, update your system, and see your changes in production.   This is a little bit harder working with a side loaded channel because you don't have a serial port but you can draw text to the screen and see what is going on.   </p><h3 id="RokuSearch-XMLFeedSchemas"><span style="line-height: 1.5;">XML Feed Schemas</span></h3><p>You must provide an up-to-date XML feed web location for your VOD channel. This XML feed location can be secured with basic username and password authentication. Your XML feed should contain content meta-data for each title in your catalog, as described in <a href="Roku+Search.html#RokuSearch-SearchMeta-Data">Search Meta-Data</a>. The XML files from your feed location will be uploaded and incorporated into the Roku Search master database four times a day. You should update your search meta-data XML file as often as needed, but not more than four times a day.</p><p>There are two schemas used for XML feeds to the Roku master database:</p><ul><li>Schemas Using the Gracenote TMS Database</li><li>Schemas Without the TMS Database</li></ul><p>The two differ in the amount of meta-data you must supply, and whether you need to supply a TMS ID that corresponds to the deep-link playID(s) of your content item(s).</p><h4 id="RokuSearch-SchemasUsingtheTMSDatabase">Schemas Using the TMS Database</h4><p>One schema incorporates meta-data from the Gracenote TMS database, a database of movies and TV shows. To use this database, you must supply the minimal data required to allow Roku users to purchase and play your content items, such as playID, pricing, and so forth. You must also identify the TMS ID for the corresponding content item(s) you make available to Roku users.</p><p>The TMS ID is a 14-character scheme used to uniquely identify movie and TV show content (for example, MV123456780000). These IDs are used to match titles in your currently-offered content catalog back to specific title entries in the master Roku Search database.</p><p>The first two characters in the ID represent the unique ID domain applied to the program record:</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">ID</th><th class="confluenceTh">Domain</th></tr><tr><td class="confluenceTd">MV </td><td class="confluenceTd">Movie (theatrical, made-for-television, direct-to-video)</td></tr><tr><td class="confluenceTd">SH</td><td class="confluenceTd">TV Show</td></tr><tr><td class="confluenceTd">EP</td><td class="confluenceTd">TV Episode</td></tr></tbody></table></div><p>The next 12 characters will be the unique numeric value within that database. This implies that the numeric sequence could be the identical across the four ID domains.</p><p>By using the TMS IDs, Roku only needs limited information from you to display full content meta-data. Please contact Gracenote directly about acquiring IDs for your content.</p><div class="confluence-information-macro confluence-information-macro-note conf-macro output-block" data-hasbody="true" data-macro-name="note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">If the minimum meta-data you provide for a title appears to match a title we already have in our database, we will display only the TMS meta-data.</div></div><h4 id="RokuSearch-SchemasWithouttheTMSDatabase">Schemas Without the TMS Database</h4><p>The second schema requires you to provide as much content meta-data as possible to at least match the depth of meta-data found in the TMS database, for the maximum probability that user searches will have your content items in the search results. For this schema, you still must supply the data required for Roku users to purchase and play your content items, with your own unique playID for each item.</p><h4 id="RokuSearch-XMLValidation">XML Validation</h4><p>Roku cannot incorporate your XML files into the master database unless it conforms to the correct XML schema. Refer to <a href="Roku+Search.html#RokuSearch-SearchMeta-Data">Search Meta-Data</a> for details on the required and optional meta-data for Roku Search. The following are two sample XML files, one that uses the TMS database, the other without the TMS database:</p><ul><li>TMS: <a href="https://sdkdocs.roku.com/download/attachments/3737679/roku-parter-content-feed-example-tms-id_2015-06-01.xml?version=1&amp;modificationDate=1447970388341&amp;api=v2" data-linked-resource-id="3737768" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="roku-parter-content-feed-example-tms-id_2015-06-01.xml" data-nice-type="XML File" data-linked-resource-content-type="text/xml" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87">roku-parter-content-feed-example-tms-id_2015-06-01.xml</a></li><li>No TMS: <a href="https://sdkdocs.roku.com/download/attachments/3737679/roku-partner-content-feed-example-non-tms-id-2015-06-02.xml?version=1&amp;modificationDate=1447970351510&amp;api=v2" data-linked-resource-id="3737767" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="roku-partner-content-feed-example-non-tms-id-2015-06-02.xml" data-nice-type="XML File" data-linked-resource-content-type="text/xml" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87">roku-partner-content-feed-example-non-tms-id-2015-06-02.xml</a></li></ul><p>Make sure to validate your XML feed against one of the two following XML schema (<code>.xsd</code>) files before submitting it to Roku:</p><ul><li>TMS: <a href="https://sdkdocs.roku.com/download/attachments/3737679/partner-feed-tms-validator.xsd?version=1&amp;modificationDate=1455755354024&amp;api=v2" data-linked-resource-id="4259946" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="partner-feed-tms-validator.xsd" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87">partner-feed-tms-validator.xsd</a></li><li>No TMS: <a href="https://sdkdocs.roku.com/download/attachments/3737679/partner-feed-validator.xsd?version=1&amp;modificationDate=1455755361836&amp;api=v2" data-linked-resource-id="4259947" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="partner-feed-validator.xsd" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3737679" data-linked-resource-container-version="87">partner-feed-validator.xsd</a></li></ul><h2 id="RokuSearch-SearchMeta-Data">Search Meta-Data</h2><p>The following tables describe the required and optional meta-data fields used in the XML feed files for Roku Search.</p><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body"><p>Although many fields are optional, the more meta-data you include, the greater the probability your content will be returned in the user search results. </p></div></div><h3 id="RokuSearch-MovieMeta-Data(TMS)">Movie Meta-Data (TMS)</h3><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Field</th><th class="confluenceTh">Required</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><p>movies/movie/@tmsId</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Gracenote TMS ID for a specific movie.</p></td></tr><tr><td class="confluenceTd"><p>... movie/title</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Optional, but very helpful</p></td></tr><tr><td class="confluenceTd"><p>… movie/videos/video</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>The videos element lists all the video content items corresponding to the specific movie identified by the movie/@tmsId attribute. Each child video element must have a unique play ID, and provide meta-data indicating availability, pricing and other specifics about that specific video content item available on your channel.</p></td></tr><tr><td class="confluenceTd"><p>… video/playId</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>A value you provide for each title in your XML feed that we will pass back to your channel when a user selects your service as a provider for a specific title (see <a href="Roku+Search.html#RokuSearch-PlayIDsandDeepLinking">Play IDs and Deep Linking</a>).</p></td></tr><tr><td class="confluenceTd"><p>… video/region</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Can be one of the following 2-character ISO codes (can be either uppercase or lowercase):</p><ul><li>us (default)</li><li>US (default)</li><li>gb</li><li>GB</li><li>ca</li><li>CA</li><li>ie</li><li>IE</li></ul></td></tr><tr><td class="confluenceTd"><p>… video/viewOptions/option</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Used to provide video viewing options.</p></td></tr><tr><td class="confluenceTd"><p>… option/quality</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>The resolution of the video content item. Must be one of the following (can either be uppercase or lowercase):</p><ul><li>sd</li><li>SD</li><li>hd</li><li>HD</li><li>hd+</li><li>HD+</li></ul></td></tr><tr><td class="confluenceTd"><p>… option/license</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>The type of license terms for the video content item. Must be one of the following (can either be initial capitalization or all lowercase):</p><ul><li>free</li><li>Free</li><li>rental</li><li>Rental</li><li>purchase</li><li>Purchase</li><li>subscription</li><li>Subscription</li></ul></td></tr><tr><td class="confluenceTd"><p>… option/price</p></td><td class="confluenceTd"><p>Required if option/license is set to purchase or rental, defaults to 0.00 if option/license is set to subscription or free</p></td><td class="confluenceTd"><p>Price, that must include two decimal point places, such as &quot;1.90&quot;, &quot;1.99&quot;, or &quot;2.00&quot;. If the price is &quot;0.00&quot;, set option/license to &quot;subscription&quot; or &quot;free&quot; rather than setting option/price to &quot;0.00&quot;, and option/price will be set to &quot;0.00&quot; by default.</p></td></tr><tr><td class="confluenceTd"><p>… option/currency</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>The type of currency that denominates the price. Must be one of the following (can either be uppercase or lowercase):</p><ul><li>usd (default)</li><li>USD (default)</li><li>gbp</li><li>GBP</li><li>cad</li><li>CAD</li></ul></td></tr></tbody></table></div><h3 id="RokuSearch-MovieMeta-Data(noTMS)">Movie Meta-Data (no TMS)</h3><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Field</th><th class="confluenceTh">Required</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><p>movies/movie/@id</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Your immutable reference ID for that movie.</p><div class="confluence-information-macro confluence-information-macro-warning conf-macro output-block" data-hasbody="true" data-macro-name="warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">Once assigned to a content item, you cannot change the reference ID or use it for another content item in the Roku Search meta-data.</div></div></td></tr><tr><td class="confluenceTd"><p>... movie/titles/title</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Movie title. We use this value for matching. Please don’t include extra information like year, version label, and so forth.</p></td></tr><tr><td class="confluenceTd"><p><a rel="nofollow">… </a>title/@language</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td class="confluenceTd"><p>… movie/images/image</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Although this is optional, we recommend that you include it for items where you unsure about whether we can or cannot match your content.</p></td></tr><tr><td class="confluenceTd"><p>… image/url</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p><code><span class="nolink">http://your_domain/your_image_path</span></code></p><p>Image dimensions must be 240 x 360 pixels.</p></td></tr><tr><td class="confluenceTd"><p><a rel="nofollow">… </a>image/@language</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td class="confluenceTd"><p><a rel="nofollow">… </a>image/@category</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Must one of the following:</p><ul><li>Poster Art</li><li>Box Art</li></ul></td></tr><tr><td class="confluenceTd"><p>… movie/descriptions/description</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>You must provide a movie description that does not exceed 60 characters. You should (though are not required) to also provide longer descriptions not to exceed 500 characters (the maximum length is set by the description/@length attribute).</p></td></tr><tr><td class="confluenceTd"><p><a rel="nofollow">… </a>description/@language</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td class="confluenceTd"><p>… description/@length</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Maximum character value for the short/long description. Must be one of the following:</p><ul><li>60 (default)</li><li>100</li><li>250</li><li>500</li></ul></td></tr><tr><td class="confluenceTd"><p>… movie/runTime</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Runtime in seconds</p></td></tr><tr><td class="confluenceTd"><p>… movie/releaseYear</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Year initially released or first aired</p></td></tr><tr><td class="confluenceTd"><p>… movie/crew/person,</p><p>… movie/cast/person</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Used to provide a list of cast and crew members.</p><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">We recommend that you provide this if there’s a chance that we can’t match your data.</div></div></td></tr><tr><td class="confluenceTd"><p>… cast/person/role</p></td><td class="confluenceTd"><p>Required if a cast person is provided</p></td><td class="confluenceTd"><p>Must be one of the following:</p><ul><li>Actor</li><li>Anchor</li><li>Host</li><li>Narrator</li><li>Voice</li></ul></td></tr><tr><td class="confluenceTd"><p>… crew/person/role</p></td><td class="confluenceTd"><p>Required if a crew person is provided</p></td><td class="confluenceTd"><p>Must be one of the following:</p><ul><li>Director</li><li>Host</li></ul></td></tr><tr><td class="confluenceTd"><p>… person/firstName</p></td><td class="confluenceTd"><p>Required if person provided</p></td><td class="confluenceTd"><p>First Name or abbreviation</p></td></tr><tr><td class="confluenceTd"><p>… person/middleName</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Middle Name or abbreviation</p></td></tr><tr><td class="confluenceTd"><p>… person/lastName</p></td><td class="confluenceTd"><p>Required if person provided</p></td><td class="confluenceTd"><p>Last Name</p></td></tr><tr><td class="confluenceTd"><p>… person/birthDate</p></td><td class="confluenceTd"><p>Required if person provided</p></td><td class="confluenceTd"><p><code><em>YYYY</em>-<em>mm</em>-<em>dd</em></code></p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… person/deathDate</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p><code><em>YYYY</em>-<em>mm</em>-<em>dd</em></code></p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… person/image</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p><code><span class="nolink">http://your_domain/your_image_path</span></code></p><p>Image dimensions must be 270 x 360 pixels.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… movie/ratings/rating</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Localized parental rating of movie</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… rating/rating</p></td><td colspan="1" class="confluenceTd"><p>Required if rating provided</p></td><td colspan="1" class="confluenceTd"><p>Must be a value found in <a href="Roku+Search.html#RokuSearch-AcceptableParentalRatings">Acceptable Parental Ratings</a></p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… rating/source</p></td><td colspan="1" class="confluenceTd"><p>Required if rating provided</p></td><td colspan="1" class="confluenceTd"><p>Must be either:</p><ul><li>British Board of Film Classification</li><li>Canadian Home Video Rating System</li><li>Canadian Parental Rating</li><li>Motion Picture Association of America</li><li>UK Content Provider</li><li>USA Parental Rating</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… movie/keywords/keyword</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Keywords used to describe movie</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… keyword/type</p></td><td colspan="1" class="confluenceTd"><p>Required only if keyword</p></td><td colspan="1" class="confluenceTd"><p>Must be:</p><ul><li>Character</li><li>General</li><li>Mood</li><li>Setting</li><li>Subject</li><li>Theme</li><li>Time Period</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… keyword/word</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Users cannot search by keyword, however our meta-data structure supports them. For example, here are keywords for the movie <strong><em>Argo</em></strong> by keyword type:</p><p><strong>Mood</strong></p><ul><li>Brutal</li><li>Tense</li><li>Suspenseful</li></ul><p><strong>Theme</strong></p><ul><li>Rescue</li><li>Escape</li></ul><p><strong>Subject</strong></p><ul><li>Iran hostage crisis</li><li>On the run</li><li>Political intrigue</li><li>Schemes</li></ul><p><strong>Time Period</strong></p><ul><li>1970s</li></ul><p><strong>Setting</strong></p><ul><li>Tehran, Iran</li><li>CIA office</li><li>Canada</li><li>United States</li></ul><p><strong>Character</strong></p><ul><li>CIA agent</li><li>Specialist</li><li>Hostage</li><li>Revolutionary</li><li>Ambassador</li><li>Wife</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p><a rel="nofollow">… </a>keyword/@language</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… movie/genres/genre</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Must be found in <a href="Roku+Search.html#RokuSearch-AcceptableGenres">Acceptable Genres</a>.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… movie/videos/video</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>The videos element lists all the video content items corresponding to the specific movie identified by the movie/@id attribute. Each child video element must have a unique play ID, and provide meta-data indicating availability, pricing and other specifics about that specific video content item available on your channel.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… video/playId</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>A value you provide for each title in your XML feed that we will pass back to your channel when a user selects your service as a provider for a specific title (see <a href="Roku+Search.html#RokuSearch-PlayIDsandDeepLinking">Play IDs and Deep Linking</a>).</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… video/region</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Can be one of the following 2-character ISO codes (can be either uppercase or lowercase):</p><ul><li>us (default)</li><li>US (default)</li><li>gb</li><li>GB</li><li>ca</li><li>CA</li><li>ie</li><li>IE</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… video/viewOptions/option</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>Used to provide video viewing options.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… option/quality</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>The resolution of the video content item. Must be one of the following (can either be uppercase or lowercase):</p><ul><li>sd</li><li>SD</li><li>hd</li><li>HD</li><li>hd+</li><li>HD+</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… option/license</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>The type of licensing terms for the video content item. Must be one of the following (can either be initial capitalization or all lowercase):</p><ul><li>free</li><li>Free</li><li>rental</li><li>Rental</li><li>purchase</li><li>Purchase</li><li>subscription</li><li>Subscription</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… option/price</p></td><td colspan="1" class="confluenceTd"><p>Required if option/license is set to purchase or rental, defaults to 0.00 if option/license is set to subscription or free</p></td><td colspan="1" class="confluenceTd"><p>Price, that must include two decimal point places, such as &quot;1.90&quot;, &quot;1.99&quot;, or &quot;2.00&quot;. If the price is &quot;0.00&quot;, set option/license to &quot;subscription&quot; or &quot;free&quot; rather than setting option/price to &quot;0.00&quot;, and option/price will be set to &quot;0.00&quot; by default.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… option/currency</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>The type of currency denominated by price. Must be one of the following (can be either uppercase or lowercase):</p><ul><li>usd (default)</li><li>USD (default)</li><li>gbp</li><li>GBP</li><li>cad</li><li>CAD</li></ul></td></tr></tbody></table></div><h3 id="RokuSearch-TVMeta-Data(TMS)">TV Meta-Data (TMS)</h3><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Field</th><th class="confluenceTh">Required</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><p>seriesItems/series/@tmsId</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Gracenote TMS ID for a specific TV series.</p></td></tr><tr><td class="confluenceTd"><p>... series/title</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Optional, but very helpful</p></td></tr><tr><td class="confluenceTd"><p>… series/episodes/episode</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>At least one episode must be included for a series</p></td></tr><tr><td class="confluenceTd"><p>episode/@tmsId</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Gracenote TMS ID for a specific TV episode.</p></td></tr><tr><td class="confluenceTd"><p>... episode/title</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Optional, but very helpful</p></td></tr><tr><td class="confluenceTd"><p>… episode/videos/video</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>The videos element lists all the video content items corresponding to the specific TV episode identified by the episode/@tmsId attribute. Each child video element must have a unique play ID, and provide meta-data indicating availability, pricing, and other specifics about that specific video content item available on your channel.</p></td></tr><tr><td class="confluenceTd"><p>… video/playId</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>A value you provide for each title in your XML feed that we will pass back to your channel when a user selects your service as a provider for a specific title (see <a href="Roku+Search.html#RokuSearch-PlayIDsandDeepLinking">Play IDs and Deep Linking</a>).</p></td></tr><tr><td class="confluenceTd"><p>… video/region</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Can be one of the following 2-character ISO codes (can be either uppercase or lowercase):</p><ul><li>us (default)</li><li>US (default)</li><li>gb</li><li>GB</li><li>ca</li><li>CA</li><li>ie</li><li>IE</li></ul></td></tr><tr><td class="confluenceTd"><p>… video/viewOptions/option</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Used to provide video viewing options.</p></td></tr><tr><td class="confluenceTd"><p>… option/quality</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>The resolution of the video content item. Must be one of the following (can be either uppercase or lowercase):</p><ul><li>sd</li><li>SD</li><li>hd</li><li>HD</li><li>hd+</li><li>HD+</li></ul></td></tr><tr><td class="confluenceTd"><p>… option/license</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>The type of licensing terms for the video content item. Must be one of the following (can be either initial capitalization or all lowercase):</p><ul><li>free</li><li>Free</li><li>rental</li><li>Rental</li><li>purchase</li><li>Purchase</li><li>subscription</li><li>Subscription</li></ul></td></tr><tr><td class="confluenceTd"><p>… option/price</p></td><td class="confluenceTd"><p>Required if option/license is set to purchase or rental, defaults to 0.00 if option/license is set to subscription or free</p></td><td class="confluenceTd"><p>Price, that must include two decimal point places, such as &quot;1.90&quot;, &quot;1.99&quot;, or &quot;2.00&quot;. If the price is &quot;0.00&quot;, set option/license to &quot;subscription&quot; or &quot;free&quot; rather than setting option/price to &quot;0.00&quot;, and option/price will be set to &quot;0.00&quot; by default.</p></td></tr><tr><td class="confluenceTd"><p>… option/currency</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>The type of currency denominated by price. Must be one of the following (can be either uppercase or lowercase):</p><ul><li>usd (default)</li><li>USD (default)</li><li>gbp</li><li>GBP</li><li>cad</li><li>CAD</li></ul></td></tr></tbody></table></div><h3 id="RokuSearch-TVMeta-Data(noTMS)">TV Meta-Data (no TMS)</h3><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh">Field</th><th class="confluenceTh">Required</th><th class="confluenceTh">Description</th></tr><tr><td class="confluenceTd"><p>seriesItems/series/@id</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Your immutable reference ID for that TV series.</p><div class="confluence-information-macro confluence-information-macro-warning conf-macro output-block" data-hasbody="true" data-macro-name="warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">Once assigned to a content item, you cannot change the reference ID or use it for another content item in the Roku <strong>Search</strong> meta-data.</div></div></td></tr><tr><td class="confluenceTd"><p>… series/titles/title</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>Used for providing titles. We use this field for matching.</p></td></tr><tr><td class="confluenceTd"><p><a rel="nofollow">… </a>title/@language</p></td><td class="confluenceTd"><p>Options</p></td><td class="confluenceTd"><p>Default: en</p><p>(Roku <strong>Search</strong> is currently only available in English.)</p></td></tr><tr><td class="confluenceTd"><p>… series/images/image</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Used to provide images for this tv series. Optional but highly recommended if you’re not confident that we can match your data.</p></td></tr><tr><td class="confluenceTd"><p>… image/url</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p><span class="nolink"><span style="font-family: Courier New;">http://your_domain/your_image_path</span></span></p><p>Image dimensions must be 240 x 360 pixels.</p></td></tr><tr><td class="confluenceTd"><p><a rel="nofollow">… </a>image/@language</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td class="confluenceTd"><p>… series/descriptions/description</p></td><td class="confluenceTd"><p>Required</p></td><td class="confluenceTd"><p>You must provide a movie description that does not exceed 60 characters. You should (though are not required) to also provide longer descriptions not to exceed 500 characters (the maximum length is set by the description/@length attribute).</p></td></tr><tr><td class="confluenceTd"><p><a rel="nofollow">… </a>description/@language</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td class="confluenceTd"><p><a rel="nofollow">… </a>description/@length</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>The maximum character value for the short/long description.</p><p>Must be one of the following:</p><ul><li>60 (default)</li><li>100</li><li>250</li><li>500</li></ul></td></tr><tr><td class="confluenceTd"><p>… series/originalAirDate</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Optional but very important. We recommend that you provide this.</p></td></tr><tr><td class="confluenceTd"><p>… series/crew/person, <br/>… series/cast/person</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Used to identify cast and crew members</p></td></tr><tr><td class="confluenceTd"><p>… cast/person/role</p></td><td class="confluenceTd"><p>Required if a cast person is provided</p></td><td class="confluenceTd"><p>Must be one of the following::</p><ul><li>Actor</li><li>Anchor</li><li>Host</li><li>Narrator</li><li>Voice</li></ul></td></tr><tr><td class="confluenceTd"><p>… crew/person/role</p></td><td class="confluenceTd"><p>Required if a crew person is provided</p></td><td class="confluenceTd"><p>Must be one of the following:</p><ul><li>Director</li><li>Host</li></ul></td></tr><tr><td class="confluenceTd"><p>… person/firstName</p></td><td class="confluenceTd"><p>Required if person provided</p></td><td class="confluenceTd"><p>First Name or abbreviation. Used for matching.</p></td></tr><tr><td class="confluenceTd"><p>… person/middleName</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p>Middle Name or abbreviation</p></td></tr><tr><td class="confluenceTd"><p>… person/lastName</p></td><td class="confluenceTd"><p>Required if person provided</p></td><td class="confluenceTd"><p>Last Name. Used for matching.</p></td></tr><tr><td class="confluenceTd"><p>… person/birthDate</p></td><td class="confluenceTd"><p>Required if person provided</p></td><td class="confluenceTd"><p><code><em>YYYY</em>-<em>mm</em>-<em>dd</em></code></p><p>Used for matching.</p></td></tr><tr><td class="confluenceTd"><p>… person/deathDate</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p><code><em>YYYY</em>-<em>mm</em>-<em>dd</em></code></p></td></tr><tr><td class="confluenceTd"><p>… person/image</p></td><td class="confluenceTd"><p>Optional</p></td><td class="confluenceTd"><p><span class="nolink"><span style="font-family: Courier New;">http://your_domain/your_image_path</span></span></p><p>Image dimensions must be 270 x 360 pixels.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… series/seasons/season</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>Used to include data for seasons</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… season/seasonNumber</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>Sequential season number</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… season/images/image/url</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p><span class="nolink"><span style="font-family: Courier New;">http://your_domain/your_image_path</span></span></p><p>Image dimensions must be 360 x 270 pixels.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p><a rel="nofollow">… </a>season/images/image/@language</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… season/episodes/episode</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>At least one episode must be included for a series</p></td></tr><tr><td colspan="1" class="confluenceTd"><p><a rel="nofollow">… </a>episode/@id</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>Your immutable reference ID for episode.</p><div class="confluence-information-macro confluence-information-macro-warning conf-macro output-block" data-hasbody="true" data-macro-name="warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">Once assigned to a content item, you cannot change the reference ID or use it for another content item in the Roku Search meta-data.</div></div></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/episodeNumber</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>Sequential episode number</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/airDate</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Optional but recommended. This is helpful for matching and such.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/titles/title</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>Series title</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… title/@language</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/images/image</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Image used for episode</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… image/url</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p><code><span class="nolink">http://your_domain/your_image_path</span></code></p><p>Image dimensions must be 360 x 270 pixels.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p><a rel="nofollow">… </a>image/@language</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/descriptions/description</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>You must provide a movie description that does not exceed 60 characters. You should (though are not required) to also provide longer descriptions not to exceed 500 characters (the maximum length is set by the description/@length attribute).</p></td></tr><tr><td colspan="1" class="confluenceTd"><p><a rel="nofollow">… </a>description/@language</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td colspan="1" class="confluenceTd"><p><a rel="nofollow">… </a>description/@length</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Must be the maximum character value for the short/long description:</p><ul><li>60 (default)</li><li>100</li><li>250</li><li>500</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/crew/person, <br/>… episode/cast/person</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>A cast or crew member.</p><div class="confluence-information-macro confluence-information-macro-tip conf-macro output-block" data-hasbody="true" data-macro-name="tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"> </span><div class="confluence-information-macro-body">Roku recommends that you provide complete data for this if you’re not sure that we can match the episode.  </div></div></td></tr><tr><td colspan="1" class="confluenceTd"><p>… cast/person/role</p></td><td colspan="1" class="confluenceTd"><p>Required if a cast person is provided</p></td><td colspan="1" class="confluenceTd"><p>Must be one of the following:</p><ul><li>Actor</li><li>Anchor</li><li>Host</li><li>Narrator</li><li>Voice</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… crew/person/role</p></td><td colspan="1" class="confluenceTd"><p>Required if a crew person is provided</p></td><td colspan="1" class="confluenceTd"><p>Must be one of the following:</p><ul><li>Director</li><li>Host</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… person/firstName</p></td><td colspan="1" class="confluenceTd"><p>Required if person provided</p></td><td colspan="1" class="confluenceTd"><p>First Name or abbreviation. Used for matching.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… person/middleName</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Middle Name or abbreviation</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… person/lastName</p></td><td colspan="1" class="confluenceTd"><p>Required if person provided</p></td><td colspan="1" class="confluenceTd"><p>Last Name. Used for matching.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… person/birthDate</p></td><td colspan="1" class="confluenceTd"><p>Required if person provided</p></td><td colspan="1" class="confluenceTd"><p><code><em>YYYY</em>-<em>mm</em>-<em>dd</em></code></p><p>Used for matching.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… person/deathDate</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p><code><em>YYYY</em>-<em>mm</em>-<em>dd</em></code></p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… person/image</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p><span class="nolink"><span style="font-family: Courier New;">http://your_domain/your_image_path</span></span></p><p>Image dimensions must be 360 x 270 pixels.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/ratings/rating</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Localized parental rating of movie</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… rating/rating</p></td><td colspan="1" class="confluenceTd"><p>Required if rating provided</p></td><td colspan="1" class="confluenceTd"><p>Must be a value from <a href="Roku+Search.html#RokuSearch-AcceptableParentalRatings">Acceptable Parental Ratings</a></p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… rating/source</p></td><td colspan="1" class="confluenceTd"><p>Required if rating provided</p></td><td colspan="1" class="confluenceTd"><p>Must be either:</p><ul><li>British Board of Film Classification</li><li>Canadian Home Video Rating System</li><li>Canadian Parental Rating</li><li>Motion Picture Association of America</li><li>UK Content Provider</li><li>USA Parental Rating</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/keywords/keyword</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Keywords used to describe movie</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… keyword/type</p></td><td colspan="1" class="confluenceTd"><p>Required only if keyword</p></td><td colspan="1" class="confluenceTd"><p>Must be:</p><ul><li>Character</li><li>General</li><li>Mood</li><li>Setting</li><li>Subject</li><li>Theme</li><li>Time Period</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… keyword/word</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Users cannot search by Keyword, however our meta-data structure supports them. For example, here are keywords for the movie <strong><em>Argo</em></strong> by keyword type:</p><p><strong>Mood</strong></p><ul><li>Brutal</li><li>Tense</li><li>Suspenseful</li></ul><p><strong>Theme</strong></p><ul><li>Rescue</li><li>Escape</li></ul><p><strong>Subject</strong></p><ul><li>Iran hostage crisis</li><li>On the run</li><li>Political intrigue</li><li>Schemes</li></ul><p><strong>Time Period</strong></p><ul><li>1970s</li></ul><p><strong>Setting</strong></p><ul><li>Tehran, Iran</li><li>CIA office</li><li>Canada</li><li>United States</li></ul><p><strong>Character</strong></p><ul><li>CIA agent</li><li>Specialist</li><li>Hostage</li><li>Revolutionary</li><li>Ambassador</li><li>Wife</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p><a rel="nofollow">… </a>keyword/@language</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Default: en</p><p>(Roku Search is currently only available in English.)</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/videos/video</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>The videos element lists all the video content items corresponding to the specific TV episode identified by the episode/@id attribute. Each child video element must have a unique play ID, and provide meta-data indicating availability, pricing, and other specifics about that specific video content item available on your channel.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… episode/genres/genre</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>Must be found in <a href="Roku+Search.html#RokuSearch-AcceptableGenres">Acceptable Genres</a>.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… video/playId</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>A value you provide for each title in your XML feed that we will pass back to your channel when a user selects your service as a provider for a specific title (see <a href="Roku+Search.html#RokuSearch-PlayIDsandDeepLinking">Play IDs and Deep Linking</a>).  </p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… video/region</p><p> </p></td><td colspan="1" class="confluenceTd"><p>Optional</p><p> </p></td><td colspan="1" class="confluenceTd"><p>Must be one of the following 2-character ISO codes (can be either uppercase or lowercase):</p><ul><li>us (default)</li><li>US (default)</li><li>gb</li><li>GB</li><li>ca</li><li>CA</li><li>ie</li><li>IE</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… video/viewOptions/option</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>You must provide at least one option.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… option/quality</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>The resolution of the video content item. Must be one of the following (can be either uppercase or lowercase):</p><ul><li>sd</li><li>SD</li><li>hd</li><li>HD</li><li>hd+</li><li>HD+</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… option/license</p></td><td colspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" class="confluenceTd"><p>The type of licensing terms for the video content item. Must be one of the following (can be either initial capitalization or all lowercase):</p><ul><li>free</li><li>Free</li><li>rental</li><li>Rental</li><li>purchase</li><li>Purchase</li><li>subscription</li><li>Subscription</li></ul></td></tr><tr><td colspan="1" class="confluenceTd"><p>… option/price</p></td><td colspan="1" class="confluenceTd"><p>Required if option/license is set to purchase or rental, defaults to 0.00 if option/license is set to subscription or free</p></td><td colspan="1" class="confluenceTd"><p>Price, that must include two decimal point places, such as &quot;1.90&quot;, &quot;1.99&quot;, or &quot;2.00&quot;. If the price is &quot;0.00&quot;, set option/license to &quot;subscription&quot; or &quot;free&quot; rather than setting option/price to &quot;0.00&quot;, and option/price will be set to &quot;0.00&quot; by default.</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>… option/currency</p></td><td colspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" class="confluenceTd"><p>The currency that denominates price. Must be one of the following (can either be uppercase or lowercase):</p><ul><li>usd (default)</li><li>USD (default)</li><li>gbp</li><li>GBP</li><li>cad</li><li>CAD</li></ul></td></tr></tbody></table></div><h2 id="RokuSearch-AcceptableGenres">Acceptable Genres</h2><p>All acceptable genres may have either initial capitalization of the first word, or all lower-case.</p><div class="sectionColumnWrapper conf-macro output-block" data-hasbody="true" data-macro-name="section"><div class="sectionMacro"><div class="sectionMacroRow"><div class="columnMacro conf-macro output-block" data-hasbody="true" data-macro-name="column" style="width:25%;min-width:25%;max-width:25%;"><ul><li>action</li><li>action sports</li><li>adventure</li><li>aerobics</li><li>agriculture</li><li>animals</li><li>animated</li><li>anime</li><li>anthology</li><li>archery</li><li>arm wrestling</li><li>art</li><li>arts/crafts</li><li>auction</li><li>auto</li><li>auto racing</li><li>aviation</li><li>awards</li><li>badminton</li><li>ballet</li><li>baseball</li><li>basketball</li><li>beach soccer</li><li>beach volleyball</li><li>biathlon</li><li>bicycle</li><li>bicycle racing</li><li>billiards</li><li>biography</li><li>blackjack</li><li>boat</li><li>boat racing</li><li>bobsled</li><li>bodybuilding</li><li>bowling</li><li>boxing</li><li>bullfighting</li><li>bus./financial</li><li>canoe</li><li>card games</li><li>cheerleading</li><li>children</li><li>children-music</li><li>children-special</li><li>children-talk</li><li>collectibles</li><li>comedy</li><li>comedy drama</li><li>community</li><li>computers</li><li>consumer</li><li>cooking</li><li>cricket</li><li>crime</li><li>crime drama</li><li>curling</li></ul></div><div class="columnMacro conf-macro output-block" data-hasbody="true" data-macro-name="column" style="width:25%;min-width:25%;max-width:25%;"><ul><li>dance</li><li>dark comedy</li><li>darts</li><li>debate</li><li>diving</li><li>docudrama</li><li>documentary</li><li>dog racing</li><li>dog show</li><li>dog sled</li><li>drag racing</li><li>drama</li><li>educational</li><li>entertainment</li><li>environment</li><li>equestrian</li><li>erotic</li><li>event</li><li>exercise</li><li>fantasy</li><li>fashion</li><li>fencing</li><li>field hockey</li><li>figure skating</li><li>fishing</li><li>football</li><li>fundraiser</li><li>gaelic football</li><li>game show</li><li>gaming</li><li>gay/lesbian</li><li>golf</li><li>gymnastics</li><li>handball</li><li>health</li><li>historical drama</li><li>history</li><li>hockey</li><li>holiday</li><li>holiday music</li><li>holiday music special</li><li>holiday special</li><li>holiday-children</li><li>holiday-children special</li><li>home improvement</li><li>horror</li><li>horse</li><li>house/garden</li><li>how-to</li><li>hunting</li><li>hurling</li><li>hydroplane racing</li><li>indoor soccer</li><li>interview</li><li>intl soccer</li></ul></div><div class="columnMacro conf-macro output-block" data-hasbody="true" data-macro-name="column" style="width:25%;min-width:25%;max-width:25%;"><ul><li>kayaking</li><li>lacrosse</li><li>law</li><li>luge</li><li>martial arts</li><li>medical</li><li>military</li><li>miniseries</li><li>mixed martial arts</li><li>motorcycle</li><li>motorcycle racing</li><li>motorsports</li><li>mountain biking</li><li>music</li><li>music special</li><li>music talk</li><li>musical</li><li>musical comedy</li><li>mystery</li><li>nature</li><li>news</li><li>newsmagazine</li><li>olympics</li><li>opera</li><li>outdoors</li><li>parade</li><li>paranormal</li><li>parenting</li><li>performing arts</li><li>playoff sports</li><li>poker</li><li>politics</li><li>polo</li><li>pool</li><li>pro wrestling</li><li>public affairs</li><li>racquet</li><li>reality</li><li>religious</li><li>ringuette</li><li>rodeo</li><li>roller derby</li><li>romance</li><li>romantic comedy</li><li>rowing</li><li>rugby</li><li>running</li></ul></div><div class="columnMacro conf-macro output-block" data-hasbody="true" data-macro-name="column" style="width:25%;min-width:25%;max-width:25%;"><ul><li>sailing</li><li>science</li><li>science fiction</li><li>self improvement</li><li>shooting</li><li>shopping</li><li>sitcom</li><li>skateboarding</li><li>skating</li><li>skeleton</li><li>skiing</li><li>snooker</li><li>snowboarding</li><li>snowmobile</li><li>soap</li><li>soap special</li><li>soap talk</li><li>soccer</li><li>softball</li><li>special</li><li>speed skating</li><li>sports talk</li><li>squash</li><li>standup</li><li>sumo wrestling</li><li>surfing</li><li>suspense</li><li>swimming</li><li>table tennis</li><li>talk</li><li>technology</li><li>tennis</li><li>theater</li><li>thriller</li><li>track/field</li><li>travel</li><li>triathlon</li><li>variety</li><li>volleyball</li><li>war</li><li>water polo</li><li>water skiing</li><li>watersports</li><li>weather</li><li>weightlifting</li><li>western</li><li>wrestling</li><li>yacht racing</li></ul></div></div></div></div><h2 id="RokuSearch-AcceptableParentalRatings">Acceptable Parental Ratings</h2><div class="sectionColumnWrapper conf-macro output-block" data-hasbody="true" data-macro-name="section"><div class="sectionMacro"><div class="sectionMacroRow"><div class="columnMacro conf-macro output-block" data-hasbody="true" data-macro-name="column" style="width:25%;min-width:25%;max-width:25%;"><ul><li>12</li><li>12A</li><li>14+</li><li>14A</li><li>15</li><li>18</li><li>18+</li><li>18A</li></ul></div><div class="columnMacro conf-macro output-block" data-hasbody="true" data-macro-name="column" style="width:25%;min-width:25%;max-width:25%;"><ul><li>A</li><li>AA</li><li>C</li><li>C8</li><li>E</li><li>G</li><li>NC-17</li><li>PG</li></ul></div><div class="columnMacro conf-macro output-block" data-hasbody="true" data-macro-name="column" style="width:25%;min-width:25%;max-width:25%;"><ul><li>PG-13</li><li>R</li><li>R18</li><li>TV14</li><li>TVG</li><li>TVMA</li><li>TVPG</li><li>TVY</li></ul></div><div class="columnMacro conf-macro output-block" data-hasbody="true" data-macro-name="column" style="width:25%;min-width:25%;max-width:25%;"><ul><li>TVY14</li><li>TVY7</li><li>U</li><li>Uc</li><li>UNRATED</li></ul></div></div></div></div><p> </p><p> </p><p> </p><p class="MsoNormal"> </p>
+
+                
+        
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://sdkdocs.roku.com/display/sdkdoc/Roku+Search"
+    dc:identifier="https://sdkdocs.roku.com/display/sdkdoc/Roku+Search"
+    dc:title="Roku Search"
+    trackback:ping="https://sdkdocs.roku.com/rpc/trackback/3737679"/>
+</rdf:RDF>
+-->
+
+            
+    
+
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="3737679" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right ">
+            <li class="no-labels-message">
+            No labels
+        </li>
+            </ul>
+
+    </div>
+</div>
+</div>
+
+            
+            
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                        
+    
+<div id="comments-section" class="pageSection group">
+        
+    
+
+
+
+</div>
+
+
+            
+</div>
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+</div>
+  
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div id="footer" role="contentinfo">
+    <section class="footer-body">
+
+                                                    
+        
+
+        <ul id="poweredby">
+            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
+            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
+            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
+            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
+        </ul>
+
+        
+
+        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+
+                    <script>
+var footer = document.getElementById('poweredby');
+footer.removeChild(footer.children[2]);
+footer.removeChild(footer.children[2]);
+
+var pDiv = document.createElement('li');
+pDiv.className='noprint';
+pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
+footer.appendChild(pDiv);
+</script>
+
+<script>
+    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
+    if ( modinfo != undefined ) {
+        modinfo.style.display = "none" ;
+    }
+
+</script>
+
+        
+    </section>
+</div>
+
+    </div>
+</body>
+</html>

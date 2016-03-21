@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Packaging Your Application - Roku SDK Documentation - Developer Documentation</title>
+
+        
+
+                        
+    
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="https://sdkdocs.roku.com">
+
+<meta id="atlassian-token" name="atlassian-token" content="cf9af07fa4f17126b9ca84d360fa9a5e9b50ba76">
+
+
+<meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+    <meta name="confluence-request-time" content="1458510929732">
+        
+    
+        
+            <meta name="ajs-is-space-admin" content=""> <meta name="ajs-has-space-config" content="">
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-discovered-plugin-features" content="$discoveredList">
+            <meta name="ajs-keyboardshortcut-hash" content="6f3f47137c1b3ed14b1e16e051694721">
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            
+    
+    
+            <meta name="ajs-page-id" content="3735926">
+            <meta name="ajs-latest-page-id" content="3735926">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="Packaging Your Application">
+            <meta name="ajs-parent-page-title" content="Channel Packaging And Publishing">
+            <meta name="ajs-parent-page-id" content="1611562">
+            <meta name="ajs-space-key" content="sdkdoc">
+            <meta name="ajs-space-name" content="Roku SDK Documentation">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="https://sdkdocs.roku.com">
+            <meta name="ajs-version-number" content="5.9.1-OD-65-062">
+            <meta name="ajs-build-number" content="6150">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-remote-user-key" content="">
+            <meta name="ajs-current-user-fullname" content="">
+            <meta name="ajs-current-user-avatar-url" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="10485760">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="clc.quick.create,confluence-inline-comments-resolved,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareContentEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.mentions.api.ConfluenceMentionEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.security.ForgotPasswordEvent,pdf-preview,notification.plugin.api.enabled.com.atlassian.confluence.plugins.tasklist.event.SendTaskEmailEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageMovedEvent,previews.sharing,previews.versions,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentUpdateEvent,file-annotations,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.attachment.AttachmentBatchUploadCompletedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingLessUsersEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentRemoveEvent,confluence.wrap.macro,atlassian.aui.raphael.disabled,previews.conversion-service,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.follow.FollowEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageEditedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostCreateEvent,previews.trigger-all-file-types,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentResolveEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.like.LikeCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentCreateEvent,previews.sharing.pushstate,confluence-inline-comments-rich-editor,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostUpdateEvent,file-annotations.likes,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentMentionUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingNoSpaceCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.hipchat.api.events.HipChatUserMapped,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareAttachmentEvent,confluence-inline-comments,quick-reload-inline-comments-flags,confluence-inline-comments-dangling-comment,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostMovedEvent">
+            <meta name="ajs-atl-token" content="cf9af07fa4f17126b9ca84d360fa9a5e9b50ba76">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-user-date-pattern" content="dd MMM yyyy">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
+</script>
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?build-number=6150" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/css/toc-macro-client-impl/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d375ee99916b6b096207b53cf4260ab0-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.css?highlightactions=true&amp;flavour=VANILLA&amp;custom-site-logo=true" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/35e02545dc3a2fc430eccbb927fe7227-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/css/theme.doc/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js?atlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js?analytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js?locale=en-GB" ></script>
+
+
+        
+    
+
+        
+        <meta name="ajs-site-title" content="Developer Documentation" />
+
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67357911-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<!-- End Google Tag Manager -->
+
+<!-- New Relic -->
+<script type="text/javascript">
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
+</script>
+<!-- End New Relic -->
+
+    
+                <link rel="canonical" href="Packaging+Your+Application.html">
+        <link rel="shortlink" href="https://sdkdocs.roku.com/x/dgE5">
+    <meta name="wikilink" content="[sdkdoc:Packaging Your Application]">
+    <meta name="page-version" content="22">
+
+</head>
+
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+
+        
+            <div id='stp-licenseStatus-banner'></div>
+    <div id="full-height-container">
+    <div id="header-precursor">
+        
+                    </div>
+
+
+
+
+
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.2.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+                            <li>
+            
+        
+        
+<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+            <span>Spaces</span>
+    </a>
+        </li>
+                            <li id="browseMenu" role="menu">
+            
+    
+        <a id="browse-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Packaging+Your+Application.html#" aria-haspopup="true" aria-owns="browse-menu-link-content" title="Browse">
+        <span class="browse">Browse</span>
+    </a>
+    <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+        Pages
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+        Blog
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+        Labels
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+        Space Operations
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+        </li>
+                        <li class="aui-buttons">
+            </li>
+    </ul>
+</div><div class="aui-header-secondary"><ul class="aui-nav">
+            <li>
+        
+    
+            
+<a  id="doctheme-anchor" href="Packaging+Your+Application.html#"  class=" aui-nav-imagelink"   title="">
+            <span></span>
+    </a>
+    </li>
+                    <li>
+        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
+    </li>
+        <li>
+            
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Packaging+Your+Application.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+        
+            
+<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="keyboard-shortcuts-link" href="Packaging+Your+Application.html#" class="    "      title="View available keyboard shortcuts" >
+        Keyboard Shortcuts
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
+        Feed Builder
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
+        What’s new
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="gadget-directory-link" href="Packaging+Your+Application.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
+        Available Gadgets
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
+        About Confluence
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+    </li>
+        <li>
+                
+    
+    </li>
+        <li>
+            
+    </li>
+        <li>
+                                            <li>
+        
+            
+<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FPackaging%2BYour%2BApplication" class="   user-item login-link "      title="" >
+        Log in
+</a>
+</li>
+                        
+    </li>
+    </ul>
+</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    <br class="clear">
+</header>
+
+    <div id="splitter">
+    <div id="splitter-sidebar"  class="padding-div" >
+        
+
+                    
+    
+
+
+<div class="plugin_pagetree">
+
+        
+        
+    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+        <div class="plugin_pagetree_children">
+        </div>
+    </ul>
+
+    <fieldset class="hidden">
+        <input type="hidden" name="treeId" value="">
+        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
+        <input type="hidden" name="treePageId" value="3735926">
+
+        <input type="hidden" name="noRoot" value="false">
+        <input type="hidden" name="rootPageId" value="1611307">
+
+        <input type="hidden" name="rootPage" value="">
+        <input type="hidden" name="startDepth" value="0">
+        <input type="hidden" name="spaceKey" value="sdkdoc" >
+
+        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
+        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
+        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
+        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DPackaging%2BYour%2BApplication">
+        <input type="hidden" name="mobile" value="false">
+
+                <fieldset class="hidden">
+                                                <input type="hidden" name="ancestorId" value="1611562">
+                                    <input type="hidden" name="ancestorId" value="1611307">
+                                    </fieldset>
+    </fieldset>
+</div>
+
+
+
+            </div>
+    <div id="splitter-content">
+
+        <script>InitDocThemeSidebar()</script>
+
+                        
+            
+<div id="main"  class="aui-page-panel" >
+    <div id="main-header">
+        
+        
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                                            
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="Packaging+Your+Application.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
+            <span>
+                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
+                                
+            </span>
+        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                    <ul  id="action-menu-primary"                         class="section-primary first">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3735926" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
+                <span>
+                        A<u>t</u>tachments (72)
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=3735926" rel="nofollow" class="action-view-history"   title="">
+                <span>
+                        Page History
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3735926" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
+                <span>
+                        Restrictions
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="action-menu-secondary"                         class="section-secondary">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3735926" rel="nofollow" class="action-view-info"   title="">
+                <span>
+                        Page Information
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+            
+                                            
+    
+    
+    <a  id="view-resolved-comments" href="Packaging+Your+Application.html#" rel="nofollow" class=""   title="">
+                <span>
+                        Resolved comments
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=3735926" rel="nofollow" class=""   title="Link to this Page">
+                <span>
+                        Link to this Page…
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=3735926#selectedPageInHierarchy" rel="nofollow" class=""   title="">
+                <span>
+                        View in Hierarchy
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=3735926" rel="nofollow" class="action-view-source popup-link"   title="">
+                <span>
+                        View Source
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=3735926" rel="nofollow" class=""   title="">
+                <span>
+                        Export to PDF
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=3735926" rel="nofollow" class="action-export-word"   title="">
+                <span>
+                        Export to Word
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+        
+                <div id="title-heading" class="pagetitle with-breadcrumbs">
+        
+                                        
+                            <div id="breadcrumb-section">
+                    
+    
+    
+    <ol id="breadcrumbs">
+                                        
+                        
+        <li class="first" >
+                        
+                            <span class=""><a href="../sdkdoc.2.html">Roku SDK Documentation</a></span>
+                                                                    
+                        
+        <li>
+                        
+                            <span class=""><a href="../sdkdoc.2.html">Roku SDK Documentation</a></span>
+                                                                    
+                        
+        <li>
+                        
+                            <span class=""><a href="Channel+Packaging+And+Publishing.html">Channel Packaging And Publishing</a></span>
+                                                    </ol>
+
+
+                </div>
+            
+            <h1 id="title-text" class="with-breadcrumbs">
+                                        <a href="Packaging+Your+Application.html">Packaging Your Application</a>
+                            </h1>
+        </div>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+
+        
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+<div id="content" class="page view">
+    
+
+
+<div id="action-messages">
+                        </div>
+
+
+
+        <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>
+        
+    
+    
+        <fieldset class="hidden parameters">
+            <input type="hidden" title="parentPageId" value="1611562">
+        </fieldset>
+
+                            
+    
+
+                    
+
+        
+        <a href="Packaging+Your+Application.html#page-metadata-end" class="assistive">Skip to end of metadata</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+                            <li class="page-metadata-item noprint">
+
+    
+            
+                                            
+    
+    
+    <a  id="content-metadata-page-restrictions-hidden" href="Packaging+Your+Application.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+                <span>
+                        
+        </span>    </a>
+</li>
+                            <li class="page-metadata-item noprint">
+
+    
+        
+                                            
+    
+    
+    <a  id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=3735926&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment"  accessKey="t"  title="72 attachments">
+                <span>
+                        
+        </span>    </a>
+</li>
+                        <li class="page-metadata-modification-info">
+                
+        
+    
+        
+    
+        
+            
+            Created by <span class='author'>     <a href="../~breid.html"
+                       class="url fn"
+                            >Bill Reid</a></span>, last modified on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=3735926&amp;selectedPageVersions=21&amp;selectedPageVersions=22'>Nov 02, 2015</a>
+                </li>
+        </ul>
+    </div>
+
+
+<a href="Packaging+Your+Application.html#page-metadata-start" class="assistive">Go to start of metadata</a>
+<div id="page-metadata-end" class="assistive"></div>
+
+        
+        <fieldset class="hidden parameters">
+                        <input type="hidden" title="browsePageTreeMode" value="view">
+        </fieldset>
+
+        <div id="main-content" class="wiki-content">
+                           
+        <hr/><p><div class="toc-macro client-side-toc-macro manualtoc conf-macro output-block" data-csslistindent="18px" data-cssliststyle="square" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div></p><hr/><p>There are a few simple steps required to package your application before uploading to the Roku Channel Store. This process creates a secure version of your application suitable for general release. This secure version is called a <em>package</em>. The packaging process uses cryptographic hardware on the player during the process, so you must have a player available to package an application.</p><p>The basic steps in creating an application package are:</p><ol><li>Side-load your application onto a Roku device (see <a href="Loading+and+Running+Your+Application+Walkthrough.html#LoadingandRunningYourApplicationWalkthrough-ApplicationInstallerPage">Application Installer Page</a> in the <a href="https://sdkdocs.roku.com/pages/viewpage.action?pageId=1612183">Developer Guide</a>).</li><li>Run the <code>genkey</code> utility to generate a key (see <a href="Packaging+Your+Application.html#PackagingYourApplication-RunthegenkeyUtility">Run the genkey Utility</a>). This step only needs to be done once.</li><li>Run the <code>package</code> utility to generate the package (see <a href="Packaging+Your+Application.html#PackagingYourApplication-RunthepackageUtility">Run the package Utility</a>).</li><li>Download the package from the Roku device to your computer (see <a href="Packaging+Your+Application.html#PackagingYourApplication-DownloadingthePackage">Downloading the Package</a>).</li></ol><h2 id="PackagingYourApplication-RunthegenkeyUtility">Run the genkey Utility</h2><p>To run the Package Utility, you must first generate a <em>key</em> by running the console utility <code>genkey</code>. The <code>genkey</code> utility will generate three things:</p><ul><li>A key to encrypt and sign your application. This key remains hidden and is never seen by you or anyone else.</li><li>A password to use the key. The key cannot be used unless you have this password.</li><li>A developer ID. This is a non-confidential token that identifies which key was used to encrypt and sign the application.</li></ul><p>Whenever you update your application, you should reuse the same key.  This can only be done if you have the original password, so it is important to keep the password somewhere safe even after you have finished packaging your application.</p><p>To run genkey, you must have a telnet client.  A telnet client is available for all modern operating systems.  It is often simply called <code>telnet</code>, which is what we shall use in the examples below.</p><ol><li>On the Roku home screen, select Settings, then About. Note the IP address of the Roku player. <br/> </li><li>From a computer, run your telnet application, using the IP address found in step 1 and port number 8080. For example, if the IP address were 192.168.1.45, you would type:<br/>telnet  192.168.1.45  8080<br/> </li><li>In the telnet console, you should see your Roku's serial number and a prompt:<br/>18C215080317<br/>&gt; _<br/> </li><li>Press Enter a couple of times. The prompt should repeat. <br/> </li><li>Type genkey and press Enter. You will see a number of dots print, then after a while it will print a password and developer ID:<br/>&gt; genkey<br/>.....................................................<br/>Password: qUtgw1sjHZQabCaUqPDg3g==<br/>DevID: 671b0ea1dbffcc10f3dfc931718351cdecfacc0f<br/>&gt; _<br/> </li><li><p>Make a record of the password and developer ID so that you will have it after the telnet session closes. You will enter the password next when you run the Package Utility.</p></li></ol><p>The key remains stored in the Roku player and can be used to create any number of packages. That is, you only need to run genkey once. The key is erased by a factory reset or by running genkey again. An erased key can be restored by rekeying the player as described in <a href="Packaging+Your+Application.html">Rekeying</a>. However a lost password cannot be recovered.</p><h2 id="PackagingYourApplication-RunthepackageUtility">Run the package Utility</h2><p>The <code>package</code> utility is accessed through the Developer Web Page on the Roku player. The Developer Web Page is disabled by default, but must be enabled in order to side-load your application. The instructions to enable the page are described under <a class="external-link" href="../rokudocs/Developer+Guide.html#DeveloperGuide-71EnablingDevelopmentModeonyourbox" rel="nofollow">Enabling Development Mode</a> in the Developer Guide but if you've gotten this far, it should already be enabled.</p><p>To run the packager, follow these steps:</p><ol><li>On your computer, open a browser and enter the IP address of your Roku player. This is the same address used in the first step of genkey. <br/> </li><li>This will open the Development Application Installer page, showing that your application is installed. <br/> <br/><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" src="https://sdkdocs.roku.com/download/attachments/3735926/inst2.jpg?version=1&amp;modificationDate=1443297666549&amp;api=v2" data-image-src="/download/attachments/3735926/inst2.jpg?version=1&amp;modificationDate=1443297666549&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3735887" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="inst2.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3735926" data-linked-resource-container-version="22"></span><br/><br/>If instead you see a &quot;No Development Application Installed&quot; message like this, it means you have not successfully side-loaded your application on this Roku player. <br/> <br/><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" src="https://sdkdocs.roku.com/download/attachments/3735926/noapp2.jpg?version=1&amp;modificationDate=1443297666512&amp;api=v2" data-image-src="/download/attachments/3735926/noapp2.jpg?version=1&amp;modificationDate=1443297666512&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3735888" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="noapp2.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3735926" data-linked-resource-container-version="22"></span><br/> </li><li>Click on the &quot;Packager&quot; link at the top of the page.  This will open the Application Packager page. <br/> <br/>If you see a &quot;no dev key&quot; message instead of the packager link like this, it means you have not successfully run genkey on this Roku player. <br/> <br/><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" src="https://sdkdocs.roku.com/download/attachments/3735926/inst_nokey2.jpg?version=1&amp;modificationDate=1443297666465&amp;api=v2" data-image-src="/download/attachments/3735926/inst_nokey2.jpg?version=1&amp;modificationDate=1443297666465&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3735889" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="inst_nokey2.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3735926" data-linked-resource-container-version="22"></span><br/> </li><li>At the bottom of the Packager page, enter your application's name and version number in the first box (e.g. &quot;MyApp/1.0&quot;). <br/> </li><li>In the second box, enter the password obtained from genkey. <br/> <br/><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" src="https://sdkdocs.roku.com/download/attachments/3735926/pkg_nopkg2.jpg?version=1&amp;modificationDate=1443297666813&amp;api=v2" data-image-src="/download/attachments/3735926/pkg_nopkg2.jpg?version=1&amp;modificationDate=1443297666813&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3735883" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="pkg_nopkg2.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3735926" data-linked-resource-container-version="22"></span><br/> </li><li>Click the Package button.  After a few moments, the page should refresh. <br/> </li><li>In the Currently Packaged Application section, there should now be a link to download the package. <br/> <br/><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" src="https://sdkdocs.roku.com/download/attachments/3735926/pkg_pkg2.jpg?version=1&amp;modificationDate=1443297666713&amp;api=v2" data-image-src="/download/attachments/3735926/pkg_pkg2.jpg?version=1&amp;modificationDate=1443297666713&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3735884" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="pkg_pkg2.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3735926" data-linked-resource-container-version="22"></span><br/> </li><li>After your channel is packaged, you can also inspect the details of the package. This is useful for confirming the creation date of the package as well as the devid used to sign the package. Especially for channel updates, checking the devid is a helpful test to guarantee that the devid is not different from your current channel version in the Roku Channel Store. Changing the devid will result in any persistent data stored in the registry being lost. <br/> <br/>To inspect the package, click Utilities, then click the Inspect button. You will see output similar to that in the image below. <br/> <br/><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://sdkdocs.roku.com/download/attachments/3735926/package_inspector.png?version=1&amp;modificationDate=1443297666173&amp;api=v2" data-image-src="/download/attachments/3735926/package_inspector.png?version=1&amp;modificationDate=1443297666173&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3735896" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="package_inspector.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3735926" data-linked-resource-container-version="22"></span></li></ol><h2 id="PackagingYourApplication-DownloadingthePackage">Downloading the Package</h2><p>After completing the package process, simply click on the link under &quot;Currently Packaged Application&quot; to download the package file to your computer. This package file can then be uploaded to the Channel Store.</p><p>The name of the downloaded package will be</p><pre>Pxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.pkg</pre><p>where the xxxx are 32 hex digits.  These digits are the MD5 checksum of the contents of the file.  Thus, it is possible to verify that the file contents have not been corrupted by typing this at a bash shell:</p><pre> m1=${filename:1:32}<br/> m2=$(md5sum $filename | sed 's/ .*//')<br/> if [ $m1 = $m2 ]; then echo OK; else echo CORRUPT; fi</pre><p>This is for convenience only; it is not necessary to verify the file in this way.   Also, you may rename the file if you wish before uploading it to the Channel Store.</p><h2 id="PackagingYourApplication-Rekeying">Rekeying</h2><p>In some circumstances it may be convenient to install the same key on more than one Roku box, or to restore a key onto a Roku box after it has been erased. This can be done if you have a package file which was created using the desired key, and the password for the key.  The process of copying a key from a package back to a Roku player is called <em>rekeying</em>. To rekey a Roku player, follow these steps:</p><ol><li>On your computer, open a browser and enter the IP address of your Roku player.  This will open the Development Application Installer page.<br/> </li><li>Click on the Utilities link at the top of the page.  This will open the Application Package Utilities page. <br/> <br/><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" width="500" src="https://sdkdocs.roku.com/download/attachments/3735926/util_nofile2.jpg?version=1&amp;modificationDate=1443297666661&amp;api=v2" data-image-src="/download/attachments/3735926/util_nofile2.jpg?version=1&amp;modificationDate=1443297666661&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3735885" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="util_nofile2.jpg" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3735926" data-linked-resource-container-version="22"></span><br/> </li><li>Click the browse button and select the package file which was created using the key that you wish to copy.<br/> </li><li>Enter the password for that key in the Password box.<br/> </li><li>Click the Rekey button.</li></ol><p>This will install the key onto the Roku player.  To generate a new package using this key, run the Package Utility as described in Package Utility.  You should not run genkey again, because that will generate a new key which will overwrite the rekeyed key.</p><h2 id="PackagingYourApplication-BriefOverviewofthePackageSecurityModel">Brief Overview of the Package Security Model</h2><p>The Roku Streaming Player is designed to be a general purpose streaming video player capable of supporting multiple content providers and applications through the Channel Store. The Security Model has provisions in place to prevent unauthorized access to content, services or any other application specific data. The Roku firmware was designed to provide safe, &quot;sandboxed&quot; access to platform services through a virtual machine environment. The &quot;sandbox&quot; provides:</p><ul><li>Restricted access to platform services</li><li>No access to extend or modify binaries</li><li>No access to audio/video data</li><li>Restricted access to other developers application data</li><li>No access to data from applications signed with a different key</li><li>No access to log, console or other output</li><li>No access to source code for other applications</li></ul><p>Each application has access to a secure system registry for storage of application specific data. The registry is encrypted for safe storage of secrets and can only be read by applications signed with the same key. The registry is unique to a specific developer context. In general, each application maintains its own unique registry, but if a family of applications needed to share registration information this is also possible by using the same key for all applications.</p><p>When a developer performs a genkey on their Roku Streaming Player, they generate an RSA key pair. When they package their application, they sign and encrypt the application with the private key genkey produced. The package signature also creates an association to a secure registry. The firmware enforces access to the registry based on the key that signed the package.</p><p>The developer can create multiple applications that share a common registry by signing all of the applications with the same key. If the private key (or its password) is lost, new versions of the application will be unable to access the registry. Since the private key is stored in the package, but protected with AES encryption via the password, it can always be recovered from a previous package as long as the password is remembered. So it is of utmost importance to safely and securely store that password and package containing the private key. With the password and a package containing the corresponding keyset from a genkey, any Roku Streaming Player can be &quot;Rekeyed&quot; to enable signing of packages with the same key that was stored in a previous package.</p><h2 id="PackagingYourApplication-ConsequencesofthePackageSecurityModel">Consequences of the Package Security Model</h2><ul><li>Applications can share data via registry entries if and only if the applications are packaged with same key</li><li>New versions of applications will have to re-link if they are packaged with a different key</li><li>Be careful about creating applications that are a &quot;suite&quot; and share the same signing key. When apps are part of the same suite, they should share the same linking information in the registry because this linking information will not be removed from the registry until all channels in the suite are removed.</li><li>It is critical to save the password and keep track of the key that signed an application. If the password is lost, you will not be able to sign any new packages (including new versions) with the same key.</li><li>Multiple developers can use the same key to sign their applications by &quot;Rekeying&quot; the Roku Streaming Player with a package containing the key and entering the corresponding saved password.</li></ul><h2 id="PackagingYourApplication-ContentSecurityModel">Content Security Model</h2><p>The SDK supports a content security model using time-expiring random urls and a meta-data feed accessed with SSL mutual authentication. The success of the security model requires a proper implementation by the developer. Roku is not responsible or liable for any losses resulting from the use of this SDK.</p><p>The general idea is that a developer could protect the meta-data feed with mutual SSL authentication. Each Roku box has a unique client certificate that is signed by Roku as the Certificate Authority. The firmware also supports a special header, x-roku-reserved-dev-id, that always sends the developer id of the currently running application. Since this is authoritative and can't be forged, the developer's web server can only accept connections from a Roku Streaming Player running their application. Likewise, the Roku Streaming Player can enforce that it is talking to the developer's web server by including the CA certificate of the authority that issued their web server certificate in their channel application. The implementation details of this mutual SSL authentication method are included in the Component Reference Guide.</p><p>In the secure meta-data feed, the developer can send the URLs to his content. Since these URLs are long random strings, it would be very difficult for a hacker to guess the URL. Since they are time-expiring, even if they guessed correctly, the damage would be limited as they will disappear when they expire.</p><p>Playback of content over SSL-encrypted HTTPS connections ensures that the content is encrypted while en route to the Roky player. The decrypted content is only available for playback and never stored on the Roku Streaming Player. The output ports are also protected: The HDMI port features HDCP and the component video outputs support both CGMS-A and Macrovision. .The USB is not for general purpose use.</p><h2 id="PackagingYourApplication-GeneratingScreenshots(Sincev3.1onRoku1andv4.3onRoku2)">Generating Screenshots (Since v3.1 on Roku 1 and v4.3 on Roku 2)</h2><p>You can generate screenshots of your side-loaded developer channel using the Utilities page. This is done on the &quot;Package Utilities&quot; page of the Developer Web Page on your Roku Streaming Player. Just navigate your side-loaded application to the screen you'd like to capture, then navigate your browser to the Package Utilities page and click on the &quot;Screenshot&quot; button. The image of your application's screen will load in your browser. This will capture <em>only</em> the currently displayed screen in a side-loaded application. It cannot capture images of the home screen or other Roku menus, or images from an application loaded from the Channel Store.</p><p>Once the screenshot is captured, you can right-click (on Windows) or control-click (on MacOS) on the image to save it.</p><p style="margin-left: 30.0px;"> <br class="atl-forced-newline"/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="336" width="574" src="https://sdkdocs.roku.com/download/attachments/3735926/worddav282d6bfa7de108e6da6996439c7e7699.png?version=1&amp;modificationDate=1443297668710&amp;api=v2" data-image-src="/download/attachments/3735926/worddav282d6bfa7de108e6da6996439c7e7699.png?version=1&amp;modificationDate=1443297668710&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="3735860" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav282d6bfa7de108e6da6996439c7e7699.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="3735926" data-linked-resource-container-version="22"></span></p><p> </p>
+
+                
+        
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://sdkdocs.roku.com/display/sdkdoc/Packaging+Your+Application"
+    dc:identifier="https://sdkdocs.roku.com/display/sdkdoc/Packaging+Your+Application"
+    dc:title="Packaging Your Application"
+    trackback:ping="https://sdkdocs.roku.com/rpc/trackback/3735926"/>
+</rdf:RDF>
+-->
+
+            
+    
+
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="3735926" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right ">
+            <li class="no-labels-message">
+            No labels
+        </li>
+            </ul>
+
+    </div>
+</div>
+</div>
+
+            
+            
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                        
+    
+<div id="comments-section" class="pageSection group">
+        
+    
+
+
+
+</div>
+
+
+            
+</div>
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+</div>
+  
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div id="footer" role="contentinfo">
+    <section class="footer-body">
+
+                                                    
+        
+
+        <ul id="poweredby">
+            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
+            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
+            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
+            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
+        </ul>
+
+        
+
+        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+
+                    <script>
+var footer = document.getElementById('poweredby');
+footer.removeChild(footer.children[2]);
+footer.removeChild(footer.children[2]);
+
+var pDiv = document.createElement('li');
+pDiv.className='noprint';
+pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
+footer.appendChild(pDiv);
+</script>
+
+<script>
+    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
+    if ( modinfo != undefined ) {
+        modinfo.style.display = "none" ;
+    }
+
+</script>
+
+        
+    </section>
+</div>
+
+    </div>
+</body>
+</html>

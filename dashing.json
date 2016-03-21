@@ -1,6 +1,7 @@
 {
     "name": "BrightScript SDK",
     "package": "brightscript",
+    "index": "index.html",
     "selectors": {
         "h1#title-text a": "Entry"
     },

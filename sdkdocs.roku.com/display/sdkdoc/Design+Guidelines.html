@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Guidelines - Roku SDK Documentation - Developer Documentation</title>
+
+        
+
+                        
+    
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="https://sdkdocs.roku.com">
+
+<meta id="atlassian-token" name="atlassian-token" content="cf9af07fa4f17126b9ca84d360fa9a5e9b50ba76">
+
+
+<meta id="confluence-space-key" name="confluence-space-key" content="sdkdoc">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+    <meta name="confluence-request-time" content="1458510892772">
+        
+    
+        
+            <meta name="ajs-is-space-admin" content=""> <meta name="ajs-has-space-config" content="">
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-discovered-plugin-features" content="$discoveredList">
+            <meta name="ajs-keyboardshortcut-hash" content="6f3f47137c1b3ed14b1e16e051694721">
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            
+    
+    
+            <meta name="ajs-page-id" content="1611565">
+            <meta name="ajs-latest-page-id" content="1611565">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="Design Guidelines">
+            <meta name="ajs-parent-page-title" content="Roku SDK Documentation">
+            <meta name="ajs-parent-page-id" content="1611307">
+            <meta name="ajs-space-key" content="sdkdoc">
+            <meta name="ajs-space-name" content="Roku SDK Documentation">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="https://sdkdocs.roku.com">
+            <meta name="ajs-version-number" content="5.9.1-OD-65-062">
+            <meta name="ajs-build-number" content="6150">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-remote-user-key" content="">
+            <meta name="ajs-current-user-fullname" content="">
+            <meta name="ajs-current-user-avatar-url" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="10485760">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="clc.quick.create,confluence-inline-comments-resolved,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareContentEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.mentions.api.ConfluenceMentionEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.security.ForgotPasswordEvent,pdf-preview,notification.plugin.api.enabled.com.atlassian.confluence.plugins.tasklist.event.SendTaskEmailEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageMovedEvent,previews.sharing,previews.versions,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentUpdateEvent,file-annotations,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.attachment.AttachmentBatchUploadCompletedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingLessUsersEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentRemoveEvent,confluence.wrap.macro,atlassian.aui.raphael.disabled,previews.conversion-service,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.follow.FollowEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageEditedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostCreateEvent,previews.trigger-all-file-types,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentResolveEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.like.LikeCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentCreateEvent,previews.sharing.pushstate,confluence-inline-comments-rich-editor,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostUpdateEvent,file-annotations.likes,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentMentionUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingNoSpaceCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.hipchat.api.events.HipChatUserMapped,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareAttachmentEvent,confluence-inline-comments,quick-reload-inline-comments-flags,confluence-inline-comments-dangling-comment,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostMovedEvent">
+            <meta name="ajs-atl-token" content="cf9af07fa4f17126b9ca84d360fa9a5e9b50ba76">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-user-date-pattern" content="dd MMM yyyy">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/_/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://sdkdocs.roku.com/opensearch/osd.action" title="Developer Documentation"/>
+
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="true";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download)\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\"daysBeforeLicenseExpiry\":0,\"daysBeforeMaintenanceExpiry\":0,\"showLicenseExpiryBanner\":false,\"showMaintenanceExpiryBanner\":false,\"renewUrl\":null,\"salesEmail\":null}";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\"linkActive\":false,\"conditionsMet\":true,\"admin\":false}";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.analytics-enabled-data-provider"]="\"true\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:nps-acknowledgement-resources.sen-data-provider"]="\"SEN-2332423\"";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
+</script>
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/c0b179288d335d9e912667cdb75fb8d2-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?build-number=6150" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/css/toc-macro-client-impl/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/d375ee99916b6b096207b53cf4260ab0-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.css?highlightactions=true&amp;flavour=VANILLA&amp;custom-site-logo=true" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/35e02545dc3a2fc430eccbb927fe7227-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/css/theme.doc/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="https://sdkdocs.roku.com/s/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/31/_/styles/colors.css" media="all">
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/a72faf4a376b855acc1dc1b5e40829cb-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/9/_/download/superbatch/js/batch.js?atlassian.aui.raphael.disabled=true&amp;locale=en-GB&amp;build-number=6150" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/fb358127e94bd69e710c31c2f2ba1c43/_/download/contextbatch/js/toc-macro-client-impl/batch.js" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/fd3d085a9edff5a756d242bf1bc14976-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/97a922b416cbe43cf83e5c5ab531a613/_/download/contextbatch/js/atl.confluence.plugins.pagetree-desktop,main,viewcontent,page,atl.general,atl.comments/batch.js?analytics-uploadable=true&amp;highlightactions=true&amp;flavour=VANILLA&amp;analytics-enabled=true&amp;locale=en-GB&amp;anonymous-access-enabled=true&amp;is-server-instance=true&amp;hostenabled=true" ></script>
+<script type="text/javascript" src="https://sdkdocs.roku.com/s/6c0981174e94142364564819dc0d1413-CDN/en_GB/6150/5f41c4ff85fd86016ba4c6b8a1bbb6bc9b81bcc3.31/96ff7b4cb8d7e0cf3843a298eef90d7a/_/download/contextbatch/js/theme.doc/batch.js?locale=en-GB" ></script>
+
+
+        
+    
+
+        
+        <meta name="ajs-site-title" content="Developer Documentation" />
+
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67357911-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTPN7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZTPN7');</script>
+<!-- End Google Tag Manager -->
+
+<!-- New Relic -->
+<script type="text/javascript">
+window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,ee:"QJf3ax"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"2acbd9030c",applicationID:"9463045",sa:1,agent:"js-agent.newrelic.com/nr-686.min.js"}
+</script>
+<!-- End New Relic -->
+
+    
+                <link rel="canonical" href="Design+Guidelines.html">
+        <link rel="shortlink" href="https://sdkdocs.roku.com/x/LZcY">
+    <meta name="wikilink" content="[sdkdoc:Design Guidelines]">
+    <meta name="page-version" content="6">
+
+</head>
+
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="theme-documentation  aui-theme-default aui-layout">
+
+        
+            <div id='stp-licenseStatus-banner'></div>
+    <div id="full-height-container">
+    <div id="header-precursor">
+        
+                    </div>
+
+
+
+
+
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="../sdkdoc.2.html"><img src="https://sdkdocs.roku.com/download/attachments/524289/atl.site.logo?version=2&amp;modificationDate=1440675577312&amp;api=v2" alt="Developer Documentation" /><span class="aui-header-logo-text">Developer Documentation</span></a></h1><ul class="aui-nav">
+                            <li>
+            
+        
+        
+<a  id="space-directory-link" href="https://sdkdocs.roku.com/spacedirectory/view.action"  class=" aui-nav-imagelink"   title="Spaces">
+            <span>Spaces</span>
+    </a>
+        </li>
+                            <li id="browseMenu" role="menu">
+            
+    
+        <a id="browse-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Design+Guidelines.html#" aria-haspopup="true" aria-owns="browse-menu-link-content" title="Browse">
+        <span class="browse">Browse</span>
+    </a>
+    <nav id="browse-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                                <ul  id="browse-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+    
+            
+<a  id="space-pages-link" href="https://sdkdocs.roku.com/pages/listpages.action?key=sdkdoc" class="    "      title="Browse pages in the Roku SDK Documentation space" >
+        Pages
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-blogposts-link" href="https://sdkdocs.roku.com/pages/viewrecentblogposts.action?key=sdkdoc" class="    "      title="Browse blogs in the Roku SDK Documentation space" >
+        Blog
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-labels-link" href="https://sdkdocs.roku.com/labels/listlabels-heatmap.action?key=sdkdoc" class="    "      title="Browse labels in the Roku SDK Documentation space" >
+        Labels
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="space-advanced-link" href="https://sdkdocs.roku.com/spaces/viewspacesummary.action?key=sdkdoc" class="    "      title="Browse additional space functions in the Roku SDK Documentation space" >
+        Space Operations
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+        </li>
+                        <li class="aui-buttons">
+            </li>
+    </ul>
+</div><div class="aui-header-secondary"><ul class="aui-nav">
+            <li>
+        
+    
+            
+<a  id="doctheme-anchor" href="Design+Guidelines.html#"  class=" aui-nav-imagelink"   title="">
+            <span></span>
+    </a>
+    </li>
+                    <li>
+        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="https://sdkdocs.roku.com/dosearchsite.action" method="get"><fieldset><input type="hidden" name="where" value="sdkdoc"/><input type="hidden" name="spaceSearch" value="true"/><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accessKey="q" autocomplete="off" name="queryString" title="Quick Search" placeholder="Search space" /><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"/><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
+    </li>
+        <li>
+            
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="Design+Guidelines.html#" aria-haspopup="true" aria-owns="help-menu-link-content" title="Help">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                    <div class="aui-dropdown2-section">
+                                <ul  id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+        
+            
+<a  id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-59/Getting+Help+And+Support" class="    "      title="Visit the Confluence documentation home"  target="_blank"
+>
+        Online Help
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="keyboard-shortcuts-link" href="Design+Guidelines.html#" class="    "      title="View available keyboard shortcuts" >
+        Keyboard Shortcuts
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="feed-builder-link" href="https://sdkdocs.roku.com/dashboard/configurerssfeed.action" class="    "      title="Create your custom RSS feed." >
+        Feed Builder
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="whats-new-menu-link" href="https://docs.atlassian.com/confluence/docs-59/whatsnew/iframe" class="    "      title="" >
+        What’s new
+</a>
+</li>
+                                            <li>
+    
+                
+<a  id="gadget-directory-link" href="Design+Guidelines.html#" class="   user-item administration-link "      title="Browse gadgets provided by Confluence" >
+        Available Gadgets
+</a>
+</li>
+                                            <li>
+    
+            
+<a  id="confluence-about-link" href="https://sdkdocs.roku.com/aboutconfluencepage.action" class="    "      title="Get more information about Confluence" >
+        About Confluence
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+    </li>
+        <li>
+                
+    
+    </li>
+        <li>
+            
+    </li>
+        <li>
+                                            <li>
+        
+            
+<a  id="login-link" href="https://sdkdocs.roku.com/login.action?os_destination=%2Fdisplay%2Fsdkdoc%2FDesign%2BGuidelines" class="   user-item login-link "      title="" >
+        Log in
+</a>
+</li>
+                        
+    </li>
+    </ul>
+</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    <br class="clear">
+</header>
+
+    <div id="splitter">
+    <div id="splitter-sidebar"  class="padding-div" >
+        
+
+                    
+    
+
+
+<div class="plugin_pagetree">
+
+        
+        
+    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+        <div class="plugin_pagetree_children">
+        </div>
+    </ul>
+
+    <fieldset class="hidden">
+        <input type="hidden" name="treeId" value="">
+        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=false">
+        <input type="hidden" name="treePageId" value="1611565">
+
+        <input type="hidden" name="noRoot" value="false">
+        <input type="hidden" name="rootPageId" value="1611307">
+
+        <input type="hidden" name="rootPage" value="">
+        <input type="hidden" name="startDepth" value="0">
+        <input type="hidden" name="spaceKey" value="sdkdoc" >
+
+        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
+        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
+        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
+        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3Dsdkdoc%26title%3DDesign%2BGuidelines">
+        <input type="hidden" name="mobile" value="false">
+
+                <fieldset class="hidden">
+                                                <input type="hidden" name="ancestorId" value="1611307">
+                                    </fieldset>
+    </fieldset>
+</div>
+
+
+
+            </div>
+    <div id="splitter-content">
+
+        <script>InitDocThemeSidebar()</script>
+
+                        
+            
+<div id="main"  class="aui-page-panel" >
+    <div id="main-header">
+        
+        
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                                            
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="Design+Guidelines.html#" aria-haspopup="true" aria-owns="action-menu" data-container="#navigation">
+            <span>
+                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
+                                
+            </span>
+        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default" aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                    <ul  id="action-menu-primary"                         class="section-primary first">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-attachments-link" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=1611565" rel="nofollow" class="action-view-attachments"  accessKey="t"  title="View Attachments">
+                <span>
+                        A<u>t</u>tachments (21)
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-history-link" href="https://sdkdocs.roku.com/pages/viewpreviousversions.action?pageId=1611565" rel="nofollow" class="action-view-history"   title="">
+                <span>
+                        Page History
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-page-permissions-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611565" rel="nofollow" class="action-page-permissions"   title="Edit restrictions">
+                <span>
+                        Restrictions
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul  id="action-menu-secondary"                         class="section-secondary">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-page-info-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611565" rel="nofollow" class="action-view-info"   title="">
+                <span>
+                        Page Information
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+            
+                                            
+    
+    
+    <a  id="view-resolved-comments" href="Design+Guidelines.html#" rel="nofollow" class=""   title="">
+                <span>
+                        Resolved comments
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="link-to-page-link" href="https://sdkdocs.roku.com/pages/viewinfo.action?pageId=1611565" rel="nofollow" class=""   title="Link to this Page">
+                <span>
+                        Link to this Page…
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="view-in-hierarchy-link" href="https://sdkdocs.roku.com/pages/listpages-dirview.action?key=sdkdoc&amp;openId=1611565#selectedPageInHierarchy" rel="nofollow" class=""   title="">
+                <span>
+                        View in Hierarchy
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-view-source-link" href="https://sdkdocs.roku.com/plugins/viewsource/viewpagesrc.action?pageId=1611565" rel="nofollow" class="action-view-source popup-link"   title="">
+                <span>
+                        View Source
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-pdf-link" href="https://sdkdocs.roku.com/spaces/flyingpdf/pdfpageexport.action?pageId=1611565" rel="nofollow" class=""   title="">
+                <span>
+                        Export to PDF
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a  id="action-export-word-link" href="https://sdkdocs.roku.com/exportword?pageId=1611565" rel="nofollow" class="action-export-word"   title="">
+                <span>
+                        Export to Word
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+        
+                <div id="title-heading" class="pagetitle with-breadcrumbs">
+        
+                                        
+                            <div id="breadcrumb-section">
+                    
+    
+    
+    <ol id="breadcrumbs">
+                                        
+                        
+        <li class="first" >
+                        
+                            <span class=""><a href="../sdkdoc.2.html">Roku SDK Documentation</a></span>
+                                                                    
+                        
+        <li>
+                        
+                            <span class=""><a href="../sdkdoc.2.html">Roku SDK Documentation</a></span>
+                                                    </ol>
+
+
+                </div>
+            
+            <h1 id="title-text" class="with-breadcrumbs">
+                                        <a href="Design+Guidelines.html">Design Guidelines</a>
+                            </h1>
+        </div>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+
+        
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+<div id="content" class="page view">
+    
+
+
+<div id="action-messages">
+                        </div>
+
+
+
+        <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="https://sdkdocs.roku.com/display/sdkdoc/{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="https://sdkdocs.roku.com/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>
+        
+    
+    
+        <fieldset class="hidden parameters">
+            <input type="hidden" title="parentPageId" value="1611307">
+        </fieldset>
+
+                            
+    
+
+                    
+
+        
+        <a href="Design+Guidelines.html#page-metadata-end" class="assistive">Skip to end of metadata</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+                            <li class="page-metadata-item noprint">
+
+    
+            
+                                            
+    
+    
+    <a  id="content-metadata-page-restrictions-hidden" href="Design+Guidelines.html#" rel="nofollow" class="hidden"   title="Unrestricted">
+                <span>
+                        
+        </span>    </a>
+</li>
+                            <li class="page-metadata-item noprint">
+
+    
+        
+                                            
+    
+    
+    <a  id="content-metadata-attachments" href="https://sdkdocs.roku.com/pages/viewpageattachments.action?pageId=1611565&amp;metadataLink=true" rel="nofollow" class="aui-icon aui-icon-small aui-iconfont-attachment"  accessKey="t"  title="21 attachments">
+                <span>
+                        
+        </span>    </a>
+</li>
+                        <li class="page-metadata-modification-info">
+                
+        
+    
+        
+    
+        
+            
+            Created by <span class='author'>     <a href="../~jbush.html"
+                       class="url fn"
+                            >Jeff Bush</a></span>, last modified by <span class='editor'>     <a href="../~rburdick.html"
+                       class="url fn"
+                            >Robert Burdick</a></span> on <a class='last-modified' title='Show changes' href='https://sdkdocs.roku.com/pages/diffpagesbyversion.action?pageId=1611565&amp;selectedPageVersions=5&amp;selectedPageVersions=6'>Aug 20, 2015</a>
+                </li>
+        </ul>
+    </div>
+
+
+<a href="Design+Guidelines.html#page-metadata-start" class="assistive">Go to start of metadata</a>
+<div id="page-metadata-end" class="assistive"></div>
+
+        
+        <fieldset class="hidden parameters">
+                        <input type="hidden" title="browsePageTreeMode" value="view">
+        </fieldset>
+
+        <div id="main-content" class="wiki-content">
+                           
+        <p><div class="toc-macro client-side-toc-macro manualtoc conf-macro output-block" data-hasbody="false" data-headerelements="H1,H2,H3,H4" data-macro-name="toc"> </div></p><h1 id="DesignGuidelines-1.0GuidelinesOverview">1.0 Guidelines Overview</h1><p>These guidelines are for developers who want to design and build applications for the Roku streaming player television user interface. The following are the goals of this document:</p><ul><li>Describe guidelines to consider as you design applications for television.</li><li>Explain the Roku UI model</li><li>Define the screen types that are available with the Software Developer Kit (SDK)</li></ul><div><h2 id="DesignGuidelines-1.1RokuUIPowerPointTool">1.1 Roku UI PowerPoint Tool</h2><p>Roku has developed a PowerPoint Tool that includes wireframes of each Roku screen type. Use this tool to simulate your application before developing code. The tool helps you determine which screens are appropriate for your application, understand the task flow of your application, and verify that your content fits appropriately on each screen. If you prototype with this tool, it's more likely that your application will fit nicely into the general Roku user interface paradigm. The Roku PowerPoint tool is available on the Roku Developer website.</p></div><h2 id="DesignGuidelines-1.2PerformanceIssues">1.2 Performance Issues</h2><p> </p><p>You should do all that you can to insure your application runs quickly and is responsive to user input. Ideally users should see visual feedback within 250 milliseconds of pressing a button on the remote control. Visual feedback might include displaying a new screen or moving the focus between objects on the current screen. If your application does have a perceptible delay, make sure to use the progress indicator to keep the user informed about the status of your application and assure them the player is still functioning appropriately. <br/><br/> Some things you can to make your application feel responsive are to display the screen first then fill the screen with data coming from a network feed secondly. Or, you can display a placeholder or &quot;facade&quot; screen temporarily over the real screen while the data from the feed populates the real screen. After the data is loaded, remove the placeholder screen. This technique is used in applications to avoid flashing the channel menu screen while data is loading from the network.</p><h2 id="DesignGuidelines-1.3TelevisionDesignGuidelines">1.3 Television Design Guidelines</h2><p>When you design and build an application for television, consider these guidelines.</p><h4 id="DesignGuidelines-1.3.1Format">1.3.1 Format</h4><p>The Roku player supports both standard-definition (SD) and high-definition (HD) television formats. In general, although not entirely accurate, SD corresponds with the &quot;traditional&quot; CRT tube-based TV, and HD corresponds with the modern flat screen TV popular with consumers after about 2005. These formats are defined as follows:</p><p> </p><ul><li>The SD source format is 720x480, 4:3 aspect ratio. It is also known as &quot;480i.&quot; When the image is output to a display (TV), the image is compressed horizontally to 640x480. To accommodate for this and to avoid distorted images, source art should be created with a &quot;0.9&quot; non-square pixel aspect ratio. This setting is available in design tools like Adobe Photoshop and may be referred to as &quot;D1/DV NTSC (0.9).&quot;</li><li>The HD source format is 1280x720, 16:9 aspect ratio. It is also known as &quot;720p.&quot; HD pixels are &quot;square&quot; and do not require special consideration as described above for SD.</li></ul><p><br class="atl-forced-newline"/> Design your application to work in both 4:3 and 16:9 formats. Users select their display aspect format through Roku settings.</p><ul><li>Help you determine which screens to use to construct your application.</li><li>Provide tips to ensure your application is consistent with the Roku look and feel.</li></ul><h4 id="DesignGuidelines-1.3.2Safezones">1.3.2 Safe zones</h4><p>Safe zone is a term used to describe the areas of the television picture that can reliably be seen on all types of television screens. Historically, the edges of TV images were distorted by the physical limitations of the glass picture tube.  It was decided that the picture would be overscanned with the edge of the picture hidden by a plastic trim piece on the front of the TV set.  Be aware that the edges of your artwork will not be visible on a TV, even though the entire image is displayed on the computer. Most relevant to SD, this overscan issue also impacts HD. <br class="atl-forced-newline"/> Keep text that you intend the audience to read within the Title Safe Zone.</p><ul><li>The HD Title Safe Zone is 1022X578, offset from the upper left corner (0,0) by 128,70.</li><li>The SD Title Safe Zone is 576X384, offset from the upper left corner (0,0) by 72,48.</li></ul><p><br class="atl-forced-newline"/> Keep important visual elements within the Action Safe Zone, content outside the Action Safe Zone risks being cut off by the edge of the screen.</p><ul><li>The HD Action safe zone is 1150X646, offset from the upper left corner (0,0) by 64,35.</li><li>The SD Action safe zone is 648X432, offset from the upper left corner (0,0) by 36,24.</li></ul><p><br class="atl-forced-newline"/> The Roku PowerPoint Screen Template Tool includes safe zones. Use this tool to prototype your application and help determine how much content can reliably fit on the screen.</p><h4 id="DesignGuidelines-1.3.3Pixelelementsandlinewidth">1.3.3 Pixel elements and line width</h4><p>Make sure lines are at least 2 pixels wide, and do not use fine detail or single pixel elements on your screens. Avoid bordering areas of high contrast colors. This avoids screen flicker that occurs with interlaced displays, which render TV images alternating odd and even scan lines. This occurs predominantly on SD displays.</p><h4 id="DesignGuidelines-1.3.4Color">1.3.4 Color</h4><ul><li>RGB color values should be between 16 and 235.</li><li>Use de-saturated (low saturation) colors to avoid bleeding. High saturation colors might also be called vibrant, hot, intense, bright, loud, etc. Lowering the saturation might also be called toning it down, muting the color, making the color duller.</li><li>Cool colors (blues, purples, and grays) tend to perform better and have less bleeding on TVs than warm colors (reds, oranges, and yellows).</li><li>Avoid putting high-contrast colors next to each other as they might vibrate or flicker.</li><li>Preview art on an actual TV. TVs tend to have higher contrast and saturation than computer monitors.</li><li>Use high-contrast colors for emphasis and low contrast color elements for secondary or less important information.</li><li>Consider the colors in your brand and whether to use them in your application. Matching colors might be beneficial for product identity, but be aware of color limitations on TVs.</li><li>Consider color-blind users when you select your color scheme. For example, some color-blind users might not be able to differentiate between red, green, and gray. Differentiate important elements with a second visual element like shape or size in addition to color.</li></ul><h4 id="DesignGuidelines-1.3.5Typography">1.3.5 Typography</h4><ul><li>A set of Roku system fonts (a collection of Gotham fonts) is provided through the SDK.</li><li>Use a font color that is legible and has enough contrast to be seen against the background.</li></ul><p> </p><h4 id="DesignGuidelines-1.3.6Visualclarity">1.3.6 Visual clarity</h4><ul><li>Build test screens using the SDK.</li><li>Try your screens on both SD and HD resolutions and on small and large screen monitors.</li><li>Although HD monitors allow for lots of information to be displayed on the screen simultaneously, design your screens so that they are legible and do not overwhelm the viewer.</li><li>Try viewing your screen in direct sunlight and in a darkened room. If there is not enough contrast on your screen, it will appear washed out in direct sunlight. If there is too much contrast on your screen, it might appear too bright in a darkened room.</li><li>Check that you can easily see the focus (highlight) so that users can select an item on the screen.</li><li>Ask a variety of users to test the screens for legibility.</li></ul><h1 id="DesignGuidelines-2.0RokuUserInterfaceModel">2.0 Roku User Interface Model</h1><p>This section describes how to accomplish common user tasks through the Roku UI using the remote control and how the Roku UI is structured.</p><h2 id="DesignGuidelines-2.1RokuRemoteControl">2.1 Roku Remote Control</h2><h4 id="DesignGuidelines-2.1.1Navigatingwithinthesystemuserinterface">2.1.1 Navigating within the system user interface</h4><p>The UI is controlled by the Roku remote control, which has the following buttons:</p><ul><li><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="300" width="268" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav44121178384115f6dcefe04426f25acf.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav44121178384115f6dcefe04426f25acf.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606661" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav44121178384115f6dcefe04426f25acf.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span> Home (the button with the house icon) returns to the Roku home screen.</li><li>Up, Down, Right, and Left arrows move the focus (highlight) through the UI.</li></ul><p>When a details page is displayed, Right and Left buttons navigate forward and backward respectively between content items in the current list. This behavior is controlled by the application, and Roku strongly recommends this behavior. See the developer documents for guidance on how to incorporate this behavior into your application.</p><ul><li>Select, selects the item that has the focus.</li><li>Forward scan, when a poster list is on screen, will page forward through the list.</li><li>Reverse scan, when a poster list is on screen, will page backward through the list.</li></ul><p>You can navigate up the UI hierarchy in two ways:</p><ul><li>Press Home to go directly to the Roku home screen.</li><li>Press Up. Up will navigate up through selectable items on the screen. After passing through all of the selectable items, Up will return to the previously viewed screen.</li></ul><h6 id="DesignGuidelines-SinceFirmwareversion2.7:">Since Firmware version 2.7:</h6><p> </p><ul><li>With the new HD model, the remote has the same functionality as the Classic (pictured above) remote but with a new form factor (pictured below left).</li><li>The new XD and XDS remotes have three new buttons, the<ul><li><strong>Instant replay button</strong>. (The button labeled &quot;Skip Back&quot; in the picture below right). Upon pressing this button, the video will skip back 7 seconds without re-buffering. Active only in video mode.</li><li><strong>Info button</strong>. (The button labeled &quot;Options&quot; in the picture below right). This button must be programmed by app developers, or it will do nothing. App developers should provide contextually relevant information overlaid on video or other UI.</li><li><strong>Back button</strong>. App developers must enable this button functionality. When enabled, it closes the current screen pops the display stack in the UI. Active only in non-video mode.</li></ul></li></ul><p><br class="atl-forced-newline"/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="288" width="232" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav898f70d8df82a2a1ab5c944bc3d926ff.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav898f70d8df82a2a1ab5c944bc3d926ff.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606662" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav898f70d8df82a2a1ab5c944bc3d926ff.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="288" width="101" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav7db3ab86671fc45dd8a77c911cc2472e.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav7db3ab86671fc45dd8a77c911cc2472e.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606656" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav7db3ab86671fc45dd8a77c911cc2472e.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span></p><h4 id="DesignGuidelines-2.1.2Navigatingcontent">2.1.2 Navigating content</h4><p>Playback content is controlled with the following buttons:</p><ul><li>Play/Pause, toggles between pausing and playing content.</li><li>Up, stops content playback and returns to the screen where the content was launched, typically a details screen.</li><li>Down, pauses playing the content and displays the details for the content. To close the details screen and return to the previous state, press down again.</li><li>Select, pauses playing content and enters frame-scanning mode.</li><li>Right, pauses playing content and enters frame-scanning mode. To scan forward one frame at a time, press the button again.</li><li>Left, pauses playing the content and enters frame-scanning mode. To scan backward one frame at a time, press the button again.</li><li>Forward scan, pauses playing the content and scans forward. To scan faster, press the button again. To play the highlighted scene, press select or play. To resume playing from the point you paused, press up.</li><li>Reverse scan, pauses playing the content and scans backward. To scan faster, press the button again. To play the highlighted scene, press select or play. To resume playing from the point you paused, press up.</li><li>Home, stops content playback and returns to Roku home, focus on the application just exited.</li></ul><p>When the player is active, developers do not have control over the system UI.</p><p> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="643" width="274" src="https://sdkdocs.roku.com/download/attachments/1611565/worddave08f46bf147796c6fa0548fc2c6bc5e0.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddave08f46bf147796c6fa0548fc2c6bc5e0.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606657" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddave08f46bf147796c6fa0548fc2c6bc5e0.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span></p><h2 id="DesignGuidelines-2.2TypicalBrowseContentFlow">2.2 Typical Browse Content Flow</h2><p><br class="atl-forced-newline"/> The following is the typical screen flow through an application for browsing content tasks.</p><ul><li>Roku home screen: All channel applications are listed on and accessible through the Roku home screen. Select a channel (for example, &quot;AcmeCo Video On Demand Channel&quot;).</li><li>Channel Menu screen: The channel menu screen is displayed. If possible, expose content at the highest level of your application; consider using a list screen [In SDK: <a href="roPosterScreen.html">roPosterScreen</a>] here. If your application and content requires multiple levels of categorization, consider using a category screen as a menu at this level. Choose a channel (for example, &quot;TV On Demand&quot;).</li><li>List screen: A content list is displayed. If the content has images, a poster list screen is displayed, [In SDK: <a href="roPosterScreen.html">roPosterScreen</a>]. If the content is categorized, an optional filter banner is displayed so the user can select a category (for example &quot;Top TV Shows&quot;) before selecting content (&quot;Grey's Anatomy, Season 5&quot;).</li><li>Episodic picker screen (for episodic content only): If the selected content has episodes, an episodic picker screen is displayed so the user can choose an episode (for example, &quot;Episode 12, Stairway To Heaven&quot;). If the content does not have episodes, the episodic picker is not displayed.[In SDK: <a href="roPosterScreen.html">roPosterScreen (flat-episodic)</a>].</li><li>Details screen: After selecting content from a list or episodic picker, the content details screen is displayed. Select the Play button on the detail screen to start playing content. [In SDK: <a href="roSpringboardScreen.html">roSpringboard</a>]</li><li>Content playback: The show begins to play. Press the Up button on the remote to stop content playback and return to the Details screen. If bookmarks are enabled on the Roku Streaming Player or server, exiting content will pause the video and place a bookmark so that the user can resume play later. If not, the user will have to start content playback from the beginning the next time they attempt to play. Use bookmarks if possible. Press Home to return to the Roku home screen.</li></ul><h2 id="DesignGuidelines-2.3TypicalSearchContentFlow">2.3 Typical Search Content Flow</h2><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="609" width="113" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav6c7f3c554eba0d474462a0618311c5fd.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav6c7f3c554eba0d474462a0618311c5fd.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606658" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav6c7f3c554eba0d474462a0618311c5fd.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span></p><p>The following is the typical screen flow through an application for content search tasks:</p><ul><li>Roku home screen: All applications are listed on and accessible through the Roku home screen. Select a channel (for example, &quot;AcmeCo Video On Demand Channel&quot;).</li><li>Channel menu: The channel menu screen is displayed. The Search option might be available from the channel menu or elsewhere within an application. Choose Search. [In SDK: <a href="roPosterScreen.html">roPosterScreen </a>(flat-category); or, <a href="roPosterScreen.html">roPosterScreen </a>(arced-landscape/portrait/square/16:9)</li><li>Search keyboard screen: The search keyboard is displayed. The user enters a query using the keyboard. If your application supports predictive search, the results list begins to populate as users enter text. If not, an empty list results list or search history could be presented initially. After entering text, the user selects a search result from the list on the right side of the screen.</li><li>Content List: If the content selected from the result list in the keyboard has more than a single result a content list is presented. If a single result is obtained, the content list can be skipped.</li><li>Episodic Content: If the selected content has episodes, an Episodic Picker screen should be used so the user can select a single episode. If not this step can be skipped. [In SDK: <a href="roPosterScreen.html">roPosterScreen </a>(flat-episodic)]</li><li>Details Screen: Once a single piece of content is selected, a details screen is presented. The action button for initiating content playback is typically on the details screen. [In SDK: <a href="roSpringboardScreen.html">roSpringboardScreen</a>]</li><li>Content playback: The content fills the screen. The transport controls display temporarily, then time out. [In SDK: <a href="roVideoScreen.html">roVideoScreen</a>]<br/><br/></li></ul><h2 id="DesignGuidelines-2.4TypicalApplicationLinkingFlow">2.4 Typical Application Linking Flow</h2><p>Roku users discover and add channels to their Roku streaming player via the Roku Channel Store. Once added, channels appear on the user's Roku Home screen. Channel applications can run on the Roku streaming player in either an &quot;unlinked&quot; or &quot;linked&quot; state. Channels that are not linked enable all users who have added your Channel to their home screen equal access to the content that you provide. Linking enables personalization and allows users to associate their Roku streaming player with their personal accounts on your website. This limits content access based on their account status. In order for users to access personal content, they must link their Roku streaming player to their active account on your website.<br/> The choice whether to have users link their Roku streaming player to their active web account is entirely up to the channel partner. For instance, with Netflix, users must link before they can browse content because a Netflix user account is necessary to view an Instant Queue. Amazon allows users to browse content prior to linking because Amazon wants to enable users to shop before playing content. In that case, Amazon facilitates trial of the application and ultimately inspires users to create an account and link before content playback. Some channels may provide a hybrid solution-enabling users to browse content that is available to all users when not &quot;signed in&quot;, but requiring linking to view personal content.</p><h4 id="DesignGuidelines-2.4.1Thefollowingdescribesthelinkbeforebrowsescenario:">2.4.1 The following describes the link before browse scenario:</h4><p> </p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="464" width="328" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav08d773e7a9c8219061fb32e2b140d818.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav08d773e7a9c8219061fb32e2b140d818.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606663" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav08d773e7a9c8219061fb32e2b140d818.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span></p><p> </p><p>The Netflix channel is a good example of this content flow.</p><ul><li>Roku Home: The user selects the channel from Roku Home.</li><li>Channel Information Screen: A content screen is used to introduce users to the benefits and features of your application. This screen is optional. [In SDK: <a href="roPosterScreen.html">roParagraphScreen</a>]</li><li>Linking Screen: The Linking Screen is used to guide the user through the process of linking the Roku streaming player with your web service. This screen is mandatory for channels that require linking. At this point, the user will be instructed to go to an Internet connected PC to enter a URL and the link code presented on the Roku streaming player link screen. Typically the URL is www.&lt;yourwebsite&gt;.com/roku. [In SDK: <a href="roCodeRegistrationScreen.html">roCodeRegistrationScreen</a>]</li><li>PC: On the PC the user will either create or authenticate an account. They will then be asked to enter the link code that was presented on the player linking screen.</li><li>Congratulations Screen: When the user returns to the player, they will be congratulated for having successfully linked their web account with the Roku player. A content screen is used to create the Congratulations screen. This screen is optional. After successfully linking, the user has access to personalized experiences via your Channel on the Roku player. [In SDK: <a href="roParagraphScreen.html">roParagraphScreen</a>]</li></ul><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="562" width="336" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav7056b0e876ef438092b35f98b69b412b.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav7056b0e876ef438092b35f98b69b412b.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606664" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav7056b0e876ef438092b35f98b69b412b.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span></p><p> </p><h4 id="DesignGuidelines-2.4.2Thefollowingdescribesthebrowsebeforelinkscenario:(SeeabovesectionforreferencetoSDKscreentypenames)">2.4.2 The following describes the browse before link scenario: (See above section for reference to SDK screentype names)</h4><p>The Amazon channel is a good example of this content flow.</p><ul><li>Roku Home: The user will select the channel from Roku Home.</li><li>Channel Menu Screen – Content Lists: The user will discover content via the channel main screen or lower level content list screens. When the user selects to view the content (buy, rent, purchase, etc.) they will be presented with the linking process.</li><li>Channel Information Screen: A content screen is used to introduce users to the benefits and features of your application. This screen is optional. [In SDK: <a href="roParagraphScreen.html">roParagraphScreen</a>]</li><li>Linking Screen: The Linking Screen is used to guide the user through the process of linking the Roku player with your web service. This screen is mandatory for channels that require linking. At this point, the user will be instructed to go to an Internet connected PC to enter a URL and the link code presented on the Roku player link screen. Typically the URL is www.&lt;yourwebsite&gt;.com/roku. [In SDK: <a href="roCodeRegistrationScreen.html">roCodeRegistrationScreen</a></li><li>PC: On the PC the user will either create or authenticate an account. They will then be asked to enter the link code that was presented on the player linking screen.</li></ul><p>Congratulations Screen: When the user returns to the player, they will be congratulated for having successfully linked their web account with the Roku player. A content screen is used to create the Congratulations screen. This screen is optional. After successfully linking, the user has access to personalized experiences via your Channel on the Roku player. [In SDK: <a href="roParagraphScreen.html">roParagraphScreen</a>]</p><h1 id="DesignGuidelines-3.0RokuUIComponents">3.0 Roku UI Components</h1><p>These components appear throughout the UI screens. <br class="atl-forced-newline"/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="299" width="600" src="https://sdkdocs.roku.com/download/attachments/1611565/worddavb44d1999613390f0ef85181716ee91c3.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddavb44d1999613390f0ef85181716ee91c3.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606665" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddavb44d1999613390f0ef85181716ee91c3.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span></p><ol><li>The <strong>overhang</strong> is the application-branded area at the top of each screen (objects in the overhang are inactive and cannot be selected by the user). The suggested maximum Overhang height is 83 pixels for SD and 124 pixels for HD. The enforced maximum Overhang height is 92 for SD and 138 for HD. Between the suggested maximum height and the enforced maximum height is a transition area in which application developers should alpha blend their Overhang art into the screen background. Art rendered in the Overhang transition area (83 - 92 px for SD and 124 - 138 px for HD) will be rendered over by the Filter Banner, Modal Dialogs, and other native UI widgets. Application developers should not assume that the art in the Overhang transition zone will always be viewable by the end user. [In SDK: <a href="roAppManager.html">OverhangSlice</a>]</li><li>The <strong>primary logo</strong> is your application logo. [In SDK: <a href="roAppManager.html">OverhangLogo + OverhangLogoOffset</a>]</li><li>The <strong>breadcrumb</strong> is a two-level pathname (the current screen and the previous level in the application hierarchy) that updates dynamically as the user traverses the system. [BreadcrumbTextLeft, BreadcrumbTextRight]</li><li>The <strong>content region or background</strong> is the area below the overhang where application content or controls are displayed. [In SDK: <a href="roAppManager.html">BackgroundColor</a>]</li></ol><p> </p><h2 id="DesignGuidelines-3.1RokuUIBehavior">3.1 Roku UI Behavior</h2><p>The Roku UI utilizes a horizontal list-scrolling mechanism on category screens, filter banners, and poster list screens. This behavior appears throughout the UI.</p><ul><li>Focus: Default focus is on the first item in the list. In the default state, the first list item is usually centered on the screen. Focus (highlight) remains in the centered position as the list is traversed horizontally. The centered position is usually larger than the items to the left and right of center.</li><li>Up: Checks if a selectable object exists above. If yes, moves focus to the object above. If no, returns to the previously viewed screen.</li><li>Down: Checks if a selectable object exists below. If yes, moves focus to the object below. If no, does nothing, and plays the error sound, the audio cue that an action is not possible.</li><li>Left: Checks if a selectable item exists to the left. If yes, the items to the left move one position right. If no selectable item exists to the left and selectable items exist to the right, moves focus to the last item in the list. If no selectable item exists to the left or right, does nothing, and plays the error sound.</li><li>Right: Checks if a selectable item exists to the right. If yes, the items to the right move one position left. If no selectable item exists to the right and selectable items exist to the left, moves focus to the first item in the list. If no selectable items exist to the right or left, does nothing, and plays the error sound.</li><li>Select: Selects the item that has focus.</li></ul><h2 id="DesignGuidelines-3.2RokuUIGlobalCustomizationOptions">3.2 Roku UI Global Customization Options</h2><p>This section describes the Roku UI attributes that are applied globally throughout the application when you change these option settings. Unless otherwise noted, the following global customization options appear on all screens in an application. Detailed information about customization can be found in the technical document: <em>Component Reference.</em></p><h4 id="DesignGuidelines-3.2.1Screenbackgroundorcontentregion">3.2.1 Screen background or content region</h4><p>A single RGB value is used to define the rectangular background that fills the content area of the screen. Typically backgrounds contrast with the text that sits on top. For example, if the background is light (RGB: 192, 192, 192) then the text that is applied on top should be dark (RGB: 43, 43, 43).</p><h4 id="DesignGuidelines-3.2.2Overhang">3.2.2 Overhang</h4><ul><li>Appears on all screens within an application.</li><li>A &quot;slice&quot; or small bitmap image can be repeated horizontally to fill the overhang area and create the background of the overhang. Alternatively, a single bitmap image can fill the overhang space.</li></ul><h4 id="DesignGuidelines-3.2.3Primaryapplicationlogo">3.2.3 Primary application logo</h4><ul><li>Your application logo should appear in the upper left corner of the overhang of all screens in your application.</li><li>Make certain that the logo is sized and located similarly to the Roku logo to ensure consistency of logo placement throughout the Roku user experience.</li><li>Make sure the logo falls within the TV safe area.</li></ul><h4 id="DesignGuidelines-3.2.4Breadcrumb">3.2.4 Breadcrumb</h4><p>The breadcrumb informs the user about their current position within an application.</p><ul><li>It should appear on all screens except the top most screen within a channel.</li><li>The second level screen should display one breadcrumb, indicating that the user has passed through the first level.</li><li>All screens below the 2<sup>nd</sup> level should display a two-level breadcrumb. The right most breadcrumb indicates the current level, the left most breadcrumb indicates the level above.</li><li>Two font colors are used in the breadcrumb to differentiate between the previous and current levels. The current level should be the easiest to read and have the most contrast against the overhang background. The previous level should be subdued and have a lower contrast value against the overhang background.</li><li>The breadcrumb should remain constant as the user traverses content within a level. To test this, try navigating left and right within a filter on a content list screen. The breadcrumb should not change.</li><li>Often a filter name appears in the left most position of a breadcrumb on the 3<sup>rd</sup> level screens. For example: If the user has navigated into TV content and is browsing through comedy the breadcrumb at the 3<sup>rd</sup> level might say: &quot;Comedy / 30 Rock&quot;.</li><li>Position: Upper right corner of the overhang.</li><li>Font type, size, and placement: Predetermined by the SDK.</li><li>Font color: Customizable by the developer.</li></ul><h4 id="DesignGuidelines-3.2.5Optionalfilterbannerforlistscreens">3.2.5 Optional filter banner for list screens</h4><p>If your application supports content categorization, an optional filter banner can be used. The filter banner allows the user to select a category before selecting content.</p><ul><li>Position: Under the overhang and above content on list screens.</li><li>Font type, size, and placement: Predetermined by the SDK.</li><li>Font color: Customizable by the developer.</li></ul><h4 id="DesignGuidelines-3.2.6Focustextforlistscreensandepisodepickerscreens">3.2.6 Focus text for list screens and episode picker screens</h4><p>The content in focus can be described with two strings of focus text. The primary focus text field is usually a title or the text that describes the object in focus. The secondary text field is supporting text, for example, the price of the content in focus.</p><ul><li>Check the vertical spacing of elements on your screen. In some cases the second line of text may get tight. Consider omitting the second line of text in these cases.</li><li>Font type, size, and placement: Predetermined by the SDK.</li><li>Font color: Customizable by the developer.</li></ul><h4 id="DesignGuidelines-3.2.7Detailsscreentext">3.2.7 Details screen text</h4><ul><li>Font type, size, and placement: Predetermined by the SDK.</li><li>Font color: Customizable by the developer except, inactive text elements (objects that do not behave as buttons) and text that is part of an image.</li></ul><p> </p><h1 id="DesignGuidelines-4.0RokuScreenTypes">4.0 Roku Screen Types</h1><h2 id="DesignGuidelines-4.1CategoryScreen">4.1 Category Screen</h2><p>Use a category screen [roPosterScreen flat-category in SDK] when your application needs a menu to display a list of features or your content requires more than two levels of categorization. Generally, the application features or categories are represented with icons that can be selected to navigate to content collections, search, or settings. List screens are preferred to category screens because they contain content posters rather than icons. If possible, use list screens. Category screens are optional in your application. The Category Screen will also support an ad &quot;Site Stripe&quot; below the menu items. <br class="atl-forced-newline"/> <strong>Tip:</strong> Don't confuse the category screen with the Poster List Screen; they have a similar look and feel. See the Poster Screen section in this document for details. <br class="atl-forced-newline"/> <strong>Category Screen Components and Behaviors</strong><br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="285" width="600" src="https://sdkdocs.roku.com/download/attachments/1611565/worddavd470cce2dc7275d5eda72acf15aabeaf.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddavd470cce2dc7275d5eda72acf15aabeaf.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606666" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddavd470cce2dc7275d5eda72acf15aabeaf.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span></p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li><strong>Menu items</strong>are placed horizontally in a scrolling list.<ul><li>Order menu items by priority. The first menu item should be the most prominent application feature, followed by lower priority features to the right.</li><li>When entering this screen from an upper level, there should be no items to the left of the first menu item with the following exception</li><li>If your application has a settings menu, put it to the left of center in the default state.</li><li>Menu focus: By default, focus is on the first menu item that is positioned in the center of the screen. The item in focus (in the highlighted state) is always the largest icon in the horizontally scrolling list.<ul><li>Press Up and focus returns to the previously viewed screen, focuses on the item selected to navigate to this screen.</li><li>Press Down<ul><li>If there is a clickable banner below the centered menu item in focus, the focus moves to down to the clickable banner.</li><li>ELSE, do nothing. Play the error sound, the audio cue indicating that the selection is invalid.</li></ul></li><li>Press Left<ul><li>If there is a selectable item to the left of the item in focus, the items to the left shall move one position to the right.</li><li>If there is no selectable item to the left of the item in focus, and there are selectable items to the right, move focus to the last item in the list.</li><li>If there is no selectable item to the left or right of the item in focus, do nothing. Play the error sound.</li></ul></li><li>Press Right<ul><li>If there is a selectable item to the right of the item in focus, the items to the right shall move one position left.</li><li>If there is no selectable item to the right of the item in focus, and there are selectable items to the left, move focus to the first time in the list.</li><li>If there is no selectable item to the right or left of the item in focus, do nothing. Play the error sound.</li></ul></li><li>Press Select, selects the object in focus.</li></ul></li></ul></li><li>The <strong>focus text</strong>is text that appears below the item in focus.<ul><li>Focus text 1: Primary text below the center menu item is the title or name of the application feature in focus. </li><li>Focus text 2: Optional secondary text appears below focus text 1. Describes the capabilities of the feature in as few words as possible.</li></ul></li></ol><p> </p><h2 id="DesignGuidelines-4.2PosterListScreen">4.2 Poster List Screen</h2><p>Use a list screen to allow users to browse content groups. The SDK offers five types of list screens. These screens are all list styles of the roPosterScreen object. Choose the type that is appropriate for your content:</p><ol><li><strong>arced-portrait</strong> supports artwork in the DVD box art aspect ratio (typically used for movies).</li><li><strong>arced-landscape</strong> supports artwork in the 4:3 aspect ratio (TV, user-created content).</li><li><strong>rounded-rect-16x9-generic</strong> supports artwork in the 16:9 aspect ration.</li><li><strong>arced-16x9</strong> supports artwork in the 16:9 aspect ratio (HD video).</li><li><strong>arced-square</strong> supports square artwork (album art, icons). This type is also used as a catchall for mixed aspect ratio artwork.</li></ol><p>:<br/> <strong>Poster Screen Components and Behaviors</strong><br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="319" width="599" src="https://sdkdocs.roku.com/download/attachments/1611565/worddave57826fc146b7e8de4543ce98767582b.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddave57826fc146b7e8de4543ce98767582b.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606659" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddave57826fc146b7e8de4543ce98767582b.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> DVD List Screen With Posters and Optional Filter Banner</p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li>The <strong>optional filter banner</strong> allows users to select a category before selecting content within a category.</li></ol><ul><li>If your content is grouped by categories, an optional filter banner can be used on your list screen. Examples of filters are content types (action, comedy, drama), merchandising lists (HD movies, top rentals, new releases), days (Monday, Tuesday, Wednesday), etc. Details on how to populate the filter banner are included in the ComponentReference document. </li><li>Filter banner focus: By default, focus is on the first category centered in the filter banner. Initially, there should be no filters to the left of focus. Subsequent filter categories are displayed on the right. When a user scrolls the filter banner horizontally, up to three filter categories can be viewed simultaneously, one on either side of the center focus.<ul><li>Press Up, return to the previously viewed screen; focus on the item selected to navigate to this screen.</li><li>Press Down, move focus to the center poster in the content region.</li><li>Press Left,<ul><li>If there is a filter to the left of the filter in focus, move the filters one position to the right.</li><li>If there is no filter to the left of the filter in focus, and there are filters to the right, move focus to the last filter in the list.</li></ul></li><li>Press Right,<ul><li>If there is a filter to the right of the filter in focus, move the filters one position left.</li><li>If there is no filter to the right of the filter in focus, and there are filters to the left; move focus to the first filter in the list.</li></ul></li><li>Press Select, select the filter in focus, move focus to first poster in list below.</li></ul></li><li>The posters below the filter banner are items from the category in focus and are grayed out when the filter banner is in focus. When focus moves down to the posters from the banner, the filter banner grays out, indicating that the posters are now active.</li></ul><ol><li><strong>Poster list items</strong> are displayed in a horizontal V-shaped list. The posters in the list appear to get smaller the farther they get from the poster in focus. Posters are displayed in the most relevant sort order. For example, if the filter is &quot;recent,&quot; the first poster is the newest item in the list. By default, the first list item is in center focus, followed by additional posters to the right of center.</li><li><strong>Poster focus</strong>by default is pinned on the center poster in the bottom of the &quot;V&quot; in the content region.<ul><li><ul><li>Press Up, and the system checks if there is a filter banner<ul><li>If yes, move focus to the filter banner; focus on the filter selected previously.</li><li>If no, return to the previously viewed screen, focus on the item selected to navigate to this screen.</li></ul></li><li>Press Down, do nothing. Play the error sound, the audio cue that the selection is not valid.</li><li>Press Left,<ul><li>If a poster exists to the left, move posters one position to the right.</li><li>If no poster exists to the left but posters exist to the right, move focus to the last poster in the list.</li><li>If no poster exists to the left or right, do nothing. Play the error sound.</li></ul></li><li>Press Right,<ul><li>If a poster exists to the right, move posters one position left.</li><li>If no poster exists on the right but posters exist to the left, move focus to the first poster in the list.</li><li>If no poster exists to the left or right, do nothing. Play the error sound.</li></ul></li><li>Press Select, selects the poster that has focus (highlight).</li><li>Press Play, if the user presses the Play button on the remote when a content item is in focus, start content playback, bypassing the details screen.</li></ul></li></ul></li><li><strong>Focus text</strong> appears below the poster in focus.</li></ol><ul><li>Focus text 1: Primary text below the center menu item is the title or name of the application feature in focus. [In SDK: &lt;ShortDescriptionLine1&gt;]</li><li>Focus text 2: Optional secondary text appears below focus text 1. Describes the capabilities of the feature in as few words as possible. [In SDK: &lt;ShortDescriptionLine2&gt;].</li></ul><h2 id="DesignGuidelines-4.3EpisodicPickerScreen">4.3 Episodic Picker Screen</h2><p>Use an episodic picker screen when users need to browse episodic content. If the content selected is grouped by episode (for example, Season 3 of the series &quot;House&quot;), the episodic picker allows users to select a single episode from the season. Typically, episodic content has a single poster image for the entire episodic group. Use the episodic picker rather than a list screen because it confines episode selection to a lower level and avoids having to display the same poster multiple times on one screen.<br/> The SDK offers two types of episodic picker screens. Choose the type that is appropriate for your content:</p><ul><li>4:3 Episodic Picker supports artwork in the 4:3 aspect ratio (TV, user-created content). [In SDK: flat-episodic]</li><li>16:9 Episodic Picker supports artwork in the 16:9 aspect ratio (HD video). [In SDK: flat-episodic-16x9].</li></ul><p><br class="atl-forced-newline"/> <strong>Episodic Picker Screen Components and Behaviors</strong><br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="318" width="599" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav3930f150a28f8523406bce8f3b782365.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav3930f150a28f8523406bce8f3b782365.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606668" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav3930f150a28f8523406bce8f3b782365.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> 4:3 Episodic Picker</p><p style="margin-left: 30.0px;">1. The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</p><p style="margin-left: 30.0px;"><strong>2. Focus</strong>: The episodes are displayed in a horizontal list. The first episode is centered and in focus, represented by the episode poster and focus rectangle. The focus rectangle also supports a status indicator that illustrates the approximate position of the playback head in the video stream of the selected episode [<a href="Content+Meta-Data.html">Content metadata</a>: &lt;BookmarkPosition&gt;]. Subsequent episodes fall to the right in ascending order and are represented by simple rectangular icons with episode number.</p><ul><li style="list-style-type: none;"><ul><li>Episode focus: By default, focus is on the first episode centered in horizontal list.</li><li>Press Up, return to the previously viewed screen; focus on the item selected to navigate to this screen.</li><li>Press Down, do nothing. Play the error sound.</li><li>Press Left,<ul><li>If there is an episode to the left of the episode in focus, the episodes shall move one position to the right.</li><li>If there is no episode to the left of the episode in focus, and there are episodes to the right, move focus to the last episode in the list.</li></ul></li><li>Press Right,<ul><li>If there is an episode to the right of the episode in focus, the episodes shall move one position left.</li><li>If there are no episodes to the right of the episode in focus, and there are episodes to the left, move focus to the first episode in the list.</li></ul></li><li>Press Select; select the episode that has focus (highlight).</li></ul></li></ul><p style="margin-left: 30.0px;"><strong>3. Episode icons:</strong> Are displayed as icons on either side of the focus poster.</p><p style="margin-left: 30.0px;"><strong>4. Focus text</strong>: text that appears below the poster in focus.</p><ul><li style="list-style-type: none;"><ul><li>Focus text 1: Primary text below the center menu item is the title or name of the application feature in focus. [<a href="Content+Meta-Data.html">Content metadata</a>: &lt;ShortDescriptionLine1&gt;]</li><li>Focus text 2: Optional secondary text appears below focus text 1. Describes the capabilities of the feature in as few words as possible. [<a href="Content+Meta-Data.html">Content metadata</a>: &lt;ShortDescriptionLine2&gt;].</li></ul></li></ul><p style="margin-left: 30.0px;"><strong>5. Descriptive paragraph</strong>: The description of the episode content is limited to approximately 200 characters (3 lines of text) and is displayed in the lower portion of the screen. The paragraph is not selectable. [<a href="Content+Meta-Data.html">Content metadata</a>, &lt;paragraphtext&gt;.</p><h2 id="DesignGuidelines-4.4DetailsScreen">4.4 Details Screen</h2><p>Use a details screen to provide information about the selected content. [In SDK: roSpringboard] This screen is usually accessed from a list screen. The details screen displays controls for managing or controlling content and is the launching point for content playback. The SDK offers four types of detail screens. Choose the type that is appropriate for your content:</p><ul><li>DVD Details screen supports artwork in the DVD box art aspect ratio (typically used for movies).</li><li>4:3 Details screen supports artwork in the 4:3 aspect ratio (TV, user-created content).</li><li>16:9 Details screen supports artwork in the 16:9 aspect ratio (HD video).</li><li>Square Details screen supports square artwork (album art, icons). This type is also used as a catchall for mixed aspect ratio artwork).</li></ul><p><strong>Details Screen Components and Behaviors</strong><br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="318" width="599" src="https://sdkdocs.roku.com/download/attachments/1611565/worddavfe7b44f206cc33d05703a2c95deb8de0.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddavfe7b44f206cc33d05703a2c95deb8de0.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606669" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddavfe7b44f206cc33d05703a2c95deb8de0.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> <span style="color: rgb(64,64,64);"><strong>Details Screen</strong></span></p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li>The <strong>poster</strong> is placed in the upper left side of the screen. Choose the poster that is appropriate for your content. The poster is not selectable. If a poster is not available use the &quot;no image&quot; poster icon in the format that is appropriate for your content. [In SDK: &lt;PosterURL&gt;]</li><li><strong>Content title</strong>: Use uppercase and lowercase letters in your content title. [In SDK: &lt;Title&gt;]</li><li><strong>Action buttons</strong>: The SDK supports up to five action buttons on the details screen. The top button is the default selection on the screen. Action buttons have variable length and should not truncate. Use short names that best represent the action that will result if the button is selected, for example, if selecting the button initiates an action, use a verb. If the selection navigates elsewhere, display a noun describing the linked screen. [In SDK: &lt;button text&gt;</li></ol><ul><li>Focus, by default, is on the top action button on the screen.</li><li>Press Up,<ul><li>If focus is on the top most button, return to the previously viewed screen with focus on the item selected to navigate to this screen.</li><li>If the user has navigated left/right between detail pages, up should return to the content list with focus on the currently selected content.</li><li>Else, move focus up one button.</li></ul></li><li>Press Down,<ul><li>If focus is on the bottom action button, do nothing. Play the error sound.</li><li>ELSE, move focus down one button.</li></ul></li><li>Press Left,<ul><li>Display previous content detail page, move focus to topmost button. (Note that this the preferred behavior and it not currently supported by the SDK. Watch for Left arrow events on the detail screen, if the left arrow has been pressed display he previous detail screen in the content list. If the user has arrowed to the beginning of a content list, wrap to the end on the next left button press.)</li></ul></li><li>Press Right,<ul><li>Display next content detail page, move focus to topmost button. (Note that this the preferred behavior and it not currently supported by the SDK. Watch for Right arrow events on the detail screen, if the right arrow has been pressed display he next detail screen in the content list. If the user has arrowed to the end of a content list, wrap to the beginning on the next right button press.)</li></ul></li><li>Select: Select the button that has focus (highlight).</li></ul><ol><li><strong>First Row Metadata</strong>: A variety of metadata tags are displayed on this screen. Metadata is not selectable. The metadata you place on the details screen will vary depending on your content. The first row of metadata supports up to 3 text strings (for videos, use actor names in all capital letters) and an optional five-star user rating. If your content is something other than video, we suggest that you try to map your metadata to this format. For example, if your content is music, substitute actor names with artist name. All field names and placement are listed in the ComponentReference.pdf on developer.roku.com. Please map all metadata tags to these field names even if they don't match perfectly.</li><li><strong>Descriptive paragraph</strong>: The description of the content is limited to approximately 250 characters (4 lines of text) and is displayed in the lower portion of the screen. The paragraph is not selectable. [In SDK: &lt;Description&gt;].</li><li><strong>Second and Third Row Metadata</strong>: The second row of metadata includes (from left to right) content length (1hr32min), release date (2009), content rating (PG-13), content format if applicable (use bitmaps, e.g. HD), and director's name (in all capital letters). The third row is reserved for up to two content descriptors (genre, e.g. Comedy).</li></ol><h2 id="DesignGuidelines-4.5AudioPlayingScreen">4.5 Audio Playing Screen</h2><p>Use an audio playing screen when music or radio is being played. This screen is usually accessed from a content list. <br class="atl-forced-newline"/> <strong>Tip:</strong> Don't confuse the audio playing screen with the details screen; they have a similar look and feel. See the Details Screen section in this document for more information. <br class="atl-forced-newline"/> <strong>Audio Playing Screen Components and Behaviors</strong> <br class="atl-forced-newline"/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="330" width="623" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav3329f95eabd3093145882342ff123580.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav3329f95eabd3093145882342ff123580.png?version=1&amp;modificationDate=1365202067000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606670" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav3329f95eabd3093145882342ff123580.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> Audio Playing Screen</p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li>The <strong>poster</strong> is placed in the upper left side of the screen. Generally, audio is represented by square poster art (for example, album cover). The poster is not selectable. The content poster frame has an integrated status bar to indicate whether the audio stream is playing or paused. [In SDK: &lt;PosterURL&gt;]</li><li>In the <strong>content title</strong>, use uppercase and lowercase letters. [In SDK:&lt;Title&gt;}</li><li>The SDK supports up to five <strong>action buttons</strong> on the audio playing screen. The top button is the default selection on the screen. Action buttons have variable length and should not truncate. Use short names that best represent the action that will result if the button is selected, for example, if selecting the button initiates an action, use a verb. If the selection navigates elsewhere, display a noun describing where it will go. [In SDK: &lt;buttontext&gt;}</li></ol><ul><li>Focus, by default is on the top most action button on the screen.</li><li>Press Up,<ul><li><ul><li>If focus is on the top most button, return to the previously viewed screen with focus on the item selected to navigate to this screen.</li><li>Else, move focus up one button.</li></ul></li></ul></li><li>Press Down,</li><li>If focus is on the bottom action button, do nothing. Play the error sound.</li><li>ELSE, move focus down one button.</li><li>Press Left,</li><li>Display previous content detail page, move focus to topmost button</li><li>Press Right,<ul><li>Display next content detail page, move focus to topmost button</li></ul></li><li>Select: Select the button that has focus (highlight).</li></ul><ol><li>The <strong>progress bar</strong> is a playback indicator incorporated into the poster displayed:</li></ol><ul><li>Updates as the song is played</li></ul><ol><li><strong>Metadata</strong> is placed under the poster and is not selectable. The first line of metadata is the artist name (formatted: by: Artist Name), [In SDK: [Actor1]]. The second line of metadata is the album name (formatted: on: Album Name), [In SDK: [Actor2]].</li><li><strong>The song length</strong> appears at the bottom left portion of the screen and appears with minute and second counts only (e.g., 2m37s) [In SDK: &lt;Length&gt;].</li></ol><h2 id="DesignGuidelines-4.6KeyboardScreens">4.6 Keyboard Screens</h2><p>Use a keyboard screen for user text-entry tasks. There are two types of keyboards: A search keyboard, with a limited character set and integrated results list [In SDK: roSearchScreen]; and a full screen keyboard with access to a complete ASCII character set [In SDK: roKeyboardScreen].</p><ul><li>Search Keyboards: Initiated from a user content search within your application. There are two types of search keyboards:<ul><li>Standard search keyboard for when search history is persistent.</li><li>Predictive search keyboard for when search history is accessible. After the user begins text entry, the search history is replaced with predictive results.</li></ul></li><li>Full Screen Keyboard: Initiated from screens requiring data entry from the user (login user names, access codes, or passwords). Roku discourages use of this keyboard in typically applications and recommends that if your application requires intense data entry; consider pushing text-entry tasks to the web if possible.</li></ul><p><br class="atl-forced-newline"/> <strong>Search Screen Components and Behaviors</strong> <br class="atl-forced-newline"/> <strong>Search Keyboard Components</strong><br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="338" width="599" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav771d0aeb3f6763153aa9ae94be13a7de.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav771d0aeb3f6763153aa9ae94be13a7de.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606642" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav771d0aeb3f6763153aa9ae94be13a7de.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> Search Keyboard</p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li>The <strong>text entry field</strong> is the area where the entered text is displayed. It is not selectable.</li><li>The <strong>text entry keys</strong> on the search keyboard are part of a reduced set of alpha-numeric keys.</li></ol><ul><li>Focus, by default is on the upper left key in the keyboard. The cursor should be blinking and right justified in the text entry field. In the initial state, an instructional line of text might fill the text entry area, giving the user a sense of what type of information to enter. The instructional text is eliminated when the user starts typing.</li><li>Press Up,<ul><li><ul><li style="list-style-type: none;"><ul><li>If focus is on the top most row of keys, return to the previously viewed screen, focus on the item selected to navigate to this screen.</li><li>If focus is on the top most item in results list, do nothing. Play the error sound.</li><li>If focus in on either the search or clear history button, move focus to closest item above</li><li>ELSE, move focus up one position.</li></ul></li><li>Press Down,<ul><li>If focus is on the bottom most row of keys, move focus to search button.</li><li>If focus is on the bottom most list item, check if there is a clear button below</li><li>If yes, move focus to the clear button.</li><li>If no, do nothing. Play the error sound.</li><li>If focus is on either the search or clear history button, play the error sound.</li><li>ELSE, move focus down one position.</li></ul></li><li>Press Left,<ul><li>If focus is on the left most row of keys or search button, play the error sound.</li><li>If focus is on a list item, move focus to the closest character key in the keyboard.</li><li>If focus is on the clear history button, move focus to the search button.</li><li>ELSE, move focus left one position in keyboard.</li></ul></li><li>Press Right,<ul><li>If focus is on the right most row of keys, move focus to top most list item.</li><li>If focus is on a list item or clear search button, play the error sound.</li><li>If focus is on the search button, move focus to top most list item.</li><li>ELSE, move focus right one position in keyboard.</li></ul></li><li>Select: Select the item that has focus (highlight).</li></ul></li></ul></li></ul><ol><li><strong>List title</strong> is the title of the results list. [In SDK: SetSearchTermHeaderText]</li><li>The <strong>Result List</strong>can be one of the following:<ul><li>Past search keywords from applications utilizing search (titled &quot;Recent Searches&quot;)</li><li>Predictive search results that populate the text field as the user selects letters on the keyboard with the remote control (titled &quot;Search Suggestions&quot;)</li></ul></li><li>The <strong>Search button</strong> initiates a search on the text string in the text field. [In SDK: SetSearchButtonText]</li><li><strong>Clear History button</strong> clears the search history results list. If the user has cleared the search history, the search history does not display the next time the user enters this screen. [In SDK: ClearSearchTerms]</li></ol><p><br class="atl-forced-newline"/> Full Screen Keyboard</p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li>The <strong>text entry field</strong> is where the entered text is displayed. It is not selectable.</li><li><strong>Instructions</strong> are an informational text string below the text entry field that instructs the user about the type of text required for the text entry task. It is not selectable.</li><li>The <strong>text entry keys</strong> on the full screen keyboard have a full set of ASCII keys available. The initial set of keys should be the alpha set. Radio buttons are included to enable character set switching and uppercase character entry.</li></ol><ul><li>Focus, by default is on the upper left most key. The cursor should be blinking and right justified in the text entry field.</li><li>Press Up,<ul><li>If focus is on the top most rows of keys, do nothing play error sound.</li><li>ELSE, move focus up one position.</li><li>Press Down,</li><li>If focus is on the bottom most rows of keys, move focus to the action buttons.</li><li>If focus is on the action buttons, move focus down one button</li><li>If focus is on the bottom most action button, play the error sound.</li></ul></li><li>Press Left,<ul><li>If focus is on the left most row of keys or action button, play the error sound.</li><li>If focus is on the right most key or action button, play the error sound.</li><li>ELSE, move focus left one position.</li></ul></li><li>Press Right,<ul><li>If focus is on the right most row of keys or action button, play the error sound.</li><li>If focus is on the left most key or action button, play the error sound.</li><li>ELSE, move focus right one position.</li></ul></li><li>Select: Select the item that has focus (highlight).</li></ul><ol><li>The full screen keyboard supports up to three <strong>action buttons</strong>. Make the top button the executable command after text entry. Enable a &quot;back&quot; button to leave the text entry screen without entering text.</li></ol><h2 id="DesignGuidelines-4.7ContentScreen">4.7 Content Screen</h2><p>Use a content screen when a message or special offer needs to be presented to the user. [In SDK: roParagraphScreen]. <br/> A content screen is displayed generally on the initial application launch to describe the application or from a &quot;learn more&quot; button within the application. The SDK provides two content screen types: content text and content image. <br class="atl-forced-newline"/> <strong>Content Screen Components and Behaviors</strong> <br class="atl-forced-newline"/> <strong>Content Text Screen</strong><br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="335" width="623" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav909cc93c5cfbef5b4166887ecf8acedf.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav909cc93c5cfbef5b4166887ecf8acedf.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606643" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav909cc93c5cfbef5b4166887ecf8acedf.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> Content Screen: Text</p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li>The <strong>content region</strong> is a descriptive paragraph and is not selectable.</li></ol><ul><li><strong>Descriptive paragraph</strong>: The descriptive paragraph is limited to approximately 950 characters of text and is displayed centered on the screen.</li></ul><ol><li>The content screen supports several <strong>action buttons;</strong> it's recommended that you try to limit action buttons to no more than 3. If this screen elicits a response from the user, the top button should be the default response. A &quot;back&quot; button should be available to exit the screen without taking action.</li></ol><ul><li>Focus, initially is on the top most action button</li><li>Press Up,<ul><li>If focus is on the top most button, return to the previously viewed screen, focus on the item selected to navigate to this screen.</li><li>ELSE, move focus up one position.</li><li>Press Left,</li><li>Do nothing, play the error sound.</li></ul></li><li>Press Right,<ul><li>Do nothing, play the error sound.</li><li>Press Down,</li><li>If focus is on the bottom most button, play the error sound.</li><li>ELSE, moves focus down one position.</li></ul></li><li>Select: Select the item that has focus (highlight).</li></ul><p><br class="atl-forced-newline"/> <span style="color: rgb(13,13,13);"><strong>Content Image Screen</strong></span> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="319" width="599" src="https://sdkdocs.roku.com/download/attachments/1611565/worddavf15bfb5a46c00a46c85ca41b54a43bac.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddavf15bfb5a46c00a46c85ca41b54a43bac.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606667" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddavf15bfb5a46c00a46c85ca41b54a43bac.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> Content Screen: Image</p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li>The <strong>content region</strong> is either a descriptive paragraph or bitmap image. Neither is selectable.</li></ol><ul><li><strong>Bitmap image</strong>: The bitmap image is placed under the overhang and horizontally aligned on the screen. Tip: If the image is too large or there are too many action buttons, the image will be clipped.</li></ul><ol><li>The content screen supports several <strong>action buttons;</strong> it's recommended that you try to limit action buttons to no more than 3. If this screen elicits a response from the user, the top button should be the default response. A &quot;back&quot; button should be available to exit the screen without taking action.</li></ol><ul><li>Focus, initially is on the top most action button</li><li>Press Up,<ul><li>If focus is on the top most button, return to the previously viewed screen, focus on the item selected to navigate to this screen.</li><li>ELSE, move focus up one position.</li><li>Press Left,</li><li>Do nothing, play the error sound.</li></ul></li><li>Press Right,</li><li>Do nothing, play the error sound.</li><li>Press Down,<ul><li>If focus is on the bottom most button, play the error sound.</li><li>ELSE, moves focus down one position.</li></ul>Select: Select the item that has focus (highlight).</li></ul><h2 id="DesignGuidelines-4.8LinkingScreen">4.8 Linking Screen</h2><p>If you want to enable users who have an account on your website to access their personal content on the Roku player, use the linking screen. Linking is an optional feature of the SDK. [In SDK: roCodeRegistrationScreen]. Linking can be required upon entering the application for the first time (for example, Netflix) or upon playing content (for example, Amazon). <br class="atl-forced-newline"/> Account linking also enables bookmarking, which allows the content provider to track the user's location in a content stream so that users can resume playback of content from where they stopped regardless of the device they are using. <br class="atl-forced-newline"/> To learn more about linking, refer to &quot;Typical Application Linking Flow&quot; at the beginning or this document or the technical document <em>Content Data and Hosting</em> available at: developer.roku.com. <br class="atl-forced-newline"/> <strong>Linking Screen Components and Behaviors</strong><br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="318" width="599" src="https://sdkdocs.roku.com/download/attachments/1611565/worddavd002129f4c4cc68ec82a337dd7ce4e85.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddavd002129f4c4cc68ec82a337dd7ce4e85.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606646" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddavd002129f4c4cc68ec82a337dd7ce4e85.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> Linking Screen</p><ol><li>The <strong>overhang</strong> is a component of all screens. For more information, see the Roku UI Global Customization Options in this document.</li><li>The <strong>descriptive paragraph</strong> should include the following:</li></ol><ul><li>&quot;To &lt;benefit of your application&gt; from &lt;your website.com&gt;, link your Roku player to your &lt;your website.com&gt; profile.</li><li>&quot;From your computer,&quot;</li><li>&quot;go to www.yourwebsite.com/roku&quot;</li><li>&quot;and enter this code:&quot;</li><li>&quot;&lt;Variable code number&gt;&quot; (formatted in all caps)</li><li>&quot;This screen will automatically update once your Roku player has been linked to your &lt;your website.com&gt; profile.</li></ul><ol><li><strong>Activation code</strong> is a randomly generated code that the user must type into the linking page on your website to activate their account on the Roku player. Ideally, the code number is as few as 4 digits, and preferably no more than 8 digits.</li><li><strong>Action buttons:</strong></li></ol><ul><li>Get a new code. The top most action button allows the user to request a new code. It is the default button.</li><li>Back. The bottom most action button allows the user to abort linking.</li><li>Button Focus, initially is on the top most action button.</li><li>Press Up,<ul><li>If focus is on the top most button, play the error sound.</li><li>ELSE, move focus up one position.</li><li>Press Left, play the error sound.</li><li>Press Right, play the error sound.</li></ul></li><li>Press Down,<ul><li>If focus is on the bottom most button, play the error sound.</li><li>ELSE, move focus down one position.</li></ul></li><li>Select: Select the item that has focus (highlight).</li></ul><h2 id="DesignGuidelines-4.9TextOverlayScreenRokutoupdatethissectionwhenthescreenisdesignhasstabilized.">4.9 Text Overlay ScreenRoku to update this section when the screen is design has stabilized.</h2><p>Use the text overlay screen to display text on the screen over content, for example &quot;data&quot; (e.g., comments, captions, etc.) associated with a photo stream. The text appears in a semi-opaque transparent rectangle that overlays a currently playing video or photo stream. This screen also allows for pause and play controls. <br class="atl-forced-newline"/> The SDK allows developers to define whether the overlay is visible or not visible as well as a hold time for each image in a slideshow. For instance, a developer can determine that in slideshow mode, the overlay can appear automatically and remain visible for n seconds before disappearing, until the next slide. A channel developer could also decide that the overlay be visible as the result of a user action, for instance, pressing the down button on the remote control. <br/> Text Overlay Screen Components and Behaviors<br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="312" width="599" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav2514a9527d016cb7660e783b9efa60cb.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav2514a9527d016cb7660e783b9efa60cb.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606647" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav2514a9527d016cb7660e783b9efa60cb.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> Text Overlay Screen</p><ol><li>The <strong>video or photo</strong> plays full screen in the background.</li><li><strong>Transparent text overlay</strong> displays the text associated with the content playing in the video or photo underneath.</li></ol><ul><li>If there is text associated with the content window, the text should automatically appear in the layer above.</li><li>There are three &quot;fields&quot; in this overlay as indicated above. These fields may reflect data in the stream, such as the image author; location in the stream of the particular image (e.g., 1 of 28); and, image caption or comments.</li><li>There is no focus on this window. All actions are initiated through the remote control.</li><li>Press Left,<ul><li>If content is a photo, go to previous photo.</li><li>ELSE, play the error sound.</li><li>Press Right,</li><li>If content is a photo, go to next photo.</li><li>ELSE, play the error sound.</li><li>When the overlay is not present content play back resumes. The following actions are possible:</li></ul></li><li>Press Up,<ul><li>Stop content play back. Return to the detail screen that initiated content play with focus on the action button that initiated content play.</li></ul></li><li>Press Down,<ul><li>If text is available for the current content, display the text overlay.</li><li>ELSE, play the error sound.</li><li>Press Left,</li><li>If content is a photo, go to previous photo.</li><li>ELSE, play the error sound.</li></ul></li><li>Press Right,<ul><li>If content is a photo, go to next photo.</li><li>ELSE, play the error sound.</li><li>Press Reverse Scan,</li><li>If content is a photo, go to previous photo.</li><li>ELSE, play the error sound.</li><li>Press Pause, pauses slideshow, displays text overlay if one is associated with the content on the screen.</li></ul></li><li>Press Forward Scan,<ul><li>If content is a photo, go to next photo.</li><li>Press Select, toggle like/unlike states.</li></ul></li></ul><h2 id="DesignGuidelines-4.10Dialogs">4.10 Dialogs</h2><p>Dialogs are secondary windows that appear above application screens. They allow users to perform a command, engage in a dialog with the application, or simply provide system progress feedback when the application is busy. There are two basic types of dialogs in the Roku system: an interactive dialog that requires user feedback before proceeding with the current task and a progress indicator that informs the user about a system delay but allows no user input. <br class="atl-forced-newline"/> <strong>Dialog Components and Behaviors</strong> <br class="atl-forced-newline"/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="269" width="480" src="https://sdkdocs.roku.com/download/attachments/1611565/worddav6cda76c882d963121c8f0f7daa515fef.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddav6cda76c882d963121c8f0f7daa515fef.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606640" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddav6cda76c882d963121c8f0f7daa515fef.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/>Interactive Dialog: <br class="atl-forced-newline"/> If you need to inform the user about an event or require feedback from the user before proceeding with a task, use an interactive dialog [In SDK: roMessageDialog].</p><ol><li>The <strong>dialog box</strong> is a floating window that appears temporarily over applications.</li><li>The <strong>dialog title</strong> identifies the system feature that originated the dialog.</li><li>The <strong>dialog prompt</strong> informs the user about why the dialog appeared. The prompt is often stated as a question that is resolved by selecting one of the action buttons included on the dialog. It can also simply inform the user about an event, and the user dismisses the dialog after reading.</li><li><strong>Action buttons</strong> allow the user to make a selection that dismisses the dialog. The default action should be the top button and, if selected, should have the safest or preferred consequence. We recommend that dialogs contain no more than 3 action buttons. Use the &quot;back&quot; button when the dialog is simply informing the user of an issue or to abort an action.</li></ol><ul><li>Button Focus, initially is on the top most action button.<ul><li>Press Up,<ul><li>If focus is on the top most button, play the error sound.</li><li>ELSE, move focus up one position.</li></ul></li><li>Press Left, play the error sound.</li><li>Press Right, play the error sound.</li><li>Press Down,<ul><li>If focus is on the bottom most button, play the error sound.</li><li>ELSE, move focus down one position.</li></ul></li></ul></li></ul><p><br class="atl-forced-newline"/> Select: Select the item that has focus (highlight).<br/> <span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="338" width="600" src="https://sdkdocs.roku.com/download/attachments/1611565/worddavd1de7b4d95be57c1f8282b8cb50c5405.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-image-src="/download/attachments/1611565/worddavd1de7b4d95be57c1f8282b8cb50c5405.png?version=1&amp;modificationDate=1365202066000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1606641" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="worddavd1de7b4d95be57c1f8282b8cb50c5405.png" data-base-url="https://sdkdocs.roku.com" data-linked-resource-content-type="application/octet-stream" data-linked-resource-container-id="1611565" data-linked-resource-container-version="6"></span><br/> Progress Indicator: <br class="atl-forced-newline"/> If a process is initiated that will delay the presentation of an active screen by more than a few seconds, display a progress indicator dialog. [In SDK: roOneLineDialog].</p><ol><li>The <strong>dialog box</strong> is a floating window that appears temporarily over applications.</li><li>The <strong>dialog title</strong> identifies the system feature that originated the dialog and informs the user about the nature of the delay. If possible, give the user some indication about how long the delay might last.</li><li>The <strong>spinner icon</strong> lets the user know that the system is performing a process that the user cannot interrupt.</li></ol><p><br class="atl-forced-newline"/> <strong>Tip:</strong> Progress indicators have no action buttons. They automatically dismiss when the delaying process is complete.<br/> <strong>Appendix I: Guidelines for publishing a channel to Roku's Channel Store</strong><br/> The process of publishing a channel to Roku's Channel Store includes several steps.</p><ol><li><strong>Create a developer account and log in</strong></li></ol><p>Adding a channel to Roku's Channel Store requires a Roku developer account. Developers will create a Roku user account and then agree to an SDK License agreement. By creating this account, Roku grants developers full access to the Roku SDK as well as additional resources. Instructions and links to complete this process can be found at <a class="external-link" href="http://roku.com/developer" rel="nofollow">http://roku.com/developer</a>.</p><ol><li><strong>Provide metadata</strong></li></ol><p>The following information or metadata must be provided when adding a channel: <br class="atl-forced-newline"/> <strong>Channel Name:</strong> Channel Name is what users will see when browsing the Roku Channel Store. This name should be less than XX characters in order to appear in various places in the Roku player user interface It is generally only one or two words and reflects the core brand and/or functionality of the channel being offered. <br class="atl-forced-newline"/> <strong>Description:</strong> The description is limited to 250 characters and should provide users with the core feature(s) and benefits of the channel being offered. It should also indicate implications of adding the channel (e.g., &quot;by adding this channel you are agreeing to [provider]'s Terms and Conditions). <br class="atl-forced-newline"/> <strong>Version:</strong> When uploading your channel on the Roku Developer site, you will be asked to include the version number. The purpose of the version number is to indicate whether an application is newer than a previous version. While updating existing channels is discussed a little later in this document, it is important to note that while the version numbers you provide do not need to be sequential; they do need to be ascending in order for an update to occur. The version number will also be visible to the user in the Channel Store. <br class="atl-forced-newline"/> <strong>Build numbers:</strong> A build number field is available when uploading a channel. This is not a required field and is never visible to the end-user. Its purpose is to provide developers an option to track specific builds of a particular version. <br class="atl-forced-newline"/> <strong>Parental Hints:</strong> The four options provided are intended to give parents a sense of the type of content available on the channel. It is up to each developer to select a hint that they believe is applicable to their content selection. The developer must select one of the following four hints during the process of adding a channel:</p><ul><li>Appropriate for all ages.</li><li>Content individually rated.</li><li>Content not rated.</li><li>Inappropriate for children.</li></ul><p><strong>Additional Requirements:</strong> In the spirit of full disclosure, Roku recommends indicating here whether or not there are additional requirements beyond adding the channel on Roku to use it. For instance, if a paid subscription is required, this option should be selected and will be displayed to the end-user. The following four requirements options will be available:</p><ul><li>None</li><li>Free Account</li><li>Subscription</li><li>Additional Fees May Apply</li></ul><p> </p><ol><li><strong>Browse and upload</strong></li></ol><p>There will be 3 separate files required to complete you channel addition. The first is a zip file of your channel application. The second and third are called Poster HD and Poster SD and are the HD and SD versions of the home page icon. A sample version of these assets will be available from the <a class="external-link" href="http://roku.com/developer" rel="nofollow">http://roku.com/developer</a> site. These images will be presented to the user along with metadata for your channel in the Channel Store and once the user adds it; will be visible on Roku Home.<br/> After all the appropriate files are uploaded and the metadata is entered in the required fields, you will click on a &quot;Submit&quot; button and the channel will enter the next phase of the publishing process.</p><ol><li><strong>Confirmation code</strong></li></ol><p>During the next phase, your submission will be in an unpublished state and not yet visible in the store. A unique code will be generated for the channel version. This code will appear in a grid on the developer page in the channel grid. You can distribute this code to beta testers via email. For end-users to enter the code, they must go to the following URL: <a class="external-link" href="http://roku.com/channelcode" rel="nofollow">http://roku.com/channelcode</a> and enter the code provided by you and select &quot;add channel&quot;. The next time their Roku player synchronizes with the Roku servers, the channel will be added to their home screen.</p><ol><li><strong>Final publishing to Channel Store</strong></li></ol><p>As a developer, you can upload multiple versions of your channel to Roku without all becoming visible in the store. To publish your channel to the store, you will select &quot;publish&quot; from the grid on the developer site. Publishing a channel updates all prior versions installed on Roku Streaming Players to the published version.</p><ol><li><strong>Channel appears in Channel Store at next unit refresh</strong></li></ol><p><br class="atl-forced-newline"/> The next time a player connects with Roku, new channels will be appear in the Channel Store and available for download.</p>
+
+                
+        
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://sdkdocs.roku.com/display/sdkdoc/Design+Guidelines"
+    dc:identifier="https://sdkdocs.roku.com/display/sdkdoc/Design+Guidelines"
+    dc:title="Design Guidelines"
+    trackback:ping="https://sdkdocs.roku.com/rpc/trackback/1611565"/>
+</rdf:RDF>
+-->
+
+            
+    
+
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="1611565" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right ">
+            <li class="no-labels-message">
+            No labels
+        </li>
+            </ul>
+
+    </div>
+</div>
+</div>
+
+            
+            
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+
+                        
+    
+<div id="comments-section" class="pageSection group">
+        
+    
+
+
+
+</div>
+
+
+            
+</div>
+
+
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+</div>
+  
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div id="footer" role="contentinfo">
+    <section class="footer-body">
+
+                                                    
+        
+
+        <ul id="poweredby">
+            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>5.9.1-OD-65-062</span>, <a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software?utm_source=confluence-footer" class="hover-footer-link">Team Collaboration Software</a></li>
+            <li class="print-only">Printed by Atlassian Confluence 5.9.1-OD-65-062, Team Collaboration Software.</li>
+            <li class="noprint"><a href="https://jira.atlassian.com/browse/CONF" class="hover-footer-link">Report a bug</a></li>
+            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
+        </ul>
+
+        
+
+        <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+
+                    <script>
+var footer = document.getElementById('poweredby');
+footer.removeChild(footer.children[2]);
+footer.removeChild(footer.children[2]);
+
+var pDiv = document.createElement('li');
+pDiv.className='noprint';
+pDiv.innerHTML='<a href="http://www.roku.com/developer/sdk-license">SDK License</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="http://www.roku.com/about/privacy">Roku Privacy Policy</a>';
+footer.appendChild(pDiv);
+</script>
+
+<script>
+    var modinfo = document.getElementsByClassName('page-metadata-modification-info')[0] ;
+    if ( modinfo != undefined ) {
+        modinfo.style.display = "none" ;
+    }
+
+</script>
+
+        
+    </section>
+</div>
+
+    </div>
+</body>
+</html>
