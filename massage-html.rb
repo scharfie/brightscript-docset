@@ -7,7 +7,7 @@ nodes_to_delete = [
   "#navigation",
 ]
 
-Dir.glob("sdkdocs.roku.com/**/*.html") do |filename|
+Dir.glob("sdkdocs.roku.com/**/Rectangle.html") do |filename|
   puts "Processing #{filename}..."
   file = File.read(filename)
   doc = Nokogiri::HTML(file)

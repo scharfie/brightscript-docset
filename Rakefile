@@ -16,7 +16,7 @@ end
 
 desc "Fetch the SDK HTML docs"
 task :fetch do
-  run %(wget -k -r -p --include-directories=display --adjust-extension "https://sdkdocs.roku.com/display/sdkdoc/Index")
+  run %(wget -k -r -p --include-directories=display,s --adjust-extension "https://sdkdocs.roku.com/display/sdkdoc/Index")
 end
 
 desc "Massage the SDK HTML files"
