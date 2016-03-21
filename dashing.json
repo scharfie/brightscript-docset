@@ -3,7 +3,8 @@
     "package": "brightscript",
     "index": "index.html",
     "selectors": {
-        "h1#title-text a": "Entry"
+        "h1#title-text a": "Entry",
+        "h4": "Method"
     },
     "ignore": [
         "ABOUT"
